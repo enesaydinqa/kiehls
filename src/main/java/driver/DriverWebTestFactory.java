@@ -6,6 +6,7 @@ public class DriverWebTestFactory {
 
         DriverManager driverManager;
 
+        System.out.println("BrowserType (DriverWebTestFactory) : " + System.getProperty("BrowserType"));
         String type = System.getProperty("BrowserType").toLowerCase();
 
         switch (type) {
