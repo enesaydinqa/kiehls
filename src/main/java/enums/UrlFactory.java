@@ -5,7 +5,6 @@ public enum UrlFactory {
 
     MAIN_URL("https://www.nyxcosmetics.com.tr/");
 
-
     //-----
 
     public final String pageUrl;

@@ -52,6 +52,9 @@ public class ChromeDriverManagerResponsive extends DriverManager {
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
 
+            LOGGER.info("BS_USERNAME : '" + BS_USERNAME + "'");
+            LOGGER.info("BS_AUTOMATEKEY : '" + BS_AUTOMATEKEY + "'");
+
             driver = new RemoteWebDriver(new URL("https://" + BS_USERNAME + ":" + BS_AUTOMATEKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
 
         } else {

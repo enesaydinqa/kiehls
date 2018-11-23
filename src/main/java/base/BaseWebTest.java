@@ -53,7 +53,6 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
 
         if (driver != null) {
             driver.quit();
-            driver.quit();
             driver = null;
         }
 

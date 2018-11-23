@@ -37,7 +37,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
     @Test
     public void testMainPageBrokenLink() {
-
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Request Link");
 
@@ -52,7 +51,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
                             "Broken Link " + png.getRequest().getUrl(),
                             404 > png.getResponse().getStatus());
                 });
-
     }
 
     @Test
