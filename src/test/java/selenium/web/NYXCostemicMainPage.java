@@ -1,7 +1,7 @@
 package selenium.web;
 
 import base.BaseWebTest;
-import enums.UrlFactory;
+import enums.URLFactory;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.proxy.CaptureType;
 import org.junit.Assert;
@@ -23,7 +23,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Request PNG Link");
 
-        navigateToURL(UrlFactory.MAIN_URL);
+        navigateToURL(URLFactory.MAIN_URL);
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
@@ -40,7 +40,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Request Link");
 
-        navigateToURL(UrlFactory.MAIN_URL);
+        navigateToURL(URLFactory.MAIN_URL);
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
@@ -61,7 +61,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - En Yeniler Ürün Testi");
 
-        navigateToURL(UrlFactory.MAIN_URL);
+        navigateToURL(URLFactory.MAIN_URL);
 
         listElementRandomClick(mainPage.getNewestProducts());
 

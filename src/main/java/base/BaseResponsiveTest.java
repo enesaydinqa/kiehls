@@ -1,7 +1,7 @@
 package base;
 
 import driver.DriverManager;;
-import driver.DriverWebTestFactory;
+import driver.DriverResponsiveTestFactory;
 import net.lightbody.bmp.core.har.Har;
 import org.junit.*;
 import org.junit.rules.TestName;
@@ -35,19 +35,24 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
         LoadConfigProperty();
 
         DriverManager driverManager;
-        driverManager = DriverWebTestFactory.getManager();
+        driverManager = DriverResponsiveTestFactory.getManager();
         driver = driverManager.getDriver();
 
-        VideoRecorder.startRecording(testName.getMethodName());
+        videoRecorder.startRecording(testName.getMethodName());
 
     }
 
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
 
         setHarFile(testName.getMethodName());
-        VideoRecorder.stopRecording();
+
+        try {
+            VideoRecorder.stopRecording();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
 
         if (driver != null) {
             driver.close();

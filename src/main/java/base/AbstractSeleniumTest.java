@@ -1,7 +1,7 @@
 package base;
 
 import driver.DriverManager;
-import enums.UrlFactory;
+import enums.URLFactory;
 import interfaces.Actions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -26,7 +26,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
     }
 
     @Override
-    public void navigateToURL(UrlFactory url) {
+    public void navigateToURL(URLFactory url) {
         int pageLoadTimeOut = Integer.parseInt(LoadProperties.config.getProperty("PageLoadTimeOut"));
         driver.manage().timeouts().pageLoadTimeout(pageLoadTimeOut, TimeUnit.MINUTES);
         driver.navigate().to(url.pageUrl);

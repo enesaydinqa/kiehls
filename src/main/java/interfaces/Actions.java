@@ -1,6 +1,6 @@
 package interfaces;
 
-import enums.UrlFactory;
+import enums.URLFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -10,7 +10,7 @@ public interface Actions {
 
     String getCurrentURL();
 
-    void navigateToURL(UrlFactory url);
+    void navigateToURL(URLFactory url);
 
     void openNewTab();
 

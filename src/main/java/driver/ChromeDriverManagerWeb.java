@@ -44,7 +44,10 @@ public class ChromeDriverManagerWeb extends DriverManager {
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
 
-            driver = new RemoteWebDriver(new URL("https://" + BS_USERNAME + ":" + BS_AUTOMATEKEY + "@hub-cloud.browserstack.com/wd/hub"), capabilities);
+            LOGGER.info("BS_USERNAME : '" + USERNAME + "'");
+            LOGGER.info("BS_AUTOMATEKEY : '" + AUTOMATE_KEY + "'");
+
+            driver = new RemoteWebDriver(new URL(BrowserStackURL), capabilities);
 
         } else {
 
