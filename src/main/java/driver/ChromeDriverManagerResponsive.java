@@ -57,6 +57,8 @@ public class ChromeDriverManagerResponsive extends DriverManager {
         if (REMOTE_TEST.equals("true")) {
 
             capabilities.setCapability("browserstack.local", "true");
+            capabilities.setCapability("browserstack.networkLogs", "true");
+
 
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
