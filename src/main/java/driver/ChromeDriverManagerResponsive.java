@@ -66,9 +66,6 @@ public class ChromeDriverManagerResponsive extends DriverManager {
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
 
-            LOGGER.info("BS_USERNAME : '" + USERNAME + "'");
-            LOGGER.info("BS_AUTOMATEKEY : '" + AUTOMATE_KEY + "'");
-
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
             driver.manage().window().setSize(new Dimension(414, 736));
 
