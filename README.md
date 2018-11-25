@@ -1,6 +1,10 @@
-<<<<<<< HEAD
-# lorealta
-
-=======
 # nyxcosmetics
->>>>>>> abdcd72a363fbb811b62e74091225ddf88b42887
+
+- Parameters
+
+-DRemoteTest=true
+-DBrowserType=chrome
+-DUsername=testuser
+-DAutomateKey=testautomatekey
+-Djetty.port=8090
+
