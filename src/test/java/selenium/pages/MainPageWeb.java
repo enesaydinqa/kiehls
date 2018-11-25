@@ -11,8 +11,15 @@ public class MainPageWeb {
     @FindBy(xpath = "(//div[@class='slick-track'])[1]/div")
     private List<WebElement> newestProducts;
 
+    @FindBy(css = ".fancybox-skin")
+    private WebElement productPricePopup;
+
 
     public List<WebElement> getNewestProducts() {
         return newestProducts;
+    }
+
+    public WebElement getNewestPricePopup() {
+        return productPricePopup;
     }
 }
