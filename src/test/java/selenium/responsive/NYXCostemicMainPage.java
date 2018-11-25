@@ -53,7 +53,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
                     LOGGER.info(png.getRequest().getUrl());
                     Assert.assertTrue(
                             "Broken : " + png.getRequest().getUrl(),
-                            404 > png.getResponse().getStatus());
+                            400 > png.getResponse().getStatus());
                 });
 
     }

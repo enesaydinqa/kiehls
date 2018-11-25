@@ -51,7 +51,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
                     LOGGER.info(png.getRequest().getUrl());
                     Assert.assertTrue(
                             "Broken : " + png.getRequest().getUrl(),
-                            404 > png.getResponse().getStatus());
+                            400 > png.getResponse().getStatus());
                 });
 
     }
@@ -78,13 +78,39 @@ public class NYXCostemicMainPage extends BaseWebTest {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
-        proxy.newHar("Ana Sayfa - Slider");
+        proxy.newHar("Ana Sayfa - Sale Price");
 
         navigateToURL(URLFactory.MAIN_URL);
 
         IntStream.range(0, mainPage.getProductSalePrices().size())
                 .forEach(count -> {
                     Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
+                });
+
+    }
+
+    @Test
+    public void testProductDetail() throws InterruptedException {
+
+        MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
+
+        proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
+        proxy.newHar("Ana Sayfa - Product Detail");
+
+        navigateToURL(URLFactory.MAIN_URL);
+
+        waitElementToBeClickable(mainPage.getMainPageAllProduct().get(1));
+        scrollToElement(mainPage.getMainPageAllProduct().get(1));
+        click(mainPage.getMainPageAllProduct().get(1));
+
+        List<HarEntry> entries = proxy.getHar().getLog().getEntries();
+
+        entries
+                .forEach(png -> {
+                    LOGGER.info(png.getRequest().getUrl());
+                    Assert.assertTrue(
+                            "Broken : " + png.getRequest().getUrl(),
+                            400 > png.getResponse().getStatus());
                 });
 
     }

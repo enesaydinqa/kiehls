@@ -17,6 +17,9 @@ public class MainPageWeb {
     @FindBy(xpath = "//div[@data-pro-product-info]")
     private List<WebElement> productSalePrices;
 
+    @FindBy(xpath = "//div[contains(@class, 'pro-product-image')]")
+    private List<WebElement> mainPageAllProduct;
+
 
     public List<WebElement> getNewestProducts() {
         return newestProducts;
@@ -28,5 +31,9 @@ public class MainPageWeb {
 
     public List<WebElement> getProductSalePrices() {
         return productSalePrices;
+    }
+
+    public List<WebElement> getMainPageAllProduct() {
+        return mainPageAllProduct;
     }
 }
