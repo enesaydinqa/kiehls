@@ -313,17 +313,17 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
     public void checkDOMLoaded() {
 
         String DOCUMENT_READY_STATE = "return document.readyState";
-        String JQUERY_ACTIVE = "return jQuery.active == 0";
-        String JQUERY_DEFINED = "return typeof jQuery != 'undefined'";
+        //String JQUERY_ACTIVE = "return jQuery.active == 0";
+        //String JQUERY_DEFINED = "return typeof jQuery != 'undefined'";
 
         try {
             while (true) {
 
                 boolean readyState = JSHelper.executeScriptObject(driver, DOCUMENT_READY_STATE).equals("complete");
-                boolean JqueryActive = (boolean) JSHelper.executeScriptObject(driver, JQUERY_ACTIVE);
-                boolean JqueryDefined = (boolean) JSHelper.executeScriptObject(driver, JQUERY_DEFINED);
+                //boolean JqueryActive = (boolean) JSHelper.executeScriptObject(driver, JQUERY_ACTIVE);
+                //boolean JqueryDefined = (boolean) JSHelper.executeScriptObject(driver, JQUERY_DEFINED);
 
-                if (readyState & JqueryActive & JqueryDefined) {
+                if (readyState) {
                     break;
                 }
             }
