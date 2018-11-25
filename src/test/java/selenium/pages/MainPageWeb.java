@@ -14,6 +14,9 @@ public class MainPageWeb {
     @FindBy(xpath = "(//div[@class='fancybox-skin'])[1]")
     private WebElement productPricePopup;
 
+    @FindBy(xpath = "//div[@data-pro-product-info]")
+    private List<WebElement> productSalePrices;
+
 
     public List<WebElement> getNewestProducts() {
         return newestProducts;
@@ -21,5 +24,9 @@ public class MainPageWeb {
 
     public WebElement getProductPricePopup() {
         return productPricePopup;
+    }
+
+    public List<WebElement> getProductSalePrices() {
+        return productSalePrices;
     }
 }

@@ -11,6 +11,7 @@ import selenium.pages.MainPageWeb;
 
 import java.util.List;
 import java.util.logging.Logger;
+import java.util.stream.IntStream;
 
 public class NYXCostemicMainPage extends BaseWebTest {
 
@@ -70,6 +71,22 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
     }
 
+    @Test
+    public void testProductSalePrice() {
+
+        MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
+
+        proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
+        proxy.newHar("Ana Sayfa - Slider");
+
+        navigateToURL(URLFactory.MAIN_URL);
+
+        IntStream.range(0, mainPage.getProductSalePrices().size())
+                .forEach(count -> {
+                    Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
+                });
+
+    }
 
 
 }
