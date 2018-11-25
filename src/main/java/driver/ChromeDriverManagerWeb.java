@@ -20,7 +20,11 @@ public class ChromeDriverManagerWeb extends DriverManager {
 
     protected void createDriver() throws Exception {
 
-        Runtime.getRuntime().exec(START_LOCAL_PROXY);
+        if (EXEC_COMMAND_BY_JENKINS.equals("true")) {
+            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
+        } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
+            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
+        }
 
         proxy = new BrowserMobProxyServer();
         proxy.start();
@@ -50,7 +54,7 @@ public class ChromeDriverManagerWeb extends DriverManager {
             LOGGER.info("BS_USERNAME : '" + USERNAME + "'");
             LOGGER.info("BS_AUTOMATEKEY : '" + AUTOMATE_KEY + "'");
 
-            driver = new RemoteWebDriver(new URL(BrowserStackURL), capabilities);
+            driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
 
         } else {
 
