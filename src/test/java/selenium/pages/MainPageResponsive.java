@@ -8,7 +8,7 @@ import java.util.List;
 
 public class MainPageResponsive {
 
-    @FindBy(xpath = "(//div[@class='swiper-wrapper'])[2]/div")
+    @FindBy(css = "[data-gtm-list='EN YENİLER']")
     private List<WebElement> newestProducts;
 
 

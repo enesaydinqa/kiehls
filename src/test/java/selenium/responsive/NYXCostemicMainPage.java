@@ -56,18 +56,4 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
 
     }
 
-    @Test
-    public void testTheNewestProducts() {
-
-        MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
-
-        proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
-        proxy.newHar("Ana Sayfa - En Yeniler Ürün Testi");
-
-        navigateToURL(URLFactory.MAIN_URL);
-
-        listElementRandomClick(mainPage.getNewestProducts());
-
-    }
-
 }

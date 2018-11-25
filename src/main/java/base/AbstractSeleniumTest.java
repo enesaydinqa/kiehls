@@ -50,6 +50,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
         waitElementToBeClickable(clickableElement);
         clickableElement.click();
 
+
     }
 
     @Override

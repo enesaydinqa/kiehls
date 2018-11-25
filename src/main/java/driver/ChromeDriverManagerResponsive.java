@@ -26,7 +26,7 @@ public class ChromeDriverManagerResponsive extends DriverManager {
     @Override
     public void createDriver() throws IOException {
 
-        if (EXEC_COMMAND_BY_JENKINS.equals("true")) {
+        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
         } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
