@@ -2,6 +2,7 @@ package base;
 
 import driver.DriverManager;
 import enums.URLFactory;
+import helper.JSHelper;
 import interfaces.Actions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -22,11 +23,14 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public String getCurrentURL() {
+
+        checkDOMLoaded();
         return driver.getCurrentUrl();
     }
 
     @Override
     public void navigateToURL(URLFactory url) {
+
         int pageLoadTimeOut = Integer.parseInt(LoadProperties.config.getProperty("PageLoadTimeOut"));
         driver.manage().timeouts().pageLoadTimeout(pageLoadTimeOut, TimeUnit.MINUTES);
         driver.navigate().to(url.pageUrl);
@@ -39,12 +43,14 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void click(WebElement element) {
+
+        checkDOMLoaded();
         element.click();
     }
 
     @Override
     public void listElementRandomClick(List<WebElement> element) {
-
+        checkDOMLoaded();
         WebElement clickableElement = element.get(new Random().nextInt(element.size()));
         scrollToElement(clickableElement);
         waitElementToBeClickable(clickableElement);
@@ -55,49 +61,61 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void rightClick(WebElement element) {
+        checkDOMLoaded();
         org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(driver);
         action.contextClick(element).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
     }
 
     @Override
     public void doubleClick(WebElement element) {
+        checkDOMLoaded();
         org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(driver);
         action.doubleClick(element).perform();
     }
 
     @Override
     public void mouseOver(WebElement element) {
+        checkDOMLoaded();
         org.openqa.selenium.interactions.Actions actions = new org.openqa.selenium.interactions.Actions(driver);
         actions.moveToElement(element).perform();
     }
 
     @Override
     public void selectOptionIndex(WebElement element, int index) {
+
+        checkDOMLoaded();
         new Select(element).selectByIndex(index);
     }
 
     @Override
     public void selectOptionValue(WebElement element, String itemValue) {
+        checkDOMLoaded();
         new Select(element).selectByValue(itemValue);
     }
 
     @Override
     public void selectOptionVisibleText(WebElement element, String visibleText) {
+        checkDOMLoaded();
         new Select(element).selectByVisibleText(visibleText);
     }
 
     @Override
     public void sendKeys(WebElement element, CharSequence text) {
+
+        checkDOMLoaded();
         element.sendKeys(text);
     }
 
     @Override
     public boolean isDisplayed(WebElement element) {
+
+        checkDOMLoaded();
         return element.isDisplayed();
     }
 
     @Override
     public boolean isAttributePresent(WebElement element, String attribute) {
+        checkDOMLoaded();
         Boolean result = false;
 
         try {
@@ -113,6 +131,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void waitElementToBeClickable(WebElement element) {
+        checkDOMLoaded();
         int waitTimeOutSeconds = Integer.valueOf(LoadProperties.config.getProperty("WaitTimeOutSeconds"));
         WebDriverWait wait = new WebDriverWait(driver, waitTimeOutSeconds);
         wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -120,6 +139,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void waitElementVisible(WebElement element) {
+        checkDOMLoaded();
         int waitTimeOutSeconds = Integer.valueOf(LoadProperties.config.getProperty("WaitTimeOutSeconds"));
         WebDriverWait wait = new WebDriverWait(driver, waitTimeOutSeconds);
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -127,6 +147,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void waitElementNotVisible(WebElement element) {
+        checkDOMLoaded();
         int waitTimeOutSeconds = Integer.valueOf(LoadProperties.config.getProperty("WaitTimeOutSeconds"));
         WebDriverWait wait = new WebDriverWait(driver, waitTimeOutSeconds);
         wait.until(ExpectedConditions.invisibilityOf(element));
@@ -134,37 +155,44 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void clearInput(WebElement element) {
+        checkDOMLoaded();
         element.clear();
     }
 
     @Override
     public void clearMultipleSelectedOption(WebElement element) {
+        checkDOMLoaded();
         new Select(element).deselectAll();
     }
 
     @Override
     public String getText(WebElement element) {
+        checkDOMLoaded();
         return element.getText();
     }
 
     @Override
     public String getSelectedOptionText(WebElement element) {
+        checkDOMLoaded();
         Select dropdown = new Select(element);
         return dropdown.getFirstSelectedOption().getText();
     }
 
     @Override
     public String getAttribute(WebElement element, String attributeName) {
+        checkDOMLoaded();
         return element.getAttribute(attributeName);
     }
 
     @Override
     public String selectedOptionGetText(WebElement element) {
+        checkDOMLoaded();
         return new Select(element).getFirstSelectedOption().getText();
     }
 
     @Override
     public String selectedOptionGetValue(WebElement element) {
+        checkDOMLoaded();
         return new Select(element).getFirstSelectedOption().getAttribute("value");
     }
 
@@ -193,11 +221,14 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void checkBoxChecked(WebElement element) {
+
+        checkDOMLoaded();
         element.isSelected();
     }
 
     @Override
     public void pageRefresh() {
+        checkDOMLoaded();
         driver.navigate().refresh();
     }
 
@@ -234,6 +265,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void dragAndDrop(WebElement from, WebElement to) throws Exception {
+        checkDOMLoaded();
         org.openqa.selenium.interactions.Actions act = new org.openqa.selenium.interactions.Actions(driver);
 
         scrollToElement(from);
@@ -250,25 +282,53 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
 
     @Override
     public void pageZoom(String zoomValue) {
+        checkDOMLoaded();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.body.style.zoom='" + zoomValue + "%'");
     }
 
     @Override
     public void pageScroll(int x, int y) {
+        checkDOMLoaded();
         JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeScript("scroll(" + x + "," + y + ")");
     }
 
     @Override
     public void scrollToElement(WebElement element) {
+        checkDOMLoaded();
+
         JavascriptExecutor scroll = (JavascriptExecutor) driver;
         scroll.executeScript("arguments[0].scrollIntoView();", element);
     }
 
     @Override
     public void clickViaJs(WebElement element) {
+        checkDOMLoaded();
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", element);
     }
+
+    @Override
+    public void checkDOMLoaded() {
+
+        String DOCUMENT_READY_STATE = "return document.readyState";
+        String JQUERY_ACTIVE = "return jQuery.active == 0";
+        String JQUERY_DEFINED = "return typeof jQuery != 'undefined'";
+
+        try {
+            while (true) {
+
+                boolean readyState = JSHelper.executeScriptObject(driver, DOCUMENT_READY_STATE).equals("complete");
+                boolean JqueryActive = (boolean) JSHelper.executeScriptObject(driver, JQUERY_ACTIVE);
+                boolean JqueryDefined = (boolean) JSHelper.executeScriptObject(driver, JQUERY_DEFINED);
+
+                if (readyState & JqueryActive & JqueryDefined) {
+                    break;
+                }
+            }
+        } catch (Exception ex) {
+        }
+    }
+
 }

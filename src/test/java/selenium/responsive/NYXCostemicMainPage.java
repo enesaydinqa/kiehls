@@ -39,10 +39,10 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
     }
 
     @Test
-    public void testMainPageBrokenLink() {
+    public void testMainPageFai() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
-        proxy.newHar("Ana Sayfa - Request Link");
+        proxy.newHar("Ana Sayfa - Traffic");
 
         navigateToURL(URLFactory.MAIN_URL);
 

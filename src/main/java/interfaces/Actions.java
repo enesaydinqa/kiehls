@@ -82,6 +82,8 @@ public interface Actions {
 
     void dragAndDrop(WebElement from, WebElement to) throws Exception;
 
+    void checkDOMLoaded();
+
 
 
     //-- Javascript
