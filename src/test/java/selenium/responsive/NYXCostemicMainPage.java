@@ -39,7 +39,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
     }
 
     @Test
-    public void testMainPageFai() {
+    public void testMainPageTraffic() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Traffic");
@@ -52,7 +52,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
                 .forEach(png -> {
                     LOGGER.info(png.getRequest().getUrl());
                     Assert.assertTrue(
-                            "Broken Link " + png.getRequest().getUrl(),
+                            "Broken : " + png.getRequest().getUrl(),
                             404 > png.getResponse().getStatus());
                 });
 
