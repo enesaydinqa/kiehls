@@ -41,8 +41,11 @@ public class ChromeDriverManagerResponsive extends DriverManager {
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
         Map<String, String> mobileEmulation = new HashMap<>();
-        mobileEmulation.put("deviceName", "Pixel 2");
-
+        mobileEmulation.put("browserName", "iPhone");
+        mobileEmulation.put("device", "iPhone 8 Plus");
+        mobileEmulation.put("realMobile", "true");
+        mobileEmulation.put("os_version", "11.0");
+    
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--ignore-certificate-errors");
