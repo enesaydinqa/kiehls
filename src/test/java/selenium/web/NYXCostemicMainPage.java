@@ -51,6 +51,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
                             "Broken Link " + png.getRequest().getUrl(),
                             404 > png.getResponse().getStatus());
                 });
+
     }
 
     @Test

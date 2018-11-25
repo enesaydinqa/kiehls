@@ -11,7 +11,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import properties.LoadProperties;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Logger;
 
@@ -19,7 +18,9 @@ public class ChromeDriverManagerWeb extends DriverManager {
 
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerWeb.class.getName());
 
-    protected void createDriver() throws MalformedURLException {
+    protected void createDriver() throws Exception {
+
+        Runtime.getRuntime().exec(START_LOCAL_PROXY);
 
         proxy = new BrowserMobProxyServer();
         proxy.start();

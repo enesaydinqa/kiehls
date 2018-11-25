@@ -9,6 +9,7 @@ public abstract class DriverManager {
     String USERNAME = System.getProperty("Username");
     String AUTOMATE_KEY = System.getProperty("AutomateKey");
     String BrowserStackURL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+    String START_LOCAL_PROXY = System.getProperty("user.dir") + "/drivers/BrowserStackLocal --key " + AUTOMATE_KEY;
 
     protected static RemoteWebDriver driver;
     protected static BrowserMobProxy proxy;

@@ -12,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import properties.LoadProperties;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -23,7 +24,9 @@ public class ChromeDriverManagerResponsive extends DriverManager {
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
 
     @Override
-    public void createDriver() throws MalformedURLException {
+    public void createDriver() throws IOException {
+
+        Runtime.getRuntime().exec(START_LOCAL_PROXY);
 
         proxy = new BrowserMobProxyServer();
         proxy.start(8090);
