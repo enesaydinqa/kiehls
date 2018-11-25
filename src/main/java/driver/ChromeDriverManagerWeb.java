@@ -41,6 +41,8 @@ public class ChromeDriverManagerWeb extends DriverManager {
 
         if (REMOTE_TEST.equals("true")) {
 
+            capabilities.setCapability("browserstack.local", "true");
+
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
 
