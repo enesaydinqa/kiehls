@@ -26,6 +26,8 @@ public class ChromeDriverManagerWeb extends DriverManager {
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
         }
 
+        Thread.sleep(10000);
+
         proxy = new BrowserMobProxyServer();
         proxy.start();
         int port = proxy.getPort();

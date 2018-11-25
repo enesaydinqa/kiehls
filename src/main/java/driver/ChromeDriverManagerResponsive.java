@@ -24,13 +24,15 @@ public class ChromeDriverManagerResponsive extends DriverManager {
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
 
     @Override
-    public void createDriver() throws IOException {
+    public void createDriver() throws IOException, InterruptedException {
 
         if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
         } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
         }
+
+        Thread.sleep(10000);
 
         proxy = new BrowserMobProxyServer();
         proxy.start();
