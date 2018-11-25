@@ -41,7 +41,6 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
         DriverManager driverManager;
         driverManager = DriverWebTestFactory.getManager();
         driver = driverManager.getDriver();
-        wait(5);
 
         if (TAKEAVIDEO.equals("true")) {
             videoRecorder.startRecording(testName.getMethodName());

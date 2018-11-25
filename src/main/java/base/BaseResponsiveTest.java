@@ -38,7 +38,6 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
         DriverManager driverManager;
         driverManager = DriverResponsiveTestFactory.getManager();
         driver = driverManager.getDriver();
-        wait(5);
 
 
         if (TAKEAVIDEO.equals("true")) {
