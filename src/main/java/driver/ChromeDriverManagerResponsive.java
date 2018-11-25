@@ -33,7 +33,7 @@ public class ChromeDriverManagerResponsive extends DriverManager {
         }
 
         proxy = new BrowserMobProxyServer();
-        proxy.start(8090);
+        proxy.start();
         int port = proxy.getPort();
 
         LOGGER.info("This Execute Browser Port --> " + port);
@@ -65,6 +65,7 @@ public class ChromeDriverManagerResponsive extends DriverManager {
             LOGGER.info("BS_AUTOMATEKEY : '" + AUTOMATE_KEY + "'");
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
+            driver.manage().window().setSize(new Dimension(414, 736));
 
         } else {
 
