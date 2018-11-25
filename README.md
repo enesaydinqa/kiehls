@@ -4,7 +4,7 @@
 
 -DRemoteTest=true
 -DBrowserType=chrome
--DUsername=testuser
--DAutomateKey=testautomatekey
+-DUsername=tunpekar1
+-DAutomateKey=FPqXDFz4bqk1jvqXDZ3d
 -Djetty.port=8090
-
+-DExecCommandByJenkins=false
