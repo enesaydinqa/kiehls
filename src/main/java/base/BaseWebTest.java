@@ -56,7 +56,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
 
         setHarFile(testName.getMethodName());
 
-        if (TAKEAVIDEO.equals("false")) {
+        if (TAKEAVIDEO.equals("true")) {
             VideoRecorder.stopRecording();
         } else {
         }
