@@ -8,3 +8,4 @@
 -DAutomateKey=FPqXDFz4bqk1jvqXDZ3d
 -Djetty.port=8090
 -DExecCommandByJenkins=false
+-DTakeVideo=false

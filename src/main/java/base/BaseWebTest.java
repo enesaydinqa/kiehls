@@ -46,7 +46,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
         if (TAKEAVIDEO.equals("true")) {
             videoRecorder.startRecording(testName.getMethodName());
         } else {
-            LOGGER.info("Take a Video ");
+            LOGGER.info("Scenarios will not take video");
         }
     }
 
@@ -56,10 +56,12 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
 
         setHarFile(testName.getMethodName());
 
-        try {
+        if (TAKEAVIDEO.equals("false")) {
             VideoRecorder.stopRecording();
-        } catch (Exception ex) {
+        } else {
         }
+
+
         if (driver != null) {
             driver.quit();
             driver = null;

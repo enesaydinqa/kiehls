@@ -20,6 +20,7 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
     private final static Logger LOGGER = Logger.getLogger(BaseResponsiveTest.class.getName());
 
     private VideoRecorder videoRecorder;
+    String TAKEAVIDEO = System.getProperty("TakeVideo").toLowerCase();
 
     @Override
     protected void createDriver() {
@@ -40,22 +41,23 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
         wait(5);
 
 
-        try {
+        if (TAKEAVIDEO.equals("true")) {
             videoRecorder.startRecording(testName.getMethodName());
-        } catch (Exception ex) {
+        } else {
+            LOGGER.info("Scenarios will not take video");
         }
 
     }
 
 
     @After
-    public void tearDown() {
+    public void tearDown() throws Exception {
 
         setHarFile(testName.getMethodName());
 
-        try {
+        if (TAKEAVIDEO.equals("false")) {
             VideoRecorder.stopRecording();
-        } catch (Exception ex) {
+        } else {
         }
 
         if (driver != null) {
