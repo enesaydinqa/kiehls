@@ -22,6 +22,8 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
     private final static Logger LOGGER = Logger.getLogger(BaseWebTest.class.getName());
 
     private VideoRecorder videoRecorder;
+    String TAKEAVIDEO = System.getProperty("TakeVideo").toLowerCase();
+
 
     @Override
     protected void createDriver() {
@@ -39,9 +41,13 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
         DriverManager driverManager;
         driverManager = DriverWebTestFactory.getManager();
         driver = driverManager.getDriver();
+        wait(5);
 
-        videoRecorder.startRecording(testName.getMethodName());
-
+        if (TAKEAVIDEO.equals("true")) {
+            videoRecorder.startRecording(testName.getMethodName());
+        } else {
+            LOGGER.info("Take a Video ");
+        }
     }
 
 
@@ -49,8 +55,11 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
     public void tearDown() throws Exception {
 
         setHarFile(testName.getMethodName());
-        VideoRecorder.stopRecording(); // Stop Test Video
 
+        try {
+            VideoRecorder.stopRecording();
+        } catch (Exception ex) {
+        }
         if (driver != null) {
             driver.quit();
             driver = null;

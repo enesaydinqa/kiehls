@@ -37,8 +37,13 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
         DriverManager driverManager;
         driverManager = DriverResponsiveTestFactory.getManager();
         driver = driverManager.getDriver();
+        wait(5);
 
-        videoRecorder.startRecording(testName.getMethodName());
+
+        try {
+            videoRecorder.startRecording(testName.getMethodName());
+        } catch (Exception ex) {
+        }
 
     }
 
@@ -51,7 +56,6 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
         try {
             VideoRecorder.stopRecording();
         } catch (Exception ex) {
-            ex.printStackTrace();
         }
 
         if (driver != null) {

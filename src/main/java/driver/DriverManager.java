@@ -8,8 +8,10 @@ public abstract class DriverManager {
     String REMOTE_TEST = System.getProperty("RemoteTest").toLowerCase();
     String USERNAME = System.getProperty("Username");
     String AUTOMATE_KEY = System.getProperty("AutomateKey");
-    String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
     String BROWSER_STACK_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+
+    String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
     String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/drivers/BrowserStackLocal --key " + AUTOMATE_KEY;
     String EXEC_LOCAL_PROXY_BY_JENKINS = "/var/lib/jenkins/workspace/lorealta/BrowserStackLocal --key " + AUTOMATE_KEY;
 
