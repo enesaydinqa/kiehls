@@ -66,8 +66,10 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
         listElementRandomClick(mainPage.getNewestProducts());
 
-        waitElementVisible(mainPage.getNewestPricePopup());
+        waitElementVisible(mainPage.getProductPricePopup());
 
     }
+
+
 
 }

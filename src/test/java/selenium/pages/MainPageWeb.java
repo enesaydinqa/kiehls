@@ -11,7 +11,7 @@ public class MainPageWeb {
     @FindBy(xpath = "(//div[@class='slick-track'])[1]/div")
     private List<WebElement> newestProducts;
 
-    @FindBy(css = ".fancybox-skin")
+    @FindBy(xpath = "(//div[@class='fancybox-skin'])[1]")
     private WebElement productPricePopup;
 
 
@@ -19,7 +19,7 @@ public class MainPageWeb {
         return newestProducts;
     }
 
-    public WebElement getNewestPricePopup() {
+    public WebElement getProductPricePopup() {
         return productPricePopup;
     }
 }
