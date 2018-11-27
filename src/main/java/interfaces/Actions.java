@@ -74,7 +74,7 @@ public interface Actions {
 
     void switchParentFrame();
 
-    void switchFrame(By element);
+    void switchFrame(WebElement element);
 
     String getWindowHandle();
 

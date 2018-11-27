@@ -8,15 +8,15 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public abstract class DriverManager {
 
-    String REMOTE_TEST = System.getProperty("RemoteTest").toLowerCase();
-    String USERNAME = System.getProperty("Username");
-    String AUTOMATE_KEY = System.getProperty("AutomateKey");
+    protected static String REMOTE_TEST = System.getProperty("RemoteTest").toLowerCase();
+    protected static String USERNAME = System.getProperty("Username");
+    protected static String AUTOMATE_KEY = System.getProperty("AutomateKey");
     String BROWSER_STACK_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
+    protected static String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
+    protected static String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/browserstacklocal/mac/BrowserStackLocal --key " + AUTOMATE_KEY;
+    protected static String EXEC_LOCAL_PROXY_BY_JENKINS = System.getProperty("user.dir") + "/browserstacklocal/linux/BrowserStackLocal --key " + AUTOMATE_KEY;
 
-    String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
-    String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/browserstacklocal/mac/BrowserStackLocal --key " + AUTOMATE_KEY;
-    String EXEC_LOCAL_PROXY_BY_JENKINS = System.getProperty("user.dir") + "/browserstacklocal/linux/BrowserStackLocal --key " + AUTOMATE_KEY;
 
     protected static RemoteWebDriver driver;
     protected static BrowserMobProxy proxy;

@@ -72,10 +72,17 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
         navigateToURL(URLFactory.MAIN_URL);
 
-        listElementRandomClick(mainPage.getNewestProducts());
-
         wait(3);
-        waitElementVisible(mainPage.getProductPricePopup());
+        waitElementVisible(mainPage.getMainPageFancyBoxIFrame());
+        switchFrame(mainPage.getMainPageFancyBoxIFrame());
+        waitElementToBeClickable(mainPage.getMainPageBeInformed());
+        click(mainPage.getMainPageBeInformed());
+
+        driver.switchTo().parentFrame();
+
+        listElementRandomClick(mainPage.getNewestProducts());
+        waitElementVisible(mainPage.getBreadCrumb());
+        mainPage.getBreadCrumb().isDisplayed();
 
     }
 

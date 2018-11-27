@@ -14,8 +14,8 @@ public class SetProperties {
 
         prop.setProperty("forWinChromeDriver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
         prop.setProperty("forMacChromeDriver", System.getProperty("user.dir") + "/Drivers/chromedriver");
-        prop.setProperty("ImplicitlyWait", "20");
-        prop.setProperty("WaitTimeOutSeconds", "20");
+        prop.setProperty("ImplicitlyWait", "30");
+        prop.setProperty("WaitTimeOutSeconds", "30");
         prop.setProperty("PageLoadTimeOut", "20");
         prop.setProperty("BaseURL", "https://www.nyxcosmetics.com.tr/");
         prop.setProperty("HarFilePath", System.getProperty("user.dir") +  "/src/main/resources/");

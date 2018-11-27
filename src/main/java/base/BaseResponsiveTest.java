@@ -20,6 +20,7 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
 
     private final static Logger LOGGER = Logger.getLogger(BaseResponsiveTest.class.getName());
 
+
     private VideoRecorder videoRecorder;
     String TAKEAVIDEO = System.getProperty("TakeVideo").toLowerCase();
 
@@ -29,6 +30,19 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
 
     @Rule
     public final TestName testName = new TestName();
+
+    @BeforeClass
+    public static void localProxyStart() throws IOException
+    {
+
+        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
+            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
+            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
+        } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
+            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
+            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
+        }
+    }
 
     @Before
     public void init() throws Exception {

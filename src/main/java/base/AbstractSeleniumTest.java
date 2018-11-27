@@ -61,6 +61,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
         checkDOMLoaded();
         WebElement clickableElement = element.get(new Random().nextInt(element.size()));
         scrollToElement(clickableElement);
+        mouseOver(clickableElement);
         waitElementToBeClickable(clickableElement);
         clickableElement.click();
 
@@ -289,9 +290,9 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
     }
 
     @Override
-    public void switchFrame(By element)
+    public void switchFrame(WebElement element)
     {
-        driver.switchTo().frame(driver.findElement(element));
+        driver.switchTo().frame(element);
     }
 
     @Override
@@ -370,10 +371,10 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
             while (true)
             {
                 boolean readyState = JSHelper.executeScriptObject(driver, DOCUMENT_READY_STATE).equals("complete");
-                boolean JqueryActive = (boolean) JSHelper.executeScriptObject(driver, JQUERY_ACTIVE);
-                boolean JqueryDefined = (boolean) JSHelper.executeScriptObject(driver, JQUERY_DEFINED);
+                //boolean JqueryActive = (boolean) JSHelper.executeScriptObject(driver, JQUERY_ACTIVE);
+                //boolean JqueryDefined = (boolean) JSHelper.executeScriptObject(driver, JQUERY_DEFINED);
 
-                if (readyState & JqueryActive & JqueryDefined)
+                if (readyState)
                 {
                     break;
                 }
