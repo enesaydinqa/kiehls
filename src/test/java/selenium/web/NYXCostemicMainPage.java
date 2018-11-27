@@ -62,7 +62,8 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
     @Test
     @DisplayName("The Newest Products")
-    public void testTheNewestProducts() {
+    public void testTheNewestProducts() throws InterruptedException
+    {
 
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
 
@@ -73,6 +74,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
         listElementRandomClick(mainPage.getNewestProducts());
 
+        wait(3);
         waitElementVisible(mainPage.getProductPricePopup());
 
     }
