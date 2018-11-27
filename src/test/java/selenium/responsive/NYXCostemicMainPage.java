@@ -10,7 +10,6 @@ import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
 import selenium.pages.MainPageResponsive;
-import selenium.pages.MainPageWeb;
 
 import java.util.List;
 import java.util.logging.Logger;
