@@ -6,6 +6,7 @@ import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.proxy.CaptureType;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
 import selenium.pages.MainPageWeb;
 
@@ -13,12 +14,14 @@ import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
+@DisplayName("NYX Costemic Main Page - Web")
 public class NYXCostemicMainPage extends BaseWebTest {
 
     Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
 
 
     @Test
+    @DisplayName("Main Page Load PNG")
     public void testMainPageLoadPNG() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -37,6 +40,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
+    @DisplayName("The Main Page Traffic")
     public void testMainPageTraffic() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -57,6 +61,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
+    @DisplayName("The Newest Products")
     public void testTheNewestProducts() {
 
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
@@ -73,6 +78,7 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
+    @DisplayName("Product Sale Price")
     public void testProductSalePrice() {
 
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
@@ -90,7 +96,8 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
-    public void testProductDetail() throws InterruptedException {
+    @DisplayName("Product Detail")
+    public void testProductDetail() {
 
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
 

@@ -7,6 +7,7 @@ import net.lightbody.bmp.proxy.CaptureType;
 import org.junit.Assert;
 import org.junit.Test;
 
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
 import selenium.pages.MainPageResponsive;
 import selenium.pages.MainPageWeb;
@@ -15,12 +16,14 @@ import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
+@DisplayName("NYX Costemic Main Page - Responsive")
 public class NYXCostemicMainPage extends BaseResponsiveTest {
 
     Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
 
 
     @Test
+    @DisplayName("Main Page Load PNG")
     public void testMainPageLoadPNG() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -39,6 +42,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
     }
 
     @Test
+    @DisplayName("The Main Page Traffic")
     public void testMainPageTraffic() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -59,6 +63,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
     }
 
     @Test
+    @DisplayName("Product Sale Price")
     public void testProductSalePrice() {
 
         MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
