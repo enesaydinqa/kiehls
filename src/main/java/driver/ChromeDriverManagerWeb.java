@@ -2,6 +2,8 @@ package driver;
 
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +14,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import properties.LoadProperties;
 
 import java.net.URL;
-import java.util.logging.Logger;
 
 public class ChromeDriverManagerWeb extends DriverManager {
 
