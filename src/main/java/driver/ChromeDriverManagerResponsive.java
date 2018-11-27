@@ -22,6 +22,7 @@ import java.util.logging.Logger;
 public class ChromeDriverManagerResponsive extends DriverManager {
 
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
+    private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
     @Override
     public void createDriver() throws IOException, InterruptedException {
@@ -52,6 +53,7 @@ public class ChromeDriverManagerResponsive extends DriverManager {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--ignore-certificate-errors");
+        chromeOptions.addArguments("--user-agent=" + USER_AGENT);
         chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
@@ -64,7 +66,6 @@ public class ChromeDriverManagerResponsive extends DriverManager {
 
             capabilities.setCapability("browserstack.local", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
-
 
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
