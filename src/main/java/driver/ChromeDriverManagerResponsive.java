@@ -2,6 +2,8 @@ package driver;
 
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;
@@ -13,11 +15,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import properties.LoadProperties;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class ChromeDriverManagerResponsive extends DriverManager {
 

@@ -4,21 +4,23 @@ import base.BaseResponsiveTest;
 import enums.URLFactory;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.proxy.CaptureType;
+
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
+
 import selenium.pages.MainPageResponsive;
 
 import java.util.List;
-import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Responsive")
 public class NYXCostemicMainPage extends BaseResponsiveTest {
 
-    Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
+   Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
 
 
     @Test

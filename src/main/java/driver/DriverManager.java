@@ -1,6 +1,8 @@
 package driver;
 
 import net.lightbody.bmp.BrowserMobProxy;
+
+import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public abstract class DriverManager {
@@ -23,6 +25,7 @@ public abstract class DriverManager {
     public RemoteWebDriver getDriver() throws Exception {
         if (null == driver) {
             createDriver();
+            BasicConfigurator.configure();
         }
         return driver;
     }
