@@ -28,10 +28,10 @@ public class ChromeDriverManagerResponsive extends DriverManager {
     public void createDriver() throws IOException, InterruptedException {
 
         if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
-            LOGGER.info("Execute Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
+            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
         } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
-            LOGGER.info("Execute Command -> " + EXEC_LOCAL_PROXY);
+            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
         }
 
