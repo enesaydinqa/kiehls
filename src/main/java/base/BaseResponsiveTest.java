@@ -60,6 +60,8 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
         } else {
         }
 
+        proxy.stop();
+
         if (driver != null) {
             driver.close();
             driver.quit();

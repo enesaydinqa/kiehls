@@ -61,6 +61,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
         } else {
         }
 
+        proxy.stop();
 
         if (driver != null) {
             driver.quit();
