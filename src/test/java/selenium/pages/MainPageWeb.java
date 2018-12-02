@@ -6,9 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-public class MainPageWeb {
+public class MainPageWeb
+{
 
-    @FindBy(xpath = "(//div[@class='slick-track'])[1]/div//div[@class='pro-product-image-wrapper']//img[@class='visible -lazy-load-init']")
+    @FindBy(xpath = "(//div[@class='slick-track'])[1]/div//div[@class='pro-product-image-wrapper']//img[@class" +
+            "='visible -lazy-load-init']")
     private List<WebElement> newestProducts;
 
     @FindBy(xpath = "(//a[@itemprop='item'])[1]")
@@ -23,7 +25,7 @@ public class MainPageWeb {
     @FindBy(xpath = "//i[contains(@class, 'element-close-button')]")
     private WebElement mainPageBeInformed;
 
-    @FindBy(xpath = "//div[contains(@class, 'pro-product-image')]")
+    @FindBy(css = "[class='pro-product-image init-swipe'] img[data-src]")
     private List<WebElement> mainPageAllProduct;
 
     @FindBy(css = ".pro-spotlight-line-pagination-wrapper .swiper-pagination-bullet")
@@ -33,19 +35,23 @@ public class MainPageWeb {
     private WebElement activeSliderImage;
 
 
-    public List<WebElement> getNewestProducts() {
+    public List<WebElement> getNewestProducts()
+    {
         return newestProducts;
     }
 
-    public WebElement getBreadCrumb() {
+    public WebElement getBreadCrumb()
+    {
         return breadCrumb;
     }
 
-    public List<WebElement> getProductSalePrices() {
+    public List<WebElement> getProductSalePrices()
+    {
         return productSalePrices;
     }
 
-    public List<WebElement> getMainPageAllProduct() {
+    public List<WebElement> getMainPageAllProduct()
+    {
         return mainPageAllProduct;
     }
 
