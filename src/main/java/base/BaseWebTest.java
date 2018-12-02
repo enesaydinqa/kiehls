@@ -45,7 +45,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest
         {
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
-            wait(10);
+            wait(20);
         }
         else if (EXEC_COMMAND_BY_JENKINS.equals("false"))
         {
