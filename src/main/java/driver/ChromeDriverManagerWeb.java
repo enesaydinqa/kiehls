@@ -21,16 +21,6 @@ public class ChromeDriverManagerWeb extends DriverManager {
 
     protected void createDriver() throws Exception {
 
-        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
-            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
-            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
-        } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
-            LOGGER.info("Execute Terminal Command  -> " + EXEC_LOCAL_PROXY);
-            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
-        }
-
-        Thread.sleep(10000);
-
         proxy = new BrowserMobProxyServer();
         proxy.start();
         int port = proxy.getPort();

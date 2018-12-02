@@ -31,24 +31,22 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
     protected void createDriver() {
     }
 
-    @BeforeClass
-    public static void localProxyStart() throws IOException
-    {
-
-        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
-            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
-            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
-        } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
-            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
-            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
-        }
-    }
 
     @Rule
     public final TestName testName = new TestName();
 
     @Before
     public void init() throws Exception {
+
+        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
+            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
+            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
+            wait(10);
+        } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
+            LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
+            Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
+            wait(10);
+        }
 
         SetValueProperties();
         LoadConfigProperty();
