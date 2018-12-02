@@ -20,11 +20,13 @@ import org.monte.media.FormatKeys.MediaType;
 import org.monte.media.math.Rational;
 import org.monte.screenrecorder.ScreenRecorder;
 
-public class VideoRecorder {
+public class VideoRecorder
+{
 
     private static ScreenRecorder screenRecorder;
 
-    public static void startRecording(String fileName) throws Exception {
+    public static void startRecording(String fileName) throws Exception
+    {
 
         File file = new File(System.getProperty("user.dir") + "/src/test/resources/TestCasesVideo/");
 
@@ -54,7 +56,8 @@ public class VideoRecorder {
 
     }
 
-    public static void stopRecording() throws Exception {
+    public static void stopRecording() throws Exception
+    {
         screenRecorder.stop();
     }
 }

@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import enums.URLFactory;
 
-public interface Actions {
+public interface Actions
+{
 
     String getCurrentURL();
 
@@ -83,7 +84,6 @@ public interface Actions {
     void dragAndDrop(WebElement from, WebElement to) throws Exception;
 
     void checkDOMLoaded();
-
 
 
     //-- Javascript

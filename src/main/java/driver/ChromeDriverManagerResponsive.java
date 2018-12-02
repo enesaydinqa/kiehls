@@ -19,13 +19,16 @@ import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
 import properties.LoadProperties;
 
-public class ChromeDriverManagerResponsive extends DriverManager {
+public class ChromeDriverManagerResponsive extends DriverManager
+{
 
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
-    private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
+    private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, " +
+            "like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
     @Override
-    public void createDriver() throws IOException, InterruptedException {
+    public void createDriver() throws IOException, InterruptedException
+    {
 
         Thread.sleep(10000);
 
@@ -56,7 +59,8 @@ public class ChromeDriverManagerResponsive extends DriverManager {
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
 
-        if (REMOTE_TEST.equals("true")) {
+        if (REMOTE_TEST.equals("true"))
+        {
 
             capabilities.setCapability("browserstack.local", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
@@ -67,11 +71,16 @@ public class ChromeDriverManagerResponsive extends DriverManager {
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
             driver.manage().window().setSize(new Dimension(414, 736));
 
-        } else {
+        }
+        else
+        {
 
-            if (Platform.getCurrent().is(Platform.MAC)) {
+            if (Platform.getCurrent().is(Platform.MAC))
+            {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forMacChromeDriver"));
-            } else if (Platform.getCurrent().is(Platform.WINDOWS)) {
+            }
+            else if (Platform.getCurrent().is(Platform.WINDOWS))
+            {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forWinChromeDriver"));
             }
 

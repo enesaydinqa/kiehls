@@ -1,7 +1,8 @@
 package enums;
 
 
-public enum URLFactory {
+public enum URLFactory
+{
 
     MAIN_URL("https://www.nyxcosmetics.com.tr/");
 
@@ -9,11 +10,13 @@ public enum URLFactory {
 
     public final String pageUrl;
 
-    URLFactory(String pageUrl) {
+    URLFactory(String pageUrl)
+    {
         this.pageUrl = pageUrl;
     }
 
-    URLFactory(URLFactory baseUrl, String pageUrl) {
+    URLFactory(URLFactory baseUrl, String pageUrl)
+    {
         this.pageUrl = baseUrl.pageUrl + pageUrl;
     }
 

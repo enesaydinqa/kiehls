@@ -15,11 +15,13 @@ import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
 import properties.LoadProperties;
 
-public class ChromeDriverManagerWeb extends DriverManager {
+public class ChromeDriverManagerWeb extends DriverManager
+{
 
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerWeb.class.getName());
 
-    protected void createDriver() throws Exception {
+    protected void createDriver() throws Exception
+    {
 
         proxy = new BrowserMobProxyServer();
         proxy.start();
@@ -39,7 +41,8 @@ public class ChromeDriverManagerWeb extends DriverManager {
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
 
-        if (REMOTE_TEST.equals("true")) {
+        if (REMOTE_TEST.equals("true"))
+        {
 
             capabilities.setCapability("browserstack.local", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
@@ -49,11 +52,16 @@ public class ChromeDriverManagerWeb extends DriverManager {
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
 
-        } else {
+        }
+        else
+        {
 
-            if (Platform.getCurrent().is(Platform.MAC)) {
+            if (Platform.getCurrent().is(Platform.MAC))
+            {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forMacChromeDriver"));
-            } else if (Platform.getCurrent().is(Platform.WINDOWS)) {
+            }
+            else if (Platform.getCurrent().is(Platform.WINDOWS))
+            {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forWinChromeDriver"));
             }
 

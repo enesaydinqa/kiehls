@@ -5,7 +5,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import net.lightbody.bmp.BrowserMobProxy;
 
-public abstract class DriverManager {
+public abstract class DriverManager
+{
 
     protected static String REMOTE_TEST = System.getProperty("RemoteTest").toLowerCase();
     protected static String USERNAME = System.getProperty("Username");
@@ -13,8 +14,10 @@ public abstract class DriverManager {
     String BROWSER_STACK_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     protected static String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
-    protected static String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/browserstacklocal/mac/BrowserStackLocal --key " + AUTOMATE_KEY;
-    protected static String EXEC_LOCAL_PROXY_BY_JENKINS = System.getProperty("user.dir") + "/browserstacklocal/linux/BrowserStackLocal --key " + AUTOMATE_KEY;
+    protected static String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/browserstacklocal/mac" +
+            "/BrowserStackLocal --key " + AUTOMATE_KEY;
+    protected static String EXEC_LOCAL_PROXY_BY_JENKINS = System.getProperty("user.dir") + "/browserstacklocal/linux" +
+            "/BrowserStackLocal --key " + AUTOMATE_KEY;
 
 
     protected static RemoteWebDriver driver;
@@ -22,8 +25,10 @@ public abstract class DriverManager {
 
     protected abstract void createDriver() throws Exception;
 
-    public RemoteWebDriver getDriver() throws Exception {
-        if (null == driver) {
+    public RemoteWebDriver getDriver() throws Exception
+    {
+        if (null == driver)
+        {
             createDriver();
             PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/main/resources/log4j.properties");
         }

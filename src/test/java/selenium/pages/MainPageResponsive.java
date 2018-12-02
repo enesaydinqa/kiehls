@@ -6,7 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 
-public class MainPageResponsive {
+public class MainPageResponsive
+{
 
     @FindBy(css = "[data-gtm-list='EN YENİLER']")
     private List<WebElement> newestProducts;
@@ -21,11 +22,13 @@ public class MainPageResponsive {
     private WebElement activeSliderImage;
 
 
-    public List<WebElement> getNewestProducts() {
+    public List<WebElement> getNewestProducts()
+    {
         return newestProducts;
     }
 
-    public List<WebElement> getProductSalePrices() {
+    public List<WebElement> getProductSalePrices()
+    {
         return productSalePrices;
     }
 

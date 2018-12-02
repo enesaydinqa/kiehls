@@ -3,11 +3,13 @@ package driver;
 
 import org.apache.log4j.Logger;
 
-public class DriverResponsiveTestFactory {
+public class DriverResponsiveTestFactory
+{
 
     private final static Logger LOGGER = Logger.getLogger(DriverResponsiveTestFactory.class.getName());
 
-    public static DriverManager getManager() {
+    public static DriverManager getManager()
+    {
 
         DriverManager driverManager;
 
@@ -15,7 +17,8 @@ public class DriverResponsiveTestFactory {
 
         LOGGER.info("BrowserType (DriverResponsiveTestFactory) : " + System.getProperty("BrowserType"));
 
-        switch (type) {
+        switch (type)
+        {
 
             case "chrome":
                 driverManager = new ChromeDriverManagerResponsive();

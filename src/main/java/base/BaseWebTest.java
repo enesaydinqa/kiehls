@@ -19,7 +19,8 @@ import net.lightbody.bmp.core.har.Har;
 import properties.LoadProperties;
 import recorder.VideoRecorder;
 
-public abstract class BaseWebTest extends AbstractSeleniumTest {
+public abstract class BaseWebTest extends AbstractSeleniumTest
+{
 
     private final static Logger LOGGER = Logger.getLogger(BaseWebTest.class.getName());
 
@@ -28,7 +29,8 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
 
 
     @Override
-    protected void createDriver() {
+    protected void createDriver()
+    {
     }
 
 
@@ -36,13 +38,17 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
     public final TestName testName = new TestName();
 
     @Before
-    public void init() throws Exception {
+    public void init() throws Exception
+    {
 
-        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true")) {
+        if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true"))
+        {
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
             wait(10);
-        } else if (EXEC_COMMAND_BY_JENKINS.equals("false")) {
+        }
+        else if (EXEC_COMMAND_BY_JENKINS.equals("false"))
+        {
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
             wait(10);
@@ -55,27 +61,35 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
         driverManager = DriverWebTestFactory.getManager();
         driver = driverManager.getDriver();
 
-        if (TAKEAVIDEO.equals("true")) {
+        if (TAKEAVIDEO.equals("true"))
+        {
             videoRecorder.startRecording(testName.getMethodName());
-        } else {
+        }
+        else
+        {
             LOGGER.info("Scenarios will not take video");
         }
     }
 
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() throws Exception
+    {
 
         setHarFile(testName.getMethodName());
 
-        if (TAKEAVIDEO.equals("true")) {
+        if (TAKEAVIDEO.equals("true"))
+        {
             VideoRecorder.stopRecording();
-        } else {
+        }
+        else
+        {
         }
 
         proxy.stop();
 
-        if (driver != null) {
+        if (driver != null)
+        {
             driver.quit();
             driver = null;
         }
@@ -84,20 +98,27 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
 
     // --------
 
-    private void setHarFile(String harFileName) {
+    private void setHarFile(String harFileName)
+    {
 
         String sFileName = LoadProperties.config.getProperty("HarFilePath") + harFileName + ".har";
 
-        try {
+        try
+        {
             Har har = proxy.getHar();
             File harFile = new File(sFileName);
-            try {
+            try
+            {
                 har.writeTo(harFile);
-            } catch (IOException ex) {
+            }
+            catch (IOException ex)
+            {
                 System.out.println(ex.toString());
                 System.out.println("Could not find file " + sFileName);
             }
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
         }
     }
 
