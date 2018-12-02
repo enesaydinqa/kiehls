@@ -26,8 +26,8 @@ public class MainPageWeb {
     @FindBy(xpath = "//div[contains(@class, 'pro-product-image')]")
     private List<WebElement> mainPageAllProduct;
 
-    @FindBy(css = ".pro-spotlight-line-pagination-wrapper + div")
-    private WebElement sliderNext;
+    @FindBy(css = ".pro-spotlight-line-pagination-wrapper .swiper-pagination-bullet")
+    private List<WebElement> sliderNext;
 
     @FindBy(css = ".swiper-slide-active")
     private WebElement activeSliderImage;
@@ -59,7 +59,7 @@ public class MainPageWeb {
         return mainPageBeInformed;
     }
 
-    public WebElement getSliderNext()
+    public List<WebElement> getSliderNext()
     {
         return sliderNext;
     }

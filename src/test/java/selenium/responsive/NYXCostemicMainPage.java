@@ -13,19 +13,22 @@ import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
 
 import selenium.pages.MainPageResponsive;
+import selenium.pages.MainPageWeb;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Responsive")
-public class NYXCostemicMainPage extends BaseResponsiveTest {
+public class NYXCostemicMainPage extends BaseResponsiveTest
+{
 
-   Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
+    Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
 
 
     @Test
     @DisplayName("Main Page Load PNG")
-    public void testMainPageLoadPNG() {
+    public void testMainPageLoadPNG()
+    {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Request PNG Link");
@@ -44,7 +47,8 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
 
     @Test
     @DisplayName("The Main Page Traffic")
-    public void testMainPageTraffic() {
+    public void testMainPageTraffic()
+    {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Traffic");
@@ -65,7 +69,8 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
 
     @Test
     @DisplayName("Product Sale Price")
-    public void testProductSalePrice() {
+    public void testProductSalePrice()
+    {
 
         MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
 
@@ -76,6 +81,40 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
                     Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
                 });
 
+    }
+
+    @Test
+    @DisplayName("Main Page Slider")
+    public void testMainPageSlider()
+    {
+
+        MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
+
+        navigateToURL(URLFactory.MAIN_URL);
+
+
+        IntStream.range(0, 3)
+                .forEach(i ->
+                {
+                    waitElementVisible(mainPage.getActiveSliderImage());
+                    String dataGtmPromotion1 = getAttribute(mainPage.getActiveSliderImage(), "data-swiper-slide-index");
+
+                    mouseOver(mainPage.getSliderNext());
+                    waitElementToBeClickable(mainPage.getSliderNext());
+                    click(mainPage.getSliderNext());
+
+                    Assert.assertNotEquals(dataGtmPromotion1, getAttribute(mainPage.getActiveSliderImage(), "data" +
+                            "-swiper-slide-index"));
+
+                    try
+                    {
+                        wait(1);
+                    }
+                    catch (InterruptedException e)
+                    {
+                        e.printStackTrace();
+                    }
+                });
     }
 
 }

@@ -144,14 +144,14 @@ public class NYXCostemicMainPage extends BaseWebTest
         IntStream.range(0, 3)
                 .forEach(i ->
                 {
-                    waitElementToBeClickable(mainPage.getActiveSliderImage());
-                    String dataGtmPromotion = getAttribute(mainPage.getActiveSliderImage(), "data-gtm-promotion-id");
+                    waitElementVisible(mainPage.getActiveSliderImage());
+                    String dataGtmPromotion = getAttribute(mainPage.getActiveSliderImage(), "data-swiper-slide-index");
 
-                    waitElementToBeClickable(mainPage.getSliderNext());
-                    click(mainPage.getSliderNext());
+                    waitElementToBeClickable(mainPage.getSliderNext().get(i));
+                    click(mainPage.getSliderNext().get(i));
 
-                    Assert.assertNotSame(dataGtmPromotion, getAttribute(mainPage.getActiveSliderImage(), "data-gtm" +
-                            "-promotion-id"));
+                    Assert.assertNotEquals(dataGtmPromotion, getAttribute(mainPage.getActiveSliderImage(), "data" +
+                            "-swiper-slide-index"));
                 });
 
     }

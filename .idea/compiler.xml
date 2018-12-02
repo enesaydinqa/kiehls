@@ -9,8 +9,5 @@
         <module name="nyxcosmetics" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="nyxcosmetics" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
