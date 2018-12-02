@@ -67,21 +67,6 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
 
     }
 
-    @Test
-    @DisplayName("Product Sale Price")
-    public void testProductSalePrice()
-    {
-
-        MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
-
-        navigateToURL(URLFactory.MAIN_URL);
-
-        IntStream.range(0, mainPage.getProductSalePrices().size())
-                .forEach(count -> {
-                    Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
-                });
-
-    }
 
     @Test
     @DisplayName("Main Page Slider")
