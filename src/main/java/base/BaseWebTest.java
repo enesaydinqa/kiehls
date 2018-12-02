@@ -1,8 +1,10 @@
 package base;
 
-import driver.DriverManager;
-import driver.DriverWebTestFactory;
-import net.lightbody.bmp.core.har.Har;
+import static properties.LoadProperties.LoadConfigProperty;
+import static properties.SetProperties.SetValueProperties;
+
+import java.io.File;
+import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -10,14 +12,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
+
+import driver.DriverManager;
+import driver.DriverWebTestFactory;
+import net.lightbody.bmp.core.har.Har;
 import properties.LoadProperties;
 import recorder.VideoRecorder;
-
-import java.io.File;
-import java.io.IOException;
-
-import static properties.LoadProperties.LoadConfigProperty;
-import static properties.SetProperties.SetValueProperties;
 
 public abstract class BaseWebTest extends AbstractSeleniumTest {
 

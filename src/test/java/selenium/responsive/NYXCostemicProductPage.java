@@ -1,6 +1,5 @@
 package selenium.responsive;
 
-import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
@@ -10,13 +9,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
 
 import base.BaseResponsiveTest;
-import base.BaseWebTest;
 import enums.URLFactory;
-import net.lightbody.bmp.core.har.HarEntry;
-import net.lightbody.bmp.proxy.CaptureType;
 import selenium.pages.MainPageResponsive;
-import selenium.pages.MainPageWeb;
-import selenium.pages.ProductDetailPage;
 
 @DisplayName("NYX Costemic Product Page - Responsive")
 public class NYXCostemicProductPage extends BaseResponsiveTest

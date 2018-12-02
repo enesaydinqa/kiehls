@@ -1,20 +1,25 @@
 package base;
 
-import driver.DriverManager;;
-import driver.DriverResponsiveTestFactory;
-import net.lightbody.bmp.core.har.Har;
-
-import org.apache.log4j.Logger;
-import org.junit.*;
-import org.junit.rules.TestName;
-import properties.LoadProperties;
-import recorder.VideoRecorder;
+import static properties.LoadProperties.LoadConfigProperty;
+import static properties.SetProperties.SetValueProperties;
 
 import java.io.File;
 import java.io.IOException;
 
-import static properties.LoadProperties.LoadConfigProperty;
-import static properties.SetProperties.SetValueProperties;
+import org.apache.log4j.Logger;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Rule;
+import org.junit.rules.TestName;
+
+import driver.DriverManager;
+import driver.DriverResponsiveTestFactory;
+import net.lightbody.bmp.core.har.Har;
+import properties.LoadProperties;
+import recorder.VideoRecorder;
+
+;
 
 public abstract class BaseResponsiveTest extends AbstractSeleniumTest {
 

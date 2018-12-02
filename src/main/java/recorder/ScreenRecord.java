@@ -1,14 +1,14 @@
 package recorder;
 
-import org.monte.media.Format;
-import org.monte.media.Registry;
-import org.monte.screenrecorder.ScreenRecorder;
-
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import org.monte.media.Format;
+import org.monte.media.Registry;
+import org.monte.screenrecorder.ScreenRecorder;
 
 public class ScreenRecord extends ScreenRecorder {
     private String name;
