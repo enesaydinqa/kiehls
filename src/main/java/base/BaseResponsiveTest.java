@@ -38,22 +38,24 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest
     @Rule
     public final TestName testName = new TestName();
 
-    @Before
-    public void init() throws Exception
+    @BeforeClass
+    public static void browserstackLocalExec() throws InterruptedException, IOException
     {
-
         if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true"))
         {
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
-            wait(20);
         }
         else if (EXEC_COMMAND_BY_JENKINS.equals("false"))
         {
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
-            wait(10);
         }
+    }
+
+    @Before
+    public void init() throws Exception
+    {
 
         SetValueProperties();
         LoadConfigProperty();
