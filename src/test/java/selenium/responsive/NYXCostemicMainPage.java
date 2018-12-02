@@ -69,9 +69,6 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
 
         MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
 
-        proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
-        proxy.newHar("Ana Sayfa - Slider");
-
         navigateToURL(URLFactory.MAIN_URL);
 
         IntStream.range(0, mainPage.getProductSalePrices().size())

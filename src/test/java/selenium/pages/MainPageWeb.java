@@ -26,6 +26,13 @@ public class MainPageWeb {
     @FindBy(xpath = "//div[contains(@class, 'pro-product-image')]")
     private List<WebElement> mainPageAllProduct;
 
+    @FindBy(css = ".pro-spotlight-line-pagination-wrapper + div")
+    private WebElement sliderNext;
+
+    @FindBy(css = ".swiper-slide-active")
+    private WebElement activeSliderImage;
+
+
     public List<WebElement> getNewestProducts() {
         return newestProducts;
     }
@@ -50,5 +57,15 @@ public class MainPageWeb {
     public WebElement getMainPageBeInformed()
     {
         return mainPageBeInformed;
+    }
+
+    public WebElement getSliderNext()
+    {
+        return sliderNext;
+    }
+
+    public WebElement getActiveSliderImage()
+    {
+        return activeSliderImage;
     }
 }
