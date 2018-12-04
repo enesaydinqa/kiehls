@@ -24,7 +24,7 @@ public class ChromeDriverManagerWeb extends DriverManager
     {
 
         proxy = new BrowserMobProxyServer();
-        proxy.start(8090);
+        proxy.start(9090);
         int port = proxy.getPort();
 
         LOGGER.info("This Execute Browser Port --> " + port);

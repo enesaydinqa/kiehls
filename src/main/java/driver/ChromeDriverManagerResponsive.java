@@ -31,7 +31,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
 
         proxy = new BrowserMobProxyServer();
-        proxy.start();
+        proxy.start(9090);
         int port = proxy.getPort();
 
         LOGGER.info("This Execute Browser Port --> " + port);
