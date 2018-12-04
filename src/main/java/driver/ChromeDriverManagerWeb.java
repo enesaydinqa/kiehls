@@ -39,9 +39,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         browserStackLocalArgs.put("force", "true");
         browserStackLocalArgs.put("v", "true");
         String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-        System.out.println(host);
         String browserMobPort = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
-        System.out.println(browserMobPort);
         browserStackLocalArgs.put("-local-proxy-host", host);
         browserStackLocalArgs.put("-local-proxy-port", browserMobPort);
         browserStackLocal.start(browserStackLocalArgs);
@@ -51,9 +49,9 @@ public class ChromeDriverManagerWeb extends DriverManager
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        //capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        //capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-        //capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
         capabilities.setCapability("browser", "Chrome");
         capabilities.setCapability("browser_version", "70.0");
 

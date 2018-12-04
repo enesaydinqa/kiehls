@@ -32,12 +32,11 @@ public class NYXCostemicProductPage extends BaseWebTest
 
         navigateToURL(URLFactory.MAIN_URL);
 
-        /*
         waitElementToBeClickable(mainPage.getMainPageAllProduct().get(1));
         scrollToElement(mainPage.getMainPageAllProduct().get(1));
         click(mainPage.getMainPageAllProduct().get(1));
 
-*/
+
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries
