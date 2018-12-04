@@ -15,6 +15,7 @@ import org.junit.rules.TestName;
 
 import driver.DriverManager;
 import driver.DriverWebTestFactory;
+import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.core.har.Har;
 import properties.LoadProperties;
 import recorder.VideoRecorder;
@@ -41,13 +42,24 @@ public abstract class BaseWebTest extends AbstractSeleniumTest
     @BeforeClass
     public static void browserstackLocalExec() throws InterruptedException, IOException
     {
+        proxy = new BrowserMobProxyServer();
+        proxy.start();
+
         if (EXEC_COMMAND_BY_JENKINS.equals("true") & REMOTE_TEST.equals("true"))
         {
+            String EXEC_LOCAL_PROXY_BY_JENKINS = System.getProperty("user.dir") + "/browserstacklocal/linux" +
+                    "/BrowserStackLocal --key " + AUTOMATE_KEY + " --proxy-host www.nyxcosmetics.com.tr --proxy-port "
+                    + proxy.getPort() + "--force-local --force-proxy";
+
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY_BY_JENKINS);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY_BY_JENKINS);
         }
         else if (EXEC_COMMAND_BY_JENKINS.equals("false"))
         {
+            String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/browserstacklocal/mac" +
+                    "/BrowserStackLocal --key " + AUTOMATE_KEY + " --proxy-host www.nyxcosmetics.com.tr --proxy-port "
+                    + proxy.getPort() + "--force-local --force-proxy";
+
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
         }

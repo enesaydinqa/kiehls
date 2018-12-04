@@ -27,11 +27,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
             "like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
     @Override
-    public void createDriver() throws IOException, InterruptedException
+    public void createDriver() throws IOException
     {
-
-        proxy = new BrowserMobProxyServer();
-        proxy.start(9090);
         int port = proxy.getPort();
 
         LOGGER.info("This Execute Browser Port --> " + port);
@@ -42,12 +39,10 @@ public class ChromeDriverManagerResponsive extends DriverManager
         mobileEmulation.put("browserName", "iPhone");
         mobileEmulation.put("device", "iPhone 8 Plus");
         mobileEmulation.put("realMobile", "true");
-        mobileEmulation.put("os_version", "11.0");
         mobileEmulation.put("version", "70.0");
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--ignore-certificate-errors");
         chromeOptions.addArguments("--user-agent=" + USER_AGENT);
         chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
@@ -64,9 +59,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
             capabilities.setCapability("browserstack.debug", "true");
             capabilities.setCapability("browserstack.seleniumLogs", "true");
             capabilities.setCapability("browserstack.console", "info");
-
             capabilities.setBrowserName("chrome");
-            capabilities.setPlatform(Platform.MAC);
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
             driver.manage().window().setSize(new Dimension(414, 736));

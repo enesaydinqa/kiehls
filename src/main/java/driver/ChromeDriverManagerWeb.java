@@ -22,9 +22,6 @@ public class ChromeDriverManagerWeb extends DriverManager
 
     protected void createDriver() throws Exception
     {
-
-        proxy = new BrowserMobProxyServer();
-        proxy.start(9090);
         int port = proxy.getPort();
 
         LOGGER.info("This Execute Browser Port --> " + port);
@@ -33,13 +30,14 @@ public class ChromeDriverManagerWeb extends DriverManager
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--ignore-certificate-errors");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+        capabilities.setCapability("browser", "Chrome");
+        capabilities.setCapability("browser_version", "70.0");
 
         if (REMOTE_TEST.equals("true"))
         {
@@ -50,7 +48,6 @@ public class ChromeDriverManagerWeb extends DriverManager
             capabilities.setCapability("browserstack.console", "info");
 
             capabilities.setBrowserName("chrome");
-            capabilities.setPlatform(Platform.MAC);
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
 
