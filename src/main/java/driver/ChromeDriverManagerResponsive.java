@@ -30,8 +30,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
     public void createDriver() throws IOException, InterruptedException
     {
 
-        Thread.sleep(10000);
-
         proxy = new BrowserMobProxyServer();
         proxy.start();
         int port = proxy.getPort();
@@ -61,9 +59,11 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         if (REMOTE_TEST.equals("true"))
         {
-
             capabilities.setCapability("browserstack.local", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
+            capabilities.setCapability("browserstack.debug", "true");
+            capabilities.setCapability("browserstack.seleniumLogs", "true");
+            capabilities.setCapability("browserstack.console", "info");
 
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);

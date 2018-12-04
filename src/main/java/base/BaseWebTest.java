@@ -37,6 +37,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest
     @Rule
     public final TestName testName = new TestName();
 
+
     @BeforeClass
     public static void browserstackLocalExec() throws InterruptedException, IOException
     {
@@ -50,6 +51,9 @@ public abstract class BaseWebTest extends AbstractSeleniumTest
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
         }
+
+        Thread.sleep(10000);
+
     }
 
     @Before

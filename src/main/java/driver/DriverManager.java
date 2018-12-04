@@ -15,9 +15,9 @@ public abstract class DriverManager
 
     protected static String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
     protected static String EXEC_LOCAL_PROXY = System.getProperty("user.dir") + "/browserstacklocal/mac" +
-            "/BrowserStackLocal --key " + AUTOMATE_KEY;
+            "/BrowserStackLocal --key " + AUTOMATE_KEY + " --force-local -local-proxy-port 8090";
     protected static String EXEC_LOCAL_PROXY_BY_JENKINS = System.getProperty("user.dir") + "/browserstacklocal/linux" +
-            "/BrowserStackLocal --key " + AUTOMATE_KEY;
+            "/BrowserStackLocal --key " + AUTOMATE_KEY + " --force-local -local-proxy-port 8090";
 
 
     protected static RemoteWebDriver driver;

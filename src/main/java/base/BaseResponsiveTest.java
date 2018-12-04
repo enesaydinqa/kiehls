@@ -51,6 +51,8 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest
             LOGGER.info("Execute Terminal Command -> " + EXEC_LOCAL_PROXY);
             Runtime.getRuntime().exec(EXEC_LOCAL_PROXY);
         }
+
+        Thread.sleep(10000);
     }
 
     @Before

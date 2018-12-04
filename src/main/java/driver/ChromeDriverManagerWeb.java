@@ -24,7 +24,7 @@ public class ChromeDriverManagerWeb extends DriverManager
     {
 
         proxy = new BrowserMobProxyServer();
-        proxy.start();
+        proxy.start(8090);
         int port = proxy.getPort();
 
         LOGGER.info("This Execute Browser Port --> " + port);
@@ -43,9 +43,11 @@ public class ChromeDriverManagerWeb extends DriverManager
 
         if (REMOTE_TEST.equals("true"))
         {
-
             capabilities.setCapability("browserstack.local", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
+            capabilities.setCapability("browserstack.debug", "true");
+            capabilities.setCapability("browserstack.seleniumLogs", "true");
+            capabilities.setCapability("browserstack.console", "info");
 
             capabilities.setBrowserName("chrome");
             capabilities.setPlatform(Platform.MAC);
