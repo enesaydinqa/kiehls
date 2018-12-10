@@ -46,7 +46,6 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
     @DisplayName("The Main Page Traffic")
     public void testMainPageTraffic()
     {
-
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Traffic");
 
@@ -58,8 +57,8 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
                 .forEach(png -> {
                     LOGGER.info(png.getRequest().getUrl());
                     Assert.assertTrue(
-                            "Broken : " + png.getRequest().getUrl(),
-                            400 > png.getResponse().getStatus());
+                           "Broken : " + png.getRequest().getUrl(),
+                          400 > png.getResponse().getStatus());
                 });
 
     }

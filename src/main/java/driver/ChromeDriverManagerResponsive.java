@@ -1,7 +1,7 @@
 package driver;
 
-import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,13 +17,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import com.browserstack.local.Local;
 
-import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.client.ClientUtil;
 import properties.LoadProperties;
 
 public class ChromeDriverManagerResponsive extends DriverManager
 {
-
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
     private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, " +
             "like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
@@ -31,10 +29,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
     @Override
     public void createDriver() throws Exception
     {
-        int port = proxy.getPort();
-
-        LOGGER.info("This Execute Browser Port --> " + port);
-
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
         Local browserStackLocal = new Local();
@@ -45,10 +39,13 @@ public class ChromeDriverManagerResponsive extends DriverManager
         browserStackLocalArgs.put("force", "true");
         browserStackLocalArgs.put("v", "true");
         String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-        String browserMobPort = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+        String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
         browserStackLocalArgs.put("-local-proxy-host", host);
-        browserStackLocalArgs.put("-local-proxy-port", browserMobPort);
+        browserStackLocalArgs.put("-local-proxy-port", port);
         browserStackLocal.start(browserStackLocalArgs);
+
+        LOGGER.info("This Execute Browser Host --> " + host);
+        LOGGER.info("This Execute Browser Port --> " + port);
 
         Map<String, String> mobileEmulation = new HashMap<>();
         mobileEmulation.put("browserName", "iPhone");
@@ -56,12 +53,15 @@ public class ChromeDriverManagerResponsive extends DriverManager
         mobileEmulation.put("realMobile", "true");
         mobileEmulation.put("version", "70.0");
 
+        String[] switches = {"--ignore-certificate-errors"};
+
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--user-agent=" + USER_AGENT);
         chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        capabilities.setCapability("chrome.switches", Arrays.asList(switches));
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
@@ -69,11 +69,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         if (REMOTE_TEST.equals("true"))
         {
-            capabilities.setCapability("browserstack.local", "false");
-            capabilities.setCapability("browserstack.networkLogs", "true");
-            capabilities.setCapability("browserstack.debug", "true");
-            capabilities.setCapability("browserstack.seleniumLogs", "true");
-            capabilities.setCapability("browserstack.console", "info");
+            capabilities.setCapability("browserstack.local", "true");
             capabilities.setBrowserName("chrome");
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);

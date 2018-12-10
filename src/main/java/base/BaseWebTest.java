@@ -9,11 +9,8 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
-
-import com.browserstack.local.Local;
 
 import driver.DriverManager;
 import driver.DriverWebTestFactory;
@@ -83,6 +80,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest
 
         if (driver != null)
         {
+            driver.close();
             driver.quit();
             driver = null;
         }

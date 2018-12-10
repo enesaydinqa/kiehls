@@ -16,8 +16,6 @@ public abstract class DriverManager
     protected static String AUTOMATE_KEY = System.getProperty("AutomateKey");
     String BROWSER_STACK_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
-    protected static String EXEC_COMMAND_BY_JENKINS = System.getProperty("ExecCommandByJenkins").toLowerCase();
-
     protected abstract void createDriver() throws Exception;
 
     public RemoteWebDriver getDriver() throws Exception
