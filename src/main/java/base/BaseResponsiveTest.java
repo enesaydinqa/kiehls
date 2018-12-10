@@ -43,7 +43,7 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest
     public void init() throws Exception
     {
         proxy = new BrowserMobProxyServer();
-        proxy.start(0);
+        proxy.start(8090);
 
         SetValueProperties();
         LoadConfigProperty();
