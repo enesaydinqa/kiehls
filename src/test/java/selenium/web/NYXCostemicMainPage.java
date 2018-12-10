@@ -54,9 +54,9 @@ public class NYXCostemicMainPage extends BaseWebTest
         entries
                 .forEach(png -> {
                     LOGGER.info(png.getRequest().getUrl());
-                    //Assert.assertTrue(
-                    //        "Broken : " + png.getRequest().getUrl(),
-                    //        400 > png.getResponse().getStatus());
+                    Assert.assertTrue(
+                            "Broken : " + png.getRequest().getUrl(),
+                            400 > png.getResponse().getStatus());
                 });
     }
 
