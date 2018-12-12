@@ -1,9 +1,9 @@
 package selenium.web;
 
 import java.util.List;
-import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -41,7 +41,7 @@ public class NYXCostemicProductPage extends BaseWebTest
 
         entries
                 .forEach(png -> {
-                    LOGGER.info(png.getRequest().getUrl());
+                    LOGGER.info("[Assert] " +png.getRequest().getUrl());
                     Assert.assertTrue(
                             "Broken : " + png.getRequest().getUrl(),
                             400 > png.getResponse().getStatus());

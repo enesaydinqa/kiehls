@@ -16,16 +16,14 @@ import net.lightbody.bmp.proxy.CaptureType;
 import selenium.pages.MainPageResponsive;
 
 @DisplayName("NYX Costemic Main Page - Responsive")
-public class NYXCostemicMainPage extends BaseResponsiveTest
-{
+public class NYXCostemicMainPage extends BaseResponsiveTest {
 
     Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
 
 
     @Test
     @DisplayName("Main Page Load PNG")
-    public void testMainPageLoadPNG()
-    {
+    public void testMainPageLoadPNG() {
 
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Request PNG Link");
@@ -36,7 +34,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
 
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png"))
                 .forEach(png -> {
-                    LOGGER.info(png.getRequest().getUrl());
+                    LOGGER.info("[Assert] " + png.getRequest().getUrl());
                     Assert.assertEquals(200, png.getResponse().getStatus());
                 });
 
@@ -44,8 +42,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
 
     @Test
     @DisplayName("The Main Page Traffic")
-    public void testMainPageTraffic()
-    {
+    public void testMainPageTraffic() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Traffic");
 
@@ -55,10 +52,10 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
 
         entries
                 .forEach(png -> {
-                    LOGGER.info(png.getRequest().getUrl());
+                    LOGGER.info("[Assert] " + png.getRequest().getUrl());
                     Assert.assertTrue(
-                           "Broken : " + png.getRequest().getUrl(),
-                          400 > png.getResponse().getStatus());
+                            "Broken : " + png.getRequest().getUrl(),
+                            400 > png.getResponse().getStatus());
                 });
 
     }
@@ -66,8 +63,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
 
     @Test
     @DisplayName("Main Page Slider")
-    public void testMainPageSlider()
-    {
+    public void testMainPageSlider() {
 
         MainPageResponsive mainPage = PageFactory.initElements(driver, MainPageResponsive.class);
 
@@ -87,12 +83,9 @@ public class NYXCostemicMainPage extends BaseResponsiveTest
                     Assert.assertNotEquals(dataGtmPromotion1, getAttribute(mainPage.getActiveSliderImage(), "data" +
                             "-swiper-slide-index"));
 
-                    try
-                    {
+                    try {
                         wait(1);
-                    }
-                    catch (InterruptedException e)
-                    {
+                    } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 });

@@ -45,13 +45,10 @@ public class ChromeDriverManagerWeb extends DriverManager {
         LOGGER.info("This Execute Browser Port --> " + port);
         LOGGER.info("=================================================================");
 
-        String[] switches = {"--ignore-certificate-errors"};
-
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability("chrome.switches", Arrays.asList(switches));
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);

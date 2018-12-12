@@ -55,15 +55,12 @@ public class ChromeDriverManagerResponsive extends DriverManager
         mobileEmulation.put("realMobile", "true");
         mobileEmulation.put("version", "70.0");
 
-        String[] switches = {"--ignore-certificate-errors"};
-
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--user-agent=" + USER_AGENT);
         chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability("chrome.switches", Arrays.asList(switches));
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);

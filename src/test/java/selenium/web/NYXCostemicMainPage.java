@@ -1,9 +1,9 @@
 package selenium.web;
 
 import java.util.List;
-import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -16,16 +16,14 @@ import net.lightbody.bmp.proxy.CaptureType;
 import selenium.pages.MainPageWeb;
 
 @DisplayName("NYX Costemic Main Page - Web")
-public class NYXCostemicMainPage extends BaseWebTest
-{
+public class NYXCostemicMainPage extends BaseWebTest {
 
     Logger LOGGER = Logger.getLogger(NYXCostemicMainPage.class.getName());
 
 
     @Test
     @DisplayName("Main Page Load PNG")
-    public void testMainPageLoadPNG()
-    {
+    public void testMainPageLoadPNG() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Request PNG Link");
 
@@ -35,15 +33,14 @@ public class NYXCostemicMainPage extends BaseWebTest
 
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png"))
                 .forEach(png -> {
-                    LOGGER.info(png.getRequest().getUrl());
+                    LOGGER.info("[Assert] " + png.getRequest().getUrl());
                     Assert.assertEquals(200, png.getResponse().getStatus());
                 });
     }
 
     @Test
     @DisplayName("The Main Page Traffic")
-    public void testMainPageTraffic()
-    {
+    public void testMainPageTraffic() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
         proxy.newHar("Ana Sayfa - Traffic");
 
@@ -51,9 +48,9 @@ public class NYXCostemicMainPage extends BaseWebTest
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
-        entries
+        entries.stream()
                 .forEach(png -> {
-                    LOGGER.info(png.getRequest().getUrl());
+                    LOGGER.info("[Assert] " + png.getRequest().getUrl());
                     Assert.assertTrue(
                             "Broken : " + png.getRequest().getUrl(),
                             400 > png.getResponse().getStatus());
@@ -62,8 +59,7 @@ public class NYXCostemicMainPage extends BaseWebTest
 
     @Test
     @DisplayName("The Newest Products")
-    public void testTheNewestProducts() throws InterruptedException
-    {
+    public void testTheNewestProducts() throws InterruptedException {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
 
         navigateToURL(URLFactory.MAIN_URL);
@@ -83,8 +79,7 @@ public class NYXCostemicMainPage extends BaseWebTest
 
     @Test
     @DisplayName("Product Sale Price")
-    public void testProductSalePrice()
-    {
+    public void testProductSalePrice() {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
 
         navigateToURL(URLFactory.MAIN_URL);
@@ -97,8 +92,7 @@ public class NYXCostemicMainPage extends BaseWebTest
 
     @Test
     @DisplayName("Main Page Slider")
-    public void testMainPageSlider()
-    {
+    public void testMainPageSlider() {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
 
         navigateToURL(URLFactory.MAIN_URL);

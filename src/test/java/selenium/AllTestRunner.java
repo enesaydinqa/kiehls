@@ -9,6 +9,5 @@ import selenium.web.NYXCostemicProductPage;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({NYXCostemicMainPage.class, selenium.responsive.NYXCostemicMainPage.class,
         NYXCostemicProductPage.class, selenium.responsive.NYXCostemicProductPage.class})
-public class AllTestRunner
-{
+public class AllTestRunner {
 }
