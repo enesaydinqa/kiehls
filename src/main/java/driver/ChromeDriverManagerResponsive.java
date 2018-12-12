@@ -44,8 +44,10 @@ public class ChromeDriverManagerResponsive extends DriverManager
         browserStackLocalArgs.put("-local-proxy-port", port);
         browserStackLocal.start(browserStackLocalArgs);
 
+        LOGGER.info("=================================================================");
         LOGGER.info("This Execute Browser Host --> " + host);
         LOGGER.info("This Execute Browser Port --> " + port);
+        LOGGER.info("=================================================================");
 
         Map<String, String> mobileEmulation = new HashMap<>();
         mobileEmulation.put("browserName", "iPhone");
@@ -73,8 +75,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
             capabilities.setBrowserName("chrome");
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
-            driver.manage().window().setSize(new Dimension(414, 736));
-
         }
         else
         {
@@ -89,9 +89,14 @@ public class ChromeDriverManagerResponsive extends DriverManager
             }
 
             driver = new ChromeDriver(capabilities);
-            driver.manage().window().setSize(new Dimension(414, 736));
-
         }
+
+        driver.manage().window().setSize(new Dimension(414, 736));
+
+        String session = (driver).getSessionId().toString();
+        LOGGER.info("=================================================================\n");
+        LOGGER.info("This Execute Session ID --> " + session + "\n");
+        LOGGER.info("=================================================================\n");
 
     }
 

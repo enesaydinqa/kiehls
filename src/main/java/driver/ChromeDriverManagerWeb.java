@@ -20,13 +20,11 @@ import com.browserstack.local.Local;
 import net.lightbody.bmp.client.ClientUtil;
 import properties.LoadProperties;
 
-public class ChromeDriverManagerWeb extends DriverManager
-{
+public class ChromeDriverManagerWeb extends DriverManager {
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
 
     @Override
-    public void createDriver() throws Exception
-    {
+    public void createDriver() throws Exception {
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
         Local browserStackLocal = new Local();
@@ -42,8 +40,10 @@ public class ChromeDriverManagerWeb extends DriverManager
         browserStackLocalArgs.put("-local-proxy-port", port);
         browserStackLocal.start(browserStackLocalArgs);
 
+        LOGGER.info("=================================================================");
         LOGGER.info("This Execute Browser Host --> " + host);
         LOGGER.info("This Execute Browser Port --> " + port);
+        LOGGER.info("=================================================================");
 
         String[] switches = {"--ignore-certificate-errors"};
 
@@ -57,23 +57,17 @@ public class ChromeDriverManagerWeb extends DriverManager
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
 
-        if (REMOTE_TEST.equals("true"))
-        {
+        if (REMOTE_TEST.equals("true")) {
             capabilities.setCapability("browserstack.local", "true");
             capabilities.setBrowserName("chrome");
 
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
 
-        }
-        else
-        {
+        } else {
 
-            if (Platform.getCurrent().is(Platform.MAC))
-            {
+            if (Platform.getCurrent().is(Platform.MAC)) {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forMacChromeDriver"));
-            }
-            else if (Platform.getCurrent().is(Platform.WINDOWS))
-            {
+            } else if (Platform.getCurrent().is(Platform.WINDOWS)) {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forWinChromeDriver"));
             }
 
@@ -81,6 +75,10 @@ public class ChromeDriverManagerWeb extends DriverManager
 
         }
 
+        String session = (driver).getSessionId().toString();
+        LOGGER.info("=================================================================\n");
+        LOGGER.info("This Execute Session ID --> " + session + "\n");
+        LOGGER.info("=================================================================\n");
     }
 
 }
