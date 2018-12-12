@@ -29,14 +29,12 @@ public abstract class BaseResponsiveTest extends AbstractSeleniumTest
     private VideoRecorder videoRecorder;
     String TAKEAVIDEO = System.getProperty("TakeVideo").toLowerCase();
 
-    @Override
-    protected void createDriver()
-    {
-    }
-
     @Rule
     public final TestName testName = new TestName();
 
+    @Override
+    protected void createDriver() {
+    }
 
     @Before
     public void init() throws Exception
