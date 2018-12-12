@@ -43,9 +43,7 @@ public class ChromeDriverManagerWeb extends DriverManager {
         chromeOptions.addArguments("disable-infobars");
 
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("browser", "Chrome");
         caps.setCapability("browser_version", "62.0");
-        caps.setCapability("os", "Windows");
         caps.setCapability("os_version", "10");
         caps.setCapability(CapabilityType.PROXY, seleniumProxy);
         caps.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
