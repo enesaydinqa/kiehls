@@ -1,19 +1,18 @@
 package selenium.web;
 
-import java.util.List;
-import java.util.stream.IntStream;
-
+import base.BaseWebTest;
+import enums.URLFactory;
+import net.lightbody.bmp.core.har.HarEntry;
+import net.lightbody.bmp.proxy.CaptureType;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
-
-import base.BaseWebTest;
-import enums.URLFactory;
-import net.lightbody.bmp.core.har.HarEntry;
-import net.lightbody.bmp.proxy.CaptureType;
 import selenium.pages.MainPageWeb;
+
+import java.util.List;
+import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Web")
 public class NYXCostemicMainPage extends BaseWebTest {

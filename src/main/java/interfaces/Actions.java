@@ -1,10 +1,9 @@
 package interfaces;
 
-import java.util.List;
-
+import enums.URLFactory;
 import org.openqa.selenium.WebElement;
 
-import enums.URLFactory;
+import java.util.List;
 
 public interface Actions
 {

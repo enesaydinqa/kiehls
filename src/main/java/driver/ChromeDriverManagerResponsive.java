@@ -1,10 +1,7 @@
 package driver;
 
-import java.net.URL;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
+import com.browserstack.local.Local;
+import net.lightbody.bmp.client.ClientUtil;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Platform;
@@ -14,11 +11,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
-import com.browserstack.local.Local;
-
-import net.lightbody.bmp.client.ClientUtil;
 import properties.LoadProperties;
+
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ChromeDriverManagerResponsive extends DriverManager
 {
