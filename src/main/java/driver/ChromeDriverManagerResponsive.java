@@ -17,15 +17,13 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ChromeDriverManagerResponsive extends DriverManager
-{
+public class ChromeDriverManagerResponsive extends DriverManager {
     private Logger LOGGER = Logger.getLogger(ChromeDriverManagerResponsive.class.getName());
     private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, " +
             "like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
     @Override
-    public void createDriver() throws Exception
-    {
+    public void createDriver() throws Exception {
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
         Local browserStackLocal = new Local();
@@ -36,7 +34,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         browserStackLocalArgs.put("force", "true");
         browserStackLocalArgs.put("v", "true");
         String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-        String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+        String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1, seleniumProxy.getHttpProxy().length());
         browserStackLocalArgs.put("-local-proxy-host", host);
         browserStackLocalArgs.put("-local-proxy-port", port);
         browserStackLocal.start(browserStackLocalArgs);
@@ -62,23 +60,16 @@ public class ChromeDriverManagerResponsive extends DriverManager
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
-        if (REMOTE_TEST.equals("true"))
-        {
-            capabilities.setCapability("browserstack.local", "true");
-            capabilities.setBrowserName("chrome");
-
+        if (REMOTE_TEST.equals("true")) {
+            capabilities.setCapability("browserstack.local", true);
             driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
-        }
-        else
-        {
+        } else {
 
-            if (Platform.getCurrent().is(Platform.MAC))
-            {
+            if (Platform.getCurrent().is(Platform.MAC)) {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forMacChromeDriver"));
-            }
-            else if (Platform.getCurrent().is(Platform.WINDOWS))
-            {
+            } else if (Platform.getCurrent().is(Platform.WINDOWS)) {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forWinChromeDriver"));
             }
 

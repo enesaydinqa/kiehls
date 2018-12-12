@@ -21,16 +21,15 @@ public class ChromeDriverManagerWeb extends DriverManager {
     @Override
     public void createDriver() throws Exception {
         Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
-
         Local browserStackLocal = new Local();
-        HashMap<String, String> browserStackLocalArgs = new HashMap<>();
+        HashMap<String, String> browserStackLocalArgs = new HashMap<String, String>();
         browserStackLocalArgs.put("key", AUTOMATE_KEY);
         browserStackLocalArgs.put("forcelocal", "true");
         browserStackLocalArgs.put("forceproxy", "true");
         browserStackLocalArgs.put("force", "true");
         browserStackLocalArgs.put("v", "true");
         String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-        String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+        String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1, seleniumProxy.getHttpProxy().length());
         browserStackLocalArgs.put("-local-proxy-host", host);
         browserStackLocalArgs.put("-local-proxy-port", port);
         browserStackLocal.start(browserStackLocalArgs);
@@ -43,17 +42,18 @@ public class ChromeDriverManagerWeb extends DriverManager {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
 
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-        capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("browser", "Chrome");
+        caps.setCapability("browser_version", "62.0");
+        caps.setCapability("os", "Windows");
+        caps.setCapability("os_version", "10");
+        caps.setCapability(CapabilityType.PROXY, seleniumProxy);
+        caps.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         if (REMOTE_TEST.equals("true")) {
-            capabilities.setCapability("browserstack.local", "true");
-            capabilities.setBrowserName("chrome");
+            caps.setCapability("browserstack.local", true);
 
-            driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), capabilities);
+            driver = new RemoteWebDriver(new URL(BROWSER_STACK_URL), caps);
 
         } else {
 
@@ -63,7 +63,7 @@ public class ChromeDriverManagerWeb extends DriverManager {
                 System.setProperty("webdriver.chrome.driver", LoadProperties.config.getProperty("forWinChromeDriver"));
             }
 
-            driver = new ChromeDriver(capabilities);
+            driver = new ChromeDriver(caps);
 
         }
 
