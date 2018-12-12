@@ -76,9 +76,9 @@ public class ChromeDriverManagerWeb extends DriverManager {
         }
 
         String session = (driver).getSessionId().toString();
-        LOGGER.info("=================================================================\n");
-        LOGGER.info("This Execute Session ID --> " + session + "\n");
-        LOGGER.info("=================================================================\n");
+        LOGGER.info("=================================================================");
+        LOGGER.info("This Execute Session ID --> " + session);
+        LOGGER.info("=================================================================");
     }
 
 }
