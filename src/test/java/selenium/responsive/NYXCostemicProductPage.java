@@ -18,7 +18,6 @@ public class NYXCostemicProductPage extends BaseResponsiveTest
     Logger LOGGER = Logger.getLogger(NYXCostemicProductPage.class.getName());
 
     @Test
-    @Ignore
     @DisplayName("Product Sale Price")
     public void testProductSalePrice()
     {

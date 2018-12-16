@@ -41,7 +41,6 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
     }
 
     @Test
-    @Ignore
     @DisplayName("The Main Page Traffic")
     public void testMainPageTraffic() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);

@@ -22,7 +22,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
 
 
     @Test
-    @Ignore
     @DisplayName("Main Page Load PNG")
     public void testMainPageLoadPNG() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -40,7 +39,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
-    @Ignore
     @DisplayName("The Main Page Traffic")
     public void testMainPageTraffic() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -60,7 +58,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
-    @Ignore
     @DisplayName("The Newest Products")
     public void testTheNewestProducts() throws InterruptedException {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
@@ -81,7 +78,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
-    @Ignore
     @DisplayName("Product Sale Price")
     public void testProductSalePrice() {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);
@@ -95,7 +91,6 @@ public class NYXCostemicMainPage extends BaseWebTest {
     }
 
     @Test
-    @Ignore
     @DisplayName("Main Page Slider")
     public void testMainPageSlider() {
         MainPageWeb mainPage = PageFactory.initElements(driver, MainPageWeb.class);

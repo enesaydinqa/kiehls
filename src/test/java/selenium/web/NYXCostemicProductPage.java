@@ -22,7 +22,6 @@ public class NYXCostemicProductPage extends BaseWebTest
     Logger LOGGER = Logger.getLogger(NYXCostemicProductPage.class.getName());
 
     @Test
-    @Ignore
     @DisplayName("Product Detail")
     public void testProductDetail()
     {
@@ -50,7 +49,6 @@ public class NYXCostemicProductPage extends BaseWebTest
     }
 
     @Test
-    @Ignore
     @DisplayName("Product Description Length")
     public void testProductDescriptionLength()
     {
