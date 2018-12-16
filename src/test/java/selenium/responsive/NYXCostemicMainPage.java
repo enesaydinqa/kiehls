@@ -6,6 +6,7 @@ import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.proxy.CaptureType;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
@@ -40,6 +41,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
     }
 
     @Test
+    @Ignore
     @DisplayName("The Main Page Traffic")
     public void testMainPageTraffic() {
         proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
@@ -61,6 +63,7 @@ public class NYXCostemicMainPage extends BaseResponsiveTest {
 
 
     @Test
+    @Ignore
     @DisplayName("Main Page Slider")
     public void testMainPageSlider() {
 

@@ -6,6 +6,7 @@ import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.proxy.CaptureType;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +22,7 @@ public class NYXCostemicProductPage extends BaseWebTest
     Logger LOGGER = Logger.getLogger(NYXCostemicProductPage.class.getName());
 
     @Test
+    @Ignore
     @DisplayName("Product Detail")
     public void testProductDetail()
     {
@@ -48,6 +50,7 @@ public class NYXCostemicProductPage extends BaseWebTest
     }
 
     @Test
+    @Ignore
     @DisplayName("Product Description Length")
     public void testProductDescriptionLength()
     {

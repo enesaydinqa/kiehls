@@ -3,6 +3,7 @@ package selenium.responsive;
 import base.BaseResponsiveTest;
 import enums.URLFactory;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.support.PageFactory;
@@ -17,6 +18,7 @@ public class NYXCostemicProductPage extends BaseResponsiveTest
     Logger LOGGER = Logger.getLogger(NYXCostemicProductPage.class.getName());
 
     @Test
+    @Ignore
     @DisplayName("Product Sale Price")
     public void testProductSalePrice()
     {
