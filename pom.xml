@@ -10,6 +10,17 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.0.0-M2</version>
+                <configuration>
+                    <outputDirectory>${basedir}/target/newsite</outputDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <outputDirectory>${basedir}/target/newsite</outputDirectory>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
@@ -134,6 +145,13 @@
             <artifactId>maven-surefire-report-plugin</artifactId>
             <version>3.0.0-M2</version>
             <type>maven-plugin</type>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.7.1</version>
         </dependency>
 
     </dependencies>
