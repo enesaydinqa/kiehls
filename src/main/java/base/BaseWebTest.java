@@ -11,6 +11,7 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import properties.LoadProperties;
 import recorder.VideoRecorder;
+import ru.yandex.qatools.allure.annotations.Step;
 
 import java.io.File;
 import java.io.IOException;
@@ -33,6 +34,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
     }
 
     @Before
+    @Step("init")
     public void init() throws Exception {
         proxy = new BrowserMobProxyServer();
         proxy.start(0);
@@ -53,6 +55,7 @@ public abstract class BaseWebTest extends AbstractSeleniumTest {
 
 
     @After
+    @Step("tear Down")
     public void tearDown() throws Exception {
 
         setHarFile(testName.getMethodName());
