@@ -7,7 +7,6 @@ import selenium.web.NYXCostemicMainPage;
 import selenium.web.NYXCostemicProductPage;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({NYXCostemicMainPage.class, selenium.responsive.NYXCostemicMainPage.class,
-        NYXCostemicProductPage.class, selenium.responsive.NYXCostemicProductPage.class, selenium.galen.NyxCostemicMainPageLayout.class})
+@Suite.SuiteClasses({selenium.galen.NyxCostemicMainPageLayout.class})
 public class AllTestRunner {
 }
