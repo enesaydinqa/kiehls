@@ -21,7 +21,7 @@ public class SetProperties
         prop.setProperty("PageLoadTimeOut", "20");
         prop.setProperty("BaseURL", "https://www.nyxcosmetics.com.tr/");
         prop.setProperty("HarFilePath", System.getProperty("user.dir") + "/src/main/resources/");
-        prop.setProperty("SpecReportPath", System.getProperty("user.dir") + "/target/LayoutReports/");
+        prop.setProperty("GalenReportPath", System.getProperty("user.dir") + "/target/GalenLayoutReports/");
 
         prop.store(output, null);
 

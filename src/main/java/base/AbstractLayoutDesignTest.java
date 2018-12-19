@@ -7,7 +7,6 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.junit.Assert;
 
 import com.galenframework.api.Galen;
@@ -25,14 +24,13 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
     {
         GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
 
-        createFolder(className);
+        //createFolder(className);
 
         LayoutReport layoutReport = Galen.checkLayout(driver, specFile, includedTags);
 
         List<GalenTestInfo> tests = new LinkedList<>();
 
         GalenTestInfo test = GalenTestInfo.fromString(className);
-
         test.getReport().layout(layoutReport, "check layout on desktop");
         tests.add(test);
 
@@ -40,7 +38,7 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
         Date date = new Date();
 
         new HtmlReportBuilder().build(tests,
-                LoadProperties.config.getProperty("SpecReportPath") + className + dateFormat.format(date));
+                LoadProperties.config.getProperty("GalenReportPath") + className + dateFormat.format(date));
 
         if (layoutReport.errors() > 0)
         {
