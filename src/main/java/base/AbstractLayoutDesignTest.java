@@ -71,10 +71,9 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
 
             List<String> srcFiles = new ArrayList<>();
 
-            for (int i = 0; i < listOfFiles.length; i++)
-            {
-                srcFiles.add(listOfFiles[i].getPath());
-            }
+            IntStream.range(0, listOfFiles.length)
+                    .filter(i -> listOfFiles[i].getPath().contains("html") || listOfFiles[i].getPath().contains("js") || listOfFiles[i].getPath().contains("css"))
+                    .forEach(i -> srcFiles.add(listOfFiles[i].getPath()));
 
             FileOutputStream fos = new FileOutputStream(reportPath + "/" + className + ".zip");
             ZipOutputStream zipOut = new ZipOutputStream(fos);
