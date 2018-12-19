@@ -4,17 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -73,7 +68,7 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
 
             IntStream.range(0, listOfFiles.length)
                     .filter(i -> !listOfFiles[i].getPath().contains(".json") & !listOfFiles[i].getPath().contains(
-                            ".png"))
+                            "report.html"))
                     .forEach(i -> srcFiles.add(listOfFiles[i].getPath()));
 
             FileOutputStream fos = new FileOutputStream(reportPath + "/" + className + ".zip");
