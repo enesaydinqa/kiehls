@@ -61,7 +61,7 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
         }
         finally
         {
-            File folder = new File(reportPath + "/");
+            File folder = new File(reportPath);
             File[] listOfFiles = folder.listFiles();
 
             List<String> srcFiles = new ArrayList<>();
