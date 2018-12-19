@@ -11,9 +11,9 @@ public abstract class DriverManager
     protected static RemoteWebDriver driver;
     protected static BrowserMobProxy proxy;
 
-    protected static String REMOTE_TEST = System.getProperty("RemoteTest").toLowerCase();
-    protected static String USERNAME = System.getProperty("Username");
-    protected static String AUTOMATE_KEY = System.getProperty("AutomateKey");
+    static String REMOTE_TEST = System.getProperty("RemoteTest").toLowerCase();
+    private static String USERNAME = System.getProperty("Username");
+    static String AUTOMATE_KEY = System.getProperty("AutomateKey");
     String BROWSER_STACK_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     protected abstract void createDriver() throws Exception;
