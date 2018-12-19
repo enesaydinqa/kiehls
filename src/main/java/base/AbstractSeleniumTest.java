@@ -1,5 +1,6 @@
 package base;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -382,4 +383,29 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
         }
     }
 
+    @Override
+    public void createFolder(String folderPathName)
+    {
+        File theDir = new File(folderPathName);
+
+        if (!theDir.exists())
+        {
+            boolean result = false;
+
+            try
+            {
+                theDir.mkdir();
+                result = true;
+            }
+            catch (SecurityException se)
+            {
+                //handle it
+            }
+            if (result)
+            {
+                System.out.println("DIR created");
+            }
+        }
+
+    }
 }

@@ -20,7 +20,7 @@ import properties.LoadProperties;
 import recorder.VideoRecorder;
 import ru.yandex.qatools.allure.annotations.Step;
 
-public abstract class BaseWebTest extends AbstractSeleniumTest {
+public abstract class BaseWebTest extends AbstractLayoutDesignTest {
 
     private final static Logger LOGGER = Logger.getLogger(BaseWebTest.class.getName());
 

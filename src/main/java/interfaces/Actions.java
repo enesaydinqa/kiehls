@@ -95,4 +95,6 @@ public interface Actions
     void scrollToElement(WebElement element);
 
     void clickViaJs(WebElement element);
+
+    void createFolder(String folderPathName);
 }

@@ -9,7 +9,6 @@ public class SetProperties
 
     public static void SetValueProperties() throws Exception
     {
-
         Properties prop = new Properties();
         OutputStream output = null;
         output = new FileOutputStream(System.getProperty("user.dir") + "/src/main/resources/properties/config" +
@@ -22,6 +21,7 @@ public class SetProperties
         prop.setProperty("PageLoadTimeOut", "20");
         prop.setProperty("BaseURL", "https://www.nyxcosmetics.com.tr/");
         prop.setProperty("HarFilePath", System.getProperty("user.dir") + "/src/main/resources/");
+        prop.setProperty("SpecReportPath", System.getProperty("user.dir") + "/target/LayoutReports/");
 
         prop.store(output, null);
 
