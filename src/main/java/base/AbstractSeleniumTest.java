@@ -1,9 +1,10 @@
 package base;
 
-import driver.DriverManager;
-import enums.URLFactory;
-import helper.JSHelper;
-import interfaces.Actions;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -11,12 +12,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import properties.LoadProperties;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
+import driver.DriverManager;
+import enums.URLFactory;
+import helper.JSHelper;
+import interfaces.Actions;
+import properties.LoadProperties;
 
 public abstract class AbstractSeleniumTest extends DriverManager implements Actions
 {
