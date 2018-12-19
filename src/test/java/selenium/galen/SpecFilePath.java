@@ -6,7 +6,7 @@ public enum SpecFilePath
 
     MAIN_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/"),
 
-    MAIN_PAGE(MAIN_DIRECTORY, "nativeAdClassifiedPage.spec");
+    MAIN_PAGE(MAIN_DIRECTORY, "NyxCostemicMainPage.spec");
 
 
     //-----
