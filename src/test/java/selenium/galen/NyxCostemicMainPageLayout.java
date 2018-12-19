@@ -18,7 +18,7 @@ public class NyxCostemicMainPageLayout extends BaseWebTest
     {
         navigateToURL(URLFactory.MAIN_URL);
         Thread.sleep(10000);
-        checkLayoutDesign(SpecFilePath.MAIN_PAGE.getFilePath(), Arrays.asList("desktop"),
+        checkLayoutDesign(SpecFilePath.MAIN_PAGE.getFilePath(), Arrays.asList(PlatformName.DESKTOP.platformName),
                 this.getClass().getSimpleName());
     }
 }

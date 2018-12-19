@@ -24,8 +24,6 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
     {
         GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
 
-        //createFolder(className);
-
         LayoutReport layoutReport = Galen.checkLayout(driver, specFile, includedTags);
 
         List<GalenTestInfo> tests = new LinkedList<>();
@@ -46,4 +44,19 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
         }
 
     }
+
+    public enum PlatformName
+    {
+        DESKTOP("desktop"),
+        MOBILE("mobile");
+
+        public final String platformName;
+
+        PlatformName(String platformName)
+        {
+            this.platformName = platformName;
+        }
+    }
+
+
 }
