@@ -19,28 +19,28 @@
   @on desktop
 
     ProHeaderSpace :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     BestNewHeader :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     BestSellersHeader :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     NoToMissHeader :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     NoToMissImage :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     MoreHeader :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     MoreImage :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     Footer :
-        image file images/ReportsPage/1.png, error 3 %
+        image file images/1.png, error 3 %
 
     sahibinden-logo:
         height 34px
