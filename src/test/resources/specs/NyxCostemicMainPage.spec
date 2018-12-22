@@ -19,16 +19,16 @@
   @on desktop
 
     ProHeaderSpace :
-        image file images/1.png, error 3 %
+        image file images/ProHeaderSpace.png, error 3 %
 
     BestNewHeader :
-        image file images/1.png, error 3 %
+        image file images/BestNewHeader.png, error 3 %
 
     BestSellersHeader :
-        image file images/1.png, error 3 %
+        image file images/BestSellersHeader.png, error 3 %
 
     NoToMissHeader :
-        image file images/1.png, error 3 %
+        image file images/NoToMissHeader.png, error 3 %
 
     NoToMissImage :
         image file images/1.png, error 3 %
