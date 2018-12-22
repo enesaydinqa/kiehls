@@ -14,7 +14,7 @@
 
 ==================================================================================================
 
-= Native Ad Classified Layout Page =
+= NyxCostemic Main Page Layout Design =
 
   @on desktop
 
@@ -31,20 +31,24 @@
         image file images/NoToMissHeader.png, error 3 %
 
     NoToMissImage :
-        image file images/1.png, error 3 %
+        image file images/NoToMissImage.png, error 3 %
 
     MoreHeader :
-        image file images/1.png, error 3 %
+        image file images/MoreHeader.png, error 3 %
 
     MoreImage :
-        image file images/1.png, error 3 %
+        image file images/MoreImage.png, error 3 %
 
     Footer :
-        image file images/1.png, error 3 %
+        image file images/Footer.png, error 3 %
 
-    sahibinden-logo:
+    MainPageSlider:
         height 34px
         width 160px
+        inside screen 0px left, 10px top
+
+
+
     classifiedBreadCrumbBackground:
         height 27px
         width 100 % of screen/width
