@@ -1,14 +1,47 @@
 ==================================================================================================
 @objects
-    header-banner           xpath       //div[contains(@class, 'search-leaderboard-banner')]/div/div
-    ad-image                xpath       //div[@class='ad-image']
-    ntvd-link-container     xpath       //div[@class='ntvd_link_container']
-    ad-call-to-action       xpath       //div[@class='ad-call-to-action']
+    ProHeaderSpace                 css         .pro-header-space
+    MainPageSlider                 xpath       //div[contains(@id, 'pro-spotlight-')]
+    BestNewHeader                  xpath       (//div[@class='pro-content-list-header'])[1]
+    BestNewProductContainer        xpath       (//div[@class='slick-list draggable'])[1]/div/div[contains(@class,'slick-active')]
+    BestSellersHeader              xpath       (//div[@class='pro-content-list-header'])[2]
+    BestSellersProductContainer    xpath       (//div[@class='slick-list draggable'])[2]/div/div[contains(@class,'slick-active')]
+    NoToMissHeader                 xpath       (//div[contains(@class, 'v-widget-container')])[1]
+    NoToMissImage                  xpath       (//div[contains(@class, 'proadmin-cms-place-row')])[6]
+    MoreHeader                     xpath       (//div[contains(@class, 'v-widget-container')])[2]
+    MoreImage                      xpath       (//div[contains(@class, 'proadmin-cms-place-row')])[8]
+    Footer                         xpath       (//div[contains(@class, 'proadmin-cms-place-row')])[9]
+
 ==================================================================================================
 
 = Native Ad Classified Layout Page =
 
   @on desktop
+
+    ProHeaderSpace :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    BestNewHeader :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    BestSellersHeader :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    NoToMissHeader :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    NoToMissImage :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    MoreHeader :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    MoreImage :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
+    Footer :
+        image file images/ReportsPage/ReportsHeader.png, error 3 %
+
     sahibinden-logo:
         height 34px
         width 160px
