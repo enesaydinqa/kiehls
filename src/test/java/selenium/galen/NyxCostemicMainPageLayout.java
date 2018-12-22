@@ -14,10 +14,16 @@ public class NyxCostemicMainPageLayout extends BaseWebTest
 {
     @Test
     @DisplayName("The Main Page Layout Design")
-    public void testMainPageLayoutDesign() throws IOException, InterruptedException
+    public void testMainPageLayoutDesign() throws IOException
     {
         navigateToURL(URLFactory.MAIN_URL);
-        Thread.sleep(10000);
+        wait(5);
+
+        for (int s = 100; s <= 1700; s += 100) {
+            wait(1);
+            pageScroll(0, s);
+        }
+
         checkLayoutDesign(SpecFilePath.MAIN_PAGE.getFilePath(), Arrays.asList(PlatformName.DESKTOP.platformName),
                 this.getClass().getSimpleName());
     }

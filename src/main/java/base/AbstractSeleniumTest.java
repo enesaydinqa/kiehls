@@ -228,9 +228,16 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Acti
     }
 
     @Override
-    public void wait(int seconds) throws InterruptedException
+    public void wait(int seconds)
     {
-        Thread.sleep(seconds * 1000);
+        try
+        {
+            Thread.sleep(seconds * 1000);
+        }
+        catch (Exception ex)
+        {
+        }
+
     }
 
     @Override
