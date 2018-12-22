@@ -48,13 +48,13 @@
         inside screen 0px left, 10px top
 
     @for [1 - 4] as index
-        BestNewProductContainer--${index}:
+        BestNewProductContainer-${index}:
             width 772 px
             height 34 px
             inside screen 0px top
 
     @for [1 - 4] as index
-        BestSellersProductContainer--${index}:
+        BestSellersProductContainer-${index}:
             width 772 px
             height 34 px
             inside screen 0px top
