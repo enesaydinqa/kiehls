@@ -19,8 +19,6 @@ import net.lightbody.bmp.core.har.Har;
 import properties.LoadProperties;
 import recorder.VideoRecorder;
 
-;
-
 public abstract class BaseResponsiveTest extends AbstractSeleniumTest
 {
 

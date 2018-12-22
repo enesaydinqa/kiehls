@@ -67,8 +67,6 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
             List<String> srcFiles = new ArrayList<>();
 
             IntStream.range(0, listOfFiles.length)
-                    .filter(i -> !listOfFiles[i].getPath().contains(".json") & !listOfFiles[i].getPath().contains(
-                            "report.html"))
                     .forEach(i -> srcFiles.add(listOfFiles[i].getPath()));
 
             FileOutputStream fos = new FileOutputStream(reportPath + "/" + className + ".zip");
