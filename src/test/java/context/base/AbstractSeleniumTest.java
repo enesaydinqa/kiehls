@@ -1,9 +1,8 @@
 package context.base;
 
 import context.driver.DriverManager;
-import context.enums.UrlFactory;
+import selenium.pages.UrlFactory;
 import context.helper.JSHelper;
-import context.interfaces.SeleniumActions;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -21,7 +20,6 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class AbstractSeleniumTest extends DriverManager implements SeleniumActions
 {
-
     @Override
     public String getCurrentURL()
     {

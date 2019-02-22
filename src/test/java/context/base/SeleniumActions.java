@@ -1,6 +1,6 @@
-package context.interfaces;
+package context.base;
 
-import context.enums.UrlFactory;
+import selenium.pages.UrlFactory;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;

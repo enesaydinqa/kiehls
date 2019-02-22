@@ -59,7 +59,7 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
         if (Boolean.parseBoolean(prop.getProperty("take.a.video")))
         {
             {
-                videoRecorder.startRecording(testName.getMethodName());
+                VideoRecorder.startRecording(testName.getMethodName());
             }
         }
         else

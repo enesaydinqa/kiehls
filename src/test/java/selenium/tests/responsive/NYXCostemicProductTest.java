@@ -1,7 +1,7 @@
 package selenium.tests.responsive;
 
 import context.base.AbstractResponsiveTest;
-import context.enums.UrlFactory;
+import selenium.pages.UrlFactory;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
@@ -16,7 +16,7 @@ public class NYXCostemicProductTest extends AbstractResponsiveTest
 {
     private static Logger logger = Logger.getLogger(NYXCostemicProductTest.class);
 
-    MainPageResponsivePage mainPage;
+    private MainPageResponsivePage mainPage;
 
     @Before
     public void init() throws Exception

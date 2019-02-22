@@ -1,4 +1,4 @@
-package context.enums;
+package selenium.pages;
 
 
 public enum UrlFactory

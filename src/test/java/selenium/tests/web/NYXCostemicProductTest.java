@@ -1,9 +1,8 @@
 package selenium.tests.web;
 
 import context.base.AbstractNYXCostemicTest;
-import context.enums.UrlFactory;
+import selenium.pages.UrlFactory;
 import net.lightbody.bmp.core.har.HarEntry;
-import net.lightbody.bmp.proxy.CaptureType;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
@@ -20,8 +19,8 @@ public class NYXCostemicProductTest extends AbstractNYXCostemicTest
 {
     private static Logger logger = Logger.getLogger(NYXCostemicProductTest.class);
 
-    MainPageWebPage mainPage;
-    ProductDetailPage productDetailPage;
+    private MainPageWebPage mainPage;
+    private ProductDetailPage productDetailPage;
 
     @Before
     public void init() throws Exception

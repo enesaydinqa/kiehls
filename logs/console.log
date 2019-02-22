@@ -1165,3 +1165,62 @@ java.nio.channels.ClosedChannelException
 2019-02-22 23:51:52 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> a28fde6e48cf631994ca644617b56d82
 2019-02-22 23:51:52 INFO  ChromeDriverManagerResponsive:101 - =================================================================
 2019-02-22 23:51:52 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-22 23:54:06 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-22 23:54:07 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-22 23:54:07 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 573e7863131d38058c719aced4c24a7c
+2019-02-22 23:54:07 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-22 23:54:07 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-22 23:55:10 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-22 23:55:56 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-22 23:56:25 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-22 23:56:27 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-22 23:56:27 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 17f03174fe1c328fb1ee9831e043186a
+2019-02-22 23:56:27 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-22 23:56:27 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-23 00:01:37 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 00:01:38 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 00:01:38 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 00:01:38 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:55014
+2019-02-23 00:01:39 INFO  ChromeDriverManagerResponsive:59 - =================================================================
+2019-02-23 00:01:39 INFO  ChromeDriverManagerResponsive:60 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 00:01:39 INFO  ChromeDriverManagerResponsive:61 - This Execute Browser Port --> 55014
+2019-02-23 00:01:39 INFO  ChromeDriverManagerResponsive:62 - =================================================================
+2019-02-23 00:01:40 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-23 00:01:40 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 817a5ef5769cf12dd0304ab3b07ec8b3
+2019-02-23 00:01:40 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-23 00:01:40 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-down.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-left.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-right.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-up.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/downarrow-1469426433.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/rightarrow-1469426425-1501594557.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/closebox.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/28/logo-1503932630.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-09/07/menu.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/28/cart-1503933186.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/icon_facebook.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-09/04/arrow-left.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-09/04/arrow-right.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/pixel.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/25/off.png
+2019-02-23 00:02:00 INFO  NYXCostemicMainTest:43 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/uparrows-1469426430-1501594559.png
+2019-02-23 00:02:00 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 00:02:00 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 00:02:00 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 00:02:02 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 00:02:18 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 00:02:20 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-23 00:02:20 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 1cd0bc627e5ab55d15e851b44f859cbc
+2019-02-23 00:02:20 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-23 00:02:20 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-23 00:05:41 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 00:05:43 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-23 00:05:43 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 262998400ad50eb955d909d1dee87bf1
+2019-02-23 00:05:43 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-23 00:05:43 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-23 00:07:11 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 00:07:13 INFO  ChromeDriverManagerWeb:85 - =================================================================
+2019-02-23 00:07:13 INFO  ChromeDriverManagerWeb:86 - This Execute Session ID --> 45fedf6519570b64042589f6db857be9
+2019-02-23 00:07:13 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-02-23 00:07:13 INFO  AbstractWebTest:65 - Scenarios will not take video

@@ -58,7 +58,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         if (Boolean.parseBoolean(prop.getProperty("take.a.video")))
         {
-            videoRecorder.startRecording(testName.getMethodName());
+            VideoRecorder.startRecording(testName.getMethodName());
         }
         else
         {

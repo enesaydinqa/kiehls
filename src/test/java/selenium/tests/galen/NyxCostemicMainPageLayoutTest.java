@@ -2,7 +2,7 @@ package selenium.tests.galen;
 
 
 import context.base.AbstractWebTest;
-import context.enums.UrlFactory;
+import selenium.pages.UrlFactory;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import selenium.tests.galen.path.SpecFilePath;
@@ -12,7 +12,6 @@ import java.util.Arrays;
 
 public class NyxCostemicMainPageLayoutTest extends AbstractWebTest
 {
-
     @Test
     @DisplayName("The Main Page Layout Design")
     public void testMainPageLayoutDesign() throws IOException

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class JSHelper
 {
-
     public static Object executeScriptObject(WebDriver driver, String s, Object... objects)
     {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
