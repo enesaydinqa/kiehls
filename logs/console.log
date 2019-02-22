@@ -1155,3 +1155,13 @@ java.nio.channels.ClosedChannelException
 2019-02-22 23:45:46 INFO  ChromeDriverManagerWeb:86 - This Execute Session ID --> b874f9a86cf284d91876744098391b64
 2019-02-22 23:45:46 INFO  ChromeDriverManagerWeb:87 - =================================================================
 2019-02-22 23:45:46 INFO  AbstractWebTest:65 - Scenarios will not take video
+2019-02-22 23:49:47 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-22 23:49:50 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-22 23:49:50 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> a7b2bca0712feeb5f3fa1e11c412be91
+2019-02-22 23:49:50 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-22 23:49:50 INFO  AbstractResponsiveTest:67 - Scenarios will not take video
+2019-02-22 23:51:50 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-22 23:51:52 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-22 23:51:52 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> a28fde6e48cf631994ca644617b56d82
+2019-02-22 23:51:52 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-22 23:51:52 INFO  AbstractResponsiveTest:67 - Scenarios will not take video

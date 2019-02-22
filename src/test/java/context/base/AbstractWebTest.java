@@ -72,15 +72,9 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     {
         //setHarFile(testName.getMethodName());
 
-        if (Boolean.parseBoolean(prop.getProperty("take.a.video")))
-        {
-            VideoRecorder.stopRecording();
-        }
-        else
-        {
-        }
+        if (Boolean.parseBoolean(prop.getProperty("take.a.video"))) VideoRecorder.stopRecording();
 
-        proxy.stop();
+        if (proxy != null) proxy.stop();
 
         if (driver != null)
         {
