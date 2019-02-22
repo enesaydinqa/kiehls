@@ -2,15 +2,16 @@ package selenium;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import selenium.tests.galen.NyxCostemicMainPageLayoutTest;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({selenium.galen.NyxCostemicMainPageLayout.class})
+@Suite.SuiteClasses({NyxCostemicMainPageLayoutTest.class})
 public class AllTestRunner
 {
 
     /*
-    @Suite.SuiteClasses({selenium.galen.NyxCostemicMainPageLayout.class, selenium.responsive.NYXCostemicMainPage.class,
-        selenium.responsive.NYXCostemicProductPage.class, selenium.web.NYXCostemicMainPage.class,
-        selenium.web.NYXCostemicProductPage.class})
+    @Suite.SuiteClasses({selenium.tests.galen.NyxCostemicMainPageLayout.class, selenium.tests.responsive.NYXCostemicMainPage.class,
+        selenium.tests.responsive.NYXCostemicProductPage.class, selenium.tests.web.NYXCostemicMainPage.class,
+        selenium.tests.web.NYXCostemicProductPage.class})
      */
 }
