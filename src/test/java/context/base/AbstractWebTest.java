@@ -11,6 +11,8 @@ import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Rule;
+import org.junit.rules.TestName;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +24,9 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
     private VideoRecorder videoRecorder;
     Properties prop = new Properties();
+
+    @Rule
+    public final TestName testName = new TestName();
 
     @Override
     protected void createDriver(Boolean withProxy)
@@ -39,6 +44,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public void init() throws Exception
     {
         init(false);
+        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
     public void init(Boolean withProxy) throws Exception
