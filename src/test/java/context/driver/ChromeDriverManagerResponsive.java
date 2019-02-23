@@ -72,6 +72,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 
+
         if (withProxy)
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
@@ -81,6 +82,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             if (browserStackLocal)
             {
+                capabilities.setCapability("browserstack.console", "info");
                 capabilities.setCapability("browserstack.local", browserStackLocal);
                 browserStackLocalArg(host, port);
             }
