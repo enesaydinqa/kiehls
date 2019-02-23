@@ -16,14 +16,12 @@ import org.junit.rules.TestName;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Properties;
 
 public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 {
     private Logger logger = Logger.getLogger(AbstractWebTest.class);
 
-    private VideoRecorder videoRecorder;
-    Properties prop = new Properties();
+    private boolean takeVideo;
 
     @Rule
     public final TestName testName = new TestName();
@@ -63,7 +61,9 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         driver = driverManager.getDriver(withProxy);
 
-        if (Boolean.parseBoolean(prop.getProperty("take.a.video")))
+        takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
+
+        if (takeVideo)
         {
             VideoRecorder.startRecording(testName.getMethodName());
         }
@@ -82,8 +82,9 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public void tearDown() throws Exception
     {
         //setHarFile(testName.getMethodName());
+        takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
 
-        if (Boolean.parseBoolean(prop.getProperty("take.a.video"))) VideoRecorder.stopRecording();
+        if (takeVideo) VideoRecorder.stopRecording();
 
         try
         {

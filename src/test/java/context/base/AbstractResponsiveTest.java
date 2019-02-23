@@ -22,8 +22,7 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
 {
     private Logger logger = Logger.getLogger(AbstractResponsiveTest.class);
 
-    private VideoRecorder videoRecorder;
-    Properties prop = new Properties();
+    private boolean takeVideo;
 
     @Rule
     public final TestName testName = new TestName();
@@ -63,11 +62,11 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
 
         driver = driverManager.getDriver(withProxy);
 
-        if (Boolean.parseBoolean(prop.getProperty("take.a.video")))
+        takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
+
+        if (takeVideo)
         {
-            {
-                VideoRecorder.startRecording(testName.getMethodName());
-            }
+            VideoRecorder.startRecording(testName.getMethodName());
         }
         else
         {
@@ -84,8 +83,9 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
     public void tearDown() throws Exception
     {
         //setHarFile(testName.getMethodName());
+        takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
 
-        if (Boolean.parseBoolean(prop.getProperty("take.a.video"))) VideoRecorder.stopRecording();
+        if (takeVideo) VideoRecorder.stopRecording();
 
         try
         {

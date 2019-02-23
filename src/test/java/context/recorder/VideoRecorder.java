@@ -1,5 +1,7 @@
 package context.recorder;
 
+import context.base.AbstractWebTest;
+import org.apache.log4j.Logger;
 import org.monte.media.Format;
 import org.monte.media.FormatKeys;
 import org.monte.media.FormatKeys.MediaType;
@@ -22,6 +24,7 @@ import static org.monte.media.VideoFormatKeys.QualityKey;
 
 public class VideoRecorder
 {
+    private static Logger logger = Logger.getLogger(VideoRecorder.class);
 
     private static ScreenRecorder screenRecorder;
 
@@ -30,19 +33,19 @@ public class VideoRecorder
 
         File file = new File(System.getProperty("user.dir") + "/src/test/resources/test-case-videos");
 
-        if (!file.exists()) {
-            System.out.println("creating directory: " + file.getName());
+        if (!file.exists())
+        {
+            logger.info("Creating Directory : " + file.getAbsolutePath());
             boolean result = false;
 
-            try{
+            try
+            {
                 file.mkdir();
                 result = true;
             }
-            catch(SecurityException se){
-                //handle it
-            }
-            if(result) {
-                System.out.println("DIR created");
+            catch (SecurityException se)
+            {
+                se.printStackTrace();
             }
         }
 
