@@ -48,8 +48,5 @@ public class SetProperties {
         prop.setProperty("browserstack.url", "https://" + System.getProperties().getProperty("username") + ":" + System.getProperties().getProperty("automate.key") + "@hub-cloud.browserstack.com/wd/hub");
 
         prop.store(output, "NYX Costemics Regression Test Configuration");
-
-
-        System.setProperty("allure.results.directory", System.getProperty("user.dir") + "/target");
     }
 }
