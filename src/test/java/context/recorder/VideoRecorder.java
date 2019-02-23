@@ -1,6 +1,5 @@
 package context.recorder;
 
-import context.base.AbstractWebTest;
 import org.apache.log4j.Logger;
 import org.monte.media.Format;
 import org.monte.media.FormatKeys;
@@ -36,12 +35,9 @@ public class VideoRecorder
         if (!file.exists())
         {
             logger.info("Creating Directory : " + file.getAbsolutePath());
-            boolean result = false;
-
             try
             {
                 file.mkdir();
-                result = true;
             }
             catch (SecurityException se)
             {
