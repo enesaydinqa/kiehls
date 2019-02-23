@@ -23,7 +23,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
     private Map<String, String> mobileEmulation;
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;
-    private boolean browserStackLocal;
+    private boolean remoteTest;
 
     private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, " +
             "like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
@@ -31,13 +31,13 @@ public class ChromeDriverManagerResponsive extends DriverManager
     @Override
     public void createDriver(Boolean withProxy) throws Exception
     {
-        browserStackLocal = Boolean.parseBoolean(prop.getProperty("remote.test"));
+        remoteTest = Boolean.parseBoolean(prop.getProperty("remote.test"));
 
         mobileEmulation = mobileEmulation();
         chromeOptions = chromeOptions(mobileEmulation);
-        desiredCapabilities = desiredCapabilities(withProxy, browserStackLocal, chromeOptions);
+        desiredCapabilities = desiredCapabilities(withProxy, remoteTest, chromeOptions);
 
-        if (browserStackLocal)
+        if (remoteTest)
         {
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
         }

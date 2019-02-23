@@ -20,17 +20,17 @@ public class ChromeDriverManagerWeb extends DriverManager
 
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;
-    private boolean browserStackLocal;
+    private boolean remoteTest;
 
     @Override
     public void createDriver(Boolean withProxy) throws Exception
     {
-        browserStackLocal = Boolean.parseBoolean(prop.getProperty("remote.test"));
+        remoteTest = Boolean.parseBoolean(prop.getProperty("remote.test"));
 
         chromeOptions = chromeOptions();
-        desiredCapabilities = desiredCapabilities(withProxy, browserStackLocal, chromeOptions);
+        desiredCapabilities = desiredCapabilities(withProxy, remoteTest, chromeOptions);
 
-        if (browserStackLocal)
+        if (remoteTest)
         {
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
         }
