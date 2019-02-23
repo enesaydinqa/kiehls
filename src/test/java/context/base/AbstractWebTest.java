@@ -44,7 +44,6 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public void init() throws Exception
     {
         init(false);
-        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
     public void init(Boolean withProxy) throws Exception
@@ -72,6 +71,8 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
         {
             logger.info("Scenarios will not take video");
         }
+
+        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
 

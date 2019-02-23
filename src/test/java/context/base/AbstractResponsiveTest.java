@@ -44,7 +44,6 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
     public void init() throws Exception
     {
         init(false);
-        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
     public void init(Boolean withProxy) throws Exception
@@ -74,6 +73,8 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
         {
             logger.info("Scenarios will not take video");
         }
+
+        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
 
