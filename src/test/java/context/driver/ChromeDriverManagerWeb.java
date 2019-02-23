@@ -74,7 +74,7 @@ public class ChromeDriverManagerWeb extends DriverManager
             logger.info("=================================================================");
         }
 
-        capabilities.setCapability("browserstack.local", browserStackLocal);
+        capabilities.setCapability("browserstack.local", false);
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         return capabilities;

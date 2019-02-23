@@ -4,7 +4,6 @@ import context.driver.DriverManager;
 import context.driver.DriverWebTestFactory;
 import context.properties.SetProperties;
 import context.recorder.VideoRecorder;
-import io.github.bonigarcia.wdm.ChromeDriverManager;
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.proxy.CaptureType;
@@ -54,6 +53,8 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         if (withProxy)
         {
+            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + prop.getProperty("automate.key"));
+
             proxy = new BrowserMobProxyServer();
             proxy.start();
             proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
