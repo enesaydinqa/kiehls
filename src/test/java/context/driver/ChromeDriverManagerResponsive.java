@@ -1,5 +1,6 @@
 package context.driver;
 
+import com.browserstack.local.Local;
 import net.lightbody.bmp.client.ClientUtil;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Dimension;
@@ -63,7 +64,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
     }
 
-    private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions)
+    private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
@@ -74,11 +75,18 @@ public class ChromeDriverManagerResponsive extends DriverManager
         if (withProxy)
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
-            capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
 
             String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
             String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
 
+            if (browserStackLocal)
+            {
+                capabilities.setCapability("browserstack.local", browserStackLocal);
+                browserStackLocalArg(host, port);
+            }
+
+            capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+            
             logger.info("=================================================================");
             logger.info("This Execute Browser Host --> " + host);
             logger.info("This Execute Browser Port --> " + port);
@@ -111,6 +119,21 @@ public class ChromeDriverManagerResponsive extends DriverManager
         mobileEmulation.put("version", "70.0");
 
         return mobileEmulation;
+    }
+
+    private void browserStackLocalArg(String host, String port) throws Exception
+    {
+        HashMap<String, String> browserStackLocalArgs = new HashMap<>();
+
+        Local browserStackLocal = new Local();
+        browserStackLocalArgs.put("key", prop.getProperty("automate.key"));
+        browserStackLocalArgs.put("forcelocal", "true");
+        browserStackLocalArgs.put("forceproxy", "true");
+        browserStackLocalArgs.put("force", "true");
+        browserStackLocalArgs.put("v", "true");
+        browserStackLocalArgs.put("-local-proxy-host", host);
+        browserStackLocalArgs.put("-local-proxy-port", port);
+        browserStackLocal.start(browserStackLocalArgs);
     }
 
 }

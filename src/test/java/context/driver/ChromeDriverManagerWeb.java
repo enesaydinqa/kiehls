@@ -1,5 +1,6 @@
 package context.driver;
 
+import com.browserstack.local.Local;
 import net.lightbody.bmp.client.ClientUtil;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Platform;
@@ -11,6 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
+import java.util.HashMap;
 
 public class ChromeDriverManagerWeb extends DriverManager
 {
@@ -53,7 +55,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         logger.info("=================================================================");
     }
 
-    private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions)
+    private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browser", "Chrome");
@@ -63,10 +65,16 @@ public class ChromeDriverManagerWeb extends DriverManager
         if (withProxy)
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
-            capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
-
             String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
             String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+
+            if (browserStackLocal)
+            {
+                capabilities.setCapability("browserstack.local", browserStackLocal);
+                browserStackLocalArg(host, port);
+            }
+
+            capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
 
             logger.info("=================================================================");
             logger.info("This Execute Browser Host --> " + host);
@@ -74,7 +82,6 @@ public class ChromeDriverManagerWeb extends DriverManager
             logger.info("=================================================================");
         }
 
-        capabilities.setCapability("browserstack.local", false);
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         return capabilities;
@@ -86,6 +93,21 @@ public class ChromeDriverManagerWeb extends DriverManager
         chromeOptions.addArguments("disable-infobars");
 
         return chromeOptions;
+    }
+
+    private void browserStackLocalArg(String host, String port) throws Exception
+    {
+        HashMap<String, String> browserStackLocalArgs = new HashMap<>();
+
+        Local browserStackLocal = new Local();
+        browserStackLocalArgs.put("key", prop.getProperty("automate.key"));
+        browserStackLocalArgs.put("forcelocal", "true");
+        browserStackLocalArgs.put("forceproxy", "true");
+        browserStackLocalArgs.put("force", "true");
+        browserStackLocalArgs.put("v", "true");
+        browserStackLocalArgs.put("-local-proxy-host", host);
+        browserStackLocalArgs.put("-local-proxy-port", port);
+        browserStackLocal.start(browserStackLocalArgs);
     }
 
 }
