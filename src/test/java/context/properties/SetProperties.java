@@ -1,5 +1,8 @@
 package context.properties;
 
+import context.base.AbstractLayoutDesignTest;
+import org.apache.log4j.Logger;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -7,10 +10,22 @@ import java.util.Properties;
 
 public class SetProperties {
 
+    private Logger logger = Logger.getLogger(SetProperties.class);
+
     public void setProperties() throws Exception {
         Properties prop = new Properties();
         OutputStream output = null;
         File filePath = new File("src/test/resources/config.properties");
+
+        logger.info("har.file.path --> " + System.getProperty("user.dir") + "/src/test/resources/");
+        logger.info("galen.report.path --> " + System.getProperty("user.dir") + "/target/GalenLayoutReports/");
+        logger.info("take.a.video --> " + System.getProperties().getProperty("take.a.video"));
+        logger.info("exec.command.by.jenkins --> " + System.getProperties().getProperty("exec.command.by.jenkins"));
+        logger.info("jetty.port --> " + System.getProperties().getProperty("jetty.port"));
+        logger.info("automate.key --> " + System.getProperties().getProperty("automate.key"));
+        logger.info("username --> " + System.getProperties().getProperty("username"));
+        logger.info("browser.type --> " + System.getProperties().getProperty("browser.type"));
+        logger.info("remote.test --> " + System.getProperties().getProperty("remote.test"));
 
         output = new FileOutputStream(filePath.getAbsolutePath());
 
@@ -31,7 +46,7 @@ public class SetProperties {
         prop.setProperty("remote.test", System.getProperties().getProperty("remote.test"));
         prop.setProperty("browserstack.url", "https://" + System.getProperties().getProperty("username") + ":" + System.getProperties().getProperty("automate.key") + "@hub-cloud.browserstack.com/wd/hub");
 
-        prop.store(output, null);
+        prop.store(output, "NYX Costemics Regression Test Configuration");
 
     }
 }
