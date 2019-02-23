@@ -83,7 +83,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
             if (browserStackLocal)
             {
                 capabilities.setCapability("platform", "MAC");
-                capabilities.setCapability("browserName", "chrome");
+                capabilities.setCapability("browser", "Chrome");
+                capabilities.setCapability("os", "OS");
                 capabilities.setCapability("browserstack.local", browserStackLocal);
                 browserStackLocalArg(host, port);
             }
@@ -115,7 +116,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         Map<String, String> mobileEmulation = new HashMap<>();
 
-        mobileEmulation.put("browserName", "iPhone");
         mobileEmulation.put("device", "iPhone 8 Plus");
         mobileEmulation.put("realMobile", "true");
         mobileEmulation.put("version", "70.0");
