@@ -2,6 +2,8 @@ package context.driver;
 
 import net.lightbody.bmp.BrowserMobProxy;
 import org.apache.log4j.PropertyConfigurator;
+import org.junit.Rule;
+import org.junit.rules.TestName;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.util.Properties;
@@ -11,6 +13,9 @@ public abstract class DriverManager {
     protected static RemoteWebDriver driver;
     protected static BrowserMobProxy proxy;
     public static Properties prop;
+
+    @Rule
+    public final TestName testName = new TestName();
 
     protected abstract void createDriver(Boolean withProxy) throws Exception;
 

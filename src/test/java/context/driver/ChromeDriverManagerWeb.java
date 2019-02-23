@@ -50,6 +50,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         }
 
         String session = (driver).getSessionId().toString();
+        logger.info("TEST STARTED ... -> " + testName.getMethodName());
         logger.info("=================================================================");
         logger.info("This Execute Session ID --> " + session);
         logger.info("=================================================================");
