@@ -30,21 +30,21 @@ public class ChromeDriverManagerWeb extends DriverManager
         chromeOptions = chromeOptions();
         desiredCapabilities = desiredCapabilities(withProxy, remoteTest, chromeOptions);
 
+        if (Platform.getCurrent().is(Platform.MAC))
+        {
+            System.setProperty("webdriver.chrome.driver", prop.getProperty("mac.chrome.driver"));
+        }
+        else if (Platform.getCurrent().is(Platform.WINDOWS))
+        {
+            System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
+        }
+
         if (remoteTest)
         {
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
         }
         else
         {
-            if (Platform.getCurrent().is(Platform.MAC))
-            {
-                System.setProperty("webdriver.chrome.driver", prop.getProperty("mac.chrome.driver"));
-            }
-            else if (Platform.getCurrent().is(Platform.WINDOWS))
-            {
-                System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
-            }
-
             driver = new ChromeDriver(desiredCapabilities);
 
         }
