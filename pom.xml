@@ -29,7 +29,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>LAST_VERSION</version>
                 <configuration>
-                    <reportDirectory>${basedir}/target/allure-report</reportDirectory>
+                    <reportDirectory>{basedir}/allure-report</reportDirectory>
                 </configuration>
             </plugin>
 
@@ -181,7 +181,6 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <version>2.10.0</version>
-            <scope>test</scope>
         </dependency>
 
 
