@@ -59,6 +59,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browser", "Chrome");
         capabilities.setCapability("platform", "MAC");
+        capabilities.setCapability("os_version", "High Sierra");
 
         if (withProxy)
         {
