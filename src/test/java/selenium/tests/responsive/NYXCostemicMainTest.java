@@ -9,7 +9,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import selenium.pages.UrlFactory;
-import selenium.pages.mobileWeb.MainPageResponsivePage;
+import selenium.pages.mobileweb.MainPageResponsivePage;
 
 import java.util.List;
 import java.util.stream.IntStream;
