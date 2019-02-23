@@ -52,7 +52,7 @@ public class NYXCostemicMainTest extends AbstractResponsiveTest
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries.forEach(png -> {
-            logger.info("Check Response this url -> " + png.getRequest().getUrl());
+            logger.info("Check Response This Url -> " + png.getRequest().getUrl());
             Assert.assertTrue(
                     "Broken : " + png.getRequest().getUrl(),
                     400 > png.getResponse().getStatus());

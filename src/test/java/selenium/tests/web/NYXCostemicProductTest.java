@@ -43,7 +43,7 @@ public class NYXCostemicProductTest extends AbstractNYXCostemicTest
 
         entries
                 .forEach(png -> {
-                    logger.info("Check Response this url -> " + png.getRequest().getUrl());
+                    logger.info("Check Response This Url -> " + png.getRequest().getUrl());
                     Assert.assertTrue(
                             "Broken : " + png.getRequest().getUrl(),
                             400 > png.getResponse().getStatus());
