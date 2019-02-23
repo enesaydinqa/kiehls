@@ -39,7 +39,6 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
     {
         SetProperties setProp = new SetProperties();
         setProp.setProperties();
-        ChromeDriverManager.setup();
     }
 
     @Before
