@@ -37,7 +37,7 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicTest
 
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png"))
                 .forEach(png -> {
-                    logger.info("Check this Url " + png.getRequest().getUrl());
+                    logger.info("Check Response this url -> " + png.getRequest().getUrl());
                     Assert.assertEquals("This png not load", 200, png.getResponse().getStatus());
                 });
     }

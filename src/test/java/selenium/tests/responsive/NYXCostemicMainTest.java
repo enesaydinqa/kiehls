@@ -38,7 +38,7 @@ public class NYXCostemicMainTest extends AbstractResponsiveTest
 
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png"))
                 .forEach(png -> {
-                    logger.info("[Assert] " + png.getRequest().getUrl());
+                    logger.info("Check Response this url -> " + png.getRequest().getUrl());
                     Assert.assertEquals(200, png.getResponse().getStatus());
                 });
     }
@@ -52,7 +52,7 @@ public class NYXCostemicMainTest extends AbstractResponsiveTest
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries.forEach(png -> {
-            logger.info("[Assert] " + png.getRequest().getUrl());
+            logger.info("Check Response this url -> " + png.getRequest().getUrl());
             Assert.assertTrue(
                     "Broken : " + png.getRequest().getUrl(),
                     400 > png.getResponse().getStatus());
