@@ -5,6 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>LAST_VERSION</version>
+                <configuration>
+                    <reportDirectory>allure-report</reportDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+        <outputDirectory>${basedir}/site</outputDirectory>
+        
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
