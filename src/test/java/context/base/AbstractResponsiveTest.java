@@ -49,8 +49,6 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
         DriverManager driverManager;
         driverManager = DriverResponsiveTestFactory.getManager();
 
-        driver = driverManager.getDriver(withProxy);
-
         if (withProxy)
         {
             Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + System.getProperty("automate.key"));
@@ -61,6 +59,7 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
             proxy.newHar();
         }
 
+        driver = driverManager.getDriver(withProxy);
 
         takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
 

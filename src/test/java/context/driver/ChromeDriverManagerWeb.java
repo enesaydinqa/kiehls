@@ -63,6 +63,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         if (withProxy)
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
+
             String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
             String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
 

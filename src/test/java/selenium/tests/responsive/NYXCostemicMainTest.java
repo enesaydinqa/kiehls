@@ -1,5 +1,6 @@
 package selenium.tests.responsive;
 
+import context.base.AbstractNYXCostemicResponsiveTest;
 import context.base.AbstractResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
@@ -15,7 +16,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Responsive")
-public class NYXCostemicMainTest extends AbstractResponsiveTest
+public class NYXCostemicMainTest extends AbstractNYXCostemicResponsiveTest
 {
     private static Logger logger = Logger.getLogger(NYXCostemicMainTest.class);
 
