@@ -27,27 +27,8 @@ public class VideoRecorder
 
     public static void startRecording(String fileName) throws Exception
     {
-        File theDir = new File(System.getProperty("user.dir") + "/target/Video");
 
-        if (!theDir.exists())
-        {
-            System.out.println("creating directory: " + theDir.getName());
-            boolean result = false;
-
-            try
-            {
-                theDir.mkdir();
-                result = true;
-            }
-            catch (SecurityException se)
-            {
-                //handle it
-            }
-            if (result)
-            {
-                System.out.println("DIR created");
-            }
-        }
+        File file = new File(System.getProperty("user.dir") + "/src/test/resources/TestCasesVideo/");
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;
@@ -69,7 +50,7 @@ public class VideoRecorder
                         KeyFrameIntervalKey, 15 * 60),
                 new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "yellow",
                         FrameRateKey, Rational.valueOf(30)),
-                null, theDir, fileName);
+                null, file, fileName);
 
         screenRecorder.start();
 
