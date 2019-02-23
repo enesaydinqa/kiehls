@@ -44,6 +44,7 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
     public void init() throws Exception
     {
         init(false);
+        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
     public void init(Boolean withProxy) throws Exception

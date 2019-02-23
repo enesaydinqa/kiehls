@@ -44,6 +44,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public void init() throws Exception
     {
         init(false);
+        logger.info("TEST STARTED ... -> " + testName.getMethodName());
     }
 
     public void init(Boolean withProxy) throws Exception
