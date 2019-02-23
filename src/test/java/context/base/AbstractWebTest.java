@@ -72,7 +72,9 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
             logger.info("Scenarios will not take video");
         }
 
+        logger.info("=================================================================");
         logger.info("TEST STARTED ... -> " + testName.getMethodName());
+        logger.info("=================================================================");
     }
 
 

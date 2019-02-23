@@ -74,7 +74,9 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
             logger.info("Scenarios will not take video");
         }
 
+        logger.info("=================================================================");
         logger.info("TEST STARTED ... -> " + testName.getMethodName());
+        logger.info("=================================================================");
     }
 
 
