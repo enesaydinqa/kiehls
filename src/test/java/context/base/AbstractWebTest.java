@@ -79,7 +79,14 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         if (Boolean.parseBoolean(prop.getProperty("take.a.video"))) VideoRecorder.stopRecording();
 
-        if (proxy != null) proxy.stop();
+        try
+        {
+            if (proxy != null) proxy.stop();
+        }
+        catch (IllegalStateException ex)
+        {
+            logger.info("Already Stopped Proxy");
+        }
 
         if (driver != null)
         {

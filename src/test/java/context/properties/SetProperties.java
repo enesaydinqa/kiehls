@@ -1,6 +1,5 @@
 package context.properties;
 
-import context.base.AbstractLayoutDesignTest;
 import org.apache.log4j.Logger;
 
 import java.io.File;
@@ -12,10 +11,9 @@ public class SetProperties {
 
     private Logger logger = Logger.getLogger(SetProperties.class);
 
+    private File filePath = new File("src/test/resources/config.properties");
+
     public void setProperties() throws Exception {
-        Properties prop = new Properties();
-        OutputStream output = null;
-        File filePath = new File("src/test/resources/config.properties");
 
         logger.info("har.file.path --> " + System.getProperty("user.dir") + "/src/test/resources/");
         logger.info("galen.report.path --> " + System.getProperty("user.dir") + "/target/GalenLayoutReports/");
@@ -26,6 +24,9 @@ public class SetProperties {
         logger.info("username --> " + System.getProperties().getProperty("username"));
         logger.info("browser.type --> " + System.getProperties().getProperty("browser.type"));
         logger.info("remote.test --> " + System.getProperties().getProperty("remote.test"));
+
+        Properties prop = new Properties();
+        OutputStream output = null;
 
         output = new FileOutputStream(filePath.getAbsolutePath());
 
