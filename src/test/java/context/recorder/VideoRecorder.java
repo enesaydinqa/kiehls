@@ -28,7 +28,23 @@ public class VideoRecorder
     public static void startRecording(String fileName) throws Exception
     {
 
-        File file = new File(System.getProperty("user.dir") + "/src/test/resources/TestCasesVideo/");
+        File file = new File(System.getProperty("user.dir") + "/src/test/resources/test-case-videos");
+
+        if (!file.exists()) {
+            System.out.println("creating directory: " + file.getName());
+            boolean result = false;
+
+            try{
+                file.mkdir();
+                result = true;
+            }
+            catch(SecurityException se){
+                //handle it
+            }
+            if(result) {
+                System.out.println("DIR created");
+            }
+        }
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int width = screenSize.width;
