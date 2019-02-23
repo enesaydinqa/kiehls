@@ -1224,3 +1224,354 @@ java.nio.channels.ClosedChannelException
 2019-02-23 00:07:13 INFO  ChromeDriverManagerWeb:86 - This Execute Session ID --> 45fedf6519570b64042589f6db857be9
 2019-02-23 00:07:13 INFO  ChromeDriverManagerWeb:87 - =================================================================
 2019-02-23 00:07:13 INFO  AbstractWebTest:65 - Scenarios will not take video
+2019-02-23 13:51:26 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 13:51:27 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 13:51:27 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 13:51:27 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:61650
+2019-02-23 13:51:28 INFO  ChromeDriverManagerWeb:45 - =================================================================
+2019-02-23 13:51:28 INFO  ChromeDriverManagerWeb:46 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 13:51:28 INFO  ChromeDriverManagerWeb:47 - This Execute Browser Port --> 61650
+2019-02-23 13:51:28 INFO  ChromeDriverManagerWeb:48 - =================================================================
+2019-02-23 13:51:29 INFO  ChromeDriverManagerWeb:85 - =================================================================
+2019-02-23 13:51:29 INFO  ChromeDriverManagerWeb:86 - This Execute Session ID --> 8c87e021c0bbfa5b79dbeac821f3374b
+2019-02-23 13:51:29 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-02-23 13:51:29 INFO  AbstractWebTest:65 - Scenarios will not take video
+2019-02-23 13:52:42 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 13:52:42 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 13:52:42 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 13:52:44 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 13:59:52 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 13:59:53 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 13:59:53 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 13:59:54 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62103
+2019-02-23 13:59:54 INFO  ChromeDriverManagerWeb:45 - =================================================================
+2019-02-23 13:59:54 INFO  ChromeDriverManagerWeb:46 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 13:59:54 INFO  ChromeDriverManagerWeb:47 - This Execute Browser Port --> 62103
+2019-02-23 13:59:54 INFO  ChromeDriverManagerWeb:48 - =================================================================
+2019-02-23 13:59:55 INFO  ChromeDriverManagerWeb:85 - =================================================================
+2019-02-23 13:59:55 INFO  ChromeDriverManagerWeb:86 - This Execute Session ID --> a5edb80800e131b8faf4b6a687a65176
+2019-02-23 13:59:55 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-02-23 13:59:55 INFO  AbstractWebTest:70 - Scenarios will not take video
+2019-02-23 13:59:56 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-02-23 13:59:56 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-02-23 13:59:56 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-02-23 13:59:56 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:00:01 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 14:00:02 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:00:02 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:00:02 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62123
+2019-02-23 14:00:03 INFO  ChromeDriverManagerResponsive:59 - =================================================================
+2019-02-23 14:00:03 INFO  ChromeDriverManagerResponsive:60 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:00:03 INFO  ChromeDriverManagerResponsive:61 - This Execute Browser Port --> 62123
+2019-02-23 14:00:03 INFO  ChromeDriverManagerResponsive:62 - =================================================================
+2019-02-23 14:00:04 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-23 14:00:04 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 1fd6c9e07bf72e617f8daa0b9f5e0b44
+2019-02-23 14:00:04 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-23 14:00:04 INFO  AbstractResponsiveTest:72 - Scenarios will not take video
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.gstatic.com/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/dist/jquery.slim.min.js?v=8837ab
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/sw.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/dist/main.lite.bundle.js?v=8837ab
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://storage.googleapis.com/workbox-cdn/releases/3.3.1/workbox-sw.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://storage.googleapis.com/workbox-cdn/releases/3.3.1/workbox-routing.prod.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://storage.googleapis.com/workbox-cdn/releases/3.3.1/workbox-core.prod.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://storage.googleapis.com/workbox-cdn/releases/3.3.1/workbox-strategies.prod.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://storage.googleapis.com/workbox-cdn/releases/3.3.1/workbox-cache-expiration.prod.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://storage.googleapis.com/workbox-cdn/releases/3.3.1/workbox-precaching.prod.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.googletagmanager.com/gtm.js?id=GTM-MVFPT6
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/dist/vendors~swiper.4.lite.bundle.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-down.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-left.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-right.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/closebox.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-up.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/icon_facebook.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/font/17-10/24/helveticaneueltw1g-ltcn-1508867626.woff
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/rightarrow-1469426425-1501594557.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/downarrow-1469426433.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/font/18-10/02/linotype-helveticaneueltw1g-bdcn.woff
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/js-logo.jpg
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/pixel.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/font/17-08/01/helveticaneueltw1g-bdcn.woff
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/analytics.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/24/yeni-buyuk.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/slider_mobile/19-02/21/640_360.jpg
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/dist/app.lite.css
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/dist/bundle.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/dist/bundle.lite.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/24/indirim-buyuk.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/plugins/ua/linkid.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-11/29/nyx_mobile_search-1-copy.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/28/logo-1503932630.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/plugins/ua/ec.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-06/04/loading-small-1528122118.gif
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/collect?v=1&_v=j73&a=1952400471&t=pageview&_s=1&dl=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&ul=en-us&de=UTF-8&dt=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&sd=24-bit&sr=1440x900&vp=414x657&je=0&_u=aGBAgEAr~&jid=448503077&gjid=1375426174&cid=731981233.1550919612&uid=0&tid=UA-74706219-2&_gid=1947501427.1550919612&gtm=2wg241MVFPT6&cg1=homepage&cd1=NYX&cd2=tr&cd3=tr&cd4=main&cd5=homepage&cd6=&cd8=0&cd9=not%20logged&cd10=&cd11=0&cd12=0&cd18=0&z=474293541
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/collect?v=1&_v=j73&a=1952400471&t=pageview&_s=1&dl=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&ul=en-us&de=UTF-8&dt=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&sd=24-bit&sr=1440x900&vp=414x657&je=0&_u=aGDAgEAr~&jid=925011394&gjid=1387541444&cid=731981233.1550919612&uid=0&tid=UA-74428248-1&_gid=1947501427.1550919612&gtm=2wg241MVFPT6&cg1=homepage&cd1=NYX&cd2=tr&cd3=tr&cd4=main&cd5=homepage&cd6=&cd8=0&cd9=not%20logged&cd10=&cd11=0&cd12=0&cd18=0&z=317100390
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-09/07/menu.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/r/collect?v=1&_v=j73&a=1952400471&t=event&ni=1&_s=1&dl=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&ul=en-us&de=UTF-8&dt=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&sd=24-bit&sr=1440x900&vp=414x657&je=0&ec=Ecommerce&ea=Product%20Impressions&_u=aGDACEArB~&jid=630319363&gjid=2067117136&cid=731981233.1550919612&uid=0&tid=UA-74706219-2&_gid=1947501427.1550919612&_r=1&gtm=2wg241MVFPT6&cg1=homepage&cd1=NYX&cd2=tr&cd3=tr&cd4=main&cd5=homepage&cd6=&cd8=0&cd9=not%20logged&cd10=&cd11=0&cd12=0&cd18=0&il1nm=EN%20YEN%C4%B0LER&il1pi1br=NYX&il1pi1ca=FOND%C3%96TEN&il1pi1cd36=18%20-%20DEEP%20SABLE&il1pi1cd37=&il1pi1cd38=5&il1pi1cd39=in%20stock&il1pi1cd40=&il1pi1id=16270&il1pi1nm=CAN%27T%20STOP%20WON%27T%20STOP%20FULL%20COVERAGE%20FOUNDATION&il1pi1pr=79.99&il1pi1va=K2916900&il1pi1cd41=&il1pi1ps=1&z=840697958
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google-analytics.com/collect?v=1&_v=j73&a=1952400471&t=event&ni=1&_s=2&dl=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&ul=en-us&de=UTF-8&dt=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&sd=24-bit&sr=1440x900&vp=414x657&je=0&ec=Ecommerce&ea=Product%20Impressions&_u=aGDAiEArB~&jid=&gjid=&cid=731981233.1550919612&uid=0&tid=UA-74428248-1&_gid=1947501427.1550919612&gtm=2wg241MVFPT6&cg1=homepage&cd1=NYX&cd2=tr&cd3=tr&cd4=main&cd5=homepage&cd6=&cd8=0&cd9=not%20logged&cd10=&cd11=0&cd12=0&cd18=0&il1nm=EN%20YEN%C4%B0LER&il1pi1br=NYX&il1pi1ca=FOND%C3%96TEN&il1pi1cd36=18%20-%20DEEP%20SABLE&il1pi1cd37=&il1pi1cd38=5&il1pi1cd39=in%20stock&il1pi1cd40=&il1pi1id=16270&il1pi1nm=CAN%27T%20STOP%20WON%27T%20STOP%20FULL%20COVERAGE%20FOUNDATION&il1pi1pr=79.99&il1pi1va=K2916900&il1pi1cd41=&il1pi1ps=1&z=2104290297
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/28/cart-1503933186.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-09/04/arrow-left.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-09/04/arrow-right.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/25/off.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/uparrows-1469426430-1501594559.png
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://mnj4pext.rocketcdn.com/cache/480/480/loreal/loreal_nyx/product_images/CSWSF-Main-1000x1000.jpg?1550884972
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://mnj4pext.rocketcdn.com/cache/480/480/loreal/loreal_nyx/product_images/CSWSMP01-Main-1000x1000.jpg?1550884990
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://static.hotjar.com/c/hotjar-329704.js?sv=5
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j73&tid=UA-74706219-2&cid=731981233.1550919612&jid=448503077&gjid=1375426174&_gid=1947501427.1550919612&_u=aGBAgEAr~&z=130531481
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j73&tid=UA-74428248-1&cid=731981233.1550919612&jid=925011394&gjid=1387541444&_gid=1947501427.1550919612&_u=aGDAgEAr~&z=1995942438
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.googleadservices.com/pagead/conversion_async.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://mnj4pext.rocketcdn.com/cache/480/480/loreal/loreal_nyx/product_images/CSWSSP06-Alt2-1000x1000.jpg?1550885008
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-74706219-2&cid=731981233.1550919612&jid=630319363&uid=0&_gid=1947501427.1550919612&gjid=2067117136&_v=j73&z=840697958
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://6350632.fls.doubleclick.net/activityi;src=6350632;type=remar0;cat=nyx_t0;ord=7018425950318;gtm=2wg241;auiddc=1854810716.1550919609;u1=homepage;u2=undefined;u3=undefined;u4=undefined;u5=undefined;u6=undefined;u7=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F;~oref=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F?
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://nyxcosmeticstr.api.useinsider.com/ins.js?id=10001681
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://googleads.g.doubleclick.net/pagead/viewthroughconversion/874338602/?random=1550919613820&cv=9&fst=1550919613820&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=376635470&u_h=900&u_w=1440&u_ah=848&u_aw=1440&u_cd=24&u_his=2&u_tz=180&u_java=false&u_nplug=3&u_nmime=4&gtm=2wg241&sendb=1&data=ecomm_pagetype%3Dhomepage&frm=0&url=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&tiba=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&async=1&rfmt=3&fmt=4
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://adservice.google.com/ddm/fls/i/src=6350632;type=remar0;cat=nyx_t0;ord=7018425950318;gtm=2wg241;auiddc=1854810716.1550919609;u1=homepage;u2=undefined;u3=undefined;u4=undefined;u5=undefined;u6=undefined;u7=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F;_dc_1=1;~oref=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google.com.tr/pagead/1p-user-list/874338602/?random=1550919613820&cv=9&fst=1550919600000&num=1&guid=ON&eid=376635470&u_h=900&u_w=1440&u_ah=848&u_aw=1440&u_cd=24&u_his=2&u_tz=180&u_java=false&u_nplug=3&u_nmime=4&gtm=2wg241&sendb=1&data=ecomm_pagetype%3Dhomepage&frm=0&url=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&tiba=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&async=1&fmt=3&cdct=2&is_vtc=1&random=393144088&resp=GooglemKTybQhCsO&rmt_tld=1&ipr=y
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-74706219-2&cid=731981233.1550919612&jid=630319363&_v=j73&z=840697958
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google.com/pagead/1p-user-list/874338602/?random=1550919613820&cv=9&fst=1550919600000&num=1&guid=ON&eid=376635470&u_h=900&u_w=1440&u_ah=848&u_aw=1440&u_cd=24&u_his=2&u_tz=180&u_java=false&u_nplug=3&u_nmime=4&gtm=2wg241&sendb=1&data=ecomm_pagetype%3Dhomepage&frm=0&url=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F&tiba=NYX%20Cosmetics%20T%C3%BCrkiye%20%7C%20Profesyonel%20Makyaj%20Ve%20G%C3%BCzellik&async=1&fmt=3&cdct=2&is_vtc=1&random=393144088&resp=GooglemKTybQhCsO&rmt_tld=0&ipr=y
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google.com.tr/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-74706219-2&cid=731981233.1550919612&jid=630319363&_v=j73&z=840697958&slf_rd=1&random=3116061357
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://adservice.google.com.tr/ddm/fls/i/src=6350632;type=remar0;cat=nyx_t0;ord=7018425950318;gtm=2wg241;auiddc=1854810716.1550919609;u1=homepage;u2=undefined;u3=undefined;u4=undefined;u5=undefined;u6=undefined;u7=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F;_dc_1=3;~oref=https%3A%2F%2Fwww.nyxcosmetics.com.tr%2F
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-74706219-2&cid=731981233.1550919612&jid=448503077&_v=j73&z=130531481
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.google.com.tr/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-74706219-2&cid=731981233.1550919612&jid=448503077&_v=j73&z=130531481&slf_rd=1&random=2909943077
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://api.useinsider.com/js/squery.min.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://nyxcosmeticstr.api.useinsider.com/worker.html?new=true
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://nyxcosmeticstr.api.useinsider.com/css/sp-style.css?v=0.1
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://script.hotjar.com/modules-42fc1c61396d5af5bbfea65c1daa92cf.js
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://vars.hotjar.com/box-d831eecf6f5411af024c3acd759add17.html
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://location.api.useinsider.com/?pId=10001681&callback=parseLocationData&_=1550919616400
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://nyxcosmeticstr.api.useinsider.com/views/push/js/sdk/insider-push-native-sdk.js?_=1550919616765
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://static.api.useinsider.com/css/web-push-popup.css?v=1.0
+2019-02-23 14:00:17 INFO  NYXCostemicMainTest:55 - [Assert] https://www.nyxcosmetics.com.tr/api/getOfflinePages?platform=iphone&is_mobile_web=1&offline_force_update=1
+2019-02-23 14:00:17 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:00:17 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:00:17 INFO  ProxyToServerConnection:791 - (CONNECTING) [id: 0x3524f985]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-02-23 14:00:17 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:00:19 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:00:19 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 14:00:19 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:00:19 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:00:19 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62247
+2019-02-23 14:00:19 INFO  ChromeDriverManagerResponsive:59 - =================================================================
+2019-02-23 14:00:19 INFO  ChromeDriverManagerResponsive:60 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:00:19 INFO  ChromeDriverManagerResponsive:61 - This Execute Browser Port --> 62247
+2019-02-23 14:00:19 INFO  ChromeDriverManagerResponsive:62 - =================================================================
+2019-02-23 14:00:20 INFO  ChromeDriverManagerResponsive:99 - =================================================================
+2019-02-23 14:00:20 INFO  ChromeDriverManagerResponsive:100 - This Execute Session ID --> 7c3cbddfdba12c32b12b93a13fdf1303
+2019-02-23 14:00:20 INFO  ChromeDriverManagerResponsive:101 - =================================================================
+2019-02-23 14:00:20 INFO  AbstractResponsiveTest:72 - Scenarios will not take video
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/28/logo-1503932630.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-09/07/menu.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/28/cart-1503933186.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-09/04/arrow-left.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/18-09/04/arrow-right.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/25/off.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/downarrow-1469426433.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/uparrows-1469426430-1501594559.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-08/01/rightarrow-1469426425-1501594557.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-11/29/nyx_mobile_search-1-copy.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/24/indirim-buyuk.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://epmajuiy.rocketcdn.com/nyx/img/content/17-10/24/yeni-buyuk.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-down.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-left.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-right.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/angle-up.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/closebox.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/icon_facebook.png
+2019-02-23 14:00:27 INFO  NYXCostemicMainTest:41 - [Assert] https://www.nyxcosmetics.com.tr/assets/mobileweb/assets/img/pixel.png
+2019-02-23 14:00:27 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:00:27 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:00:27 INFO  ProxyToServerConnection:791 - (CONNECTING) [id: 0x5b7d3b09]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-02-23 14:00:27 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:00:29 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:04:38 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:04:39 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:04:39 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:04:39 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62462
+2019-02-23 14:04:39 INFO  ChromeDriverManagerWeb:45 - =================================================================
+2019-02-23 14:04:39 INFO  ChromeDriverManagerWeb:46 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:04:39 INFO  ChromeDriverManagerWeb:47 - This Execute Browser Port --> 62462
+2019-02-23 14:04:39 INFO  ChromeDriverManagerWeb:48 - =================================================================
+2019-02-23 14:04:39 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:04:39 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:04:39 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:04:42 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:08:31 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:08:32 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:08:32 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:08:32 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62567
+2019-02-23 14:08:33 INFO  ChromeDriverManagerWeb:45 - =================================================================
+2019-02-23 14:08:33 INFO  ChromeDriverManagerWeb:46 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:08:33 INFO  ChromeDriverManagerWeb:47 - This Execute Browser Port --> 62567
+2019-02-23 14:08:33 INFO  ChromeDriverManagerWeb:48 - =================================================================
+2019-02-23 14:08:33 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:08:33 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:08:33 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:08:35 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:10:15 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:10:16 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:10:16 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:10:16 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62587
+2019-02-23 14:10:17 INFO  ChromeDriverManagerWeb:45 - =================================================================
+2019-02-23 14:10:17 INFO  ChromeDriverManagerWeb:46 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:10:17 INFO  ChromeDriverManagerWeb:47 - This Execute Browser Port --> 62587
+2019-02-23 14:10:17 INFO  ChromeDriverManagerWeb:48 - =================================================================
+2019-02-23 14:10:21 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:10:21 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:10:21 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:10:23 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:13:40 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:13:41 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:13:41 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:13:41 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62648
+2019-02-23 14:13:41 INFO  ChromeDriverManagerWeb:41 - =================================================================
+2019-02-23 14:13:41 INFO  ChromeDriverManagerWeb:42 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:13:41 INFO  ChromeDriverManagerWeb:43 - This Execute Browser Port --> 62648
+2019-02-23 14:13:41 INFO  ChromeDriverManagerWeb:44 - =================================================================
+2019-02-23 14:13:47 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:13:47 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:13:47 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:13:50 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:23:05 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:23:51 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:24:09 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:25:02 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:25:15 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:25:41 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:25:42 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:25:42 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:25:42 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62820
+2019-02-23 14:25:43 INFO  ChromeDriverManagerWeb:67 - =================================================================
+2019-02-23 14:25:43 INFO  ChromeDriverManagerWeb:68 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:25:43 INFO  ChromeDriverManagerWeb:69 - This Execute Browser Port --> 62820
+2019-02-23 14:25:43 INFO  ChromeDriverManagerWeb:70 - =================================================================
+2019-02-23 14:25:48 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:25:48 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:25:48 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:25:50 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:34:17 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 14:34:18 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:34:18 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:34:18 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62893
+2019-02-23 14:34:18 INFO  ChromeDriverManagerResponsive:83 - =================================================================
+2019-02-23 14:34:18 INFO  ChromeDriverManagerResponsive:84 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:34:18 INFO  ChromeDriverManagerResponsive:85 - This Execute Browser Port --> 62893
+2019-02-23 14:34:18 INFO  ChromeDriverManagerResponsive:86 - =================================================================
+2019-02-23 14:34:22 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:34:22 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:34:22 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:34:24 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:45:49 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:45:53 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 14:45:54 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:45:54 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:45:54 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63036
+2019-02-23 14:45:54 INFO  ChromeDriverManagerResponsive:82 - =================================================================
+2019-02-23 14:45:54 INFO  ChromeDriverManagerResponsive:83 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:45:54 INFO  ChromeDriverManagerResponsive:84 - This Execute Browser Port --> 63036
+2019-02-23 14:45:54 INFO  ChromeDriverManagerResponsive:85 - =================================================================
+2019-02-23 14:45:55 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:45:55 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:45:55 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:45:57 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:45:57 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 14:45:57 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:45:57 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:45:57 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63038
+2019-02-23 14:45:57 INFO  ChromeDriverManagerResponsive:82 - =================================================================
+2019-02-23 14:45:57 INFO  ChromeDriverManagerResponsive:83 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:45:57 INFO  ChromeDriverManagerResponsive:84 - This Execute Browser Port --> 63038
+2019-02-23 14:45:57 INFO  ChromeDriverManagerResponsive:85 - =================================================================
+2019-02-23 14:45:58 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:45:58 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:45:58 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:01 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:01 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-02-23 14:46:02 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:02 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:02 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:02 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63041
+2019-02-23 14:46:02 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:02 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:02 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63041
+2019-02-23 14:46:02 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:02 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:02 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:02 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:05 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:05 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:05 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:05 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:05 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63043
+2019-02-23 14:46:05 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:05 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:05 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63043
+2019-02-23 14:46:05 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:06 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:06 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:06 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:08 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:08 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:08 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:08 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:08 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63045
+2019-02-23 14:46:08 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:08 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:08 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63045
+2019-02-23 14:46:08 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:09 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:09 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:09 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:11 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:11 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:11 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:11 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:11 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63047
+2019-02-23 14:46:11 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:11 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:11 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63047
+2019-02-23 14:46:11 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:12 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:12 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:12 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:14 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:14 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:14 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:14 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:14 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63049
+2019-02-23 14:46:14 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:14 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:14 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63049
+2019-02-23 14:46:14 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:15 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:15 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:15 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:17 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:17 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:17 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:17 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:17 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63051
+2019-02-23 14:46:17 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:17 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:17 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63051
+2019-02-23 14:46:17 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:18 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:18 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:18 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:21 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-02-23 14:46:21 INFO  DriverWebTestFactory:16 - BrowserType (DriverWebTestFactory) : chrome
+2019-02-23 14:46:21 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-02-23 14:46:21 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-02-23 14:46:21 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63053
+2019-02-23 14:46:21 INFO  ChromeDriverManagerWeb:71 - =================================================================
+2019-02-23 14:46:21 INFO  ChromeDriverManagerWeb:72 - This Execute Browser Host --> enesaydins-MacBook-Pro.local
+2019-02-23 14:46:21 INFO  ChromeDriverManagerWeb:73 - This Execute Browser Port --> 63053
+2019-02-23 14:46:21 INFO  ChromeDriverManagerWeb:74 - =================================================================
+2019-02-23 14:46:23 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-02-23 14:46:23 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-02-23 14:46:23 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-02-23 14:46:25 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server

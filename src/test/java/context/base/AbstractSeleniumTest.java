@@ -1,7 +1,6 @@
 package context.base;
 
 import context.driver.DriverManager;
-import selenium.pages.UrlFactory;
 import context.helper.JSHelper;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import selenium.pages.UrlFactory;
 
 import java.io.File;
 import java.util.ArrayList;

@@ -1,7 +1,6 @@
 package selenium.tests.responsive;
 
 import context.base.AbstractResponsiveTest;
-import selenium.pages.UrlFactory;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -9,6 +8,7 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
+import selenium.pages.UrlFactory;
 import selenium.pages.mobileWeb.MainPageResponsivePage;
 
 import java.util.List;

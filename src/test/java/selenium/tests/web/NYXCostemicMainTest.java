@@ -1,13 +1,13 @@
 package selenium.tests.web;
 
 import context.base.AbstractNYXCostemicTest;
-import selenium.pages.UrlFactory;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
+import selenium.pages.UrlFactory;
 import selenium.pages.web.MainPageWebPage;
 
 import java.util.List;

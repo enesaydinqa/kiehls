@@ -154,6 +154,14 @@
             <version>3.7.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.takari.junit/takari-cpsuite -->
+        <dependency>
+            <groupId>io.takari.junit</groupId>
+            <artifactId>takari-cpsuite</artifactId>
+            <version>1.2.7</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>com.galenframework</groupId>
             <artifactId>galen-java-support</artifactId>

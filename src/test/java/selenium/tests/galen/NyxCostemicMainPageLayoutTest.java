@@ -2,9 +2,9 @@ package selenium.tests.galen;
 
 
 import context.base.AbstractWebTest;
-import selenium.pages.UrlFactory;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
+import selenium.pages.UrlFactory;
 import selenium.tests.galen.path.SpecFilePath;
 
 import java.io.IOException;

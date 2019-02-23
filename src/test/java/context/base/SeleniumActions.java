@@ -1,7 +1,7 @@
 package context.base;
 
-import selenium.pages.UrlFactory;
 import org.openqa.selenium.WebElement;
+import selenium.pages.UrlFactory;
 
 import java.util.List;
 
