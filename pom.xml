@@ -29,7 +29,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>LAST_VERSION</version>
                 <configuration>
-                    <reportDirectory>allure-report</reportDirectory>
+                    <reportDirectory>${basedir}/target/allure-report</reportDirectory>
                 </configuration>
             </plugin>
 
