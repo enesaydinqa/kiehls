@@ -49,5 +49,7 @@ public class SetProperties {
 
         prop.store(output, "NYX Costemics Regression Test Configuration");
 
+
+        System.setProperty("allure.results.directory", System.getProperty("user.dir") + "/target");
     }
 }
