@@ -16,7 +16,6 @@ import org.junit.rules.TestName;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Properties;
 
 public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
 {

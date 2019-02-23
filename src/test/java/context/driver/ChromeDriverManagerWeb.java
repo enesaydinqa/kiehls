@@ -58,8 +58,7 @@ public class ChromeDriverManagerWeb extends DriverManager
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browser", "Chrome");
-        capabilities.setCapability("os", "Windows");
-        capabilities.setCapability("os_version", "10");
+        capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {
@@ -69,9 +68,6 @@ public class ChromeDriverManagerWeb extends DriverManager
 
             if (browserStackLocal)
             {
-                capabilities.setCapability("platform", "MAC");
-                capabilities.setCapability("browser", "Chrome");
-                capabilities.setCapability("os", "OS");
                 capabilities.setCapability("browserstack.local", browserStackLocal);
                 browserStackLocalArg(host, port);
             }

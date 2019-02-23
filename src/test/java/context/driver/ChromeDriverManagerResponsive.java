@@ -71,7 +71,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-
+        capabilities.setCapability("browser", "Chrome");
+        capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {
@@ -82,9 +83,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             if (browserStackLocal)
             {
-                capabilities.setCapability("platform", "MAC");
-                capabilities.setCapability("browser", "Chrome");
-                capabilities.setCapability("os", "OS");
                 capabilities.setCapability("browserstack.local", browserStackLocal);
                 browserStackLocalArg(host, port);
             }
