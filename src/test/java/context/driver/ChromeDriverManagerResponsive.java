@@ -82,13 +82,14 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             if (browserStackLocal)
             {
-                capabilities.setCapability("browserstack.console", "info");
+                capabilities.setCapability("platform", "MAC");
+                capabilities.setCapability("browserName", "chrome");
                 capabilities.setCapability("browserstack.local", browserStackLocal);
                 browserStackLocalArg(host, port);
             }
 
             capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
-            
+
             logger.info("=================================================================");
             logger.info("This Execute Browser Host --> " + host);
             logger.info("This Execute Browser Port --> " + port);
