@@ -93,7 +93,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
             logger.info("=================================================================");
         }
 
-        capabilities.setCapability("browserstack.local", false);
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         return capabilities;
