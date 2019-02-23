@@ -98,7 +98,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         HashMap<String, String> browserStackLocalArgs = new HashMap<>();
 
         Local browserStackLocal = new Local();
-        browserStackLocalArgs.put("key", prop.getProperty("automate.key"));
+        browserStackLocalArgs.put("key", System.getProperty("automate.key"));
         browserStackLocalArgs.put("forcelocal", "true");
         browserStackLocalArgs.put("forceproxy", "true");
         browserStackLocalArgs.put("force", "true");
