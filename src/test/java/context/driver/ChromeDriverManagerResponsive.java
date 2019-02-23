@@ -45,7 +45,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         {
             System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
         }
-        
+
         if (remoteTest)
         {
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);

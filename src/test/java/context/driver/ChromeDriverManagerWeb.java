@@ -46,7 +46,6 @@ public class ChromeDriverManagerWeb extends DriverManager
         else
         {
             driver = new ChromeDriver(desiredCapabilities);
-
         }
 
         String session = (driver).getSessionId().toString();
