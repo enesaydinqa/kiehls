@@ -4,6 +4,7 @@ import context.driver.DriverManager;
 import context.driver.DriverWebTestFactory;
 import context.properties.SetProperties;
 import context.recorder.VideoRecorder;
+import io.github.bonigarcia.wdm.ChromeDriverManager;
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.proxy.CaptureType;
@@ -38,6 +39,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     {
         SetProperties setProp = new SetProperties();
         setProp.setProperties();
+        ChromeDriverManager.setup();
     }
 
     @Before
