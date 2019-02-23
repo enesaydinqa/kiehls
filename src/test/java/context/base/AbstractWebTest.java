@@ -51,7 +51,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         if (withProxy)
         {
-            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + prop.getProperty("automate.key"));
+            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + System.getProperty("automate.key"));
 
             proxy = new BrowserMobProxyServer();
             proxy.start();
