@@ -20,7 +20,7 @@ public class SetProperties {
         logger.info("take.a.video --> " + System.getProperties().getProperty("take.a.video"));
         logger.info("exec.command.by.jenkins --> " + System.getProperties().getProperty("exec.command.by.jenkins"));
         logger.info("jetty.port --> " + System.getProperties().getProperty("jetty.port"));
-        logger.info("automate.key --> " + System.getProperties().getProperty("access.key"));
+        logger.info("access.key --> " + System.getProperties().getProperty("access.key"));
         logger.info("username --> " + System.getProperties().getProperty("username"));
         logger.info("browser.type --> " + System.getProperties().getProperty("browser.type"));
         logger.info("remote.test --> " + System.getProperties().getProperty("remote.test"));
