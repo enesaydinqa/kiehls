@@ -6,11 +6,11 @@ public enum SpecFilePath
     WEB_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/web/"),
     RESPONSIVE_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/mobile/"),
 
-    MAIN_PAGE_WEB(WEB_DIRECTORY, "NyxCostemicMainPage.spec"),
+    HOME_PAGE_WEB(WEB_DIRECTORY, "NYXCosmeticsMainPage.spec"),
 
 
 
-    MAIN_PAGE_RESPONSIVE(RESPONSIVE_DIRECTORY, "ResponsiveNyxCostemicsMainPage.spec");
+    HOME_PAGE_RESPONSIVE(RESPONSIVE_DIRECTORY, "ResponsiveNYXCosmeticsMainPage.spec");
 
 
     //-----

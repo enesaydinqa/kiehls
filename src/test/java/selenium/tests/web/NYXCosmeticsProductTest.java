@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Product Page - Web")
-public class NYXCostemicProductTest extends AbstractNYXCostemicTest
+public class NYXCosmeticsProductTest extends AbstractNYXCostemicTest
 {
-    private static Logger logger = Logger.getLogger(NYXCostemicProductTest.class);
+    private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);
 
     private MainPageWebPage mainPage;
     private ProductDetailPage productDetailPage;

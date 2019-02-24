@@ -13,9 +13,9 @@ import selenium.pages.mobile.MainPageResponsivePage;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Product Page - Responsive")
-public class NYXCostemicProductTest extends AbstractResponsiveTest
+public class NYXCosmeticsProductTest extends AbstractResponsiveTest
 {
-    private static Logger logger = Logger.getLogger(NYXCostemicProductTest.class);
+    private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);
 
     private MainPageResponsivePage mainPage;
 

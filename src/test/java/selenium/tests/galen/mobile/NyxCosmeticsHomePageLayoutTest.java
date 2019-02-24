@@ -10,7 +10,7 @@ import selenium.tests.galen.path.SpecFilePath;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class NyxCostemicsMainPageLayoutTest extends AbstractResponsiveTest
+public class NyxCosmeticsHomePageLayoutTest extends AbstractResponsiveTest
 {
     @Test
     @DisplayName("The Main Page Layout Design")
@@ -19,6 +19,6 @@ public class NyxCostemicsMainPageLayoutTest extends AbstractResponsiveTest
         navigateToURL(UrlFactory.MAIN_URL);
         wait(5);
         pageLongDownScroll();
-        checkLayoutDesign(SpecFilePath.MAIN_PAGE_RESPONSIVE.getFilePath(), Arrays.asList(PlatformName.MOBILE.platformName), this.getClass().getSimpleName());
+        checkLayoutDesign(SpecFilePath.HOME_PAGE_RESPONSIVE.getFilePath(), Arrays.asList(PlatformName.MOBILE.platformName), this.getClass().getSimpleName());
     }
 }
