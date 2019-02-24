@@ -4,8 +4,13 @@ public enum SpecFilePath
 {
 
     WEB_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/web/"),
+    RESPONSIVE_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/mobile/"),
 
-    MAIN_PAGE(WEB_DIRECTORY, "NyxCostemicMainPage.spec");
+    MAIN_PAGE_WEB(WEB_DIRECTORY, "NyxCostemicMainPage.spec"),
+
+
+
+    MAIN_PAGE_RESPONSIVE(RESPONSIVE_DIRECTORY, "ResponsiveNyxCostemicsMainPage.spec");
 
 
     //-----

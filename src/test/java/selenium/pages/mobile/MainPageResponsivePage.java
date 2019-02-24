@@ -1,4 +1,4 @@
-package selenium.pages.mobileweb;
+package selenium.pages.mobile;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

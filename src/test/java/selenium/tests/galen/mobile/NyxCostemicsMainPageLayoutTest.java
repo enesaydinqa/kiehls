@@ -1,4 +1,4 @@
-package selenium.tests.galen.mobileweb;
+package selenium.tests.galen.mobile;
 
 
 import context.base.AbstractResponsiveTest;
@@ -10,7 +10,7 @@ import selenium.tests.galen.path.SpecFilePath;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class NyxCostemicMainPageLayoutTest extends AbstractResponsiveTest
+public class NyxCostemicsMainPageLayoutTest extends AbstractResponsiveTest
 {
     @Test
     @DisplayName("The Main Page Layout Design")
@@ -18,13 +18,7 @@ public class NyxCostemicMainPageLayoutTest extends AbstractResponsiveTest
     {
         navigateToURL(UrlFactory.MAIN_URL);
         wait(5);
-
-        for (int s = 100; s <= 1700; s += 100)
-        {
-            wait(1);
-            pageScroll(0, s);
-        }
-
-        checkLayoutDesign(SpecFilePath.MAIN_PAGE.getFilePath(), Arrays.asList(PlatformName.DESKTOP.platformName), this.getClass().getSimpleName());
+        pageLongDownScroll();
+        checkLayoutDesign(SpecFilePath.MAIN_PAGE_RESPONSIVE.getFilePath(), Arrays.asList(PlatformName.MOBILE.platformName), this.getClass().getSimpleName());
     }
 }

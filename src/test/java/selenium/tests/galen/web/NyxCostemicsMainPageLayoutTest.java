@@ -12,7 +12,7 @@ import selenium.tests.galen.path.SpecFilePath;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class NyxCostemicMainPageLayoutTest extends AbstractWebTest
+public class NyxCostemicsMainPageLayoutTest extends AbstractWebTest
 {
 
     @Before
@@ -29,6 +29,6 @@ public class NyxCostemicMainPageLayoutTest extends AbstractWebTest
         navigateToURL(UrlFactory.MAIN_URL);
         wait(5);
         pageLongDownScroll();
-        checkLayoutDesign(SpecFilePath.MAIN_PAGE.getFilePath(), Arrays.asList(PlatformName.DESKTOP.platformName), this.getClass().getSimpleName());
+        checkLayoutDesign(SpecFilePath.MAIN_PAGE_WEB.getFilePath(), Arrays.asList(PlatformName.DESKTOP.platformName), this.getClass().getSimpleName());
     }
 }

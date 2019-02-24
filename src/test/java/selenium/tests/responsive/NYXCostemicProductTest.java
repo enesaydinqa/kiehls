@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import selenium.pages.UrlFactory;
-import selenium.pages.mobileweb.MainPageResponsivePage;
+import selenium.pages.mobile.MainPageResponsivePage;
 
 import java.util.stream.IntStream;
 
