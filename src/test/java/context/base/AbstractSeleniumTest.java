@@ -400,4 +400,14 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
         }
 
     }
+
+    @Override
+    public void pageLongDownScroll()
+    {
+        for (int s = 100; s <= 1700; s += 100)
+        {
+            wait(1);
+            pageScroll(0, s);
+        }
+    }
 }

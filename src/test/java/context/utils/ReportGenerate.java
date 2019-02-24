@@ -18,7 +18,7 @@ public class ReportGenerate extends TestWatcher
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName(), "Test failed, click here for further details");
 
-        test.log(LogStatus.FAIL, "Failure trace Selenium : " + session + " - " + e.toString());
+        test.log(LogStatus.FAIL,  session +  " -- Failure trace Selenium : "  + e.toString());
         flushReports(extent, test);
     }
 

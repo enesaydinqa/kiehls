@@ -32,12 +32,14 @@ public class NYXCostemicProductTest extends AbstractNYXCostemicTest
 
     @Test
     @DisplayName("Product Detail")
-    public void testProductDetail()
+    public void testProductDetail() throws InterruptedException
     {
         navigateToURL(UrlFactory.MAIN_URL);
-        waitElementToBeClickable(mainPage.getMainPageAllProduct().get(1));
-        scrollToElement(mainPage.getMainPageAllProduct().get(1));
-        click(mainPage.getMainPageAllProduct().get(1));
+        pageLongDownScroll();
+        scrollToElement(mainPage.getMainPageAllProduct().get(15));
+        waitElementToBeClickable(mainPage.getMainPageAllProduct().get(15));
+        click(mainPage.getMainPageAllProduct().get(15));
+        wait(10);
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
@@ -55,7 +57,7 @@ public class NYXCostemicProductTest extends AbstractNYXCostemicTest
     public void testProductDescriptionLength()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-        IntStream.range(4, 7)
+        IntStream.range(10, 15)
                 .forEach(i ->
                 {
                     scrollToElement(mainPage.getMainPageAllProduct().get(i));
@@ -68,6 +70,4 @@ public class NYXCostemicProductTest extends AbstractNYXCostemicTest
                     driver.navigate().back();
                 });
     }
-
-
 }

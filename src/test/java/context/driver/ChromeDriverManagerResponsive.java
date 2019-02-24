@@ -74,7 +74,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
         //capabilities.setCapability("browser", "Chrome");
-        //capabilities.setCapability("platform", "MAC");
+        capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {

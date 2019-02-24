@@ -95,4 +95,6 @@ public interface SeleniumActions
     void clickViaJs(WebElement element);
 
     void createFolder(String folderPathName);
+
+    void pageLongDownScroll();
 }

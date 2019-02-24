@@ -1,6 +1,7 @@
 package selenium.tests.web;
 
 import context.base.AbstractNYXCostemicTest;
+import context.base.Description;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -28,26 +29,26 @@ public class NYXCostemicsHomeTest extends AbstractNYXCostemicTest
     }
 
     @Test
-    @DisplayName("Main Page Load PNG")
+    @Description("Anasayfa daki png lerin larının 200 (ok) olduğunun kontrolü")
     public void testHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-
+        pageLongDownScroll();
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
-        entries.stream().filter(link -> link.getRequest().getUrl().contains(".png"))
+        entries.stream().filter(link -> link.getRequest().getUrl().contains(".png") | link.getRequest().getUrl().contains(".jpg"))
                 .forEach(png -> {
                     logger.info("Check Response This Url -> " + png.getRequest().getUrl());
-                    Assert.assertEquals("This png not load", 200, png.getResponse().getStatus());
+                    Assert.assertEquals("This image not load " + png.getRequest().getUrl(), 200, png.getResponse().getStatus());
                 });
     }
 
     @Test
-    @DisplayName("The Main Page Traffic")
+    @Description("Anasayfa yüklenirken yapılan request lerin response larının 400 den küçük olduğunun kontrolü")
     public void testHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-
+        pageLongDownScroll();
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries.stream()
@@ -58,23 +59,7 @@ public class NYXCostemicsHomeTest extends AbstractNYXCostemicTest
     }
 
     @Test
-    @DisplayName("The Newest Products")
-    public void testTheNewestProducts()
-    {
-        navigateToURL(UrlFactory.MAIN_URL);
-        wait(3);
-        waitElementVisible(mainPage.getMainPageFancyBoxIFrame());
-        switchFrame(mainPage.getMainPageFancyBoxIFrame());
-        waitElementToBeClickable(mainPage.getMainPageBeInformed());
-        click(mainPage.getMainPageBeInformed());
-        driver.switchTo().parentFrame();
-        listElementRandomClick(mainPage.getNewestProducts());
-        waitElementVisible(mainPage.getBreadCrumb());
-        mainPage.getBreadCrumb().isDisplayed();
-    }
-
-    @Test
-    @DisplayName("Product Sale Price")
+    @Description("Anasayfaki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü")
     public void testProductSalePrice()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -85,7 +70,7 @@ public class NYXCostemicsHomeTest extends AbstractNYXCostemicTest
     }
 
     @Test
-    @DisplayName("Main Page Slider")
+    @Description("Anasayfadaki slider ın çalıştığının kontrolü")
     public void testHomePageSlider()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -102,6 +87,4 @@ public class NYXCostemicsHomeTest extends AbstractNYXCostemicTest
                             "-swiper-slide-index"));
                 });
     }
-
-
 }

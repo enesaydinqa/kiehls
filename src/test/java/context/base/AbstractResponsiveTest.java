@@ -18,7 +18,7 @@ import org.junit.rules.TestName;
 import java.io.File;
 import java.io.IOException;
 
-public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
+public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
 {
     private Logger logger = Logger.getLogger(AbstractResponsiveTest.class);
 

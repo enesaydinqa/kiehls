@@ -60,7 +60,7 @@ public class ChromeDriverManagerWeb extends DriverManager
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         //capabilities.setCapability("browser", "Chrome");
-        //capabilities.setCapability("platform", "MAC");
+        capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {

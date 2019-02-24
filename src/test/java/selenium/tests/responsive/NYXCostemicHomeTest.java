@@ -5,14 +5,12 @@ import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobileweb.MainPageResponsivePage;
 
 import java.util.List;
-import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Responsive")
 public class NYXCostemicHomeTest extends AbstractNYXCostemicResponsiveTest
@@ -33,19 +31,13 @@ public class NYXCostemicHomeTest extends AbstractNYXCostemicResponsiveTest
     public void testHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-
-        for (int s = 100; s <= 1700; s += 100)
-        {
-            wait(1);
-            pageScroll(0, s);
-        }
-
+        pageLongDownScroll();
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
-        entries.stream().filter(link -> link.getRequest().getUrl().contains(".png"))
+        entries.stream().filter(link -> link.getRequest().getUrl().contains(".png") | link.getRequest().getUrl().contains(".jpg"))
                 .forEach(png -> {
                     logger.info("Check Response this url -> " + png.getRequest().getUrl());
-                    Assert.assertEquals(200, png.getResponse().getStatus());
+                    Assert.assertEquals("This image not load " + png.getRequest().getUrl(), 200, png.getResponse().getStatus());
                 });
     }
 
@@ -54,43 +46,13 @@ public class NYXCostemicHomeTest extends AbstractNYXCostemicResponsiveTest
     public void testHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-
-        for (int s = 100; s <= 1700; s += 100)
-        {
-            wait(1);
-            pageScroll(0, s);
-        }
-
+        pageLongDownScroll();
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries.forEach(png -> {
             logger.info("Check Response This Url -> " + png.getRequest().getUrl());
-            Assert.assertTrue(
-                    "Broken : " + png.getRequest().getUrl(),
-                    400 > png.getResponse().getStatus());
+            Assert.assertTrue("Broken : " + png.getRequest().getUrl(), 400 > png.getResponse().getStatus());
         });
-    }
-
-
-    @Test
-    @Ignore
-    @DisplayName("Main Page Slider")
-    public void testHomePageSlider()
-    {
-        navigateToURL(UrlFactory.MAIN_URL);
-        IntStream.range(0, 3)
-                .forEach(i ->
-                {
-                    waitElementVisible(mainPage.getActiveSliderImage());
-                    String dataGtmPromotion1 = getAttribute(mainPage.getActiveSliderImage(), "data-swiper-slide-index");
-
-                    mouseOver(mainPage.getSliderNext());
-                    waitElementToBeClickable(mainPage.getSliderNext());
-                    click(mainPage.getSliderNext());
-
-                    Assert.assertNotEquals(dataGtmPromotion1, getAttribute(mainPage.getActiveSliderImage(), "data" + "-swiper-slide-index"));
-                    wait(1);
-                });
     }
 
 }

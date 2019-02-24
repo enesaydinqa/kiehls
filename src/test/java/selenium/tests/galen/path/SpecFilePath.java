@@ -1,12 +1,11 @@
 package selenium.tests.galen.path;
 
-
 public enum SpecFilePath
 {
 
-    MAIN_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/"),
+    WEB_DIRECTORY(System.getProperty("user.dir") + "/src/test/resources/specs/web/"),
 
-    MAIN_PAGE(MAIN_DIRECTORY, "NyxCostemicMainPage.spec");
+    MAIN_PAGE(WEB_DIRECTORY, "NyxCostemicMainPage.spec");
 
 
     //-----

@@ -1,6 +1,7 @@
 package selenium.tests.responsive;
 
 import context.base.AbstractResponsiveTest;
+import context.base.Description;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
@@ -26,7 +27,7 @@ public class NYXCostemicProductTest extends AbstractResponsiveTest
     }
 
     @Test
-    @DisplayName("Product Sale Price")
+    @Description("Anasayfa daki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü.")
     public void testProductSalePrice() throws Exception
     {
         navigateToURL(UrlFactory.MAIN_URL);

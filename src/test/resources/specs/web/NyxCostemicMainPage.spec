@@ -19,28 +19,28 @@
   @on desktop
 
     ProHeaderSpace :
-        image file images/ProHeaderSpace.png, error 3 %
+        image file images/web/ProHeaderSpace.png, error 3 %
 
     BestNewHeader :
-        image file images/BestNewHeader.png, error 3 %
+        image file images/web/BestNewHeader.png, error 3 %
 
     BestSellersHeader :
-        image file images/BestSellersHeader.png, error 3 %
+        image file images/web/BestSellersHeader.png, error 3 %
 
     NoToMissHeader :
-        image file images/NoToMissHeader.png, error 3 %
+        image file images/web/NoToMissHeader.png, error 3 %
 
     NoToMissImage :
-        image file images/NoToMissImage.png, error 3 %
+        image file images/web/NoToMissImage.png, error 3 %
 
     MoreHeader :
-        image file images/MoreHeader.png, error 3 %
+        image file images/web/MoreHeader.png, error 3 %
 
     MoreImage :
-        image file images/MoreImage.png, error 3 %
+        image file images/web/MoreImage.png, error 3 %
 
     Footer :
-        image file images/Footer.png, error 3 %
+        image file images/web/Footer.png, error 3 %
 
     MainPageSlider:
         height 34px
