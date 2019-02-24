@@ -328,7 +328,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void pageScroll(int x, int y)
     {
-        checkDOMLoaded();
         JavascriptExecutor scroll = driver;
         scroll.executeScript("scroll(" + x + "," + y + ")");
     }

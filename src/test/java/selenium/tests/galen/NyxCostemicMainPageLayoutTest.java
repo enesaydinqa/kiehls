@@ -2,8 +2,10 @@ package selenium.tests.galen;
 
 
 import context.base.AbstractWebTest;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
+import org.openqa.selenium.Dimension;
 import selenium.pages.UrlFactory;
 import selenium.tests.galen.path.SpecFilePath;
 
@@ -12,6 +14,14 @@ import java.util.Arrays;
 
 public class NyxCostemicMainPageLayoutTest extends AbstractWebTest
 {
+
+    @Before
+    public void init() throws Exception
+    {
+        super.init();
+        driver.manage().window().setSize(new Dimension(1200, 800));
+    }
+
     @Test
     @DisplayName("The Main Page Layout Design")
     public void testMainPageLayoutDesign() throws IOException

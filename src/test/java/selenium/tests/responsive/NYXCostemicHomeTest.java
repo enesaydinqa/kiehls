@@ -15,9 +15,9 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Responsive")
-public class NYXCostemicMainTest extends AbstractNYXCostemicResponsiveTest
+public class NYXCostemicHomeTest extends AbstractNYXCostemicResponsiveTest
 {
-    private static Logger logger = Logger.getLogger(NYXCostemicMainTest.class);
+    private static Logger logger = Logger.getLogger(NYXCostemicHomeTest.class);
 
     private MainPageResponsivePage mainPage;
 
@@ -30,9 +30,15 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicResponsiveTest
 
     @Test
     @DisplayName("Main Page Load PNG")
-    public void testMainPageLoadPNG()
+    public void testHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
+
+        for (int s = 100; s <= 1700; s += 100)
+        {
+            wait(1);
+            pageScroll(0, s);
+        }
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
@@ -45,9 +51,15 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicResponsiveTest
 
     @Test
     @DisplayName("The Main Page Traffic")
-    public void testMainPageTraffic()
+    public void testHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);
+
+        for (int s = 100; s <= 1700; s += 100)
+        {
+            wait(1);
+            pageScroll(0, s);
+        }
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
@@ -63,7 +75,7 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicResponsiveTest
     @Test
     @Ignore
     @DisplayName("Main Page Slider")
-    public void testMainPageSlider()
+    public void testHomePageSlider()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         IntStream.range(0, 3)

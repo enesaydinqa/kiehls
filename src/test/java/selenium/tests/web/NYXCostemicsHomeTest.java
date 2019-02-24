@@ -14,9 +14,9 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Main Page - Web")
-public class NYXCostemicMainTest extends AbstractNYXCostemicTest
+public class NYXCostemicsHomeTest extends AbstractNYXCostemicTest
 {
-    private static Logger logger = Logger.getLogger(NYXCostemicMainTest.class);
+    private static Logger logger = Logger.getLogger(NYXCostemicsHomeTest.class);
 
     private MainPageWebPage mainPage;
 
@@ -29,7 +29,7 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicTest
 
     @Test
     @DisplayName("Main Page Load PNG")
-    public void testMainPageLoadPNG()
+    public void testHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
 
@@ -44,7 +44,7 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicTest
 
     @Test
     @DisplayName("The Main Page Traffic")
-    public void testMainPageTraffic()
+    public void testHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);
 
@@ -86,7 +86,7 @@ public class NYXCostemicMainTest extends AbstractNYXCostemicTest
 
     @Test
     @DisplayName("Main Page Slider")
-    public void testMainPageSlider()
+    public void testHomePageSlider()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         IntStream.range(0, 3)
