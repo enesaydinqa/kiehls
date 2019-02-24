@@ -1,7 +1,6 @@
 package selenium.tests.responsive;
 
 import context.base.AbstractNYXCostemicResponsiveTest;
-import context.base.AbstractResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;

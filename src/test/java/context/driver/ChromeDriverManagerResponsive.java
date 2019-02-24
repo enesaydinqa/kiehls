@@ -59,7 +59,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         driver.manage().window().setSize(new Dimension(414, 736));
 
-        String session = (driver).getSessionId().toString();
+        session = (driver).getSessionId().toString();
         logger.info("=================================================================");
         logger.info("This Execute Session ID --> " + session);
         logger.info("=================================================================");

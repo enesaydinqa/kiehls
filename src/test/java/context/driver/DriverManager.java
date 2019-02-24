@@ -10,6 +10,7 @@ public abstract class DriverManager {
 
     protected static RemoteWebDriver driver;
     protected static BrowserMobProxy proxy;
+    public static String session;
     public static Properties prop;
 
     protected abstract void createDriver(Boolean withProxy) throws Exception;

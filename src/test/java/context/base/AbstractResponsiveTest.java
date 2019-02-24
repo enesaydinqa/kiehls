@@ -4,6 +4,7 @@ import context.driver.DriverManager;
 import context.driver.DriverResponsiveTestFactory;
 import context.properties.SetProperties;
 import context.recorder.VideoRecorder;
+import context.utils.ReportGenerate;
 import net.lightbody.bmp.BrowserMobProxyServer;
 import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.proxy.CaptureType;
@@ -25,6 +26,9 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
 
     @Rule
     public final TestName testName = new TestName();
+
+    @Rule
+    public ReportGenerate screenShootRule = new ReportGenerate();
 
     @Override
     protected void createDriver(Boolean withProxy)
