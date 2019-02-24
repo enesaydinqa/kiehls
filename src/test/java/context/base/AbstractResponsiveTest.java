@@ -51,7 +51,7 @@ public abstract class AbstractResponsiveTest extends AbstractSeleniumTest
 
         if (withProxy)
         {
-            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + System.getProperty("automate.key"));
+            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + System.getProperty("access.key"));
 
             proxy = new BrowserMobProxyServer();
             proxy.start();
