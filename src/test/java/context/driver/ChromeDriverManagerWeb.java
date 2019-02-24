@@ -59,8 +59,8 @@ public class ChromeDriverManagerWeb extends DriverManager
     private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browser", "Chrome");
-        capabilities.setCapability("platform", "MAC");
+        //capabilities.setCapability("browser", "Chrome");
+        //capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {
