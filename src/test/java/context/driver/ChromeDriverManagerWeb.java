@@ -25,7 +25,7 @@ public class ChromeDriverManagerWeb extends DriverManager
     @Override
     public void createDriver(Boolean withProxy) throws Exception
     {
-        remoteTest = Boolean.parseBoolean(prop.getProperty("remote.test"));
+        remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
 
         chromeOptions = chromeOptions();
         desiredCapabilities = desiredCapabilities(withProxy, remoteTest, chromeOptions);

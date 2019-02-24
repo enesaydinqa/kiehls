@@ -31,7 +31,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
     @Override
     public void createDriver(Boolean withProxy) throws Exception
     {
-        remoteTest = Boolean.parseBoolean(prop.getProperty("remote.test"));
+        remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
 
         mobileEmulation = mobileEmulation();
         chromeOptions = chromeOptions(mobileEmulation);
