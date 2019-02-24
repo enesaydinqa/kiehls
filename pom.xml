@@ -5,9 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
+        <jetty.http.port>8090</jetty.http.port>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.version>1.4.24.RC3</allure.version>
         <aspectj.version>1.8.10</aspectj.version>
     </properties>
-
+    
     <reporting>
         <plugins>
             <plugin>
@@ -28,13 +31,6 @@
             </plugin>
         </plugins>
     </reporting>
-
-    <properties>
-        <jetty.http.port>8090</jetty.http.port>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <allure.version>1.4.24.RC3</allure.version>
-        <aspectj.version>1.8.9</aspectj.version>
-    </properties>
 
     <groupId>com.selenium</groupId>
     <artifactId>nyxcosmetics</artifactId>
