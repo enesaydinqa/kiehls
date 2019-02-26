@@ -25,8 +25,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
     private DesiredCapabilities desiredCapabilities;
     private boolean remoteTest;
 
-    private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, " +
-            "like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
+    private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
     @Override
     public void createDriver(Boolean withProxy) throws Exception
@@ -34,16 +33,19 @@ public class ChromeDriverManagerResponsive extends DriverManager
         remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
 
         mobileEmulation = mobileEmulation();
-        chromeOptions = chromeOptions(mobileEmulation);
-        desiredCapabilities = desiredCapabilities(withProxy, remoteTest, chromeOptions);
 
         if (remoteTest)
         {
+            desiredCapabilities = desiredCapabilities(withProxy, true, null);
+
             logger.info("This test is browserstack execute ...");
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
         }
         else
         {
+            chromeOptions = chromeOptions(null);
+            desiredCapabilities = desiredCapabilities(withProxy, false, chromeOptions);
+
             if (Platform.getCurrent().is(Platform.MAC))
             {
                 System.setProperty("webdriver.chrome.driver", prop.getProperty("mac.chrome.driver"));
@@ -55,9 +57,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             logger.info("This test is local execute ...");
             driver = new ChromeDriver(desiredCapabilities);
+            driver.manage().window().setSize(new Dimension(414, 736));
         }
-
-        //driver.manage().window().setSize(new Dimension(414, 736));
 
         session = (driver).getSessionId().toString();
         logger.info("=================================================================");
@@ -71,8 +72,10 @@ public class ChromeDriverManagerResponsive extends DriverManager
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-        capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        //capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+        //capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+        //capabilities.setCapability("browser", "Chrome");
+        //capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {
@@ -83,7 +86,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             if (browserStackLocal)
             {
-                capabilities.setCapability("browserstack.local", browserStackLocal);
+                capabilities.setCapability("browserstack.local", true);
                 browserStackLocalArg(host, port);
             }
 
@@ -106,8 +109,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
-        //chromeOptions.addArguments("--user-agent=" + USER_AGENT);
-        //chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+        chromeOptions.addArguments("--user-agent=" + USER_AGENT);
+        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
         return chromeOptions;
     }
@@ -116,11 +119,10 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         Map<String, String> mobileEmulation = new HashMap<>();
 
-        /*
+        mobileEmulation.put("browserName", "iPhone");
         mobileEmulation.put("device", "iPhone 8 Plus");
         mobileEmulation.put("realMobile", "true");
         mobileEmulation.put("version", "70.0");
-        */
 
         return mobileEmulation;
     }
