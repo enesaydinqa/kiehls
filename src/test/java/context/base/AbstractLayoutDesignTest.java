@@ -23,16 +23,19 @@ import java.util.stream.IntStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest {
+public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
+{
 
     private Logger logger = Logger.getLogger(AbstractLayoutDesignTest.class);
 
-    List<GalenTestInfo> tests;
-    LayoutReport layoutReport;
-    String reportPath;
+    private List<GalenTestInfo> tests;
+    private LayoutReport layoutReport;
+    private String reportPath;
 
-    protected void checkLayoutDesign(String specFile, List<String> includedTags, String className) throws IOException {
-        try {
+    protected void checkLayoutDesign(String specFile, List<String> includedTags, String className) throws IOException
+    {
+        try
+        {
             GalenConfig.getConfig().setProperty(GalenProperty.SCREENSHOT_FULLPAGE, "true");
 
             layoutReport = Galen.checkLayout(driver, specFile, includedTags);
@@ -52,13 +55,18 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest {
             new HtmlReportBuilder().build(tests,
                     reportPath);
 
-            if (layoutReport.errors() > 0) {
+            if (layoutReport.errors() > 0)
+            {
                 logger.info("Galen Report Path : " + reportPath);
                 Assert.fail("Incorrect layout: " + specFile);
             }
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             ex.printStackTrace();
-        }finally {
+        }
+        finally
+        {
             File folder = new File(reportPath);
             File[] listOfFiles = folder.listFiles();
 
@@ -70,7 +78,8 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest {
             FileOutputStream fos = new FileOutputStream(reportPath + "/" + className + ".zip");
             ZipOutputStream zipOut = new ZipOutputStream(fos);
 
-            for (String srcFile : srcFiles) {
+            for (String srcFile : srcFiles)
+            {
                 File fileToZip = new File(srcFile);
                 FileInputStream fis = new FileInputStream(fileToZip);
                 ZipEntry zipEntry = new ZipEntry(fileToZip.getName());
@@ -78,7 +87,8 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest {
 
                 byte[] bytes = new byte[1024];
                 int length;
-                while ((length = fis.read(bytes)) >= 0) {
+                while ((length = fis.read(bytes)) >= 0)
+                {
                     zipOut.write(bytes, 0, length);
                 }
                 fis.close();
@@ -90,13 +100,15 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest {
         }
     }
 
-    public enum PlatformName {
+    public enum PlatformName
+    {
         DESKTOP("desktop"),
         MOBILE("mobile");
 
         public final String platformName;
 
-        PlatformName(String platformName) {
+        PlatformName(String platformName)
+        {
             this.platformName = platformName;
         }
     }

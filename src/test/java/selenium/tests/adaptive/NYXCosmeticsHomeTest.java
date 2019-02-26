@@ -54,5 +54,4 @@ public class NYXCosmeticsHomeTest extends AbstractNYXCostemicResponsiveTest
             Assert.assertTrue("Broken : " + png.getRequest().getUrl(), 400 > png.getResponse().getStatus());
         });
     }
-
 }

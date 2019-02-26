@@ -30,11 +30,6 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     @Rule
     public ReportGenerate screenShootRule = new ReportGenerate();
 
-    @Override
-    protected void createDriver(Boolean withProxy)
-    {
-    }
-
     @BeforeClass
     public static void setProp() throws Exception
     {
