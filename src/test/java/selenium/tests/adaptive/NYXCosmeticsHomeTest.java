@@ -31,8 +31,6 @@ public class NYXCosmeticsHomeTest extends AbstractNYXCostemicResponsiveTest
     public void testAdaptiveHomePageLoadPNG() throws InterruptedException
     {
         navigateToURL(UrlFactory.MAIN_URL);
-        Thread.sleep(15000);
-        driver.navigate().refresh();
         pageLongDownScroll();
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
