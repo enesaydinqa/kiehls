@@ -73,10 +73,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-        //capabilities.setCapability("platform", "MAC");
-        capabilities.setCapability("realMobile", "true");
-        capabilities.setCapability("device", "iPhone 6s Plus");
-        //capabilities.setCapability("browserstack.appium_version", "1.8.0");
 
         if (withProxy)
         {
@@ -91,6 +87,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
                 browserStackLocalArg(host, port);
             }
 
+            capabilities.setCapability("realMobile", "true");
+            capabilities.setCapability("device", "iPhone 6s Plus");
             capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
 
             logger.info("=================================================================");
@@ -108,8 +106,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--user-agent=" + USER_AGENT);
-        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+        //chromeOptions.addArguments("--user-agent=" + USER_AGENT);
+        //chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
 
         return chromeOptions;
     }
@@ -118,9 +116,11 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         Map<String, String> mobileEmulation = new HashMap<>();
 
+        /*
         mobileEmulation.put("device", "iPhone 8 Plus");
         mobileEmulation.put("realMobile", "true");
         mobileEmulation.put("version", "70.0");
+        */
 
         return mobileEmulation;
     }
