@@ -3,6 +3,7 @@ package selenium.tests.galen.web;
 
 import context.base.AbstractWebTest;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.Dimension;
@@ -22,6 +23,7 @@ public class NyxCosmeticsHomePageLayoutTest extends AbstractWebTest
         driver.manage().window().setSize(new Dimension(1200, 800));
     }
 
+    @Ignore
     @Test
     @DisplayName("The Main Page Layout Design")
     public void testMainPageLayoutDesign() throws IOException
