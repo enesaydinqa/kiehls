@@ -1,4 +1,4 @@
-package selenium.tests.responsive;
+package selenium.tests.adaptive;
 
 import context.base.AbstractResponsiveTest;
 import context.base.Description;
@@ -28,7 +28,7 @@ public class NYXCosmeticsProductTest extends AbstractResponsiveTest
 
     @Test
     @Description("Anasayfa daki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü.")
-    public void testProductSalePrice() throws Exception
+    public void testAdaptiveProductSalePrice() throws Exception
     {
         navigateToURL(UrlFactory.MAIN_URL);
         IntStream.range(0, mainPage.getProductSalePrices().size())

@@ -1,4 +1,4 @@
-package selenium.tests.galen.mobile;
+package selenium.tests.galen.adaptive;
 
 
 import context.base.AbstractResponsiveTest;
@@ -16,7 +16,7 @@ public class NyxCosmeticsHomePageLayoutTest extends AbstractResponsiveTest
     @Ignore
     @Test
     @DisplayName("The Main Page Layout Design")
-    public void testMainPageLayoutDesign() throws IOException
+    public void testAdaptiveHomePageLayoutDesign() throws IOException
     {
         navigateToURL(UrlFactory.MAIN_URL);
         wait(5);

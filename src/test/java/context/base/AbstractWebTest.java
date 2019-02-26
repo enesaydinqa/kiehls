@@ -14,9 +14,13 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
+import org.junit.rules.TestRule;
+import org.junit.rules.TestWatcher;
+import org.junit.runners.model.Statement;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 {
@@ -28,7 +32,51 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public final TestName testName = new TestName();
 
     @Rule
-    public ReportGenerate screenShootRule = new ReportGenerate();
+    public ReportGenerate reportGenerate = new ReportGenerate();
+
+    @Rule
+    public final TestRule watchman = new TestWatcher()
+    {
+        @Override
+        public Statement apply(Statement base, org.junit.runner.Description description)
+        {
+            return super.apply(base, description);
+        }
+
+        @Override
+        protected void failed(Throwable e, org.junit.runner.Description description)
+        {
+            createFolder(System.getProperty("user.dir") + "/target/PageSource");
+
+            String file = System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt";
+
+            PrintWriter writer = null;
+
+            try
+            {
+                writer = new PrintWriter(file, "UTF-8");
+            }
+            catch (Exception ex)
+            {
+                ex.printStackTrace();
+            }
+
+            writer.println(driver.getPageSource());
+            writer.close();
+            logger.info("TEST FAIL ... Fail Screen Page Source --> " + file);
+        }
+
+        @Override
+        protected void finished(org.junit.runner.Description description)
+        {
+            if (driver != null)
+            {
+                driver.close();
+                driver.quit();
+                driver = null;
+            }
+        }
+    };
 
     @BeforeClass
     public static void setProp() throws Exception
@@ -93,14 +141,6 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
         {
             logger.info("Already Stopped Proxy");
         }
-
-        if (driver != null)
-        {
-            driver.close();
-            driver.quit();
-            driver = null;
-        }
-
     }
 
     // --------

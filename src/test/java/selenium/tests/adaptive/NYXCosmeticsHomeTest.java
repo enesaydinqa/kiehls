@@ -1,4 +1,4 @@
-package selenium.tests.responsive;
+package selenium.tests.adaptive;
 
 import context.base.AbstractNYXCostemicResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -28,7 +28,7 @@ public class NYXCosmeticsHomeTest extends AbstractNYXCostemicResponsiveTest
 
     @Test
     @DisplayName("Main Page Load PNG")
-    public void testHomePageLoadPNG()
+    public void testAdaptiveHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         pageLongDownScroll();
@@ -43,7 +43,7 @@ public class NYXCosmeticsHomeTest extends AbstractNYXCostemicResponsiveTest
 
     @Test
     @DisplayName("The Main Page Traffic")
-    public void testHomePageNetwork()
+    public void testAdaptiveHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         pageLongDownScroll();
