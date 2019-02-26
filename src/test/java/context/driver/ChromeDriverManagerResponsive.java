@@ -76,7 +76,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
         //capabilities.setCapability("platform", "MAC");
         capabilities.setCapability("realMobile", "true");
         capabilities.setCapability("device", "iPhone 6s Plus");
-        capabilities.setCapability("os_version", "8.1");
         capabilities.setCapability("browserstack.appium_version", "1.8.0");
 
         if (withProxy)
