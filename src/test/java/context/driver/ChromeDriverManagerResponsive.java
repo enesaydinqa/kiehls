@@ -73,7 +73,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
         capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
         capabilities.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
-        capabilities.setCapability("platform", "MAC");
+        //capabilities.setCapability("platform", "MAC");
         capabilities.setCapability("realMobile", "true");
         //capabilities.setCapability("device", "G930f");
         capabilities.setCapability("os_version", "8.1");
