@@ -1,4 +1,4 @@
-package selenium.tests.adaptive;
+package selenium.tests.responsive;
 
 import context.base.AbstractNYXCostemicResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;

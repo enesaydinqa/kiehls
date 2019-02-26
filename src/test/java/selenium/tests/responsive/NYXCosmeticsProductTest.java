@@ -1,4 +1,4 @@
-package selenium.tests.adaptive;
+package selenium.tests.responsive;
 
 import context.base.AbstractResponsiveTest;
 import context.base.Description;
