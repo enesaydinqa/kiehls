@@ -18,7 +18,9 @@ public class ReportGenerate extends TestWatcher
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName(), "Test failed, click here for further details");
 
-        test.log(LogStatus.FAIL,  session +  " -- Failure trace Selenium : "  + e.toString());
+        test.log(LogStatus.FAIL, "Session id : " + session);
+        test.log(LogStatus.FAIL,  e.toString());
+        test.log(LogStatus.FAIL, "Page Source File : " + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
         flushReports(extent, test);
     }
 
@@ -28,7 +30,7 @@ public class ReportGenerate extends TestWatcher
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
 
-        test.log(LogStatus.PASS, session);
+        test.log(LogStatus.PASS, "Session id : " + session);
         flushReports(extent, test);
     }
 
