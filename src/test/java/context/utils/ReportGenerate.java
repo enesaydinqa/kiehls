@@ -11,7 +11,6 @@ import static context.driver.DriverManager.session;
 public class ReportGenerate extends TestWatcher
 {
     private String filenameOfReport = System.getProperty("user.dir") + "/target/nyxcostemicstestresult.html";
-    private Boolean remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
 
     @Override
     protected void failed(Throwable e, Description description)
@@ -20,11 +19,8 @@ public class ReportGenerate extends TestWatcher
         ExtentTest test = extent.startTest(description.getDisplayName(), "Test failed, click here for further details");
 
         test.log(LogStatus.FAIL, "Session id : " + session);
-        test.log(LogStatus.FAIL, e.toString());
-        if (remoteTest)
-            test.log(LogStatus.FAIL, "Page Source File : http://strong.kroppa.com:8080/job/Run_Single_Test/ws/target/PageSource/" + description.getMethodName() + "-DOM.txt");
-        if (!remoteTest)
-            test.log(LogStatus.FAIL, "Page Source File : " + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
+        test.log(LogStatus.FAIL,  e.toString());
+        test.log(LogStatus.FAIL, "Page Source File : " + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
         flushReports(extent, test);
     }
 
