@@ -92,7 +92,6 @@ public class ChromeDriverManagerWeb extends DriverManager
             capabilities.setCapability("browser", "Chrome");
             capabilities.setCapability("platform", "MAC");
             capabilities.setCapability("acceptSslCerts", "true");
-            capabilities.setCapability("browserstack.console", "info");
             capabilities.setCapability("browserstack.debug", "true");
             capabilities.setCapability("browserstack.console", "verbose");
         }
