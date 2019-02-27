@@ -24,8 +24,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;
     private boolean remoteTest;
-    private String host;
-    private String port;
 
     private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
@@ -79,8 +77,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
-            host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-            port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+            String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
+            String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
 
             if (browserStackLocal)
             {
@@ -89,6 +87,11 @@ public class ChromeDriverManagerResponsive extends DriverManager
             }
 
             capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+
+            logger.info("=================================================================");
+            logger.info("This Execute Browser Host --> " + host);
+            logger.info("This Execute Browser Port --> " + port);
+            logger.info("=================================================================");
         }
 
         if (remoteTest)
@@ -98,11 +101,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
         }
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-
-        logger.info("=================================================================");
-        logger.info("This Execute Browser Host --> " + host);
-        logger.info("This Execute Browser Port --> " + port);
-        logger.info("=================================================================");
 
         return capabilities;
     }
