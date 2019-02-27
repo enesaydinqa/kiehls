@@ -36,7 +36,7 @@ public class SetProperties {
         prop.setProperty("page.load.timeout", "20");
         prop.setProperty("base.url", "https://www.nyxcosmetics.com.tr/");
         prop.setProperty("har.file.path", System.getProperty("user.dir") + "/src/test/resources/");
-        prop.setProperty("galen.report.path", System.getProperty("user.dir") + "/target/GalenLayoutReports/");
+        prop.setProperty("galen.report.path", System.getProperty("user.dir") + "/src/test/resources/");
         prop.setProperty("take.a.video", System.getProperties().getProperty("take.a.video"));
         prop.setProperty("jetty.port", System.getProperties().getProperty("jetty.port"));
         prop.setProperty("automate.key", System.getProperties().getProperty("access.key"));
