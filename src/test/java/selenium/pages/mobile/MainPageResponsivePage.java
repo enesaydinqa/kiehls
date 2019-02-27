@@ -10,7 +10,8 @@ import java.util.List;
 
 public class MainPageResponsivePage extends PageObject
 {
-    public MainPageResponsivePage(WebDriver driver) {
+    public MainPageResponsivePage(WebDriver driver)
+    {
         super(driver);
     }
 
@@ -25,6 +26,9 @@ public class MainPageResponsivePage extends PageObject
 
     @FindBy(css = "[data-alias='mobile_carousel'] .swiper-slide-active")
     private WebElement activeSliderImage;
+
+    @FindBy(xpath = "//a[contains(@class, '-mw-gtm-item-visited')]")
+    private List<WebElement> productList;
 
 
     public List<WebElement> getNewestProducts()
@@ -45,5 +49,10 @@ public class MainPageResponsivePage extends PageObject
     public WebElement getActiveSliderImage()
     {
         return activeSliderImage;
+    }
+
+    public List<WebElement> getProductList()
+    {
+        return productList;
     }
 }

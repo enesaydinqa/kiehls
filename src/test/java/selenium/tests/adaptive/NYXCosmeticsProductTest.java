@@ -35,6 +35,5 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                 .forEach(count -> {
                     Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
                 });
-
     }
 }

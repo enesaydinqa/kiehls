@@ -7,16 +7,15 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
 import selenium.pages.UrlFactory;
 import selenium.pages.web.MainPageWebPage;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class NYXCosmeticsHomeTest extends AbstractNYXCostemicTest
+public class NYXCosmeticsHomeNetworkTest extends AbstractNYXCostemicTest
 {
-    private static Logger logger = Logger.getLogger(NYXCosmeticsHomeTest.class);
+    private static Logger logger = Logger.getLogger(NYXCosmeticsHomeNetworkTest.class);
 
     private MainPageWebPage mainPage;
 

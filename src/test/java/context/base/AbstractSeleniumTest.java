@@ -44,7 +44,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void click(WebElement element)
     {
-        checkDOMLoaded();
+        waitElementToBeClickable(element);
         element.click();
     }
 
@@ -335,8 +335,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void scrollToElement(WebElement element)
     {
-        checkDOMLoaded();
-
         JavascriptExecutor scroll = driver;
         scroll.executeScript("arguments[0].scrollIntoView();", element);
     }
@@ -344,7 +342,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void clickViaJs(WebElement element)
     {
-        checkDOMLoaded();
         JavascriptExecutor executor = driver;
         executor.executeScript("arguments[0].click();", element);
     }
@@ -410,4 +407,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
             pageScroll(0, s);
         }
     }
+
+
 }
