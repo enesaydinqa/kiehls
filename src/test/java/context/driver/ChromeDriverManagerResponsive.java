@@ -102,8 +102,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
             capabilities.setCapability("acceptSslCerts", "true");
         }
 
-        capabilities.setCapability("browserstack.console", "true");
-        capabilities.setCapability("browserstack.debug", "info");
+        capabilities.setCapability("browserstack.console", "info");
+        capabilities.setCapability("browserstack.debug", "true");
         capabilities.setCapability("browserstack.console", "verbose");
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
