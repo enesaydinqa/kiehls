@@ -16,7 +16,7 @@ public class SetProperties {
     public void setProperties() throws Exception {
 
         logger.info("har.file.path --> " + System.getProperty("user.dir") + "/src/test/resources/");
-        logger.info("galen.report.path --> " + System.getProperty("user.dir") + "/target/GalenLayoutReports/");
+        logger.info("galen.report.path --> " + System.getProperty("user.dir") + "/src/test/resources/");
         logger.info("take.a.video --> " + System.getProperties().getProperty("take.a.video"));
         logger.info("jetty.port --> " + System.getProperties().getProperty("jetty.port"));
         logger.info("access.key --> " + System.getProperties().getProperty("access.key"));
