@@ -71,8 +71,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
-        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-
         if (withProxy)
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
