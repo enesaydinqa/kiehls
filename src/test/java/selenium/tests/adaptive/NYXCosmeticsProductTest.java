@@ -1,5 +1,6 @@
 package selenium.tests.adaptive;
 
+import context.base.AbstractNYXCostemicResponsiveTest;
 import context.base.AbstractResponsiveTest;
 import context.base.Description;
 import org.apache.log4j.Logger;
@@ -13,7 +14,7 @@ import selenium.pages.mobile.MainPageResponsivePage;
 import java.util.stream.IntStream;
 
 @DisplayName("NYX Costemic Product Page - Responsive")
-public class NYXCosmeticsProductTest extends AbstractResponsiveTest
+public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
 {
     private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);
 
