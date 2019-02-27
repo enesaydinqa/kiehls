@@ -73,7 +73,7 @@ public class ChromeDriverManagerWeb extends DriverManager
 
             if (browserStackLocal)
             {
-                capabilities.setCapability("browserstack.local", browserStackLocal)
+                capabilities.setCapability("browserstack.local", browserStackLocal);
                 browserStackLocalArg(host, port);
             }
 
