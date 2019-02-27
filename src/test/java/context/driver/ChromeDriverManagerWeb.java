@@ -28,15 +28,19 @@ public class ChromeDriverManagerWeb extends DriverManager
         remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
 
         chromeOptions = chromeOptions();
-        desiredCapabilities = desiredCapabilities(withProxy, remoteTest, chromeOptions);
 
         if (remoteTest)
         {
             logger.info("This test is browserstack execute ...");
+
+            desiredCapabilities = desiredCapabilities(true, withProxy, remoteTest, chromeOptions);
+
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
         }
         else
         {
+            desiredCapabilities = desiredCapabilities(false, withProxy, false, chromeOptions);
+
             if (Platform.getCurrent().is(Platform.MAC))
             {
                 System.setProperty("webdriver.chrome.driver", prop.getProperty("mac.chrome.driver"));
@@ -56,7 +60,7 @@ public class ChromeDriverManagerWeb extends DriverManager
         logger.info("=================================================================");
     }
 
-    private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
+    private DesiredCapabilities desiredCapabilities(Boolean remoteTest, Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
@@ -81,8 +85,16 @@ public class ChromeDriverManagerWeb extends DriverManager
             logger.info("=================================================================");
         }
 
-        capabilities.setCapability("browser", "Chrome");
-        capabilities.setCapability("platform", "MAC");
+        if (remoteTest)
+        {
+            capabilities.setCapability("browser", "Chrome");
+            capabilities.setCapability("platform", "MAC");
+            capabilities.setCapability("acceptSslCerts", "true");
+            capabilities.setCapability("browserstack.console", "info");
+            capabilities.setCapability("browserstack.debug", "true");
+            capabilities.setCapability("browserstack.console", "verbose");
+        }
+        
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         return capabilities;
