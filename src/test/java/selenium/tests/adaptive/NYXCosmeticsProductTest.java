@@ -28,12 +28,26 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
 
     @Test
     @Description("Anasayfa daki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü.")
-    public void testAdaptiveProductSalePrice() throws Exception
+    public void testAdaptiveProductPriceGreaterThanZero()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         IntStream.range(0, mainPage.getProductSalePrices().size())
                 .forEach(count -> {
                     Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
                 });
+    }
+
+    @Test
+    @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı kontrolü.")
+    public void testProductAndBasketPriceCompare() throws Exception
+    {
+        navigateToURL(UrlFactory.MAIN_URL);
+        pageLongDownScroll();
+        mainPage.getProductList().forEach(item -> scrollToElement(item));
+
+        mainPage.getProductPriceList().forEach(item -> {
+            logger.info("Home Page Visible Products Price --> " + getText(item));
+        });
+
     }
 }

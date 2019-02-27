@@ -101,8 +101,9 @@ public class ChromeDriverManagerResponsive extends DriverManager
         }
 
         capabilities.setCapability("browserstack.networkLogs", "true");
-        capabilities.setCapability("browserstack.console", "warnings");
+        capabilities.setCapability("browserstack.console", "true");
         capabilities.setCapability("browserstack.debug", "true");
+        capabilities.setCapability("browserstack.console", "verbose");
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
         return capabilities;

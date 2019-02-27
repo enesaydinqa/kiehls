@@ -30,6 +30,9 @@ public class MainPageResponsivePage extends PageObject
     @FindBy(xpath = "//a[contains(@class, '-mw-gtm-item-visited')]")
     private List<WebElement> productList;
 
+    @FindBy(xpath = "//a[contains(@class, '-mw-gtm-item-visited')]/parent::div//div[contains(text(), ' TL')]")
+    private List<WebElement> productPriceList;
+
 
     public List<WebElement> getNewestProducts()
     {
@@ -54,5 +57,10 @@ public class MainPageResponsivePage extends PageObject
     public List<WebElement> getProductList()
     {
         return productList;
+    }
+
+    public List<WebElement> getProductPriceList()
+    {
+        return productPriceList;
     }
 }

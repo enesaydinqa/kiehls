@@ -183,7 +183,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public String getText(WebElement element)
     {
-        checkDOMLoaded();
         return element.getText();
     }
 
