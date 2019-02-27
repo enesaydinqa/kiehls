@@ -14,7 +14,6 @@ import java.util.Arrays;
 public class NyxCosmeticsHomePageLayoutTest extends AbstractResponsiveTest
 {
     @Test
-    @Ignore
     @DisplayName("The Main Page Layout Design")
     public void testAdaptiveHomePageLayoutDesign() throws IOException
     {
