@@ -108,7 +108,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
         chromeOptions.addArguments("--user-agent=" + USER_AGENT);
-        chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+        chromeOptions.setExperimentalOption("mobileEmulation", null);
 
         return chromeOptions;
     }
