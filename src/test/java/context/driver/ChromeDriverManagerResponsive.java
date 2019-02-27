@@ -24,6 +24,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;
     private boolean remoteTest;
+    private String host;
+    private String port;
 
     private String USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36";
 
@@ -36,7 +38,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         if (remoteTest)
         {
-            desiredCapabilities = desiredCapabilities(withProxy, true, null);
+            desiredCapabilities = desiredCapabilities(true, withProxy, true, null);
 
             logger.info("This test is browserstack execute ...");
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
@@ -44,7 +46,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         else
         {
             chromeOptions = chromeOptions(null);
-            desiredCapabilities = desiredCapabilities(withProxy, false, chromeOptions);
+            desiredCapabilities = desiredCapabilities(false, withProxy, false, chromeOptions);
 
             if (Platform.getCurrent().is(Platform.MAC))
             {
@@ -67,7 +69,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
     }
 
-    private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
+    private DesiredCapabilities desiredCapabilities(Boolean remoteTest, Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
         DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
@@ -77,8 +79,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
-            String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-            String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+            host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
+            port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
 
             if (browserStackLocal)
             {
@@ -86,17 +88,21 @@ public class ChromeDriverManagerResponsive extends DriverManager
                 browserStackLocalArg(host, port);
             }
 
+            capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
+        }
+
+        if (remoteTest)
+        {
             capabilities.setCapability("realMobile", "true");
             capabilities.setCapability("device", "iPhone 6s Plus");
-            capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
-
-            logger.info("=================================================================");
-            logger.info("This Execute Browser Host --> " + host);
-            logger.info("This Execute Browser Port --> " + port);
-            logger.info("=================================================================");
         }
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+
+        logger.info("=================================================================");
+        logger.info("This Execute Browser Host --> " + host);
+        logger.info("This Execute Browser Port --> " + port);
+        logger.info("=================================================================");
 
         return capabilities;
     }

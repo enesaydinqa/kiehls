@@ -21,6 +21,8 @@ public class ChromeDriverManagerWeb extends DriverManager
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;
     private boolean remoteTest;
+    private String host;
+    private String port;
 
     @Override
     public void createDriver(Boolean withProxy) throws Exception
@@ -45,7 +47,7 @@ public class ChromeDriverManagerWeb extends DriverManager
             {
                 System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
             }
-            
+
             logger.info("This test is local execute ...");
             driver = new ChromeDriver(desiredCapabilities);
         }
@@ -59,15 +61,15 @@ public class ChromeDriverManagerWeb extends DriverManager
     private DesiredCapabilities desiredCapabilities(Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        //capabilities.setCapability("browser", "Chrome");
+        capabilities.setCapability("browser", "Chrome");
         capabilities.setCapability("platform", "MAC");
 
         if (withProxy)
         {
             Proxy seleniumProxy = ClientUtil.createSeleniumProxy(proxy);
 
-            String host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
-            String port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
+            host = seleniumProxy.getHttpProxy().substring(0, seleniumProxy.getHttpProxy().indexOf(":"));
+            port = seleniumProxy.getHttpProxy().substring(seleniumProxy.getHttpProxy().indexOf(":") + 1);
 
             if (browserStackLocal)
             {
@@ -76,14 +78,14 @@ public class ChromeDriverManagerWeb extends DriverManager
             }
 
             capabilities.setCapability(CapabilityType.PROXY, seleniumProxy);
-
-            logger.info("=================================================================");
-            logger.info("This Execute Browser Host --> " + host);
-            logger.info("This Execute Browser Port --> " + port);
-            logger.info("=================================================================");
         }
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+
+        logger.info("=================================================================");
+        logger.info("This Execute Browser Host --> " + host);
+        logger.info("This Execute Browser Port --> " + port);
+        logger.info("=================================================================");
 
         return capabilities;
     }
