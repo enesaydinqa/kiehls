@@ -74,6 +74,8 @@ public class ChromeDriverManagerWeb extends DriverManager
             if (browserStackLocal)
             {
                 capabilities.setCapability("browserstack.local", browserStackLocal);
+                capabilities.setCapability("browserstack.networkLogs", "true");
+                capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
                 browserStackLocalArg(host, port);
             }
 
