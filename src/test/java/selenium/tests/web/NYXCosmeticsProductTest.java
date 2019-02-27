@@ -14,7 +14,6 @@ import selenium.pages.web.ProductDetailPage;
 import java.util.List;
 import java.util.stream.IntStream;
 
-@DisplayName("NYX Costemic Product Page - Web")
 public class NYXCosmeticsProductTest extends AbstractNYXCostemicTest
 {
     private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);

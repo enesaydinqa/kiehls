@@ -12,7 +12,6 @@ import selenium.pages.mobile.MainPageResponsivePage;
 
 import java.util.List;
 
-@DisplayName("NYX Costemic Main Page - Responsive")
 public class NYXCosmeticsHomeTest extends AbstractNYXCostemicResponsiveTest
 {
     private static Logger logger = Logger.getLogger(NYXCosmeticsHomeTest.class);
