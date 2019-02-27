@@ -73,9 +73,7 @@ public class ChromeDriverManagerWeb extends DriverManager
 
             if (browserStackLocal)
             {
-                capabilities.setCapability("browserstack.local", browserStackLocal);
-                capabilities.setCapability("browserstack.networkLogs", "true");
-                capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
+                capabilities.setCapability("browserstack.local", browserStackLocal)
                 browserStackLocalArg(host, port);
             }
 
@@ -94,6 +92,8 @@ public class ChromeDriverManagerWeb extends DriverManager
             capabilities.setCapability("acceptSslCerts", "true");
             capabilities.setCapability("browserstack.debug", "true");
             capabilities.setCapability("browserstack.console", "verbose");
+            capabilities.setCapability("browserstack.networkLogs", "true");
+            capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
         }
         
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
