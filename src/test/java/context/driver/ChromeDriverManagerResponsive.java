@@ -69,7 +69,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
     private DesiredCapabilities desiredCapabilities(Boolean remoteTest, Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception
     {
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
 
         if (withProxy)
         {
