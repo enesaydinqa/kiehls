@@ -81,8 +81,6 @@ public interface SeleniumActions
 
     void dragAndDrop(WebElement from, WebElement to) throws Exception;
 
-    void checkDOMLoaded();
-
 
     //-- Javascript
 

@@ -1,13 +1,15 @@
 package selenium.tests.adaptive;
 
 import context.base.AbstractNYXCostemicResponsiveTest;
-import context.base.AbstractResponsiveTest;
 import context.base.Description;
+import context.helper.JSHelper;
+import context.helper.JavaScripts;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.MainPageResponsivePage;
 
@@ -18,12 +20,14 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);
 
     private MainPageResponsivePage mainPage;
+    private JSHelper jsHelper;
 
     @Before
     public void init() throws Exception
     {
         super.init();
         mainPage = new MainPageResponsivePage(driver);
+        jsHelper = new JSHelper(driver);
     }
 
     @Test
@@ -39,15 +43,46 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
 
     @Test
     @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı kontrolü.")
-    public void testProductAndBasketPriceCompare() throws Exception
+    public void testProductAndBasketPriceCompare()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-        pageLongDownScroll();
-        mainPage.getProductList().forEach(item -> scrollToElement(item));
 
-        mainPage.getProductPriceList().forEach(item -> {
-            logger.info("Home Page Visible Products Price --> " + getText(item));
-        });
+        IntStream.range(1, 8)
+                .forEach(i -> {
+                    try
+                    {
+                        WebElement theNewestFrom = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]"));
+                        WebElement theNewestTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + (i + 1) + "]"));
+                        dragAndDrop(theNewestFrom, theNewestTo);
 
+                        String dynamicGetProductPrice = "(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]";
+
+                        String result = jsHelper.executeScript(String.class, JavaScripts.GET_TEXT_BY_XPATH.replace("{XPATH_SELECTOR}", dynamicGetProductPrice));
+                        logger.info("Product Price --> " + result);
+                    }
+                    catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+                });
+
+        IntStream.range(1, 5)
+                .forEach(i -> {
+                    try
+                    {
+                        WebElement bestSellersFrom = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + i + "]"));
+                        WebElement bestSellersTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + (i + 1) + "]"));
+                        dragAndDrop(bestSellersFrom, bestSellersTo);
+
+                        String dynamicGetProductPrice = "(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]";
+
+                        String result = jsHelper.executeScript(String.class, JavaScripts.GET_TEXT_BY_XPATH.replace("{XPATH_SELECTOR}", dynamicGetProductPrice));
+                        logger.info("Product Price --> " + result);
+                    }
+                    catch (Exception e)
+                    {
+                        e.printStackTrace();
+                    }
+                });
     }
 }

@@ -1,7 +1,6 @@
 package context.base;
 
 import context.driver.DriverManager;
-import context.helper.JSHelper;
 import org.junit.Assert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -60,7 +59,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void rightClick(WebElement element)
     {
-        checkDOMLoaded();
         org.openqa.selenium.interactions.Actions action = new org.openqa.selenium.interactions.Actions(driver);
         action.contextClick(element).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
     }
@@ -75,7 +73,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void mouseOver(WebElement element)
     {
-        checkDOMLoaded();
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
     }
@@ -321,32 +318,6 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     {
         JavascriptExecutor executor = driver;
         executor.executeScript("arguments[0].click();", element);
-    }
-
-    @Override
-    public void checkDOMLoaded()
-    {
-        String DOCUMENT_READY_STATE = "return document.readyState";
-        String JQUERY_ACTIVE = "return jQuery.active == 0";
-        String JQUERY_DEFINED = "return typeof jQuery != 'undefined'";
-
-        try
-        {
-            while (true)
-            {
-                boolean readyState = JSHelper.executeScriptObject(driver, DOCUMENT_READY_STATE).equals("complete");
-                boolean JqueryActive = (boolean) JSHelper.executeScriptObject(driver, JQUERY_ACTIVE);
-                boolean JqueryDefined = (boolean) JSHelper.executeScriptObject(driver, JQUERY_DEFINED);
-
-                if (readyState & JqueryActive & JqueryDefined)
-                {
-                    break;
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-        }
     }
 
     @Override

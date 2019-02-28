@@ -1,14 +1,27 @@
 package context.helper;
 
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class JSHelper
+public class JSHelper implements JSExecutor
 {
-    public static Object executeScriptObject(WebDriver driver, String s, Object... objects)
+    private static final Logger logger = LoggerFactory.getLogger(JSHelper.class);
+
+    private JavascriptExecutor jExecutor;
+
+    public JSHelper(WebDriver driver)
     {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        return executor.executeScript(s, objects);
+        this.jExecutor = (JavascriptExecutor) driver;
+    }
+
+    public <T> T executeScript(Class<T> clazz, String script, Object... args)
+    {
+        logger.info("JavaScript Execute Info : { " + script + " }", "Argument Info : { " + args + " }");
+
+        return clazz.cast(jExecutor.executeScript(script, args));
     }
 
 }
