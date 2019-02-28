@@ -42,10 +42,11 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     }
 
     @Test
-    @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı kontrolü.")
-    public void testProductAndBasketPriceCompare()
+    @Description("Anasayfa ürün fiyatlarının 0 dan büyük olduğunun kontrolü.")
+    public void testHomePageProductPrice()
     {
         navigateToURL(UrlFactory.MAIN_URL);
+        wait(10);
 
         IntStream.range(1, 8)
                 .forEach(i -> {
