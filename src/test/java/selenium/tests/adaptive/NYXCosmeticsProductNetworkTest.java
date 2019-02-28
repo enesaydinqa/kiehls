@@ -34,8 +34,8 @@ public class NYXCosmeticsProductNetworkTest extends AbstractNYXCostemicResponsiv
         navigateToURL(UrlFactory.MAIN_URL);
         pageLongDownScroll();
         pageScroll(0, 0);
-        scrollToElement(mainPage.getProductList().get(3));
-        clickViaJs(mainPage.getProductList().get(3));
+        scrollToElement(mainPage.getProductList().get(2));
+        clickViaJs(mainPage.getProductList().get(2));
         pageLongDownScroll();
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
