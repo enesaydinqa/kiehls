@@ -32,8 +32,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
 
-        mobileEmulation = mobileEmulation();
-
         if (remoteTest)
         {
             desiredCapabilities = desiredCapabilities(true, withProxy, true, null);
@@ -43,7 +41,8 @@ public class ChromeDriverManagerResponsive extends DriverManager
         }
         else
         {
-            chromeOptions = chromeOptions(null);
+            mobileEmulation = mobileEmulation();
+            chromeOptions = chromeOptions(mobileEmulation);
             desiredCapabilities = desiredCapabilities(false, withProxy, false, chromeOptions);
 
             if (Platform.getCurrent().is(Platform.MAC))
@@ -96,9 +95,9 @@ public class ChromeDriverManagerResponsive extends DriverManager
         {
             capabilities.setCapability("realMobile", "true");
             capabilities.setCapability("device", "iPhone 8 Plus");
-            capabilities.setCapability("acceptSslCerts", "true");
+            //capabilities.setCapability("acceptSslCerts", "true");
             capabilities.setCapability("browserstack.debug", "true");
-            capabilities.setCapability("browserstack.console", "verbose");
+            //capabilities.setCapability("browserstack.console", "verbose");
             capabilities.setCapability("browserstack.networkLogs", "true");
             capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
         }
