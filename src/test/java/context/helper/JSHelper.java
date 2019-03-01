@@ -3,6 +3,7 @@ package context.helper;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +23,12 @@ public class JSHelper implements JSExecutor
         logger.info("JavaScript Execute Info : { " + script + " }", "Argument Info : { " + args + " }");
 
         return clazz.cast(jExecutor.executeScript(script, args));
+    }
+
+    @Override
+    public String getText(WebElement element)
+    {
+        return executeScript(String.class, "return arguments[0].textContent;", element);
     }
 
 }

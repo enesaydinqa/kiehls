@@ -16,7 +16,7 @@ public class ReportGenerate extends TestWatcher
     protected void failed(Throwable e, Description description)
     {
         ExtentReports extent = createReport();
-        ExtentTest test = extent.startTest(description.getDisplayName(), "Test failed, click here for further details");
+        ExtentTest test = extent.startTest(description.getDisplayName(), "Test failed, getText here for further details");
 
         test.log(LogStatus.FAIL, "Session id : " + session);
         test.log(LogStatus.FAIL,  e.toString());

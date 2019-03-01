@@ -3,7 +3,6 @@ package selenium.tests.adaptive;
 import context.base.AbstractNYXCostemicResponsiveTest;
 import context.base.Description;
 import context.helper.JSHelper;
-import context.helper.JavaScripts;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
@@ -56,9 +55,9 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement theNewestTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + (i + 1) + "]"));
                         dragAndDrop(theNewestFrom, theNewestTo);
 
-                        String dynamicGetProductPrice = "(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]";
+                        WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
-                        String result = jsHelper.executeScript(String.class, JavaScripts.GET_TEXT_BY_XPATH.replace("{XPATH_SELECTOR}", dynamicGetProductPrice));
+                        String result = jsHelper.getText(dynamicGetProductPrice);
                         logger.info("Product Price --> " + result);
                     }
                     catch (Exception e)
@@ -75,9 +74,9 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement bestSellersTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + (i + 1) + "]"));
                         dragAndDrop(bestSellersFrom, bestSellersTo);
 
-                        String dynamicGetProductPrice = "(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]";
+                        WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
-                        String result = jsHelper.executeScript(String.class, JavaScripts.GET_TEXT_BY_XPATH.replace("{XPATH_SELECTOR}", dynamicGetProductPrice));
+                        String result = jsHelper.getText(dynamicGetProductPrice);
                         logger.info("Product Price --> " + result);
                     }
                     catch (Exception e)
