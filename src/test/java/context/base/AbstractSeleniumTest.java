@@ -370,7 +370,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public void secureScrollPage(Integer x, Integer y)
     {
-        for (int i = 100; i <= y; i++)
+        for (int i = 100; i <= y; i += 100)
         {
             pageScroll(x, i);
         }
