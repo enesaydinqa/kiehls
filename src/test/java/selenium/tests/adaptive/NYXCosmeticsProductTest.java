@@ -66,7 +66,7 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                     }
                 });
 
-        IntStream.range(1, 5)
+        IntStream.range(1, 7)
                 .forEach(i -> {
                     try
                     {
