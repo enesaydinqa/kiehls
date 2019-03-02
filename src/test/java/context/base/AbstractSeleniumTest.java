@@ -104,7 +104,18 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     @Override
     public boolean isDisplayed(WebElement element)
     {
-        return element.isDisplayed();
+        boolean isDisplayed = false;
+
+        try
+        {
+            isDisplayed = element.isDisplayed() ? true : false;
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+        return isDisplayed;
     }
 
     @Override

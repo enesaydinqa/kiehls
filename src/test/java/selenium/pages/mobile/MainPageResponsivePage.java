@@ -33,6 +33,9 @@ public class MainPageResponsivePage extends PageObject
     @FindBy(xpath = "//a[contains(@class, '-mw-gtm-item-visited')]/parent::div//div[contains(text(), ' TL')]")
     private List<WebElement> productPriceList;
 
+    @FindBy(className = "ins-close-button-icon")
+    private WebElement popupCloseButton;
+
 
     public List<WebElement> getNewestProducts()
     {
@@ -62,5 +65,10 @@ public class MainPageResponsivePage extends PageObject
     public List<WebElement> getProductPriceList()
     {
         return productPriceList;
+    }
+
+    public WebElement getPopupCloseButton()
+    {
+        return popupCloseButton;
     }
 }
