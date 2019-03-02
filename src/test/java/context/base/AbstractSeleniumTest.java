@@ -317,7 +317,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
     public void clickViaJs(WebElement element)
     {
         JavascriptExecutor executor = driver;
-        executor.executeScript("arguments[0].textContent;", element);
+        executor.executeScript("arguments[0].click();", element);
     }
 
     @Override

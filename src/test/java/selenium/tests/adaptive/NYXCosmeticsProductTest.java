@@ -3,19 +3,17 @@ package selenium.tests.adaptive;
 import context.base.AbstractNYXCostemicResponsiveTest;
 import context.base.Description;
 import context.helper.JSHelper;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.TouchAction;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import selenium.pages.UrlFactory;
+import selenium.pages.mobile.CartPage;
 import selenium.pages.mobile.MainPageResponsivePage;
+import selenium.pages.mobile.ProductDetailPage;
 
-import java.time.Duration;
 import java.util.stream.IntStream;
 
 public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
@@ -23,6 +21,8 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);
 
     private MainPageResponsivePage mainPage;
+    private ProductDetailPage productDetailPage;
+    private CartPage cartPage;
     private JSHelper jsHelper;
 
     @Before
@@ -30,6 +30,8 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     {
         super.init();
         mainPage = new MainPageResponsivePage(driver);
+        productDetailPage = new ProductDetailPage(driver);
+        cartPage = new CartPage(driver);
         jsHelper = new JSHelper(driver);
     }
 
@@ -38,7 +40,6 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     public void testHomePageProductPrice()
     {
         navigateToURL(UrlFactory.MAIN_URL);
-        wait(10);
 
         IntStream.range(1, 8)
                 .forEach(i -> {
@@ -47,7 +48,10 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement theNewestFrom = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]"));
                         WebElement theNewestTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + (i + 1) + "]"));
 
-                        if(!Boolean.parseBoolean(System.getProperty("remote.test"))) {dragAndDrop(theNewestFrom, theNewestTo);}
+                        if (!Boolean.parseBoolean(System.getProperty("remote.test")))
+                        {
+                            dragAndDrop(theNewestFrom, theNewestTo);
+                        }
 
                         WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
@@ -71,7 +75,10 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement bestSellersFrom = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + i + "]"));
                         WebElement bestSellersTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + (i + 1) + "]"));
 
-                        if(!Boolean.parseBoolean(System.getProperty("remote.test"))) {dragAndDrop(bestSellersFrom, bestSellersTo);}
+                        if (!Boolean.parseBoolean(System.getProperty("remote.test")))
+                        {
+                            dragAndDrop(bestSellersFrom, bestSellersTo);
+                        }
 
                         WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
@@ -87,5 +94,28 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         e.printStackTrace();
                     }
                 });
+    }
+
+    @Test
+    @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
+    public void testProductAndBasketPriceCompare()
+    {
+        navigateToURL(UrlFactory.MAIN_URL);
+        pageLongDownScroll();
+        scrollToElement(mainPage.getProductList().get(3));
+
+        String result = jsHelper.getText(mainPage.getProductPriceList().get(3));
+        Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
+
+        logger.info("Product Price --> " + productPrice);
+        clickViaJs(mainPage.getProductList().get(3));
+        click(productDetailPage.addToBasket);
+
+        waitElementVisible(cartPage.productPrice);
+        String cartPageProductPrice = jsHelper.getText(cartPage.productPrice);
+        Double cartProductPrice = Double.parseDouble(cartPageProductPrice.substring(0, Math.min(cartPageProductPrice.length(), 5)).replace(",", "."));
+        logger.info("Cart Page Product Price --> " + cartProductPrice);
+
+        Assert.assertTrue("Product Price Must Be Greater Than Zero", cartProductPrice > 0);
     }
 }
