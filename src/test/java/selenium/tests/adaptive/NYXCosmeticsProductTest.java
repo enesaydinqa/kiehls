@@ -44,7 +44,7 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     @Description("Anasayfa ürün fiyatlarının 0 dan büyük olduğunun kontrolü.")
     public void testHomePageProductPrice()
     {
-        navigateToURL(UrlFactory.MAIN_URL);
+        navigateToURL(UrlFactory.TEst);
         wait(10);
 
         IntStream.range(1, 8)

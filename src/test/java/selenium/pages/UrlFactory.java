@@ -4,7 +4,8 @@ package selenium.pages;
 public enum UrlFactory
 {
 
-    MAIN_URL("https://www.nyxcosmetics.com.tr/");
+    MAIN_URL("https://www.nyxcosmetics.com.tr/"),
+    TEst("http://google.com");
 
     //-----
 
