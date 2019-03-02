@@ -34,17 +34,6 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
     }
 
     @Test
-    @Description("Anasayfa daki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü.")
-    public void testAdaptiveProductPriceGreaterThanZero()
-    {
-        navigateToURL(UrlFactory.MAIN_URL);
-        IntStream.range(0, mainPage.getProductSalePrices().size())
-                .forEach(count -> {
-                    Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
-                });
-    }
-
-    @Test
     @Description("Anasayfa ürün fiyatlarının 0 dan büyük olduğunun kontrolü.")
     public void testHomePageProductPrice()
     {
@@ -63,7 +52,11 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
                         String result = jsHelper.getText(dynamicGetProductPrice);
-                        logger.info("Product Price --> " + result);
+                        Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
+
+                        logger.info("Product Price --> " + productPrice);
+
+                        Assert.assertTrue("Product Price Must Be Greater Than Zero", productPrice > 0);
                     }
                     catch (Exception e)
                     {
@@ -83,7 +76,11 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
                         String result = jsHelper.getText(dynamicGetProductPrice);
-                        logger.info("Product Price --> " + result);
+                        Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
+
+                        logger.info("Product Price --> " + productPrice);
+
+                        Assert.assertTrue("Product Price Must Be Greater Than Zero", productPrice > 0);
                     }
                     catch (Exception e)
                     {
