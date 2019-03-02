@@ -104,13 +104,17 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
         Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
         logger.info("Product Price --> " + productPrice);
 
+        wait(7);
         clickViaJs(mainPage.getProductList().get(3));
 
+        wait(7);
         pageScroll(0, 300);
-        wait(3);
-        IntStream.range(0, 5).forEach(i -> clickViaJs(productDetailPage.addToBasket));
 
+        click(productDetailPage.addToBasket);
+
+        wait(7);
         waitElementVisible(cartPage.productPrice);
+        wait(7);
         String cartPageProductPrice = jsHelper.getText(cartPage.productPrice);
         Double cartProductPrice = Double.parseDouble(cartPageProductPrice.substring(0, Math.min(cartPageProductPrice.length(), 5)).replace(",", "."));
 

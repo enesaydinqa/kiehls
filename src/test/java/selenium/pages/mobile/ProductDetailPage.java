@@ -12,8 +12,7 @@ public class ProductDetailPage extends PageObject
         super(driver);
     }
 
-
-    @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[6]")
+    @FindBy(xpath = "//a[contains(@href, '=mobile_product_detail')]")
     public WebElement addToBasket;
 
 }
