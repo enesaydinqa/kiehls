@@ -101,7 +101,7 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
             Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + System.getProperty("access.key"));
 
             proxy = new BrowserMobProxyServer();
-            proxy.start(9050);
+            proxy.start(1337);
             proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
             proxy.newHar();
         }
