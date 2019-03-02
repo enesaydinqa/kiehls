@@ -108,8 +108,7 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
 
         pageScroll(0, 300);
         wait(3);
-        clickViaJs(productDetailPage.addToBasket);
-        click(productDetailPage.addToBasket);
+        IntStream.range(0, 5).forEach(i -> clickViaJs(productDetailPage.addToBasket));
 
         waitElementVisible(cartPage.productPrice);
         String cartPageProductPrice = jsHelper.getText(cartPage.productPrice);
