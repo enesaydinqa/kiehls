@@ -15,4 +15,7 @@ public class ProductDetailPage extends PageObject
     @FindBy(xpath = "//a[contains(@href, '=mobile_product_detail')]")
     public WebElement addToBasket;
 
+    @FindBy(xpath = "(//div[@data-alias='product_component'])[1]//div[contains(text(), ' TL')]")
+    public WebElement productPrice;
+
 }

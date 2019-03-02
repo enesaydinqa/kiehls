@@ -196,4 +196,43 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
 
         Assert.assertEquals("This product had to have a shipping charge.", actualShippingFee, expectedShippingFee);
     }
+
+    @Test
+    @Description("Kargo alanı x tl mi ?")
+    public void testShippingFree()
+    {
+        Double prShippingFree = Double.parseDouble(prop.getProperty("pr.for.shipping.free"));
+
+        Double addedBasketProduct = 0.0;
+
+        logger.info("Product Price For Shipping Free --> " + prShippingFree);
+
+        while (addedBasketProduct < prShippingFree)
+        {
+            navigateToURL(UrlFactory.THE_NEWEST_100_TO_150_PRICE);
+            wait(7);
+
+            if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+
+            Long pageHeight = jsHelper.getPageHeight();
+
+            secureScrollPage(0, pageHeight.intValue());
+            pageScroll(0, 0);
+
+            listElementRandomClick(mainPage.getProductList());
+
+            waitElementVisible(productDetailPage.productPrice);
+            String[] productPrice = jsHelper.getText(productDetailPage.productPrice).split(" TL");
+            Double actualShippingFee = Double.parseDouble(productPrice[0].replace(",", "."));
+
+            wait(7);
+            waitElementToBeClickable(productDetailPage.addToBasket);
+            clickViaJs(productDetailPage.addToBasket);
+            wait(7);
+
+            if (isDisplayed(cartPage.subtotalPrice)) addedBasketProduct += actualShippingFee;
+        }
+
+        Assert.assertFalse("There is a shipping fee, but it shouldn't be !", isDisplayed(cartPage.shippingFee));
+    }
 }

@@ -44,6 +44,7 @@ public class SetProperties {
         prop.setProperty("browser.type", System.getProperties().getProperty("browser.type"));
         prop.setProperty("remote.test", System.getProperties().getProperty("remote.test"));
         prop.setProperty("shipping.fee", System.getProperties().getProperty("shipping.fee"));
+        prop.setProperty("pr.for.shipping.free", System.getProperties().getProperty("pr.for.shipping.free"));
         prop.setProperty("browserstack.url", "https://" + System.getProperties().getProperty("username") + ":" + System.getProperties().getProperty("access.key") + "@hub-cloud.browserstack.com/wd/hub");
 
         prop.store(output, "NYX Costemics Regression Test Configuration");
