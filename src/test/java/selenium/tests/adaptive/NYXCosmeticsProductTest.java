@@ -49,9 +49,7 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement theNewestTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + (i + 1) + "]"));
 
                         if (!Boolean.parseBoolean(System.getProperty("remote.test")))
-                        {
                             dragAndDrop(theNewestFrom, theNewestTo);
-                        }
 
                         WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 
@@ -76,9 +74,7 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
                         WebElement bestSellersTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + (i + 1) + "]"));
 
                         if (!Boolean.parseBoolean(System.getProperty("remote.test")))
-                        {
                             dragAndDrop(bestSellersFrom, bestSellersTo);
-                        }
 
                         WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
 

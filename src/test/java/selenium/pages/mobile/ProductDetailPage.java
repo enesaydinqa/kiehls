@@ -15,8 +15,8 @@ public class ProductDetailPage extends PageObject
 
 
     @FindAll({
-            @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[6]"),
-            @FindBy(xpath = "//div[text() ='SEPETE EKLE']")
+            @FindBy(xpath = "//div[text() ='SEPETE EKLE']"),
+            @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[6]")
     })
     public WebElement addToBasket;
 
