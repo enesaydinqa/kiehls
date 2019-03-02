@@ -98,7 +98,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
             capabilities.setCapability("realMobile", "true");
             capabilities.setCapability("device", "iPhone 6S Plus");
             capabilities.setCapability("os_version", "11");
-            capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
             capabilities.setCapability("acceptSslCerts", "true");
             //capabilities.setCapability("browserstack.debug", "true");
             //capabilities.setCapability("browserstack.console", "warnings");
