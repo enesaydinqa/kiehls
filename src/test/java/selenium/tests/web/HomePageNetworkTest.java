@@ -13,9 +13,9 @@ import selenium.pages.web.MainPageWebPage;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class NYXCosmeticsHomePageNetworkTest extends AbstractNYXCostemicTest
+public class HomePageNetworkTest extends AbstractNYXCostemicTest
 {
-    private static Logger logger = Logger.getLogger(NYXCosmeticsHomePageNetworkTest.class);
+    private static Logger logger = Logger.getLogger(HomePageNetworkTest.class);
 
     private MainPageWebPage mainPage;
 

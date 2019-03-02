@@ -18,9 +18,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
+public class ProductTest extends AbstractNYXCostemicResponsiveTest
 {
-    private static Logger logger = Logger.getLogger(NYXCosmeticsProductTest.class);
+    private static Logger logger = Logger.getLogger(ProductTest.class);
 
     private MainPageResponsivePage mainPage;
     private ProductDetailPage productDetailPage;

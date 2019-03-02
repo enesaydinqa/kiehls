@@ -13,7 +13,7 @@ import selenium.tests.galen.path.SpecFilePath;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class NyxCosmeticsHomePageLayoutTest extends AbstractWebTest
+public class HomePageLayoutTest extends AbstractWebTest
 {
 
     @Before

@@ -11,7 +11,7 @@ import selenium.tests.galen.path.SpecFilePath;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class NyxCosmeticsHomePageLayoutTest extends AbstractResponsiveTest
+public class HomePageLayoutTest extends AbstractResponsiveTest
 {
     @Test
     @Ignore
