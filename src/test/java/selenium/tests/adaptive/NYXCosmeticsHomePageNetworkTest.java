@@ -12,9 +12,9 @@ import selenium.pages.mobile.MainPageResponsivePage;
 
 import java.util.List;
 
-public class NYXCosmeticsHomeNetworkTest extends AbstractNYXCostemicResponsiveTest
+public class NYXCosmeticsHomePageNetworkTest extends AbstractNYXCostemicResponsiveTest
 {
-    private static Logger logger = Logger.getLogger(NYXCosmeticsHomeNetworkTest.class);
+    private static Logger logger = Logger.getLogger(NYXCosmeticsHomePageNetworkTest.class);
 
     private MainPageResponsivePage mainPage;
 
