@@ -105,7 +105,10 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
         logger.info("Product Price --> " + productPrice);
 
         clickViaJs(mainPage.getProductList().get(3));
-        wait(5);
+
+        pageScroll(0, 300);
+        wait(3);
+        clickViaJs(productDetailPage.addToBasket);
         click(productDetailPage.addToBasket);
 
         waitElementVisible(cartPage.productPrice);
