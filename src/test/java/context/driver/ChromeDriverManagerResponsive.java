@@ -99,6 +99,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
             capabilities.setCapability("browserstack.debug", "true");
             capabilities.setCapability("browserstack.console", "warnings");
             capabilities.setCapability("browserstack.networkLogs", "true");
+            capabilities.setCapability("browserstack.appium_version", "1.8.0");
             //capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
         }
 
