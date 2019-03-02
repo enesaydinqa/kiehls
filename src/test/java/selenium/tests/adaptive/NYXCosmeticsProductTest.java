@@ -119,6 +119,6 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
         Double cartProductPrice = Double.parseDouble(cartPageProductPrice.substring(0, Math.min(cartPageProductPrice.length(), 5)).replace(",", "."));
 
         logger.info("Cart Page Product Price --> " + cartProductPrice);
-        Assert.assertTrue("The price on the payment screen with the product price is not the same", cartProductPrice > 0);
+        Assert.assertTrue("The price on the payment screen with the product price is not the same", cartProductPrice == productPrice);
     }
 }
