@@ -34,13 +34,16 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         if (remoteTest)
         {
+            logger.info("This test is browserstack execute ...");
+
             desiredCapabilities = desiredCapabilities(true, withProxy, true, null);
 
-            logger.info("This test is browserstack execute ...");
             driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
         }
         else
         {
+            logger.info("This test is local execute ...");
+
             mobileEmulation = mobileEmulation();
             chromeOptions = chromeOptions(mobileEmulation);
             desiredCapabilities = desiredCapabilities(false, withProxy, false, chromeOptions);
@@ -54,7 +57,6 @@ public class ChromeDriverManagerResponsive extends DriverManager
                 System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
             }
 
-            logger.info("This test is local execute ...");
             driver = new ChromeDriver(desiredCapabilities);
             driver.manage().window().setSize(new Dimension(414, 736));
         }
@@ -94,14 +96,13 @@ public class ChromeDriverManagerResponsive extends DriverManager
         if (remoteTest)
         {
             capabilities.setCapability("realMobile", "true");
-            capabilities.setCapability("device", "iPhone 8");
+            capabilities.setCapability("device", "iPhone XR");
             capabilities.setCapability("acceptSslCerts", "true");
             capabilities.setCapability("browserstack.debug", "true");
             capabilities.setCapability("browserstack.console", "warnings");
             capabilities.setCapability("browserstack.networkLogs", "true");
             capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
         }
-
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 
