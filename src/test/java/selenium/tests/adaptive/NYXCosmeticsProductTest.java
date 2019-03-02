@@ -106,16 +106,17 @@ public class NYXCosmeticsProductTest extends AbstractNYXCostemicResponsiveTest
 
         String result = jsHelper.getText(mainPage.getProductPriceList().get(3));
         Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
-
         logger.info("Product Price --> " + productPrice);
+
         clickViaJs(mainPage.getProductList().get(3));
+        wait(5);
         click(productDetailPage.addToBasket);
 
         waitElementVisible(cartPage.productPrice);
         String cartPageProductPrice = jsHelper.getText(cartPage.productPrice);
         Double cartProductPrice = Double.parseDouble(cartPageProductPrice.substring(0, Math.min(cartPageProductPrice.length(), 5)).replace(",", "."));
-        logger.info("Cart Page Product Price --> " + cartProductPrice);
 
-        Assert.assertTrue("Product Price Must Be Greater Than Zero", cartProductPrice > 0);
+        logger.info("Cart Page Product Price --> " + cartProductPrice);
+        Assert.assertTrue("The price on the payment screen with the product price is not the same", cartProductPrice > 0);
     }
 }

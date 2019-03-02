@@ -12,6 +12,6 @@ public class CartPage extends PageObject
         super(driver);
     }
 
-    @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[7]/div")
+    @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[6]")
     public WebElement productPrice;
 }

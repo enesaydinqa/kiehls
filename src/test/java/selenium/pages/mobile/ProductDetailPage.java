@@ -2,6 +2,7 @@ package selenium.pages.mobile;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import selenium.pages.PageObject;
 
@@ -12,7 +13,11 @@ public class ProductDetailPage extends PageObject
         super(driver);
     }
 
-    @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[6]")
+
+    @FindAll({
+            @FindBy(xpath = "(//div[contains(@id, 'obj-randomObjId')])[6]"),
+            @FindBy(xpath = "//div[text() ='SEPETE EKLE']")
+    })
     public WebElement addToBasket;
 
 }
