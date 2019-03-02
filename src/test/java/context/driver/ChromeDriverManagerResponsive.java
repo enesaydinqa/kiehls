@@ -93,12 +93,11 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         if (remoteTest)
         {
-            capabilities.setCapability("browserName", "iPhone");
             capabilities.setCapability("realMobile", "true");
             capabilities.setCapability("device", "iPhone 8 Plus");
-            capabilities.setCapability("acceptSslCerts", "true");
-            capabilities.setCapability("browserstack.debug", "true");
-            capabilities.setCapability("browserstack.console", "warnings");
+            //capabilities.setCapability("acceptSslCerts", "true");
+            //capabilities.setCapability("browserstack.debug", "true");
+            //capabilities.setCapability("browserstack.console", "warnings");
             //capabilities.setCapability("browserstack.networkLogs", "true");
             //capabilities.setCapability("browserstack.networkProfile", "4g-lte-high-latency");
         }
