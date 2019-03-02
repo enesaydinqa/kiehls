@@ -95,4 +95,6 @@ public interface SeleniumActions
     void createFolder(String folderPathName);
 
     void pageLongDownScroll();
+
+    void secureScrollPage(Integer x, Integer y);
 }

@@ -8,4 +8,6 @@ public interface JSExecutor
 
     String getText(WebElement element);
 
+    Long getPageHeight();
+
 }

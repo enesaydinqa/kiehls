@@ -102,7 +102,7 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
         pageLongDownScroll();
         scrollToElement(mainPage.getProductList().get(3));
 
-        String[] result = jsHelper.getText(mainPage.getProductPriceList().get(3)).split("TL");
+        String[] result = jsHelper.getText(mainPage.getProductPriceList().get(3)).split(" TL");
 
         Double productPrice = Double.parseDouble(result[0].replace(",", "."));
         logger.info("Product Price --> " + productPrice);
@@ -129,7 +129,7 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
     @Description("Sepetteki ürünlerin fiyatları toplamı ile Toplam Tutar alanındaki tutar eşit mi ?")
     public void testBasketAndSubTotalCountCompare()
     {
-        List<Double> productPrice = new ArrayList<>();
+        List<Double> productPrices = new ArrayList<>();
 
         IntStream.range(1, 3).forEach(i ->
         {
@@ -143,7 +143,7 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
             String[] result = jsHelper.getText(mainPage.getProductPriceList().get(i)).split(" TL");
 
             Double price = Double.parseDouble(result[0].replace(",", "."));
-            productPrice.add(price);
+            productPrices.add(price);
 
             logger.info("Product Price --> " + price);
 
@@ -157,7 +157,7 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
             wait(7);
         });
 
-        Double totalProductPrice = productPrice.get(0) + productPrice.get(1);
+        Double totalProductPrice = productPrices.get(0) + productPrices.get(1);
 
         waitElementVisible(cartPage.subtotalPrice);
         wait(7);
@@ -167,5 +167,33 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
 
         logger.info("Sub Total Price --> " + subTotalPrice);
         Assert.assertEquals("The price on the payment screen with the product price is not the same", totalProductPrice, subTotalPrice);
+    }
+
+    @Test
+    @Description("Kargo alanı x tl mi ?")
+    public void testShippingFee()
+    {
+        navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
+
+        Long pageHeight = jsHelper.getPageHeight();
+
+        secureScrollPage(0, pageHeight.intValue());
+        pageScroll(0, 0);
+        listElementRandomClick(mainPage.getProductList());
+        wait(7);
+        click(productDetailPage.addToBasket);
+        wait(7);
+        waitElementVisible(cartPage.shippingFee);
+
+        String[] getShippingFee = jsHelper.getText(cartPage.shippingFee).split(" TL");
+        Double actualShippingFee = Double.parseDouble(getShippingFee[0].replace(",", "."));
+
+        logger.info("Shipping fee of product in basket --> " + actualShippingFee);
+
+        Double expectedShippingFee = Double.parseDouble(prop.getProperty("shipping.fee"));
+
+        logger.info("Expected shipping costs --> " + expectedShippingFee);
+
+        Assert.assertEquals("This product had to have a shipping charge.", actualShippingFee, expectedShippingFee);
     }
 }

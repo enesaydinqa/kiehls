@@ -31,4 +31,10 @@ public class JSHelper implements JSExecutor
         return executeScript(String.class, "return arguments[0].textContent;", element);
     }
 
+    @Override
+    public Long getPageHeight()
+    {
+        return executeScript(Long.class, "return $(document).height()");
+    }
+
 }

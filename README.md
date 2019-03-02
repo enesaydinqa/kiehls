@@ -2,10 +2,11 @@
 
 - Parameters
 
--DRemoteTest=true
--DBrowserType=chrome
--DUsername=tunpekar1
--DAutomateKey=FPqXDFz4bqk1jvqXDZ3d
+-Dremote.test=true
+-Dbrowser.type=chrome
+-Dusername=tunpekar1
+-Daccess.key=FPqXDFz4bqk1jvqXDZ3d
 -Djetty.port=8090
--DExecCommandByJenkins=false
--DTakeVideo=false
+-Dtake.a.video=false
+-Dshipping.fee=7.99
+
