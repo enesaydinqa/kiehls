@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="190">
+              <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -395,7 +392,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551617336011" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551617778709" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -437,7 +434,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductTest.testBasketAndSubTotalCountCompare">
+  <component name="RunManager" selected="JUnit.ProductTest.testProductAndBasketPriceCompare">
     <configuration name="ProductTest.testBasketAndSubTotalCountCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nyxcosmetics" />
       <extension name="coverage">
@@ -540,10 +537,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductTest.testProductAndBasketPriceCompare" />
         <item itemvalue="JUnit.ProductTest.testBasketAndSubTotalCountCompare" />
         <item itemvalue="JUnit.ProductTest.testShippingFree" />
         <item itemvalue="JUnit.ProductTest.testShippingFee" />
-        <item itemvalue="JUnit.ProductTest.testProductAndBasketPriceCompare" />
         <item itemvalue="JUnit.ProductTest.testHomePageProductPrice" />
       </list>
     </recent_temporary>
@@ -610,15 +607,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 15h 24m 01s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 15h 29m 27s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 15h 32m 18s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductTest_testHomePageProductPrice - 2019.03.03 at 15h 38m 35s.xml">
       <configuration name="ProductTest.testHomePageProductPrice" configurationId="JUnit" />
     </history-entry>
@@ -640,9 +628,18 @@
     <history-entry file="ProductTest_testShippingFree - 2019.03.03 at 15h 44m 11s.xml">
       <configuration name="ProductTest.testShippingFree" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductTest_testBasketAndSubTotalCountCompare - 2019.03.03 at 15h 46m 13s.xml">
+      <configuration name="ProductTest.testBasketAndSubTotalCountCompare" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_testBasketAndSubTotalCountCompare - 2019.03.03 at 15h 48m 50s.xml">
+      <configuration name="ProductTest.testBasketAndSubTotalCountCompare" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_testProductAndBasketPriceCompare - 2019.03.03 at 15h 53m 49s.xml">
+      <configuration name="ProductTest.testProductAndBasketPriceCompare" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196212000" />
+    <option name="totallyTimeSpent" value="196776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -655,6 +652,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.30758226" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
@@ -665,8 +663,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30040053" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41388518" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30040053" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41388518" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
@@ -723,15 +721,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java</url>
-          <line>69</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -991,13 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1160,10 +1145,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="190">
+          <caret line="49" column="71" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

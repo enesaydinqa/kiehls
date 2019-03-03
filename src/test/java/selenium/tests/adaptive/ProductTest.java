@@ -40,17 +40,14 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
     public void testProductAndBasketPriceCompare()
     {
-        navigateToURL(UrlFactory.MAIN_URL);
-        pageLongDownScroll();
-        scrollToElement(mainPage.getProductList().get(3));
+        navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
 
-        String[] result = jsHelper.getText(mainPage.getProductPriceList().get(3)).split(" TL");
+        Long pageHeight = jsHelper.getPageHeight();
+        secureScrollPage(0, pageHeight.intValue());
+        pageScroll(0, 0);
+        listElementRandomClick(mainPage.getProductList());
 
-        Double productPrice = Double.parseDouble(result[0].replace(",", "."));
-        logger.info("Product Price --> " + productPrice);
-
-        wait(7);
-        clickViaJs(mainPage.getProductList().get(3));
+        Double productPrice = getPrice(productDetailPage.productPrice);
 
         wait(7);
         pageScroll(0, 300);
