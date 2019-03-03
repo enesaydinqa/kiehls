@@ -14,6 +14,7 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
 import java.io.File;
@@ -39,6 +40,14 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
         public Statement apply(Statement base, org.junit.runner.Description description)
         {
             return super.apply(base, description);
+        }
+
+        @Override
+        protected void succeeded(Description description)
+        {
+            logger.info("=================================================================");
+            logger.info("TEST PASSED ...");
+            logger.info("=================================================================");
         }
 
         @Override

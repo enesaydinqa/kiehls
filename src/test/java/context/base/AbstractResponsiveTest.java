@@ -14,6 +14,7 @@ import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.junit.rules.TestRule;
 import org.junit.rules.TestWatcher;
+import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
 
 import java.io.File;
@@ -42,6 +43,14 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
         }
 
         @Override
+        protected void succeeded(Description description)
+        {
+            logger.info("=================================================================");
+            logger.info("TEST PASSED ...");
+            logger.info("=================================================================");
+        }
+
+        @Override
         protected void failed(Throwable e, org.junit.runner.Description description)
         {
             createFolder(System.getProperty("user.dir") + "/target/PageSource");
@@ -61,7 +70,10 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
 
             writer.println(driver.getPageSource());
             writer.close();
+
+            logger.info("=================================================================");
             logger.info("TEST FAIL ... Fail Screen Page Source --> " + file);
+            logger.info("=================================================================");
         }
 
         @Override
