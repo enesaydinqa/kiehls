@@ -100,8 +100,8 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
         Double totalProductPrice = productPrices.get(0) + productPrices.get(1);
 
-        waitElementVisible(cartPage.subtotalPrice);
         wait(7);
+        waitElementVisible(cartPage.subtotalPrice);
 
         Double subTotalPrice = getPrice(cartPage.subtotalPrice);
 

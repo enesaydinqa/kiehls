@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,10 +39,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+            <state relative-caret-position="328">
+              <caret line="188" column="13" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,7 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ClientUtil.createSeleniumProxy(proxy);</find>
       <find>autom</find>
       <find>Juni</find>
       <find>reportDirectory</find>
@@ -94,6 +93,7 @@
       <find>System.getProperties()</find>
       <find>System.get</find>
       <find>gif</find>
+      <find>pass</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/target</dir>
@@ -149,7 +149,6 @@
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverResponsiveTestFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverWebTestFactory.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerWeb.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -157,8 +156,9 @@
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" />
       </list>
     </option>
   </component>
@@ -340,39 +340,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="galen" type="462c0819:PsiDirectoryNode" />
-              <item name="adaptive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="galen" type="462c0819:PsiDirectoryNode" />
-              <item name="path" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="galen" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,7 +359,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551618132625" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551618957363" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -538,8 +505,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductTest.testGiftPackageFee" />
-        <item itemvalue="JUnit.ProductTest.testProductAndBasketPriceCompare" />
         <item itemvalue="JUnit.ProductTest.testBasketAndSubTotalCountCompare" />
+        <item itemvalue="JUnit.ProductTest.testProductAndBasketPriceCompare" />
         <item itemvalue="JUnit.ProductTest.testShippingFree" />
         <item itemvalue="JUnit.ProductTest.testShippingFee" />
       </list>
@@ -607,15 +574,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductTest_testHomePageProductPrice - 2019.03.03 at 15h 39m 19s.xml">
-      <configuration name="ProductTest.testHomePageProductPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_testHomePageProductPrice - 2019.03.03 at 15h 41m 15s.xml">
-      <configuration name="ProductTest.testHomePageProductPrice" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_testShippingFee - 2019.03.03 at 15h 43m 34s.xml">
-      <configuration name="ProductTest.testShippingFee" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductTest_testProductAndBasketPriceCompare - 2019.03.03 at 15h 43m 50s.xml">
       <configuration name="ProductTest.testProductAndBasketPriceCompare" configurationId="JUnit" />
     </history-entry>
@@ -637,9 +595,18 @@
     <history-entry file="ProductTest_testProductAndBasketPriceCompare - 2019.03.03 at 15h 56m 14s.xml">
       <configuration name="ProductTest.testProductAndBasketPriceCompare" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 16h 03m 11s.xml">
+      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_testBasketAndSubTotalCountCompare - 2019.03.03 at 16h 09m 08s.xml">
+      <configuration name="ProductTest.testBasketAndSubTotalCountCompare" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 16h 13m 19s.xml">
+      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197052000" />
+    <option name="totallyTimeSpent" value="197821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -652,7 +619,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.30758226" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
@@ -663,7 +629,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30040053" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29639518" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41388518" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -712,6 +678,12 @@
           <line>99</line>
           <properties />
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java</url>
+          <line>188</line>
+          <properties />
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -771,7 +743,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/PageSource/testHomePageLoadPNG-DOM.txt" />
     <entry file="file://$PROJECT_DIR$/target/PageSource/testHomePageNetwork-DOM.txt" />
     <entry file="file://$PROJECT_DIR$/target/PageSource/testHomePageSlider-DOM.txt" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/stream/ReferencePipeline.java">
@@ -1079,26 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-181">
@@ -1133,20 +1084,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/rules/TestWatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="92" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="44" selection-start-line="44" selection-end-line="50" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+        <state relative-caret-position="304">
+          <caret line="26" selection-start-line="26" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1232">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="188" column="13" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
