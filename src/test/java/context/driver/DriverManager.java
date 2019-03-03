@@ -9,7 +9,6 @@ import java.util.Properties;
 
 public abstract class DriverManager
 {
-
     protected static RemoteWebDriver driver;
     protected static BrowserMobProxy proxy;
     protected static Configuration configuration;

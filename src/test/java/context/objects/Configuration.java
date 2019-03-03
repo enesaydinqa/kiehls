@@ -9,7 +9,7 @@ public class Configuration
 {
     private Properties configProps = new Properties();
 
-    private String browserstackUrl;
+    private String browserStackUrl;
     private Double prShippingFree;
     private Double shippingFee;
     private Boolean remoteTest;
@@ -29,13 +29,13 @@ public class Configuration
     {
         loadConfigProperties();
 
-        this.browserstackUrl = configProps.getProperty("browserstack.url");
-        this.prShippingFree = Double.valueOf(configProps.getProperty("pr.for.shipping.free"));
-        this.shippingFee = Double.valueOf(configProps.getProperty("shipping.fee"));
-        this.remoteTest = Boolean.valueOf(configProps.getProperty("remote.test"));
-        this.browserType = configProps.getProperty("browser.type");
+        this.browserStackUrl = configProps.getProperty("browserstack.url");
+        this.prShippingFree = Double.valueOf(System.getProperties().getProperty("pr.for.shipping.free"));
+        this.shippingFee = Double.valueOf(System.getProperties().getProperty("shipping.fee"));
+        this.remoteTest = Boolean.parseBoolean(System.getProperties().getProperty("remote.test"));
+        this.browserType = System.getProperties().getProperty("browser.type");
         this.username = configProps.getProperty("username");
-        this.takeAVideo = Boolean.valueOf(configProps.getProperty("take.a.video"));
+        this.takeAVideo = Boolean.valueOf(System.getProperties().getProperty("take.a.video"));
         this.galenReportPath = configProps.getProperty("galen.report.path");
         this.harFilePath = configProps.getProperty("har.file.path");
         this.baseUrl = configProps.getProperty("base.url");
@@ -54,14 +54,14 @@ public class Configuration
         configProps.load(in);
     }
 
-    public String getBrowserstackUrl()
+    public String getBrowserStackUrl()
     {
-        return browserstackUrl;
+        return browserStackUrl;
     }
 
-    public void setBrowserstackUrl(String browserstackUrl)
+    public void setBrowserStackUrl(String browserStackUrl)
     {
-        this.browserstackUrl = browserstackUrl;
+        this.browserStackUrl = browserStackUrl;
     }
 
     public Double getPrShippingFree()

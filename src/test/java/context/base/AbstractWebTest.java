@@ -2,7 +2,6 @@ package context.base;
 
 import context.driver.DriverManager;
 import context.driver.DriverWebTestFactory;
-import context.properties.SetProperties;
 import context.recorder.VideoRecorder;
 import context.utils.ReportGenerate;
 import net.lightbody.bmp.BrowserMobProxyServer;
@@ -11,7 +10,6 @@ import net.lightbody.bmp.proxy.CaptureType;
 import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.rules.TestName;
 import org.junit.rules.TestRule;
@@ -77,13 +75,6 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
             }
         }
     };
-
-    @BeforeClass
-    public static void setProp() throws Exception
-    {
-        SetProperties setProp = new SetProperties();
-        setProp.setProperties();
-    }
 
     @Before
     public void init() throws Exception

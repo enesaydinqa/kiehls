@@ -35,7 +35,7 @@ public class ChromeDriverManagerWeb extends DriverManager
 
             desiredCapabilities = desiredCapabilities(true, withProxy, remoteTest, chromeOptions);
 
-            driver = new RemoteWebDriver(new URL(configuration.getBrowserstackUrl()), desiredCapabilities);
+            driver = new RemoteWebDriver(new URL(configuration.getBrowserStackUrl()), desiredCapabilities);
         }
         else
         {

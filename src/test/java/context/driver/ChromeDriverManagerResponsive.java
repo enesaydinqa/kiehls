@@ -38,7 +38,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             desiredCapabilities = desiredCapabilities(true, withProxy, true, null);
 
-            driver = new RemoteWebDriver(new URL(configuration.getBrowserstackUrl()), desiredCapabilities);
+            driver = new RemoteWebDriver(new URL(configuration.getBrowserStackUrl()), desiredCapabilities);
         }
         else
         {
