@@ -98,7 +98,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
             proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
             proxy.newHar();
         }
-        
+
         takeVideo = configuration.getTakeAVideo();
 
         if (takeVideo)
