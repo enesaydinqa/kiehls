@@ -49,8 +49,7 @@ public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
             DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd-HHmmss");
             Date date = new Date();
 
-            reportPath =
-                    prop.getProperty("galen.report.path") + className + "-" + dateFormat.format(date);
+            reportPath = configuration.getGalenReportPath() + className + "-" + dateFormat.format(date);
 
             new HtmlReportBuilder().build(tests,
                     reportPath);

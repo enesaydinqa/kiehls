@@ -108,7 +108,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         driver = driverManager.getDriver(withProxy);
 
-        takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
+        takeVideo = configuration.getTakeAVideo();
 
         if (takeVideo)
         {
@@ -129,7 +129,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public void tearDown() throws Exception
     {
         //setHarFile(testName.getMethodName());
-        takeVideo = Boolean.parseBoolean(prop.getProperty("take.a.video"));
+        takeVideo = configuration.getTakeAVideo();
 
         if (takeVideo) VideoRecorder.stopRecording();
 

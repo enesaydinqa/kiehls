@@ -30,7 +30,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
     @Override
     public void createDriver(Boolean withProxy) throws Exception
     {
-        remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
+        remoteTest = configuration.getRemoteTest();
 
         if (remoteTest)
         {
@@ -38,7 +38,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             desiredCapabilities = desiredCapabilities(true, withProxy, true, null);
 
-            driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
+            driver = new RemoteWebDriver(new URL(configuration.getBrowserstackUrl()), desiredCapabilities);
         }
         else
         {
@@ -50,11 +50,11 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
             if (Platform.getCurrent().is(Platform.MAC))
             {
-                System.setProperty("webdriver.chrome.driver", prop.getProperty("mac.chrome.driver"));
+                System.setProperty("webdriver.chrome.driver", configuration.getMacChromeDriver());
             }
             else if (Platform.getCurrent().is(Platform.WINDOWS))
             {
-                System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
+                System.setProperty("webdriver.chrome.driver", configuration.getWindowsChromeDriver());
             }
 
             driver = new ChromeDriver(desiredCapabilities);

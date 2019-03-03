@@ -1,7 +1,7 @@
 package selenium.tests.adaptive;
 
-import context.base.AbstractNYXCostemicResponsiveTest;
-import context.base.Description;
+import context.base.AbstractNYXCosmeticsResponsiveTest;
+import context.annotations.Description;
 import context.helper.JSHelper;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class ProductTest extends AbstractNYXCostemicResponsiveTest
+public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private static Logger logger = Logger.getLogger(ProductTest.class);
 
@@ -190,24 +190,20 @@ public class ProductTest extends AbstractNYXCostemicResponsiveTest
 
         logger.info("Shipping fee of product in basket --> " + actualShippingFee);
 
-        Double expectedShippingFee = Double.parseDouble(prop.getProperty("shipping.fee"));
+        logger.info("Expected shipping costs --> " + configuration.getShippingFee());
 
-        logger.info("Expected shipping costs --> " + expectedShippingFee);
-
-        Assert.assertEquals("This product had to have a shipping charge.", actualShippingFee, expectedShippingFee);
+        Assert.assertEquals("This product had to have a shipping charge.", actualShippingFee, configuration.getShippingFee());
     }
 
     @Test
-    @Description("Kargo alanı x tl mi ?")
+    @Description("Sepet Tutarı x in üzeri ise kargo ücretsiz mi ?")
     public void testShippingFree()
     {
-        Double prShippingFree = Double.parseDouble(prop.getProperty("pr.for.shipping.free"));
-
         Double addedBasketProduct = 0.0;
 
-        logger.info("Product Price For Shipping Free --> " + prShippingFree);
+        logger.info("Product Price For Shipping Free --> " + configuration.getPrShippingFree());
 
-        while (addedBasketProduct < prShippingFree)
+        while (addedBasketProduct < configuration.getPrShippingFree())
         {
             navigateToURL(UrlFactory.THE_NEWEST_100_TO_150_PRICE);
             wait(7);

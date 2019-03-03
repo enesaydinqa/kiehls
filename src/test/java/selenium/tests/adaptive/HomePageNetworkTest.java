@@ -1,6 +1,6 @@
 package selenium.tests.adaptive;
 
-import context.base.AbstractNYXCostemicResponsiveTest;
+import context.base.AbstractNYXCosmeticsResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -12,7 +12,7 @@ import selenium.pages.mobile.MainPageResponsivePage;
 
 import java.util.List;
 
-public class HomePageNetworkTest extends AbstractNYXCostemicResponsiveTest
+public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private static Logger logger = Logger.getLogger(HomePageNetworkTest.class);
 

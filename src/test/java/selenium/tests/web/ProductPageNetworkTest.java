@@ -1,6 +1,6 @@
 package selenium.tests.web;
 
-import context.base.AbstractNYXCostemicTest;
+import context.base.AbstractNYXCosmeticsTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
@@ -14,7 +14,7 @@ import selenium.pages.web.ProductDetailPage;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class ProductPageNetworkTest extends AbstractNYXCostemicTest
+public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
 {
     private static Logger logger = Logger.getLogger(ProductPageNetworkTest.class);
 

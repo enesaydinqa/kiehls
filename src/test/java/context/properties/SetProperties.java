@@ -39,7 +39,7 @@ public class SetProperties {
         prop.setProperty("galen.report.path", System.getProperty("user.dir") + "/src/test/resources/galen");
         prop.setProperty("take.a.video", System.getProperties().getProperty("take.a.video"));
         prop.setProperty("jetty.port", System.getProperties().getProperty("jetty.port"));
-        prop.setProperty("automate.key", System.getProperties().getProperty("access.key"));
+        prop.setProperty("access.key", System.getProperties().getProperty("access.key"));
         prop.setProperty("username", System.getProperties().getProperty("username"));
         prop.setProperty("browser.type", System.getProperties().getProperty("browser.type"));
         prop.setProperty("remote.test", System.getProperties().getProperty("remote.test"));

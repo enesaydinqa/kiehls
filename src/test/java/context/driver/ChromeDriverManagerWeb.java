@@ -25,7 +25,7 @@ public class ChromeDriverManagerWeb extends DriverManager
     @Override
     public void createDriver(Boolean withProxy) throws Exception
     {
-        remoteTest = Boolean.parseBoolean(System.getProperty("remote.test"));
+        remoteTest = configuration.getRemoteTest();
 
         chromeOptions = chromeOptions();
 
@@ -35,7 +35,7 @@ public class ChromeDriverManagerWeb extends DriverManager
 
             desiredCapabilities = desiredCapabilities(true, withProxy, remoteTest, chromeOptions);
 
-            driver = new RemoteWebDriver(new URL(prop.getProperty("browserstack.url")), desiredCapabilities);
+            driver = new RemoteWebDriver(new URL(configuration.getBrowserstackUrl()), desiredCapabilities);
         }
         else
         {
@@ -43,11 +43,11 @@ public class ChromeDriverManagerWeb extends DriverManager
 
             if (Platform.getCurrent().is(Platform.MAC))
             {
-                System.setProperty("webdriver.chrome.driver", prop.getProperty("mac.chrome.driver"));
+                System.setProperty("webdriver.chrome.driver", configuration.getMacChromeDriver());
             }
             else if (Platform.getCurrent().is(Platform.WINDOWS))
             {
-                System.setProperty("webdriver.chrome.driver", prop.getProperty("windows.chrome.driver"));
+                System.setProperty("webdriver.chrome.driver", configuration.getWindowsChromeDriver());
             }
 
             logger.info("This test is local execute ...");
