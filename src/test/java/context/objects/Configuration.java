@@ -50,23 +50,6 @@ public class Configuration
         this.macChromeDriver = configProps.getProperty("mac.chrome.driver");
         this.windowsChromeDriver = configProps.getProperty("windows.chrome.driver");
         this.accessKey = configProps.getProperty("access.key");
-
-        logger.info("BrowserStack Url ---> " + browserStackUrl);
-        logger.info("Pr Shipping Free  ---> " + prShippingFree);
-        logger.info("Shipping Fee ---> " + shippingFee);
-        logger.info("Remote Test ---> " + remoteTest);
-        logger.info("Browser Type ---> " + browserType);
-        logger.info("Username ---> " + username);
-        logger.info("Take a Video ---> " + takeAVideo);
-        logger.info("Galen Report Path ---> " + galenReportPath);
-        logger.info("Har File Path ---> " + harFilePath);
-        logger.info("Base Url ---> " + baseUrl);
-        logger.info("Page Load Timeout ---> " + pageLoadTimeout);
-        logger.info("Wait Load Timeout ---> " + waitLoadTimeout);
-        logger.info("Implicitly Wait ---> " + implicitlyWait);
-        logger.info("Mac Chrome Driver Path ---> " + macChromeDriver);
-        logger.info("Windows Chrome Driver Path ---> " + windowsChromeDriver);
-        System.out.flush();
     }
 
     private void loadConfigProperties() throws IOException
