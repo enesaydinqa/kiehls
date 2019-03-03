@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/logs/console.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/console.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,35 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="92" selection-start-line="92" selection-end-line="100" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+            <state relative-caret-position="483">
+              <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerWeb.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverResponsiveTestFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverWebTestFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java" />
       </list>
@@ -327,16 +303,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -419,7 +385,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551605210122" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551606262850" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -462,6 +428,24 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="AllTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium" />
+      <option name="MAIN_CLASS_NAME" value="selenium.AllTestRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=10.99 -Dpr.for.shipping.free=120" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -472,6 +456,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AllTestRunner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -535,12 +524,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductTest_testShippingFee - 2019.03.03 at 11h 15m 14s.xml">
-      <configuration name="ProductTest.testShippingFee" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_testShippingFee - 2019.03.03 at 11h 15m 51s.xml">
-      <configuration name="ProductTest.testShippingFee" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProductTest_testShippingFee - 2019.03.03 at 11h 18m 14s.xml">
       <configuration name="ProductTest.testShippingFee" configurationId="JUnit" />
     </history-entry>
@@ -565,9 +548,15 @@
     <history-entry file="ProductTest_testShippingFree - 2019.03.03 at 12h 22m 08s.xml">
       <configuration name="ProductTest.testShippingFree" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AllTestRunner - 2019.03.03 at 12h 41m 30s.xml">
+      <configuration name="AllTestRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTestRunner - 2019.03.03 at 12h 43m 13s.xml">
+      <configuration name="AllTestRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185398000" />
+    <option name="totallyTimeSpent" value="185783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,7 +569,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.29470673" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
@@ -635,7 +623,13 @@
           <url>file://$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java</url>
           <line>32</line>
           <properties />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -840,13 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -975,20 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/DriverResponsiveTestFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/DriverWebTestFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1010,16 +983,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1030,17 +993,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/objects/Configuration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-828">
+          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6347#6348#0" expanded="true" />
@@ -1051,10 +1007,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/DriverResponsiveTestFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="92" selection-start-line="92" selection-end-line="100" selection-end-column="9" />
+        <state relative-caret-position="405">
+          <caret line="27" column="46" selection-start-line="27" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1063,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="100" column="8" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="8" />
+        <state relative-caret-position="483">
+          <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

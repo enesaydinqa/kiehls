@@ -25,6 +25,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     private static final Logger logger = Logger.getLogger(AbstractWebTest.class);
 
     private boolean takeVideo;
+    private static final String accessKey = "FPqXDFz4bqk1jvqXDZ3d";
 
     @Rule
     public final TestName testName = new TestName();
@@ -87,17 +88,17 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
         DriverManager driverManager;
         driverManager = DriverWebTestFactory.getManager();
 
-        driver = driverManager.getDriver(withProxy);
-
         if (withProxy)
         {
-            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + configuration.getAccessKey());
+            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + accessKey);
 
             proxy = new BrowserMobProxyServer();
             proxy.start();
             proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
             proxy.newHar();
         }
+
+        driver = driverManager.getDriver(withProxy);
 
         takeVideo = configuration.getTakeAVideo();
 

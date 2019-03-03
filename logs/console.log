@@ -7419,3 +7419,25 @@ java.lang.IllegalArgumentException: input == null!
 2019-03-03 12:24:41 INFO  Configuration:67 - Mac Chrome Driver Path ---> /Users/enes.aydin/loreal/nyxcosmetics/drivers/chromedriver
 2019-03-03 12:24:41 INFO  Configuration:68 - Windows Chrome Driver Path ---> /Users/enes.aydin/loreal/nyxcosmetics/drivers/chromedriver.exe
 2019-03-03 12:24:41 INFO  ChromeDriverManagerResponsive:37 - This test is browserstack execute ...
+2019-03-03 12:40:55 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-03-03 12:40:57 INFO  ChromeDriverManagerResponsive:37 - This test is browserstack execute ...
+2019-03-03 12:41:00 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-03-03 12:41:30 INFO  ChromeDriverManagerResponsive:37 - This test is browserstack execute ...
+2019-03-03 12:43:08 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-03-03 12:44:25 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-03-03 12:44:26 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:1337
+2019-03-03 12:44:26 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-03-03 12:44:27 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:1337
+2019-03-03 12:44:27 INFO  ChromeDriverManagerResponsive:37 - This test is browserstack execute ...
+2019-03-03 12:44:27 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-03-03 12:44:27 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-03-03 12:44:27 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-03-03 12:44:29 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-03-03 12:44:30 INFO  DriverResponsiveTestFactory:16 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-03-03 12:44:30 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:1337
+2019-03-03 12:44:30 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-03-03 12:44:30 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:1337
+2019-03-03 12:44:30 INFO  ChromeDriverManagerResponsive:37 - This test is browserstack execute ...
+2019-03-03 12:44:30 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-03-03 12:44:30 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-03-03 12:44:30 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
