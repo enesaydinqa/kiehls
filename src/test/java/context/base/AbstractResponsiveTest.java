@@ -22,7 +22,7 @@ import java.io.PrintWriter;
 
 public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
 {
-    private Logger logger = Logger.getLogger(AbstractResponsiveTest.class);
+    private static final Logger logger = Logger.getLogger(AbstractResponsiveTest.class);
 
     private boolean takeVideo;
 

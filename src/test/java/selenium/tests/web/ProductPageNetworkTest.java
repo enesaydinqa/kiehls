@@ -16,7 +16,7 @@ import java.util.stream.IntStream;
 
 public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
 {
-    private static Logger logger = Logger.getLogger(ProductPageNetworkTest.class);
+    private static final Logger logger = Logger.getLogger(ProductPageNetworkTest.class);
 
     private MainPageWebPage mainPage;
     private ProductDetailPage productDetailPage;

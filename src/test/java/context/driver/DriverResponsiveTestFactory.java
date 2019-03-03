@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 public class DriverResponsiveTestFactory {
 
-    private static Logger logger = Logger.getLogger(DriverResponsiveTestFactory.class);
+    private static final Logger logger = Logger.getLogger(DriverResponsiveTestFactory.class);
 
     public static DriverManager getManager() {
 

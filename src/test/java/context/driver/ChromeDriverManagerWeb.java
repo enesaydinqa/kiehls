@@ -16,7 +16,7 @@ import java.util.HashMap;
 
 public class ChromeDriverManagerWeb extends DriverManager
 {
-    private Logger logger = Logger.getLogger(ChromeDriverManagerWeb.class);
+    private static final Logger logger = Logger.getLogger(ChromeDriverManagerWeb.class);
 
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;

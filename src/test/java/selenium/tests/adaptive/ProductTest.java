@@ -20,7 +20,7 @@ import java.util.stream.IntStream;
 
 public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 {
-    private static Logger logger = Logger.getLogger(ProductTest.class);
+    private static final Logger logger = Logger.getLogger(ProductTest.class);
 
     private MainPageResponsivePage mainPage;
     private ProductDetailPage productDetailPage;

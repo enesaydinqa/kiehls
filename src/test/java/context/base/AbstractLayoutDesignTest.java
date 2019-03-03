@@ -25,8 +25,7 @@ import java.util.zip.ZipOutputStream;
 
 public abstract class AbstractLayoutDesignTest extends AbstractSeleniumTest
 {
-
-    private Logger logger = Logger.getLogger(AbstractLayoutDesignTest.class);
+    private static final Logger logger = Logger.getLogger(AbstractLayoutDesignTest.class);
 
     private List<GalenTestInfo> tests;
     private LayoutReport layoutReport;

@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class ChromeDriverManagerResponsive extends DriverManager
 {
-    private Logger logger = Logger.getLogger(ChromeDriverManagerResponsive.class);
+    private static final Logger logger = Logger.getLogger(ChromeDriverManagerResponsive.class);
 
     private Map<String, String> mobileEmulation;
     private ChromeOptions chromeOptions;

@@ -14,7 +14,7 @@ import java.util.List;
 
 public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
 {
-    private static Logger logger = Logger.getLogger(HomePageNetworkTest.class);
+    private static final Logger logger = Logger.getLogger(HomePageNetworkTest.class);
 
     private MainPageResponsivePage mainPage;
 

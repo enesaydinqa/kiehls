@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class Configuration
 {
-    private Logger logger = Logger.getLogger(Configuration.class);
+    private static final Logger logger = Logger.getLogger(Configuration.class);
 
     private Properties configProps = new Properties();
 
@@ -64,7 +64,6 @@ public class Configuration
         logger.info("Implicitly Wait ---> " + implicitlyWait);
         logger.info("Mac Chrome Driver Path ---> " + macChromeDriver);
         logger.info("Windows Chrome Driver Path ---> " + windowsChromeDriver);
-
     }
 
     private void loadConfigProperties() throws IOException
