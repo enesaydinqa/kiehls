@@ -26,4 +26,7 @@ public class CartPage extends PageObject
 
     @FindBy(xpath = "//div[contains(text(),'Hediye Paketi')]/parent::div/parent::div//div[contains(text(), 'TL')]")
     public WebElement giftPackageFee;
+
+    @FindBy(xpath = "//div[contains(text(),'Toplam Tutar')]/parent::div/parent::div//div[contains(text(), 'TL')]")
+    public WebElement totalFee;
 }

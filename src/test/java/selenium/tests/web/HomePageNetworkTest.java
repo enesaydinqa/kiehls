@@ -1,7 +1,7 @@
 package selenium.tests.web;
 
-import context.base.AbstractNYXCosmeticsTest;
 import context.annotations.Description;
+import context.base.AbstractNYXCosmeticsTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;

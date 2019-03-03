@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/context/driver/ChromeDriverManagerResponsive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/driver/ChromeDriverManagerResponsive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/ProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/ProductTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
+            <state relative-caret-position="92">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,8 +159,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" />
       </list>
     </option>
@@ -397,7 +395,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551613316553" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551617336011" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -439,17 +437,116 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=10.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=8.00" />
+  <component name="RunManager" selected="JUnit.ProductTest.testBasketAndSubTotalCountCompare">
+    <configuration name="ProductTest.testBasketAndSubTotalCountCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testBasketAndSubTotalCountCompare" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductTest.testHomePageProductPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testHomePageProductPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testProductAndBasketPriceCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testProductAndBasketPriceCompare" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testShippingFee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testShippingFee" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testShippingFree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testShippingFree" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductTest.testBasketAndSubTotalCountCompare" />
+        <item itemvalue="JUnit.ProductTest.testShippingFree" />
+        <item itemvalue="JUnit.ProductTest.testShippingFee" />
+        <item itemvalue="JUnit.ProductTest.testProductAndBasketPriceCompare" />
+        <item itemvalue="JUnit.ProductTest.testHomePageProductPrice" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -513,39 +610,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 27m 52s.xml">
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 15h 24m 01s.xml">
       <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 29m 12s.xml">
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 15h 29m 27s.xml">
       <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 30m 46s.xml">
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 15h 32m 18s.xml">
       <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 33m 59s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testHomePageProductPrice - 2019.03.03 at 15h 38m 35s.xml">
+      <configuration name="ProductTest.testHomePageProductPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 34m 53s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testHomePageProductPrice - 2019.03.03 at 15h 39m 19s.xml">
+      <configuration name="ProductTest.testHomePageProductPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 36m 26s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testHomePageProductPrice - 2019.03.03 at 15h 41m 15s.xml">
+      <configuration name="ProductTest.testHomePageProductPrice" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 37m 43s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testShippingFee - 2019.03.03 at 15h 43m 34s.xml">
+      <configuration name="ProductTest.testShippingFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 38m 29s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testProductAndBasketPriceCompare - 2019.03.03 at 15h 43m 50s.xml">
+      <configuration name="ProductTest.testProductAndBasketPriceCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 40m 14s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testBasketAndSubTotalCountCompare - 2019.03.03 at 15h 44m 08s.xml">
+      <configuration name="ProductTest.testBasketAndSubTotalCountCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.03 at 14h 41m 43s.xml">
-      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
+    <history-entry file="ProductTest_testShippingFree - 2019.03.03 at 15h 44m 11s.xml">
+      <configuration name="ProductTest.testShippingFree" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192468000" />
+    <option name="totallyTimeSpent" value="196212000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,7 +656,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="841" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.29470673" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.30758226" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -568,8 +665,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34979972" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34579438" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30040053" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41388518" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
@@ -579,7 +676,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32933334" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32443258" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32847682" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32843792" />
       <window_info anchor="bottom" id="Spring" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -599,6 +696,16 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.spec" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -616,15 +723,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java</url>
-          <line>243</line>
+          <line>69</line>
           <properties />
-          <option name="timeStamp" value="35" />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>configuration.getShippingFee().intValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>giftPackageFee.intValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>productPrice.intValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>driver.findElement(By.xpath(&quot;//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div/div[4]&quot;)).click();</expression-string>
         <language-id>JAVA</language-id>
@@ -657,21 +785,6 @@
       </expression>
       <expression>
         <expression-string>secureScrollPage(0, pageHeight.intValue());</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>IntStream.range(0, 2).forEach(i -&gt; click(productDetailPage.addToBasket))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>IntStream.range(0, 5).forEach(i -&gt; clickViaJs(productDetailPage.addToBasket));</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>jsHelper.getText(cartPage.productPrice);</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -801,13 +914,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/properties/SetProperties.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/ProductDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ProductPageNetworkTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -992,16 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1009,13 +1105,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1044,10 +1133,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/ProductDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="239" lean-forward="true" selection-start-line="239" selection-end-line="239" />
+        <state relative-caret-position="92">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

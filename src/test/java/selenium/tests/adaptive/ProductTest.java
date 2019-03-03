@@ -1,13 +1,12 @@
 package selenium.tests.adaptive;
 
-import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.annotations.Description;
+import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.CartPage;
@@ -35,63 +34,6 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         productDetailPage = new ProductDetailPage(driver);
         cartPage = new CartPage(driver);
         jsHelper = new JSHelper(driver);
-    }
-
-    @Test
-    @Description("Anasayfa ürün fiyatlarının 0 dan büyük olduğunun kontrolü.")
-    public void testHomePageProductPrice()
-    {
-        navigateToURL(UrlFactory.MAIN_URL);
-
-        IntStream.range(1, 8)
-                .forEach(i -> {
-                    try
-                    {
-                        WebElement theNewestFrom = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]"));
-                        WebElement theNewestTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + (i + 1) + "]"));
-
-                        if (configuration.getRemoteTest())
-                            dragAndDrop(theNewestFrom, theNewestTo);
-
-                        WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
-
-                        String result = jsHelper.getText(dynamicGetProductPrice);
-                        Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
-
-                        logger.info("Product Price --> " + productPrice);
-
-                        Assert.assertTrue("Product Price Must Be Greater Than Zero", productPrice > 0);
-                    }
-                    catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                });
-
-        IntStream.range(1, 7)
-                .forEach(i -> {
-                    try
-                    {
-                        WebElement bestSellersFrom = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + i + "]"));
-                        WebElement bestSellersTo = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[4]/div[" + (i + 1) + "]"));
-
-                        if (configuration.getRemoteTest())
-                            dragAndDrop(bestSellersFrom, bestSellersTo);
-
-                        WebElement dynamicGetProductPrice = driver.findElement(By.xpath("(//div[@class='swiper-wrapper'])[3]/div[" + i + "]//div[contains(text(), ' TL')]"));
-
-                        String result = jsHelper.getText(dynamicGetProductPrice);
-                        Double productPrice = Double.parseDouble(result.substring(0, Math.min(result.length(), 5)).replace(",", "."));
-
-                        logger.info("Product Price --> " + productPrice);
-
-                        Assert.assertTrue("Product Price Must Be Greater Than Zero", productPrice > 0);
-                    }
-                    catch (Exception e)
-                    {
-                        e.printStackTrace();
-                    }
-                });
     }
 
     @Test
@@ -134,15 +76,14 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         IntStream.range(1, 3).forEach(i ->
         {
             navigateToURL(UrlFactory.MAIN_URL);
+            wait(3);
 
             if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
 
             pageLongDownScroll();
             scrollToElement(mainPage.getProductList().get(i));
 
-            String[] result = jsHelper.getText(mainPage.getProductPriceList().get(i)).split(" TL");
-
-            Double price = Double.parseDouble(result[0].replace(",", "."));
+            Double price = getPrice(mainPage.getProductPriceList().get(i));
             productPrices.add(price);
 
             logger.info("Product Price --> " + price);
@@ -151,6 +92,9 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
             clickViaJs(mainPage.getProductList().get(i));
 
             wait(7);
+
+            if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+
             pageScroll(0, 300);
 
             click(productDetailPage.addToBasket);
@@ -161,9 +105,8 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
         waitElementVisible(cartPage.subtotalPrice);
         wait(7);
-        String[] getSubTotalPrice = jsHelper.getText(cartPage.subtotalPrice).split(" TL");
 
-        Double subTotalPrice = Double.parseDouble(getSubTotalPrice[0].replace(",", "."));
+        Double subTotalPrice = getPrice(cartPage.subtotalPrice);
 
         logger.info("Sub Total Price --> " + subTotalPrice);
         Assert.assertEquals("The price on the payment screen with the product price is not the same", totalProductPrice, subTotalPrice);
@@ -185,8 +128,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         wait(7);
         waitElementVisible(cartPage.shippingFee);
 
-        String[] getShippingFee = jsHelper.getText(cartPage.shippingFee).split(" TL");
-        Double actualShippingFee = Double.parseDouble(getShippingFee[0].replace(",", "."));
+        Double actualShippingFee = getPrice(cartPage.shippingFee);
 
         logger.info("Shipping fee of product in basket --> " + actualShippingFee);
 
@@ -217,16 +159,14 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
             listElementRandomClick(mainPage.getProductList());
 
-            waitElementVisible(productDetailPage.productPrice);
-            String[] productPrice = jsHelper.getText(productDetailPage.productPrice).split(" TL");
-            Double actualShippingFee = Double.parseDouble(productPrice[0].replace(",", "."));
+            Double productPrice = getPrice(productDetailPage.productPrice);
 
             wait(7);
             waitElementToBeClickable(productDetailPage.addToBasket);
             clickViaJs(productDetailPage.addToBasket);
             wait(7);
 
-            if (isDisplayed(cartPage.subtotalPrice)) addedBasketProduct += actualShippingFee;
+            if (isDisplayed(cartPage.subtotalPrice)) addedBasketProduct += productPrice;
         }
 
         Assert.assertFalse("There is a shipping fee, but it shouldn't be !", isDisplayed(cartPage.shippingFee));
@@ -245,16 +185,25 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         wait(7);
         pageScroll(0, 300);
         click(productDetailPage.addToBasket);
+
+        Double productPrice = getPrice(cartPage.productPrice);
+
         wait(7);
         click(cartPage.giftPackageCheckbox);
 
-        waitElementVisible(cartPage.giftPackageFee);
-        String[] getGiftPackageFee = jsHelper.getText(cartPage.giftPackageFee).split(" TL");
-        Double actualGiftPackageFee = Double.parseDouble(getGiftPackageFee[0].replace(",", "."));
+        Double giftPackageFee = getPrice(cartPage.giftPackageFee);
 
-        logger.info("Gift Package Fee --> " + actualGiftPackageFee);
+        Double expectedTotalFee = productPrice + giftPackageFee + configuration.getShippingFee();
+        Double actualTotalFee = getPrice(cartPage.totalFee);
 
-        Assert.assertEquals("Gift package fees are not equal !", actualGiftPackageFee, configuration.getGiftPackageFee());
+        Assert.assertEquals("Gift package fees are not equal !", giftPackageFee, configuration.getGiftPackageFee());
+        Assert.assertEquals("Total amount is wrong !", expectedTotalFee.intValue(), actualTotalFee.intValue());
+    }
 
+    private Double getPrice(WebElement element)
+    {
+        waitElementVisible(element);
+        String[] productPrice = jsHelper.getText(element).split(" TL");
+        return Double.parseDouble(productPrice[0].replace(",", "."));
     }
 }

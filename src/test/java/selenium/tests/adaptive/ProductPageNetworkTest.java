@@ -1,7 +1,7 @@
 package selenium.tests.adaptive;
 
-import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.annotations.Description;
+import context.base.AbstractNYXCosmeticsResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.core.har.HarResponse;
 import org.apache.log4j.Logger;
