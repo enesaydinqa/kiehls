@@ -12,6 +12,8 @@ import selenium.pages.mobile.CartPage;
 import selenium.pages.mobile.NewAddressRegistrationPage;
 import selenium.pages.mobile.PaymentPage;
 
+import java.util.stream.IntStream;
+
 public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private JSHelper jsHelper;
@@ -51,6 +53,9 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
         secureScrollPage(0, pageHeight.intValue());
 
         Assert.assertEquals("Agreement Smooth or Ever Not Showing !", 8, paymentPage.agreements.size());
+
+        IntStream.range(0, 8)
+                .forEach(i -> isDisplayed(paymentPage.agreements.get(i)));
     }
 
 
