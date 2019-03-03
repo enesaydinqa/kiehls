@@ -20,12 +20,12 @@ public class ChromeDriverManagerResponsive extends DriverManager
 {
     private static final Logger logger = Logger.getLogger(ChromeDriverManagerResponsive.class);
 
-    private Map<String, String> mobileEmulation;
+    private static Map<String, String> mobileEmulation;
     private ChromeOptions chromeOptions;
     private DesiredCapabilities desiredCapabilities;
     private boolean remoteTest;
 
-    private String USER_AGENT = "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1";
+    private static final String USER_AGENT = "Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1";
 
     @Override
     public void createDriver(Boolean withProxy) throws Exception

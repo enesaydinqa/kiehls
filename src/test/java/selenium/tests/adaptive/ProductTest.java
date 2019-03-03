@@ -231,4 +231,11 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
         Assert.assertFalse("There is a shipping fee, but it shouldn't be !", isDisplayed(cartPage.shippingFee));
     }
+
+    @Test
+    @Description("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
+    public void testGiftPackageFee()
+    {
+
+    }
 }

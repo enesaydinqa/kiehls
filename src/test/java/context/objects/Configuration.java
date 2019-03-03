@@ -15,6 +15,7 @@ public class Configuration
 
     private String browserStackUrl;
     private Double prShippingFree;
+    private Double giftPackageFee;
     private Double shippingFee;
     private Boolean remoteTest;
     private String browserType;
@@ -37,6 +38,7 @@ public class Configuration
         this.browserStackUrl = configProps.getProperty("browserstack.url");
         this.prShippingFree = Double.valueOf(System.getProperties().getProperty("pr.for.shipping.free"));
         this.shippingFee = Double.valueOf(System.getProperties().getProperty("shipping.fee"));
+        this.giftPackageFee = Double.valueOf(System.getProperties().getProperty("gift.package.fee"));
         this.remoteTest = Boolean.parseBoolean(System.getProperties().getProperty("remote.test"));
         this.browserType = System.getProperties().getProperty("browser.type");
         this.username = configProps.getProperty("username");
@@ -218,5 +220,15 @@ public class Configuration
     public void setAccessKey(String accessKey)
     {
         this.accessKey = accessKey;
+    }
+
+    public Double getGiftPackageFee()
+    {
+        return giftPackageFee;
+    }
+
+    public void setGiftPackageFee(Double giftPackageFee)
+    {
+        this.giftPackageFee = giftPackageFee;
     }
 }
