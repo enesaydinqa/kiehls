@@ -22,7 +22,6 @@ public class CartPage extends PageObject
     @FindBy(xpath = "//div[contains(text(),'Kargo')]/parent::div/parent::div//div[contains(text(), 'TL')]")
     public WebElement shippingFee;
 
-
     @FindAll({
             @FindBy(xpath = "//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div/div[4]"),
             @FindBy(xpath = "//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div//input"),
@@ -34,4 +33,10 @@ public class CartPage extends PageObject
 
     @FindBy(xpath = "//div[contains(text(),'Toplam Tutar')]/parent::div/parent::div//div[contains(text(), 'TL')]")
     public WebElement totalFee;
+
+    @FindBy(xpath = "//div[contains(text(),'ALIŞVERİŞİ TAMAMLA')]/parent::div/parent::div")
+    public WebElement completeShoppingButton;
+
+    @FindBy(xpath = "//div[contains(text(),'misafir olarak')]/parent::div/following-sibling::div")
+    public WebElement asAGuestButton;
 }

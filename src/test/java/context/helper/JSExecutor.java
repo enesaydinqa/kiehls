@@ -10,4 +10,9 @@ public interface JSExecutor
 
     Long getPageHeight();
 
+    String randomGenerate(int digit);
+
+    Number randomNumberGenerate(int digit);
+
+    String randomStringGenerate(int digit);
 }

@@ -37,4 +37,22 @@ public class JSHelper implements JSExecutor
         return executeScript(Long.class, "return $(document).height()");
     }
 
+    @Override
+    public String randomGenerate(int digit)
+    {
+        return executeScript(String.class, "var text = ''; var possible = 'abcdefghijklmnopqrstuvwxyz0123456789'; for (var i = 0; i < arguments[0]; i++) text += possible.charAt(Math.floor(Math.random() * possible.length)); return text;", digit);
+    }
+
+    @Override
+    public Number randomNumberGenerate(int digit)
+    {
+        return executeScript(Number.class, "return Math.floor(Math.random() * Math.floor(Math.pow(10, arguments[0])))", digit);
+    }
+
+    @Override
+    public String randomStringGenerate(int digit)
+    {
+        return executeScript(String.class, "return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, arguments[0]);", digit);
+    }
+
 }
