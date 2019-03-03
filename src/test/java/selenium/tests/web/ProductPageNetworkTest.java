@@ -31,7 +31,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
 
     @Test
     @DisplayName("Product Detail")
-    public void testProductDetail() throws InterruptedException
+    public void testProductDetail()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         pageLongDownScroll();
@@ -46,7 +46,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
                 .forEach(png -> {
                     logger.info("Check Response This Url -> " + png.getRequest().getUrl());
                     Assert.assertTrue(
-                            "Broken : " + png.getRequest().getUrl(),
+                            "HTTP Request Error : " + png.getRequest().getUrl(),
                             400 > png.getResponse().getStatus());
                 });
     }

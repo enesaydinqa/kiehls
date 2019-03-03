@@ -37,7 +37,9 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png") | link.getRequest().getUrl().contains(".jpg"))
                 .forEach(png -> {
                     logger.info("Check Response This Url -> " + png.getRequest().getUrl());
-                    Assert.assertEquals("This image not load " + png.getRequest().getUrl(), 200, png.getResponse().getStatus());
+                    Assert.assertEquals(
+                            "This image not load " + png.getRequest().getUrl(),
+                            200, png.getResponse().getStatus());
                 });
     }
 
@@ -52,7 +54,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
         entries.stream()
                 .forEach(png -> {
                     logger.info("Check Response This Url -> " + png.getRequest().getUrl());
-                    Assert.assertTrue("Broken : " + png.getRequest().getUrl(), 400 > png.getResponse().getStatus());
+                    Assert.assertTrue("HTTP Request Error : " + png.getRequest().getUrl(), 400 > png.getResponse().getStatus());
                 });
     }
 
@@ -62,9 +64,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
     {
         navigateToURL(UrlFactory.MAIN_URL);
         IntStream.range(0, mainPage.getProductSalePrices().size())
-                .forEach(count -> {
-                    Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count)));
-                });
+                .forEach(count -> Assert.assertNotEquals(0, getText(mainPage.getProductSalePrices().get(count))));
     }
 
     @Test

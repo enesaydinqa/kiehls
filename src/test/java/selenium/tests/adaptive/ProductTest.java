@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebElement;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.CartPage;
 import selenium.pages.mobile.MainPageResponsivePage;
@@ -206,10 +205,4 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         Assert.assertEquals("Total amount is wrong !", expectedTotalFee.intValue(), actualTotalFee.intValue());
     }
 
-    private Double getPrice(WebElement element)
-    {
-        waitElementVisible(element);
-        String[] productPrice = jsHelper.getText(element).split(" TL");
-        return Double.parseDouble(productPrice[0].replace(",", "."));
-    }
 }
