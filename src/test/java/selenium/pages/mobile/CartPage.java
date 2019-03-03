@@ -2,6 +2,7 @@ package selenium.pages.mobile;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import selenium.pages.PageObject;
 
@@ -21,7 +22,11 @@ public class CartPage extends PageObject
     @FindBy(xpath = "//div[contains(text(),'Kargo')]/parent::div/parent::div//div[contains(text(), 'TL')]")
     public WebElement shippingFee;
 
-    @FindBy(xpath = "//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div/div[4]")
+
+    @FindAll({
+            @FindBy(xpath = "//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div/div[4]"),
+            @FindBy(xpath = "//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div//input"),
+    })
     public WebElement giftPackageCheckbox;
 
     @FindBy(xpath = "//div[contains(text(),'Hediye Paketi')]/parent::div/parent::div//div[contains(text(), 'TL')]")

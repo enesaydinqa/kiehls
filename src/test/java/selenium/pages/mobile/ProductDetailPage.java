@@ -12,7 +12,7 @@ public class ProductDetailPage extends PageObject
         super(driver);
     }
 
-    @FindBy(xpath = "//a[contains(@href, '=mobile_product_detail')]")
+    @FindBy(xpath = "//div[contains(text(), 'SEPETE EKLE')]/parent::div/parent::div//a[contains(@href, '=mobile_product_detail')]")
     public WebElement addToBasket;
 
     @FindBy(xpath = "(//div[@data-alias='product_component'])[1]//div[contains(text(), ' TL')]")
