@@ -236,6 +236,25 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     @Description("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
     public void testGiftPackageFee()
     {
+        navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
+
+        Long pageHeight = jsHelper.getPageHeight();
+        secureScrollPage(0, pageHeight.intValue());
+        pageScroll(0, 0);
+        listElementRandomClick(mainPage.getProductList());
+        wait(7);
+        pageScroll(0, 300);
+        click(productDetailPage.addToBasket);
+        wait(7);
+        click(cartPage.giftPackageCheckbox);
+
+        waitElementVisible(cartPage.giftPackageFee);
+        String[] getGiftPackageFee = jsHelper.getText(cartPage.giftPackageFee).split(" TL");
+        Double actualGiftPackageFee = Double.parseDouble(getGiftPackageFee[0].replace(",", "."));
+
+        logger.info("Gift Package Fee --> " + actualGiftPackageFee);
+
+        Assert.assertEquals("Gift package fees are not equal !", actualGiftPackageFee, configuration.getGiftPackageFee());
 
     }
 }

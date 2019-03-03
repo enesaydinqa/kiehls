@@ -53,6 +53,7 @@ public abstract class AbstractSeleniumTest extends DriverManager implements Sele
         scrollToElement(clickableElement);
         mouseOver(clickableElement);
         waitElementToBeClickable(clickableElement);
+        wait(3);
         clickableElement.click();
     }
 
