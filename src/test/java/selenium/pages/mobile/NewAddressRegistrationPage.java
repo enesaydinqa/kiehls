@@ -24,13 +24,13 @@ public class NewAddressRegistrationPage extends PageObject
     @FindBy(id = "obj-phone")
     public WebElement phoneInput;
 
-    @FindBy(css = "[data-component-id='dropdown_city']")
+    @FindBy(xpath = "//div[@data-component-id='dropdown_city']//input[1]")
     public WebElement citySelectBox;
 
     @FindBy(css = "[data-title='Adana']")
     public WebElement adanaOption;
 
-    @FindBy(css = "[data-component-id='dropdown_township']")
+    @FindBy(xpath = "//div[@data-component-id='dropdown_township']//input[1]")
     public WebElement townshipSelectBox;
 
     @FindBy(css = "[data-title='Aladağ']")
@@ -39,10 +39,10 @@ public class NewAddressRegistrationPage extends PageObject
     @FindBy(id = "obj-address")
     public WebElement addressTextArea;
 
-    @FindBy(xpath = "//div[contains(text(),'KAYDET')]/parent::div/parent::div")
+    @FindBy(xpath = "//a[contains(@href, '/new-address?')]/parent::div")
     public WebElement saveButton;
 
-    @FindBy(xpath = "//a[text() = 'TAMAM']/parent::div")
+    @FindBy(xpath = "//a[text() = 'TAMAM']")
     public WebElement okButton;
 
 }

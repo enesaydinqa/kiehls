@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/context/objects/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/context/objects/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/PaymentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/helper/JSExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/helper/JSExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/helper/JSHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/helper/JSHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nyxcostemicstestresult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/nyxcostemicstestresult.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/context/base/AbstractNYXCosmeticsResponsiveTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/base/AbstractNYXCosmeticsResponsiveTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/context/helper/JSExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/helper/JSExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/context/helper/JSHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/helper/JSHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/pages/mobile/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/pages/mobile/CartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/ProductPageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/ProductPageNetworkTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/ProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/ProductTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/HomePageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/HomePageNetworkTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/ProductPageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/ProductPageNetworkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +41,20 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="511">
+              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/MainPageResponsivePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/NYXCosmeticsProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/SeleniumActions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCostemicTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/properties/SetProperties.java" />
@@ -143,11 +139,9 @@
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractLayoutDesignTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverResponsiveTestFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverWebTestFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/DriverManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerWeb.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" />
@@ -158,13 +152,16 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/helper/JSHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/helper/JSExecutor.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/PaymentPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/CreditCard.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/context/objects/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java" />
       </list>
     </option>
@@ -176,7 +173,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="841" />
@@ -195,6 +192,11 @@
             <path>
               <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
               <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
@@ -376,7 +378,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551635996133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551648289683" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -419,7 +421,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PaymentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nyxcosmetics" />
       <extension name="coverage">
         <pattern>
@@ -429,63 +431,9 @@
       </extension>
       <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
       <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.PaymentTest" />
-      <option name="METHOD_NAME" value="testUserNotLoggedAgreementVisible" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductPageNetworkTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nyxcosmetics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.tests.adaptive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductPageNetworkTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductPageNetworkTest.testProductDetailPageLoadImages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nyxcosmetics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.tests.adaptive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductPageNetworkTest" />
-      <option name="METHOD_NAME" value="testProductDetailPageLoadImages" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductPageNetworkTest.testTheNewestLoadRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nyxcosmetics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.tests.adaptive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductPageNetworkTest" />
-      <option name="METHOD_NAME" value="testTheNewestLoadRequest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -495,7 +443,7 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -503,10 +451,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PaymentTest.testUserNotLoggedAgreementVisible" />
-        <item itemvalue="JUnit.ProductPageNetworkTest.test" />
-        <item itemvalue="JUnit.ProductPageNetworkTest.testProductDetailPageLoadImages" />
-        <item itemvalue="JUnit.ProductPageNetworkTest.testTheNewestLoadRequest" />
+        <item itemvalue="JUnit.PaymentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -568,44 +513,44 @@
       <workItem from="1551600899716" duration="260000" />
       <workItem from="1551601162728" duration="1644000" />
       <workItem from="1551603160568" duration="1888000" />
-      <workItem from="1551626273888" duration="9385000" />
+      <workItem from="1551626273888" duration="21421000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 19h 51m 17s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.03 at 23h 39m 29s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 05m 47s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.03 at 23h 44m 05s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 09m 23s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.03 at 23h 47m 32s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 19m 01s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.03 at 23h 51m 43s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 40m 00s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.03 at 23h 55m 21s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 42m 21s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.04 at 00h 04m 39s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 45m 13s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.04 at 00h 14m 19s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 48m 38s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.04 at 00h 16m 40s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 53m 07s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.04 at 00h 19m 47s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserNotLoggedAgreementVisible - 2019.03.03 at 20h 56m 11s.xml">
-      <configuration name="PaymentTest.testUserNotLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="PaymentTest - 2019.03.04 at 00h 24m 43s.xml">
+      <configuration name="PaymentTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214329000" />
+    <option name="totallyTimeSpent" value="226365000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,7 +562,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="841" extended-state="0" />
+    <frame x="0" y="24" width="1440" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.33690986" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
@@ -628,8 +574,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.328" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2870494" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3965287" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.14839572" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37566844" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
@@ -678,11 +624,27 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>UrlFactory.NEW_ADDRESS_REGISTRATION.pageUrl</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>UrlFactory.NEW_ADDRESS_REGISTRATION</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>click(cartPage.completeShoppingButton);</expression-string>
         <language-id>JAVA</language-id>
@@ -720,16 +682,6 @@
       </expression>
       <expression>
         <expression-string>driver.findElement(By.xpath(&quot;//span[contains(text(),'hediye paketi')]/parent::div/parent::div/parent::div/div[2]&quot;)).click();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>clickViaJs(cartPage.giftPackageCheckbox);</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pageRefresh();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -795,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar!/org/openqa/selenium/WebElement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -845,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/PageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/DriverResponsiveTestFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -883,25 +821,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/console.log">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-64915">
-          <caret line="3136" column="7" selection-start-line="3136" selection-start-column="7" selection-end-line="3136" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -964,53 +883,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="26" selection-start-line="26" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1232">
           <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/ProductDetailPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/objects/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="224" column="14" lean-forward="true" selection-start-line="224" selection-start-column="14" selection-end-line="224" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5705#5706#0" expanded="true" />
-            <element signature="e#5742#5743#0" expanded="true" />
-            <element signature="e#5806#5807#0" expanded="true" />
-            <element signature="e#5858#5859#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1046,94 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/helper/JSExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/helper/JSHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="44" selection-start-line="44" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/PaymentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="44" column="51" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="44" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/objects/CreditCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1148,10 +938,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="54" selection-start-line="87" selection-start-column="54" selection-end-line="87" selection-end-column="54" />
+        <state relative-caret-position="240">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/helper/JSHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/helper/JSExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/PaymentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/objects/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5705#5706#0" expanded="true" />
+            <element signature="e#5742#5743#0" expanded="true" />
+            <element signature="e#5806#5807#0" expanded="true" />
+            <element signature="e#5858#5859#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/console.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="729">
+          <caret line="2180" lean-forward="true" selection-start-line="2180" selection-end-line="2180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/PageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/ProductDetailPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2958#2959#0" expanded="true" />
+            <element signature="e#2996#2997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1160,8 +1104,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/objects/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="158">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
