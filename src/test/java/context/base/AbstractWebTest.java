@@ -25,7 +25,6 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     private static final Logger logger = Logger.getLogger(AbstractWebTest.class);
 
     private boolean takeVideo;
-    private static final String accessKey = "FPqXDFz4bqk1jvqXDZ3d";
 
     @Rule
     public final TestName testName = new TestName();
