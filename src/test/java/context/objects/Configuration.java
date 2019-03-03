@@ -19,6 +19,7 @@ public class Configuration
     private Boolean remoteTest;
     private String browserType;
     private String username;
+    private String accessKey;
     private Boolean takeAVideo;
     private String galenReportPath;
     private String harFilePath;
@@ -48,6 +49,7 @@ public class Configuration
         this.implicitlyWait = Integer.valueOf(configProps.getProperty("implicitly.wait"));
         this.macChromeDriver = configProps.getProperty("mac.chrome.driver");
         this.windowsChromeDriver = configProps.getProperty("windows.chrome.driver");
+        this.accessKey = configProps.getProperty("access.key");
 
         logger.info("BrowserStack Url ---> " + browserStackUrl);
         logger.info("Pr Shipping Free  ---> " + prShippingFree);
@@ -64,6 +66,7 @@ public class Configuration
         logger.info("Implicitly Wait ---> " + implicitlyWait);
         logger.info("Mac Chrome Driver Path ---> " + macChromeDriver);
         logger.info("Windows Chrome Driver Path ---> " + windowsChromeDriver);
+        System.out.flush();
     }
 
     private void loadConfigProperties() throws IOException
@@ -222,5 +225,15 @@ public class Configuration
     public void setWindowsChromeDriver(String windowsChromeDriver)
     {
         this.windowsChromeDriver = windowsChromeDriver;
+    }
+
+    public String getAccessKey()
+    {
+        return accessKey;
+    }
+
+    public void setAccessKey(String accessKey)
+    {
+        this.accessKey = accessKey;
     }
 }

@@ -88,17 +88,17 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
         DriverManager driverManager;
         driverManager = DriverResponsiveTestFactory.getManager();
 
+        driver = driverManager.getDriver(withProxy);
+
         if (withProxy)
         {
-            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + System.getProperty("access.key"));
+            Runtime.getRuntime().exec("browserstacklocal/BrowserStackLocal --key " + configuration.getAccessKey());
 
             proxy = new BrowserMobProxyServer();
             proxy.start(1337);
             proxy.enableHarCaptureTypes(CaptureType.REQUEST_BINARY_CONTENT);
             proxy.newHar();
         }
-
-        driver = driverManager.getDriver(withProxy);
 
         takeVideo = configuration.getTakeAVideo();
 
