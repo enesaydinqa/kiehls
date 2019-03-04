@@ -1,5 +1,6 @@
 package selenium.tests.adaptive;
 
+import context.annotations.TestDescription;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
@@ -26,8 +27,8 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @DisplayName("Main Page Load PNG")
-    public void testAdaptiveHomePageLoadPNG() throws InterruptedException
+    @TestDescription("Adaptive - Anasayfa yüklenirken yapılan png/jpg request lerin 200 (ok) olduğunun kontrolü")
+    public void testAdaptiveHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
         pageLongDownScroll();
@@ -41,7 +42,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @DisplayName("The Main Page Traffic")
+    @TestDescription("Adaptive - Anasayfa yüklenirken yapılan request lerin response larının 400 den küçük olduğunun kontrolü")
     public void testAdaptiveHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);

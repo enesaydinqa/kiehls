@@ -1,5 +1,6 @@
 package selenium.tests.web;
 
+import context.annotations.TestDescription;
 import context.base.AbstractNYXCosmeticsTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
@@ -30,7 +31,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @DisplayName("Product Detail")
+    @TestDescription("Ürün detay sayfasında yapılan requestlerin response ların 400 den küçük olduğunun kontrolü")
     public void testProductDetail()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -52,7 +53,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @DisplayName("Product Description Length")
+    @TestDescription("Ürün detay açıklamasının 20 karakter veya daha fazla olduğunun kontrolü")
     public void testProductDescriptionLength()
     {
         navigateToURL(UrlFactory.MAIN_URL);

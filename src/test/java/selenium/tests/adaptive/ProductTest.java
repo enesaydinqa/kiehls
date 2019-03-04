@@ -1,6 +1,6 @@
 package selenium.tests.adaptive;
 
-import context.annotations.Description;
+import context.annotations.TestDescription;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import org.apache.log4j.Logger;
@@ -36,7 +36,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
+    @TestDescription("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
     public void testProductAndBasketPriceCompare()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -64,7 +64,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("Sepetteki ürünlerin fiyatları toplamı ile Toplam Tutar alanındaki tutar eşit mi ?")
+    @TestDescription("Sepetteki ürünlerin fiyatları toplamı ile Toplam Tutar alanındaki tutar eşit mi ?")
     public void testBasketAndSubTotalCountCompare()
     {
         List<Double> productPrices = new ArrayList<>();
@@ -109,7 +109,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("Kargo alanı x tl mi ?")
+    @TestDescription("Kargo alanı x tl mi ?")
     public void testShippingFee()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -134,7 +134,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("Sepet Tutarı x in üzeri ise kargo ücretsiz mi ?")
+    @TestDescription("Sepet Tutarı x in üzeri ise kargo ücretsiz mi ?")
     public void testShippingFree()
     {
         Double addedBasketProduct = 0.0;
@@ -169,7 +169,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
+    @TestDescription("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
     public void testGiftPackageFee()
     {
         randomProductSelectAndAddBasket();

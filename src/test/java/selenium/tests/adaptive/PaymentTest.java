@@ -1,6 +1,6 @@
 package selenium.tests.adaptive;
 
-import context.annotations.Description;
+import context.annotations.TestDescription;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import context.objects.CreditCard;
@@ -36,7 +36,7 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Ignore
-    @Description("Misafir olarak alışveriş tamamlama senaryosu.")
+    @TestDescription("Misafir olarak alışveriş tamamlama senaryosu.")
     public void testUserNotLoggedAgreementVisible()
     {
         user = new User(driver);

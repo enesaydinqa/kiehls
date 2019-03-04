@@ -1,6 +1,6 @@
 package selenium.tests.adaptive;
 
-import context.annotations.Description;
+import context.annotations.TestDescription;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -31,7 +31,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("Ürün detay sayfasında min 2 adet görsel var mı kontrolü.")
+    @TestDescription("Ürün detay sayfasında min 2 adet görsel var mı kontrolü.")
     public void testProductDetailPageLoadImages()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -55,7 +55,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
+    @TestDescription("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
     public void testTheNewestLoadRequest()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -74,7 +74,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @Description("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
+    @TestDescription("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
     public void testCartPageLoadRequest()
     {
         randomProductSelectAndAddBasket();
