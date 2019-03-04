@@ -70,7 +70,7 @@ public class ReportGenerate extends TestWatcher
         }
         catch (NoSuchMethodException e1)
         {
-            e1.printStackTrace();
+            // No Action
         }
 
         return null;
