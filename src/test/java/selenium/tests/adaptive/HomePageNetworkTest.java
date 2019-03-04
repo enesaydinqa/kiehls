@@ -37,7 +37,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png") | link.getRequest().getUrl().contains(".jpg"))
                 .forEach(png -> {
                     logger.info("Check Response this url -> " + png.getRequest().getUrl());
-                    Assert.assertEquals("This image not load " + png.getRequest().getUrl(), 200, png.getResponse().getStatus());
+                    Assert.assertEquals("HTTP Request Error :" + png.getRequest().getUrl(), 200, png.getResponse().getStatus());
                 });
     }
 
@@ -51,7 +51,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
 
         entries.forEach(png -> {
             logger.info("Check Response This Url -> " + png.getRequest().getUrl());
-            Assert.assertTrue("Broken : " + png.getRequest().getUrl(), 400 > png.getResponse().getStatus());
+            Assert.assertTrue("HTTP Request Error : " + png.getRequest().getUrl(), 400 > png.getResponse().getStatus());
         });
     }
 }

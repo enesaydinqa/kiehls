@@ -38,7 +38,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
                 .forEach(png -> {
                     logger.info("Check Response This Url -> " + png.getRequest().getUrl());
                     Assert.assertEquals(
-                            "This image not load " + png.getRequest().getUrl(),
+                            "HTTP Request Error : " + png.getRequest().getUrl(),
                             200, png.getResponse().getStatus());
                 });
     }
