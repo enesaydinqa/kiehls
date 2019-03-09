@@ -82,9 +82,5 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
         sendKeys(paymentPage.ccNumber, String.valueOf(creditCard.getCardNumber()));
         click(paymentPage.nameInput);
         wait(5);
-        click(paymentPage.ccDate);
-        wait(5);
-        clickViaJs(paymentPage.okButton);
-        sendKeys(paymentPage.cvcInput, String.valueOf(creditCard.getCvv()));
     }
 }

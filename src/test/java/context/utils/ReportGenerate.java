@@ -25,7 +25,7 @@ public class ReportGenerate extends TestWatcher
         test.log(LogStatus.INFO, "Description : " + testDescription);
         test.log(LogStatus.FAIL, "Session id : " + session);
         test.log(LogStatus.FAIL, "Stack Trace : " + e.toString());
-        test.log(LogStatus.FAIL, "Page Source File : http://www." + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
+        test.log(LogStatus.FAIL, "Page Source File : " + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
         flushReports(extent, test);
     }
 

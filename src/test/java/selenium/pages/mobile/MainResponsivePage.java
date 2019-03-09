@@ -50,7 +50,7 @@ public class MainResponsivePage extends PageObject
     public WebElement passwordInput;
 
     @FindAll({
-            @FindBy(xpath = "//a[contains(@href, '/giris?is')]/parent::div"),
+            //@FindBy(xpath = "//a[contains(@href, '/giris?is')]/parent::div"),
             @FindBy(xpath = "//a[contains(@href, '/giris?is')]"),
     })
     public WebElement loginButton;

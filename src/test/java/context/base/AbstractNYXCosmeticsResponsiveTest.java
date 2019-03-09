@@ -65,6 +65,8 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
         String email = "enesaydin611998@hotmail.com";
         String password = "testuser123";
 
+        JSHelper jsHelper = new JSHelper(driver);
+
         MainResponsivePage mainResponsivePage = new MainResponsivePage(driver);
 
         navigateToURL(UrlFactory.MAIN_URL);
@@ -80,9 +82,9 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
         wait(3);
         clickViaJs(mainResponsivePage.openLoginPopup);
         wait(3);
-        sendKeys(mainResponsivePage.emailInput, email);
-        sendKeys(mainResponsivePage.passwordInput, password);
-        click(mainResponsivePage.loginButton);
+        jsHelper.sendKeys(mainResponsivePage.emailInput, email);
+        jsHelper.sendKeys(mainResponsivePage.passwordInput, password);
+        jsHelper.click(mainResponsivePage.loginButton);
         wait(10);
         pageRefresh();
 

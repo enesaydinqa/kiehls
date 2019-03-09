@@ -13,8 +13,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class ChromeDriverManagerResponsive extends DriverManager
 {
@@ -95,10 +98,11 @@ public class ChromeDriverManagerResponsive extends DriverManager
 
         if (remoteTest)
         {
+            Random deviceList = new Random();
+            int device = deviceList.nextInt(deviceList().size());
+
             capabilities.setCapability("realMobile", "true");
-            capabilities.setCapability("device", "Samsung Galaxy S8");
-            capabilities.setCapability("browser", "Chrome");
-            capabilities.setCapability("browserName", "Chrome");
+            capabilities.setCapability("device", deviceList().get(device));
             capabilities.setCapability("acceptSslCerts", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
             capabilities.setCapability("browserstack.console", "warnings");
@@ -154,6 +158,20 @@ public class ChromeDriverManagerResponsive extends DriverManager
         browserStackLocalArgs.put("-local-proxy-host", host);
         browserStackLocalArgs.put("-local-proxy-port", port);
         browserStackLocal.start(browserStackLocalArgs);
+    }
+
+    private List<String> deviceList()
+    {
+        List<String> deviceList = new ArrayList<>();
+
+        deviceList.add("Samsung Galaxy S8");
+        deviceList.add("Samsung Galaxy S9");
+        deviceList.add("Samsung Galaxy S6");
+        deviceList.add("iPhone 6");
+        deviceList.add("iPhone 7");
+        deviceList.add("iPhone X");
+
+        return deviceList;
     }
 
 }
