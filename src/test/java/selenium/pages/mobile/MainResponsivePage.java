@@ -2,15 +2,16 @@ package selenium.pages.mobile;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import selenium.pages.PageObject;
 
 import java.util.List;
 
 
-public class MainPageResponsivePage extends PageObject
+public class MainResponsivePage extends PageObject
 {
-    public MainPageResponsivePage(WebDriver driver)
+    public MainResponsivePage(WebDriver driver)
     {
         super(driver);
     }
@@ -36,6 +37,26 @@ public class MainPageResponsivePage extends PageObject
     @FindBy(className = "ins-close-button-icon")
     private WebElement popupCloseButton;
 
+    @FindBy(id = "obj-menu")
+    public WebElement menuButton;
+
+    @FindBy(xpath = "//a[contains(@href, '/giris')]")
+    public WebElement openLoginPopup;
+
+    @FindBy(id = "obj-email")
+    public WebElement emailInput;
+
+    @FindBy(id = "obj-password")
+    public WebElement passwordInput;
+
+    @FindAll({
+            @FindBy(xpath = "//a[contains(@href, '/giris?is')]/parent::div"),
+            @FindBy(xpath = "//a[contains(@href, '/giris?is')]"),
+    })
+    public WebElement loginButton;
+
+    @FindBy(css = ".ins-side-menu-opened")
+    public WebElement discountPopup;
 
     public List<WebElement> getNewestProducts()
     {

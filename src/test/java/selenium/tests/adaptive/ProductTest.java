@@ -1,6 +1,6 @@
 package selenium.tests.adaptive;
 
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import org.apache.log4j.Logger;
@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.CartPage;
-import selenium.pages.mobile.MainPageResponsivePage;
+import selenium.pages.mobile.MainResponsivePage;
 import selenium.pages.mobile.ProductDetailPage;
 
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private static final Logger logger = Logger.getLogger(ProductTest.class);
 
-    private MainPageResponsivePage mainPage;
+    private MainResponsivePage mainPage;
     private ProductDetailPage productDetailPage;
     private CartPage cartPage;
     private JSHelper jsHelper;
@@ -29,14 +29,14 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     public void init() throws Exception
     {
         super.init();
-        mainPage = new MainPageResponsivePage(driver);
+        mainPage = new MainResponsivePage(driver);
         productDetailPage = new ProductDetailPage(driver);
         cartPage = new CartPage(driver);
         jsHelper = new JSHelper(driver);
     }
 
     @Test
-    @TestDescription("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
+    @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
     public void testProductAndBasketPriceCompare()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -64,37 +64,50 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("Sepetteki ürünlerin fiyatları toplamı ile Toplam Tutar alanındaki tutar eşit mi ?")
+    @Description("Sepetteki ürünlerin fiyatları toplamı ile Toplam Tutar alanındaki tutar eşit mi ?")
     public void testBasketAndSubTotalCountCompare()
     {
         List<Double> productPrices = new ArrayList<>();
 
         IntStream.range(1, 3).forEach(i ->
         {
-            navigateToURL(UrlFactory.MAIN_URL);
-            wait(3);
+            while (true)
+            {
+                navigateToURL(UrlFactory.MAIN_URL);
+                wait(5);
 
-            if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+                if (isDisplayed(mainPage.getPopupCloseButton()))
+                {
+                    click(mainPage.getPopupCloseButton());
+                    wait(3);
+                }
 
-            pageLongDownScroll();
-            scrollToElement(mainPage.getProductList().get(i));
+                pageLongDownScroll();
+                jsHelper.scrollToElement(mainPage.getProductList().get(i));
 
-            Double price = getPrice(mainPage.getProductPriceList().get(i));
-            productPrices.add(price);
+                Double price = getPrice(mainPage.getProductPriceList().get(i));
+                productPrices.add(price);
 
-            logger.info("Product Price --> " + price);
+                logger.info("Product Price --> " + price);
+
+                wait(7);
+                clickViaJs(mainPage.getProductList().get(i));
+
+                wait(7);
+
+                if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+
+                if (isDisplayed(productDetailPage.addToBasket))
+                {
+                    jsHelper.scrollToElement(productDetailPage.addToBasket);
+                    wait(5);
+                    jsHelper.click(productDetailPage.addToBasket);
+                    break;
+                }
+            }
 
             wait(7);
-            clickViaJs(mainPage.getProductList().get(i));
 
-            wait(7);
-
-            if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
-
-            pageScroll(0, 300);
-
-            click(productDetailPage.addToBasket);
-            wait(7);
         });
 
         Double totalProductPrice = productPrices.get(0) + productPrices.get(1);
@@ -109,7 +122,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("Kargo alanı x tl mi ?")
+    @Description("Kargo alanı x tl mi ?")
     public void testShippingFee()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -134,7 +147,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("Sepet Tutarı x in üzeri ise kargo ücretsiz mi ?")
+    @Description("Sepet Tutarı x in üzeri ise kargo ücretsiz mi ?")
     public void testShippingFree()
     {
         Double addedBasketProduct = 0.0;
@@ -169,7 +182,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
+    @Description("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
     public void testGiftPackageFee()
     {
         randomProductSelectAndAddBasket();

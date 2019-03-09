@@ -29,6 +29,6 @@ public class PaymentPage extends PageObject
     @FindBy(id = "obj-cvc")
     public WebElement cvcInput;
 
-    @FindBy(xpath = "//a[text() = 'Tamam']/parent::div")
+    @FindBy(xpath = "//a[text() = 'Tamam']")
     public WebElement okButton;
 }

@@ -1,13 +1,12 @@
 package selenium.tests.web;
 
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
 import selenium.pages.UrlFactory;
 import selenium.pages.web.MainPageWebPage;
 import selenium.pages.web.ProductDetailPage;
@@ -31,7 +30,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @TestDescription("Ürün detay sayfasında yapılan requestlerin response ların 400 den küçük olduğunun kontrolü")
+    @Description("Ürün detay sayfasında yapılan requestlerin response ların 400 den küçük olduğunun kontrolü")
     public void testProductDetail()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -53,7 +52,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @TestDescription("Ürün detay açıklamasının 20 karakter veya daha fazla olduğunun kontrolü")
+    @Description("Ürün detay açıklamasının 20 karakter veya daha fazla olduğunun kontrolü")
     public void testProductDescriptionLength()
     {
         navigateToURL(UrlFactory.MAIN_URL);

@@ -1,6 +1,6 @@
 package selenium.tests.adaptive;
 
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -10,7 +10,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import selenium.pages.UrlFactory;
-import selenium.pages.mobile.MainPageResponsivePage;
+import selenium.pages.mobile.MainResponsivePage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private static final Logger logger = Logger.getLogger(ProductPageNetworkTest.class);
 
-    private MainPageResponsivePage mainPage;
+    private MainResponsivePage mainPage;
     private JSHelper jsHelper;
 
     @Before
@@ -27,11 +27,11 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     {
         super.init(true);
         jsHelper = new JSHelper(driver);
-        mainPage = new MainPageResponsivePage(driver);
+        mainPage = new MainResponsivePage(driver);
     }
 
     @Test
-    @TestDescription("Ürün detay sayfasında min 2 adet görsel var mı kontrolü.")
+    @Description("Ürün detay sayfasında min 2 adet görsel var mı kontrolü.")
     public void testProductDetailPageLoadImages()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -55,7 +55,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
+    @Description("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
     public void testTheNewestLoadRequest()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -74,7 +74,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
+    @Description("En yeniler sayfası yüklenirken yapılan requestlerin response larının 200 olduğunun kontrolü.")
     public void testCartPageLoadRequest()
     {
         randomProductSelectAndAddBasket();

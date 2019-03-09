@@ -1,7 +1,6 @@
 package context.objects;
 
-import context.helper.JSHelper;
-import org.openqa.selenium.WebDriver;
+import org.apache.commons.lang.RandomStringUtils;
 
 public class User
 {
@@ -11,15 +10,13 @@ public class User
     private String phone;
     private String address;
 
-    public User(WebDriver driver)
+    public User()
     {
-        JSHelper jsHelper = new JSHelper(driver);
-
-        this.firstName = jsHelper.randomStringGenerate(6);
-        this.lastName = jsHelper.randomStringGenerate(6);
-        this.email = jsHelper.randomGenerate(6) + "@gmail.com";
-        this.phone = "34" + jsHelper.randomNumberGenerate(7);
-        this.address = jsHelper.randomGenerate(30);
+        this.firstName = RandomStringUtils.randomAlphabetic(6);
+        this.lastName = RandomStringUtils.randomAlphabetic(6);
+        this.email = RandomStringUtils.randomAlphabetic(6) + "@gmail.com";
+        this.phone = "34" + RandomStringUtils.randomNumeric(7);
+        this.address = RandomStringUtils.randomAlphanumeric(30);
     }
 
     public String getFirstName()

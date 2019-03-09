@@ -13,10 +13,10 @@ public class DescriptionManager
     private void getDescription(Object o)
     {
         Arrays.stream(o.getClass().getDeclaredFields()).parallel().filter(DescriptionField
-                -> DescriptionField.isAnnotationPresent(TestDescription.class)).forEach(DescriptionField
+                -> DescriptionField.isAnnotationPresent(Description.class)).forEach(DescriptionField
                 -> {
 
-            TestDescription description = DescriptionField.getAnnotation(TestDescription.class);
+            Description description = DescriptionField.getAnnotation(Description.class);
             DescriptionField.setAccessible(true);
             try
             {

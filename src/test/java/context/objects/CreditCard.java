@@ -1,23 +1,20 @@
 package context.objects;
 
-import context.helper.JSHelper;
-import org.openqa.selenium.WebDriver;
+import org.apache.commons.lang.RandomStringUtils;
 
 public class CreditCard
 {
     private String firstName;
     private String lastName;
-    private Number cardNumber;
-    private Number cvv;
+    private Long cardNumber;
+    private Integer cvv;
 
-    public CreditCard(WebDriver driver)
+    public CreditCard()
     {
-        JSHelper jsHelper = new JSHelper(driver);
-
-        this.firstName = jsHelper.randomStringGenerate(6);
-        this.lastName = jsHelper.randomStringGenerate(6);
-        this.cardNumber = jsHelper.randomNumberGenerate(16);
-        this.cvv = jsHelper.randomNumberGenerate(4);
+        this.firstName = RandomStringUtils.randomAlphabetic(6);
+        this.lastName = RandomStringUtils.randomAlphabetic(6);
+        this.cardNumber = Long.valueOf(RandomStringUtils.randomNumeric(16));
+        this.cvv = Integer.parseInt(RandomStringUtils.randomNumeric(4));
     }
 
     public String getFirstName()
@@ -40,22 +37,22 @@ public class CreditCard
         this.lastName = lastName;
     }
 
-    public Number getCardNumber()
+    public Long getCardNumber()
     {
         return cardNumber;
     }
 
-    public void setCardNumber(Number cardNumber)
+    public void setCardNumber(Long cardNumber)
     {
         this.cardNumber = cardNumber;
     }
 
-    public Number getCvv()
+    public Integer getCvv()
     {
         return cvv;
     }
 
-    public void setCvv(Number cvv)
+    public void setCvv(Integer cvv)
     {
         this.cvv = cvv;
     }

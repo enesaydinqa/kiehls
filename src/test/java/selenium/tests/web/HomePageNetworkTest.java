@@ -1,6 +1,6 @@
 package selenium.tests.web;
 
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
@@ -27,7 +27,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @TestDescription("Anasayfa yüklenirken yapılan png/jpg request lerin 200 (ok) olduğunun kontrolü")
+    @Description("Anasayfa yüklenirken yapılan png/jpg request lerin 200 (ok) olduğunun kontrolü")
     public void testHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -44,7 +44,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @TestDescription("Anasayfa yüklenirken yapılan request lerin response larının 400 den küçük olduğunun kontrolü")
+    @Description("Anasayfa yüklenirken yapılan request lerin response larının 400 den küçük olduğunun kontrolü")
     public void testHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -59,7 +59,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @TestDescription("Anasayfa daki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü")
+    @Description("Anasayfa daki ürünlerin fiyatının 0 dan büyük olduğunun kontrolü")
     public void testProductSalePrice()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -68,7 +68,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
     }
 
     @Test
-    @TestDescription("Anasayfadaki slider ın çalıştığının kontrolü")
+    @Description("Anasayfadaki slider ın çalıştığının kontrolü")
     public void testHomePageSlider()
     {
         navigateToURL(UrlFactory.MAIN_URL);

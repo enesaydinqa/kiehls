@@ -1,15 +1,14 @@
 package selenium.tests.adaptive;
 
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import context.helper.JSHelper;
 import context.objects.CreditCard;
 import context.objects.User;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-import selenium.pages.mobile.CartPage;
+import selenium.pages.UrlFactory;
 import selenium.pages.mobile.NewAddressRegistrationPage;
 import selenium.pages.mobile.PaymentPage;
 
@@ -18,10 +17,8 @@ import java.util.stream.IntStream;
 public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private JSHelper jsHelper;
-    private CartPage cartPage;
     private NewAddressRegistrationPage newAddressRegistrationPage;
     private PaymentPage paymentPage;
-    private User user;
     private CreditCard creditCard;
 
     @Before
@@ -29,27 +26,21 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
     {
         super.init();
         jsHelper = new JSHelper(driver);
-        cartPage = new CartPage(driver);
+        creditCard = new CreditCard();
         newAddressRegistrationPage = new NewAddressRegistrationPage(driver);
         paymentPage = new PaymentPage(driver);
+
+        login();
+        allBasketProductRemove();
     }
 
     @Test
-    @Ignore
-    @TestDescription("Misafir olarak alışveriş tamamlama senaryosu.")
-    public void testUserNotLoggedAgreementVisible()
+    @Description("Giriş yapılan kullanıcı ile alışveriş tamamlama senaryosu.")
+    public void testUserLoggedAgreementVisible()
     {
-        user = new User(driver);
-        creditCard = new CreditCard(driver);
-
         randomProductSelectAndAddBasket();
         wait(5);
-        click(cartPage.completeShoppingButton);
-        wait(7);
-        click(cartPage.asAGuestButton);
-        newAddressRegistrationFormFilling(user);
-        wait(5);
-        click(cartPage.checkoutAddressButton);
+        navigateToURL(UrlFactory.CHECKOUT_PAYMENT);
         wait(7);
         enterCreditCard(creditCard);
         Long pageHeight = jsHelper.getPageHeight();
@@ -57,8 +48,7 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
 
         Assert.assertEquals("Agreement Smooth or Ever Not Showing !", 8, paymentPage.agreements.size());
 
-        IntStream.range(0, 8)
-                .forEach(i -> isDisplayed(paymentPage.agreements.get(i)));
+        IntStream.range(0, 8).forEach(i -> isDisplayed(paymentPage.agreements.get(i)));
     }
 
 
@@ -66,12 +56,12 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
     {
         wait(10);
         sendKeys(newAddressRegistrationPage.emailInput, user.getEmail());
-        sendKeys(newAddressRegistrationPage.firstNameInput, user.getLastName());
+        sendKeys(newAddressRegistrationPage.firstNameInput, user.getFirstName());
         sendKeys(newAddressRegistrationPage.lastNameInput, user.getLastName());
         sendKeys(newAddressRegistrationPage.phoneInput, user.getPhone());
         click(newAddressRegistrationPage.citySelectBox);
         wait(3);
-        clickViaJs(newAddressRegistrationPage.okButton);
+        click(newAddressRegistrationPage.okButton);
         wait(5);
         click(newAddressRegistrationPage.townshipSelectBox);
         wait(3);
@@ -79,6 +69,8 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
         wait(5);
         click(newAddressRegistrationPage.addressTextArea);
         sendKeys(newAddressRegistrationPage.addressTextArea, user.getAddress());
+        wait(3);
+        scrollToElement(newAddressRegistrationPage.saveButton);
         click(newAddressRegistrationPage.saveButton);
         wait(5);
     }
@@ -89,10 +81,10 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
         sendKeys(paymentPage.nameInput, creditCard.getFirstName() + " " + creditCard.getLastName());
         sendKeys(paymentPage.ccNumber, String.valueOf(creditCard.getCardNumber()));
         click(paymentPage.nameInput);
-        wait(10);
+        wait(5);
         click(paymentPage.ccDate);
-        wait(3);
-        click(paymentPage.okButton);
+        wait(5);
+        clickViaJs(paymentPage.okButton);
         sendKeys(paymentPage.cvcInput, String.valueOf(creditCard.getCvv()));
     }
 }

@@ -126,6 +126,7 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
         logger.info("=================================================================");
         logger.info("TEST STARTED ... -> " + testName.getMethodName());
         logger.info("=================================================================");
+
     }
 
 

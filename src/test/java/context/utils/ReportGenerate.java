@@ -3,9 +3,8 @@ package context.utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import org.junit.rules.TestWatcher;
-import org.junit.runner.Description;
 
 import java.lang.reflect.Method;
 
@@ -16,7 +15,7 @@ public class ReportGenerate extends TestWatcher
     private String filenameOfReport = System.getProperty("user.dir") + "/target/nyxcostemicstestresult.html";
 
     @Override
-    protected void failed(Throwable e, Description description)
+    protected void failed(Throwable e, org.junit.runner.Description description)
     {
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName(), "Test failed, getText here for further details");
@@ -26,12 +25,12 @@ public class ReportGenerate extends TestWatcher
         test.log(LogStatus.INFO, "Description : " + testDescription);
         test.log(LogStatus.FAIL, "Session id : " + session);
         test.log(LogStatus.FAIL, "Stack Trace : " + e.toString());
-        test.log(LogStatus.FAIL, "Page Source File : " + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
+        test.log(LogStatus.FAIL, "Page Source File : http://www." + System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt");
         flushReports(extent, test);
     }
 
     @Override
-    protected void succeeded(Description description)
+    protected void succeeded(org.junit.runner.Description description)
     {
         ExtentReports extent = createReport();
         ExtentTest test = extent.startTest(description.getDisplayName(), "-");
@@ -58,13 +57,13 @@ public class ReportGenerate extends TestWatcher
         extent.flush();
     }
 
-    private String getDescription(Description description)
+    private String getDescription(org.junit.runner.Description description)
     {
         try
         {
             Method method = description.getTestClass().getMethod(description.getMethodName());
 
-            TestDescription testDescription = method.getAnnotation(TestDescription.class);
+            Description testDescription = method.getAnnotation(Description.class);
 
             return testDescription.value();
         }

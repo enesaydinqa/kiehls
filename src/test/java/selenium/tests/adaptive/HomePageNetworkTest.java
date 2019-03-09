@@ -1,15 +1,14 @@
 package selenium.tests.adaptive;
 
-import context.annotations.TestDescription;
+import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
 import selenium.pages.UrlFactory;
-import selenium.pages.mobile.MainPageResponsivePage;
+import selenium.pages.mobile.MainResponsivePage;
 
 import java.util.List;
 
@@ -17,17 +16,17 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
 {
     private static final Logger logger = Logger.getLogger(HomePageNetworkTest.class);
 
-    private MainPageResponsivePage mainPage;
+    private MainResponsivePage mainPage;
 
     @Before
     public void init() throws Exception
     {
         super.init(true);
-        mainPage = new MainPageResponsivePage(driver);
+        mainPage = new MainResponsivePage(driver);
     }
 
     @Test
-    @TestDescription("Adaptive - Anasayfa yüklenirken yapılan png/jpg request lerin 200 (ok) olduğunun kontrolü")
+    @Description("Adaptive - Anasayfa yüklenirken yapılan png/jpg request lerin 200 (ok) olduğunun kontrolü")
     public void testAdaptiveHomePageLoadPNG()
     {
         navigateToURL(UrlFactory.MAIN_URL);
@@ -42,7 +41,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     }
 
     @Test
-    @TestDescription("Adaptive - Anasayfa yüklenirken yapılan request lerin response larının 400 den küçük olduğunun kontrolü")
+    @Description("Adaptive - Anasayfa yüklenirken yapılan request lerin response larının 400 den küçük olduğunun kontrolü")
     public void testAdaptiveHomePageNetwork()
     {
         navigateToURL(UrlFactory.MAIN_URL);

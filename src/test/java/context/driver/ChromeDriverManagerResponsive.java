@@ -36,7 +36,7 @@ public class ChromeDriverManagerResponsive extends DriverManager
         {
             logger.info("This test is browserstack execute ...");
 
-            desiredCapabilities = desiredCapabilities(true, withProxy, true, null);
+            desiredCapabilities = desiredCapabilities(true, withProxy, true, chromeOptions);
 
             driver = new RemoteWebDriver(new URL(configuration.getBrowserStackUrl()), desiredCapabilities);
         }
@@ -96,15 +96,16 @@ public class ChromeDriverManagerResponsive extends DriverManager
         if (remoteTest)
         {
             capabilities.setCapability("realMobile", "true");
-            capabilities.setCapability("device", "iPhone 8 Plus");
-            capabilities.setCapability("browser", "iPhone");
-            capabilities.setCapability("browserName", "iPhone");
+            capabilities.setCapability("device", "Samsung Galaxy S8");
+            capabilities.setCapability("browser", "Chrome");
+            capabilities.setCapability("browserName", "Chrome");
             capabilities.setCapability("acceptSslCerts", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
             capabilities.setCapability("browserstack.console", "warnings");
             capabilities.setCapability("browserstack.appiumLogs", "true");
             capabilities.setCapability("browserstack.debug", "true");
             capabilities.setCapability("browserstack.networkLogs", "true");
+            capabilities.setCapability("autoAcceptAlerts", true);
         }
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
@@ -116,8 +117,14 @@ public class ChromeDriverManagerResponsive extends DriverManager
     {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("disable-infobars");
-        chromeOptions.addArguments("--user-agent=" + USER_AGENT);
-        chromeOptions.setExperimentalOption("mobileEmulation", null);
+        chromeOptions.addArguments("--disable-notifications");
+        chromeOptions.addArguments("--disable-popup-blocking");
+
+        if (!remoteTest)
+        {
+            chromeOptions.addArguments("--user-agent=" + USER_AGENT);
+            chromeOptions.setExperimentalOption("mobileEmulation", null);
+        }
 
         return chromeOptions;
     }
