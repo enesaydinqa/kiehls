@@ -2,6 +2,7 @@ package context.base;
 
 import context.driver.DriverManager;
 import context.driver.DriverWebTestFactory;
+import context.helper.JSHelper;
 import context.recorder.VideoRecorder;
 import context.utils.ReportGenerate;
 import net.lightbody.bmp.BrowserMobProxyServer;
@@ -26,6 +27,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     private static final Logger logger = Logger.getLogger(AbstractWebTest.class);
 
     private boolean takeVideo;
+    protected JSHelper jsHelper;
 
     @Rule
     public final TestName testName = new TestName();
@@ -118,6 +120,8 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
         {
             logger.info("Scenarios will not take video");
         }
+
+        jsHelper = new JSHelper(driver);
 
         logger.info("=================================================================");
         logger.info("TEST STARTED ... -> " + testName.getMethodName());

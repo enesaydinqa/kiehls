@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class JSHelper implements JSExecutor
+public class JSHelper implements JSExecuter
 {
     private static final Logger logger = LoggerFactory.getLogger(JSHelper.class);
 
@@ -51,27 +51,27 @@ public class JSHelper implements JSExecutor
 
 
     @Override
-    public void openNewTab(String links)
+    public JSExecuter openNewTab(String links)
     {
-        executeScript(Void.class, "window.open(" + links + ",'_blank');");
+        return executeScript(JSExecuter.class, "window.open(" + links + ",'_blank');");
     }
 
     @Override
-    public void doubleClick(WebElement element)
+    public JSExecuter doubleClick(WebElement element)
     {
-        executeScript(Void.class, "for(var i=0; i < 2; i++) {arguments[0].click();}", element);
+        return executeScript(JSExecuter.class, "for(var i=0; i < 2; i++) {arguments[0].click();}", element);
     }
 
     @Override
-    public void navigateToUrl(String links)
+    public JSExecuter navigateToUrl(String links)
     {
-        executeScript(Void.class, "window.location.href = '" + links + "';");
+        return executeScript(JSExecuter.class, "window.location.href = '" + links + "';");
     }
 
     @Override
-    public void click(WebElement element)
+    public JSExecuter click(WebElement element)
     {
-        executeScript(Void.class, "arguments[0].click();", element);
+        return executeScript(JSExecuter.class, "arguments[0].click();", element);
     }
 
     @Override
@@ -81,25 +81,25 @@ public class JSHelper implements JSExecutor
     }
 
     @Override
-    public void selectByIndex(WebElement element, Integer index)
+    public JSExecuter selectByIndex(WebElement element, Integer index)
     {
-        executeScript(Void.class, "arguments[0].selectedIndex = arguments[1]", element, index);
+        return executeScript(JSExecuter.class, "arguments[0].selectedIndex = arguments[1]", element, index);
     }
 
     @Override
-    public void selectByValue(WebElement element, String value)
+    public JSExecuter selectByValue(WebElement element, String value)
     {
-        executeScript(Void.class, "arguments[0].value = arguments[1]", element, value);
+        return executeScript(JSExecuter.class, "arguments[0].value = arguments[1]", element, value);
     }
 
     @Override
-    public void sendKeys(WebElement element, String value)
+    public JSExecuter sendKeys(WebElement element, String value)
     {
-        executeScript(Void.class, "arguments[0].value = arguments[1]", element, value);
+        return executeScript(JSExecuter.class, "arguments[0].value = arguments[1]", element, value);
     }
 
     @Override
-    public boolean isDisplayed(WebElement element)
+    public Boolean isDisplayed(WebElement element)
     {
         return executeScript(Boolean.class, "function isVisible(elem) {\n" +
                 "    if (!(elem instanceof Element)) throw Error('DomUtil: elem is not an element.');\n" +
@@ -129,9 +129,9 @@ public class JSHelper implements JSExecutor
     }
 
     @Override
-    public void clear(WebElement element)
+    public JSExecuter clear(WebElement element)
     {
-        executeScript(Void.class, "arguments[0].value = ''", element);
+        return executeScript(JSExecuter.class, "arguments[0].value = ''", element);
     }
 
     @Override
@@ -156,10 +156,59 @@ public class JSHelper implements JSExecutor
     }
 
     @Override
-    public void scrollToElement(WebElement element)
+    public JSExecuter scrollToElement(WebElement element)
     {
-        executeScript(Void.class, "return arguments[0].scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});", element);
+        return executeScript(JSExecuter.class, "arguments[0].scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});", element);
     }
+
+    @Override
+    public Boolean isAttributePresent(WebElement element, String attribute)
+    {
+        return executeScript(Boolean.class, "var value = arguments[0].getAttribute(arguments[1]); if(value !== null) {return true} else return false;", element, attribute);
+    }
+
+    @Override
+    public String getAttribute(WebElement element, String attribute)
+    {
+        return executeScript(String.class, "return arguments[0].getAttribute(arguments[1]);", element, attribute);
+    }
+
+    @Override
+    public Boolean checkBoxChecked(WebElement element)
+    {
+        return executeScript(Boolean.class, "return arguments[0].checked;", element);
+    }
+
+    @Override
+    public JSExecuter allCheckBoxChecked()
+    {
+        return executeScript(JSExecuter.class, "var checkboxes = document.querySelectorAll(\"input[type='checkbox']\"); for(var i = 0; i < checkboxes.length; i++) {checkboxes[i].checked = true;}");
+    }
+
+    @Override
+    public JSExecuter pageZoom(Integer percentValue)
+    {
+        return executeScript(JSExecuter.class, "document.body.style.zoom = arguments[0]", percentValue);
+    }
+
+    @Override
+    public JSExecuter pageRefresh()
+    {
+        return executeScript(JSExecuter.class, "location.reload()");
+    }
+
+    @Override
+    public String getCurrentUrl()
+    {
+        return executeScript(String.class, "return location.href");
+    }
+
+    @Override
+    public String getLocationPathName()
+    {
+        return executeScript(String.class, "return location.pathname");
+    }
+
 }
 
 

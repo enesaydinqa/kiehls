@@ -2,7 +2,6 @@ package selenium.tests.adaptive;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
-import context.helper.JSHelper;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.core.har.HarResponse;
 import org.apache.log4j.Logger;
@@ -20,13 +19,11 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     private static final Logger logger = Logger.getLogger(ProductPageNetworkTest.class);
 
     private MainResponsivePage mainPage;
-    private JSHelper jsHelper;
 
     @Before
     public void init() throws Exception
     {
         super.init(true);
-        jsHelper = new JSHelper(driver);
         mainPage = new MainResponsivePage(driver);
     }
 

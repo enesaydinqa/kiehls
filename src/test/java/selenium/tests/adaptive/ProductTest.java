@@ -2,7 +2,6 @@ package selenium.tests.adaptive;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
-import context.helper.JSHelper;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
@@ -23,7 +22,6 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     private MainResponsivePage mainPage;
     private ProductDetailPage productDetailPage;
     private CartPage cartPage;
-    private JSHelper jsHelper;
 
     @Before
     public void init() throws Exception
@@ -32,7 +30,6 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         mainPage = new MainResponsivePage(driver);
         productDetailPage = new ProductDetailPage(driver);
         cartPage = new CartPage(driver);
-        jsHelper = new JSHelper(driver);
     }
 
     @Test

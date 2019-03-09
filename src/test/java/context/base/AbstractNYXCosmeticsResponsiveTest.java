@@ -1,6 +1,5 @@
 package context.base;
 
-import context.helper.JSHelper;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import selenium.pages.UrlFactory;
@@ -12,14 +11,11 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
 {
     private Logger logger = Logger.getLogger(AbstractNYXCosmeticsResponsiveTest.class);
 
-    private JSHelper jsHelper;
     private MainResponsivePage mainPage;
     private ProductDetailPage productDetailPage;
 
     protected Double getPrice(WebElement element)
     {
-        jsHelper = new JSHelper(driver);
-
         waitElementVisible(element);
         String[] productPrice = jsHelper.getText(element).split(" TL");
         return Double.parseDouble(productPrice[0].replace(",", "."));
@@ -27,7 +23,6 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
 
     protected void randomProductSelectAndAddBasket()
     {
-        jsHelper = new JSHelper(driver);
         mainPage = new MainResponsivePage(driver);
         productDetailPage = new ProductDetailPage(driver);
 
@@ -64,8 +59,6 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
     {
         String email = "enesaydin611998@hotmail.com";
         String password = "testuser123";
-
-        JSHelper jsHelper = new JSHelper(driver);
 
         MainResponsivePage mainResponsivePage = new MainResponsivePage(driver);
 

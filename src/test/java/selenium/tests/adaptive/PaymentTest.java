@@ -2,7 +2,6 @@ package selenium.tests.adaptive;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
-import context.helper.JSHelper;
 import context.objects.CreditCard;
 import context.objects.User;
 import org.junit.Assert;
@@ -16,7 +15,6 @@ import java.util.stream.IntStream;
 
 public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
 {
-    private JSHelper jsHelper;
     private NewAddressRegistrationPage newAddressRegistrationPage;
     private PaymentPage paymentPage;
     private CreditCard creditCard;
@@ -25,7 +23,6 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
     public void init() throws Exception
     {
         super.init();
-        jsHelper = new JSHelper(driver);
         creditCard = new CreditCard();
         newAddressRegistrationPage = new NewAddressRegistrationPage(driver);
         paymentPage = new PaymentPage(driver);
