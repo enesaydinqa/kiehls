@@ -165,10 +165,10 @@ public class ChromeDriverManagerResponsive extends DriverManager
         List<String> deviceList = new ArrayList<>();
 
         deviceList.add("Samsung Galaxy S8");
-        deviceList.add("Samsung Galaxy S9");
+        deviceList.add("Samsung Galaxy S9 Plus");
         deviceList.add("Samsung Galaxy S6");
         deviceList.add("iPhone 6");
-        deviceList.add("iPhone 7");
+        deviceList.add("iPhone 7 Plus");
         deviceList.add("iPhone X");
 
         return deviceList;
