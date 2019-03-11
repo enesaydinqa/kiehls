@@ -8,7 +8,8 @@ import selenium.pages.PageObject;
 
 public class ProductDetailPage extends PageObject
 {
-    public ProductDetailPage(WebDriver driver) {
+    public ProductDetailPage(WebDriver driver)
+    {
         super(driver);
     }
 

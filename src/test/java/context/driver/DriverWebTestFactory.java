@@ -3,11 +3,13 @@ package context.driver;
 
 import org.apache.log4j.Logger;
 
-public class DriverWebTestFactory {
+public class DriverWebTestFactory
+{
 
     private static final Logger logger = Logger.getLogger(DriverWebTestFactory.class);
 
-    public static DriverManager getManager() {
+    public static DriverManager getManager()
+    {
 
         DriverManager driverManager;
 
@@ -15,7 +17,8 @@ public class DriverWebTestFactory {
 
         logger.info("BrowserType (DriverWebTestFactory) : " + browserType);
 
-        switch (browserType) {
+        switch (browserType)
+        {
 
             case "chrome":
                 driverManager = new ChromeDriverManagerWeb();

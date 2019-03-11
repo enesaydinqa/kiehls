@@ -9,7 +9,6 @@ public enum SpecFilePath
     HOME_PAGE_WEB(WEB_DIRECTORY, "NYXCosmeticsMainPage.spec"),
 
 
-
     HOME_PAGE_RESPONSIVE(RESPONSIVE_DIRECTORY, "ResponsiveNYXCosmeticsMainPage.spec");
 
 

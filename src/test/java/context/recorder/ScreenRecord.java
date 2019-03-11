@@ -10,24 +10,30 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ScreenRecord extends ScreenRecorder {
+public class ScreenRecord extends ScreenRecorder
+{
     private String name;
 
     public ScreenRecord(GraphicsConfiguration cfg,
                         Rectangle captureArea, Format fileFormat, Format screenFormat,
                         Format mouseFormat, Format audioFormat, File movieFolder,
-                        String name) throws IOException, AWTException {
+                        String name) throws IOException, AWTException
+    {
         super(cfg, captureArea, fileFormat, screenFormat, mouseFormat,
                 audioFormat, movieFolder);
         this.name = name;
     }
 
     @Override
-    protected File createMovieFile(Format fileFormat) throws IOException {
+    protected File createMovieFile(Format fileFormat) throws IOException
+    {
 
-        if (!movieFolder.exists()) {
+        if (!movieFolder.exists())
+        {
             movieFolder.mkdirs();
-        } else if (!movieFolder.isDirectory()) {
+        }
+        else if (!movieFolder.isDirectory())
+        {
             throw new IOException("\"" + movieFolder + "\" is not a directory.");
         }
 

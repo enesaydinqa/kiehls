@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 
 public interface JSExecuter
 {
-    <T> T executeScript(Class<T> clazz,String script, Object... args);
+    <T> T executeScript(Class<T> clazz, String script, Object... args);
 
     Long getPageHeight();
 
@@ -44,7 +44,7 @@ public interface JSExecuter
 
     Boolean isAttributePresent(WebElement element, String attribute);
 
-    String  getAttribute(WebElement element, String attribute);
+    String getAttribute(WebElement element, String attribute);
 
     Boolean checkBoxChecked(WebElement element);
 
