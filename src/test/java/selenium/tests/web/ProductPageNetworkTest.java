@@ -2,11 +2,13 @@ package selenium.tests.web;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsTest;
+import context.flag.NetworkExecutable;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import selenium.pages.UrlFactory;
 import selenium.pages.web.MainPageWebPage;
 import selenium.pages.web.ProductDetailPage;

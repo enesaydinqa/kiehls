@@ -2,17 +2,20 @@ package selenium.tests.web;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsTest;
+import context.flag.NetworkExecutable;
 import net.lightbody.bmp.core.har.HarEntry;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import selenium.pages.UrlFactory;
 import selenium.pages.web.MainPageWebPage;
 
 import java.util.List;
 import java.util.stream.IntStream;
 
+@Category(NetworkExecutable.class)
 public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
 {
     private static final Logger logger = Logger.getLogger(HomePageNetworkTest.class);

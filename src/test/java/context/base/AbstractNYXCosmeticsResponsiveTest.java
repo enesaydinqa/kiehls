@@ -61,15 +61,19 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
         String password = "testuser123";
 
         MainResponsivePage mainResponsivePage = new MainResponsivePage(driver);
+        mainPage = new MainResponsivePage(driver);
 
         navigateToURL(UrlFactory.MAIN_URL);
         wait(5);
+
+        if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
 
         if (isDisplayed(mainResponsivePage.discountPopup))
         {
             click(mainResponsivePage.discountPopup);
             wait(3);
         }
+
 
         click(mainResponsivePage.menuButton);
         wait(3);
