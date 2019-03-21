@@ -31,11 +31,7 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
             navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
             wait(5);
 
-            if (isDisplayed(mainPage.getPopupCloseButton()))
-            {
-                click(mainPage.getPopupCloseButton());
-                wait(3);
-            }
+            closeCampaingPopup();
 
             Long pageHeight = jsHelper.getPageHeight();
             secureScrollPage(0, pageHeight.intValue());
@@ -66,7 +62,7 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
         navigateToURL(UrlFactory.MAIN_URL);
         wait(5);
 
-        if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+        closeCampaingPopup();
 
         if (isDisplayed(mainResponsivePage.discountPopup))
         {
@@ -108,5 +104,17 @@ public abstract class AbstractNYXCosmeticsResponsiveTest extends AbstractRespons
             // No Action
         }
 
+    }
+
+    protected void closeCampaingPopup()
+    {
+        mainPage = new MainResponsivePage(driver);
+
+        wait(5);
+        if (isDisplayed(mainPage.getPopupCloseButton()))
+        {
+            click(mainPage.getPopupCloseButton());
+            wait(3);
+        }
     }
 }

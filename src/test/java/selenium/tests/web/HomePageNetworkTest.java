@@ -75,6 +75,9 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsTest
     public void testHomePageSlider()
     {
         navigateToURL(UrlFactory.MAIN_URL);
+
+        closeCampaingPopup();
+
         IntStream.range(0, 3)
                 .forEach(i ->
                 {

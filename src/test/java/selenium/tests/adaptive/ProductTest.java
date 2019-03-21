@@ -41,6 +41,9 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
         Long pageHeight = jsHelper.getPageHeight();
         secureScrollPage(0, pageHeight.intValue());
         pageScroll(0, 0);
+
+        closeCampaingPopup();
+
         listElementRandomClick(mainPage.getProductList());
 
         Double productPrice = getPrice(productDetailPage.productPrice);
@@ -73,11 +76,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
                 navigateToURL(UrlFactory.MAIN_URL);
                 wait(5);
 
-                if (isDisplayed(mainPage.getPopupCloseButton()))
-                {
-                    click(mainPage.getPopupCloseButton());
-                    wait(3);
-                }
+                closeCampaingPopup();
 
                 pageLongDownScroll();
                 jsHelper.scrollToElement(mainPage.getProductList().get(i));
@@ -92,7 +91,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
                 wait(7);
 
-                if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+                closeCampaingPopup();
 
                 if (isDisplayed(productDetailPage.addToBasket))
                 {
@@ -128,6 +127,9 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
         secureScrollPage(0, pageHeight.intValue());
         pageScroll(0, 0);
+
+        closeCampaingPopup();
+
         listElementRandomClick(mainPage.getProductList());
         wait(7);
         click(productDetailPage.addToBasket);
@@ -156,7 +158,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
             navigateToURL(UrlFactory.THE_NEWEST_100_TO_150_PRICE);
             wait(7);
 
-            if (isDisplayed(mainPage.getPopupCloseButton())) click(mainPage.getPopupCloseButton());
+            closeCampaingPopup();
 
             Long pageHeight = jsHelper.getPageHeight();
 
@@ -184,7 +186,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
     {
         randomProductSelectAndAddBasket();
 
-        driver.navigate().to(getCurrentURL() + "?action=gift&quantity_16286=1&use_gift=1&coupon_code=");
+        driver.navigate().to(getCurrentURL().concat("?action=gift&quantity_16286=1&use_gift=1&coupon_code="));
 
         Double productPrice = getPrice(cartPage.productPrice);
 

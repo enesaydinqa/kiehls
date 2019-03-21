@@ -41,6 +41,11 @@ public class MainPageWebPage extends PageObject
     @FindBy(css = ".swiper-slide-active")
     private WebElement activeSliderImage;
 
+    @FindBy(css = ".sp-fancybox-iframe")
+    private WebElement popupIframe;
+
+    @FindBy(xpath = "//i[contains(@id,'icon-close-button')]")
+    private WebElement popupCloseButton;
 
     public List<WebElement> getNewestProducts()
     {
@@ -80,5 +85,15 @@ public class MainPageWebPage extends PageObject
     public WebElement getActiveSliderImage()
     {
         return activeSliderImage;
+    }
+
+    public WebElement getPopupIframe()
+    {
+        return popupIframe;
+    }
+
+    public WebElement getPopupCloseButton()
+    {
+        return popupCloseButton;
     }
 }

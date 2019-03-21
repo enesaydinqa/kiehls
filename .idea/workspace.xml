@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +50,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="416">
+              <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="86" column="19" lean-forward="true" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+              <folding>
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#2262#2263#0" expanded="true" />
+                <element signature="e#2296#2297#0" expanded="true" />
+                <element signature="e#2189#2190#0" expanded="true" />
+                <element signature="e#2228#2229#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11">
+              <caret line="162" column="55" lean-forward="true" selection-start-line="162" selection-start-column="55" selection-end-line="162" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/NYXCosmeticsProductNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/NYXCosmeticsHomeNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/helper/JavaScripts.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/NYXCosmeticsProductNetworkTest.java" />
@@ -124,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/NYXCosmeticsProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/SeleniumActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCostemicTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/properties/SetProperties.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/configurations.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/Configurations.java" />
@@ -149,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractResponsiveTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/helper/JSExecutor.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/helper/JSHelper.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/recorder/ScreenRecord.java" />
@@ -161,12 +202,15 @@
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/galen/path/SpecFilePath.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/PageObject.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/HomePageNetworkTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/ProductPageNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java" />
       </list>
     </option>
   </component>
@@ -366,7 +410,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553186173351" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553187415371" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -408,8 +452,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ProductPageNetworkTest.testProductDetailPageLoadImages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HomePageNetworkTest.testHomePageSlider">
+    <configuration name="HomePageNetworkTest.testHomePageSlider" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.web" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.web.HomePageNetworkTest" />
+      <option name="METHOD_NAME" value="testHomePageSlider" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testGiftPackageFee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nyxcosmetics" />
       <extension name="coverage">
         <pattern>
@@ -418,8 +480,62 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductPageNetworkTest" />
-      <option name="METHOD_NAME" value="testProductDetailPageLoadImages" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testGiftPackageFee" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testProductAndBasketPriceCompare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testProductAndBasketPriceCompare" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testShippingFee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testShippingFee" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.testShippingFree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="nyxcosmetics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductTest" />
+      <option name="METHOD_NAME" value="testShippingFree" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
       <option name="PARAMETERS" value="" />
@@ -439,7 +555,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductPageNetworkTest.testProductDetailPageLoadImages" />
+        <item itemvalue="JUnit.HomePageNetworkTest.testHomePageSlider" />
+        <item itemvalue="JUnit.ProductTest.testGiftPackageFee" />
+        <item itemvalue="JUnit.ProductTest.testProductAndBasketPriceCompare" />
+        <item itemvalue="JUnit.ProductTest.testShippingFee" />
+        <item itemvalue="JUnit.ProductTest.testShippingFree" />
       </list>
     </recent_temporary>
   </component>
@@ -517,44 +637,44 @@
       <workItem from="1552410614569" duration="687000" />
       <workItem from="1552417249858" duration="599000" />
       <workItem from="1552417912248" duration="1400000" />
-      <workItem from="1553185754568" duration="134000" />
+      <workItem from="1553185754568" duration="1364000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 19m 58s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductPageNetworkTest_testProductDetailPageLoadImages - 2019.03.21 at 19h 33m 53s.xml">
+      <configuration name="ProductPageNetworkTest.testProductDetailPageLoadImages" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 22m 08s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductPageNetworkTest_testProductDetailPageLoadImages - 2019.03.21 at 19h 35m 15s.xml">
+      <configuration name="ProductPageNetworkTest.testProductDetailPageLoadImages" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 25m 26s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductPageNetworkTest_testProductDetailPageLoadImages - 2019.03.21 at 19h 37m 19s.xml">
+      <configuration name="ProductPageNetworkTest.testProductDetailPageLoadImages" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 25m 46s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductTest_testShippingFree - 2019.03.21 at 19h 40m 27s.xml">
+      <configuration name="ProductTest.testShippingFree" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 27m 12s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductTest_testShippingFee - 2019.03.21 at 19h 43m 08s.xml">
+      <configuration name="ProductTest.testShippingFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 27m 27s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductTest_testProductAndBasketPriceCompare - 2019.03.21 at 19h 44m 13s.xml">
+      <configuration name="ProductTest.testProductAndBasketPriceCompare" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 28m 33s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.21 at 19h 45m 38s.xml">
+      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 29m 16s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.21 at 19h 46m 29s.xml">
+      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 31m 52s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="ProductTest_testGiftPackageFee - 2019.03.21 at 19h 48m 01s.xml">
+      <configuration name="ProductTest.testGiftPackageFee" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentTest_testUserLoggedAgreementVisible - 2019.03.12 at 22h 34m 56s.xml">
-      <configuration name="PaymentTest.testUserLoggedAgreementVisible" configurationId="JUnit" />
+    <history-entry file="HomePageNetworkTest_testHomePageSlider - 2019.03.21 at 19h 52m 07s.xml">
+      <configuration name="HomePageNetworkTest.testHomePageSlider" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274112000" />
+    <option name="totallyTimeSpent" value="275342000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,8 +687,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.28755364" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -577,13 +698,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275401" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3449198" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28743315" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31417114" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
       <window_info anchor="bottom" id="Duplicate detector" order="7" weight="0.3298153" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32934928" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.328877" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32933334" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32352942" />
@@ -768,18 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="51" column="86" lean-forward="true" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2958#2959#0" expanded="true" />
-            <element signature="e#2996#2997#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/SeleniumActions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -865,60 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/PaymentPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/MainResponsivePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/galen/adaptive/HomePageLayoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -951,17 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -982,13 +1026,6 @@
             <element signature="e#5806#5807#0" expanded="true" />
             <element signature="e#5858#5859#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1040,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/annotations/DescriptionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1055,13 +1085,6 @@
             <element signature="e#135#136#0" expanded="true" />
             <element signature="e#168#169#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/HomePageNetworkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -1075,19 +1098,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="94" column="24" selection-start-line="94" selection-end-line="95" />
+        <state relative-caret-position="155">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2958#2959#0" expanded="true" />
+            <element signature="e#2996#2997#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="161" column="68" selection-start-line="161" selection-start-column="68" selection-end-line="161" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="-79">
           <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1095,27 +1127,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="412">
+          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/HomePageNetworkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-667">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="360">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/utils/ReportGenerate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/CartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/NewAddressRegistrationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/PaymentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/mobile/MainResponsivePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding>
+            <element signature="e#2317#2318#0" expanded="true" />
+            <element signature="e#2356#2357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="162" column="55" lean-forward="true" selection-start-line="162" selection-start-column="55" selection-end-line="162" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="86" column="19" lean-forward="true" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#2262#2263#0" expanded="true" />
+            <element signature="e#2296#2297#0" expanded="true" />
+            <element signature="e#2189#2190#0" expanded="true" />
+            <element signature="e#2228#2229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -36,13 +36,7 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
         Long pageHeight = jsHelper.getPageHeight();
         secureScrollPage(0, pageHeight.intValue());
         pageScroll(0, 0);
-
-        wait(5);
-        if (isDisplayed(mainPage.getPopupCloseButton()))
-        {
-            click(mainPage.getPopupCloseButton());
-            wait(3);
-        }
+        closeCampaingPopup();
 
         listElementRandomClick(mainPage.getProductList());
 
