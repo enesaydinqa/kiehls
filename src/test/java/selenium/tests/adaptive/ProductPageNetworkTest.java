@@ -2,14 +2,12 @@ package selenium.tests.adaptive;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
-import context.flag.NetworkExecutable;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.core.har.HarResponse;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.experimental.categories.Category;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.MainResponsivePage;
 
@@ -38,6 +36,14 @@ public class ProductPageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
         Long pageHeight = jsHelper.getPageHeight();
         secureScrollPage(0, pageHeight.intValue());
         pageScroll(0, 0);
+
+        wait(5);
+        if (isDisplayed(mainPage.getPopupCloseButton()))
+        {
+            click(mainPage.getPopupCloseButton());
+            wait(3);
+        }
+
         listElementRandomClick(mainPage.getProductList());
 
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();

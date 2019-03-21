@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aea812e-1e76-4179-b3ae-7b4b2642f53f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/context/flag/NetworkExecutable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/HomePageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/HomePageNetworkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/ProductPageNetworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/ProductPageNetworkTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,56 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/PaymentTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="94" column="24" selection-start-line="94" selection-end-line="95" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractNYXCosmeticsResponsiveTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-667">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/context/driver/ChromeDriverManagerResponsive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="155" column="51" lean-forward="true" selection-start-line="155" selection-start-column="51" selection-end-line="155" selection-end-column="51" />
+            <state relative-caret-position="233">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,6 +189,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,6 +248,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="device" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
               <item name="driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -317,7 +274,52 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="recorder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="selenium" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="selenium" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
@@ -351,19 +353,20 @@
             <path>
               <item name="nyxcosmetics" type="b2602c69:ProjectViewProjectNode" />
               <item name="nyxcosmetics" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552419409174" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553186173351" />
     <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -405,26 +408,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllTestRunner">
-    <configuration name="AllTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nyxcosmetics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium" />
-      <option name="MAIN_CLASS_NAME" value="selenium.AllTestRunner" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomePageNetworkTest.testAdaptiveHomePageLoadPNG" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="ProductPageNetworkTest.testProductDetailPageLoadImages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="nyxcosmetics" />
       <extension name="coverage">
         <pattern>
@@ -433,28 +418,10 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.HomePageNetworkTest" />
-      <option name="METHOD_NAME" value="testAdaptiveHomePageLoadPNG" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.ProductPageNetworkTest" />
+      <option name="METHOD_NAME" value="testProductDetailPageLoadImages" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentTest.testUserLoggedAgreementVisible" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="nyxcosmetics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.tests.adaptive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.PaymentTest" />
-      <option name="METHOD_NAME" value="testUserLoggedAgreementVisible" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -464,7 +431,7 @@
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false -Dshipping.fee=7.99 -Dpr.for.shipping.free=120 -Dgift.package.fee=5.00" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -472,9 +439,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AllTestRunner" />
-        <item itemvalue="JUnit.PaymentTest.testUserLoggedAgreementVisible" />
-        <item itemvalue="JUnit.HomePageNetworkTest.testAdaptiveHomePageLoadPNG" />
+        <item itemvalue="JUnit.ProductPageNetworkTest.testProductDetailPageLoadImages" />
       </list>
     </recent_temporary>
   </component>
@@ -552,6 +517,7 @@
       <workItem from="1552410614569" duration="687000" />
       <workItem from="1552417249858" duration="599000" />
       <workItem from="1552417912248" duration="1400000" />
+      <workItem from="1553185754568" duration="134000" />
     </task>
     <servers />
   </component>
@@ -588,7 +554,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273939000" />
+    <option name="totallyTimeSpent" value="274112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -602,7 +568,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.2732475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49867725" visible="true" weight="0.28755364" />
       <window_info id="Structure" order="1" sideWeight="0.50132275" side_tool="true" weight="0.29613733" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1064,20 +1030,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ProductPageNetworkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="-37">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1153,6 +1109,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-667">
           <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/adaptive/ProductPageNetworkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
