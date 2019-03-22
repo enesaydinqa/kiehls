@@ -4,11 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.selenium</groupId>
+    <artifactId>nyxcosmetics</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
     <properties>
+        <surefire.impl>surefire-junit47</surefire.impl>
+        <surefire.version>2.21.0</surefire.version>
         <jetty.http.port>8090</jetty.http.port>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <allure.version>1.4.24.RC3</allure.version>
-        <aspectj.version>1.8.10</aspectj.version>
+        <testcase.groups></testcase.groups>
     </properties>
 
     <reporting>
@@ -21,55 +26,71 @@
         </plugins>
     </reporting>
 
-    <groupId>com.selenium</groupId>
-    <artifactId>nyxcosmetics</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
     <profiles>
+        <profile>
+            <id>Parallel</id>
+            <properties>
+                <testcase.groups>context.flag.ParallelExecutable</testcase.groups>
+            </properties>
+        </profile>
         <profile>
             <id>Network</id>
             <properties>
                 <testcase.groups>context.flag.NetworkExecutable</testcase.groups>
             </properties>
         </profile>
+        <profile>
+            <id>Payment</id>
+            <properties>
+                <testcase.groups>context.flag.PaymentExecutable</testcase.groups>
+            </properties>
+        </profile>
     </profiles>
 
     <build>
-
-        <outputDirectory>${basedir}/target/classes</outputDirectory>
-        <testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.0.M0</version>
-            </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <includes>
-                        <include>*/*AllTestRunner</include>
-                    </includes>
+                <version>${surefire.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.surefire</groupId>
+                        <artifactId>${surefire.impl}</artifactId>
+                        <version>${surefire.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration combine.self="override">
+                    <groups>${testcase.groups}</groups>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
             </plugin>
         </plugins>
     </build>
 
-
     <dependencies>
+
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -82,12 +103,6 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-junit4</artifactId>
-            <version>2.10.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
@@ -133,30 +148,10 @@
         </dependency>
 
         <dependency>
-            <groupId>ru.yandex.qatools.allure</groupId>
-            <artifactId>allure-junit-adaptor</artifactId>
-            <version>${allure.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.googlecode.zohhak</groupId>
             <artifactId>zohhak</artifactId>
             <version>1.1.1</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-report-plugin</artifactId>
-            <version>3.0.0-M2</version>
-            <type>maven-plugin</type>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-site-plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.7.1</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.takari.junit/takari-cpsuite -->
@@ -173,7 +168,6 @@
             <artifactId>extentreports</artifactId>
             <version>2.41.2</version>
         </dependency>
-
 
         <dependency>
             <groupId>com.galenframework</groupId>

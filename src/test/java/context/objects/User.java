@@ -1,6 +1,6 @@
 package context.objects;
 
-import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class User
 {

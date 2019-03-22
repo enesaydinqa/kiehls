@@ -2,11 +2,14 @@ package selenium.tests.adaptive;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
+import context.flag.ParallelExecutable;
+import context.flag.PaymentExecutable;
 import context.objects.CreditCard;
 import context.objects.User;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.NewAddressRegistrationPage;
 import selenium.pages.mobile.PaymentPage;
@@ -33,6 +36,7 @@ public class PaymentTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Description("Giriş yapılan kullanıcı ile alışveriş tamamlama senaryosu.")
+    @Category({PaymentExecutable.class, ParallelExecutable.class})
     public void testUserLoggedAgreementVisible()
     {
         randomProductSelectAndAddBasket();

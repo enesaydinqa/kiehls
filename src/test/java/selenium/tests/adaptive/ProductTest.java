@@ -2,10 +2,12 @@ package selenium.tests.adaptive;
 
 import context.annotations.Description;
 import context.base.AbstractNYXCosmeticsResponsiveTest;
+import context.flag.ParallelExecutable;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import selenium.pages.UrlFactory;
 import selenium.pages.mobile.CartPage;
 import selenium.pages.mobile.MainResponsivePage;
@@ -34,6 +36,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Description("Ürün fiyatı ile Sepete Ekle dediğimizde çıkan fiyat aynı mı ?")
+    @Category(ParallelExecutable.class)
     public void testProductAndBasketPriceCompare()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -65,6 +68,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Description("Sepetteki ürünlerin fiyatları toplamı ile Toplam Tutar alanındaki tutar eşit mi ?")
+    @Category(ParallelExecutable.class)
     public void testBasketAndSubTotalCountCompare()
     {
         List<Double> productPrices = new ArrayList<>();
@@ -119,6 +123,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Description("Kargo alanı x tl mi ?")
+    @Category(ParallelExecutable.class)
     public void testShippingFee()
     {
         navigateToURL(UrlFactory.THE_NEWEST_0_TO_50_PRICE);
@@ -147,6 +152,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Description("Sepet Tutarı x in üzeri ise kargo ücretsiz mi ?")
+    @Category(ParallelExecutable.class)
     public void testShippingFree()
     {
         Double addedBasketProduct = 0.0;
@@ -182,6 +188,7 @@ public class ProductTest extends AbstractNYXCosmeticsResponsiveTest
 
     @Test
     @Description("Hediye paketini işaretlediğimde x TL sepete ekliyor mu ?")
+    @Category(ParallelExecutable.class)
     public void testGiftPackageFee()
     {
         randomProductSelectAndAddBasket();
