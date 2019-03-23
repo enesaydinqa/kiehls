@@ -12,7 +12,7 @@ import static context.driver.DriverManager.session;
 
 public class ReportGenerate extends TestWatcher
 {
-    private String filenameOfReport = System.getProperty("user.dir") + "/target/nyxcostemicstestresult.html";
+    private String filenameOfReport = System.getProperty("user.dir") + "/target/kiehls_regression_test_result.html";
 
     @Override
     protected void failed(Throwable e, org.junit.runner.Description description)
@@ -46,7 +46,7 @@ public class ReportGenerate extends TestWatcher
     private ExtentReports createReport()
     {
         ExtentReports extent = new ExtentReports(filenameOfReport, false);
-        extent.config().reportName("NYX Costemics Regression Tests");
+        extent.config().reportName("Kiehls Regression Tests");
         extent.config().reportHeadline("Regression Test Results");
         return extent;
     }
