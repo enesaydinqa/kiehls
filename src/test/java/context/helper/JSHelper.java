@@ -53,7 +53,7 @@ public class JSHelper implements JSExecuter
     @Override
     public JSExecuter openNewTab(String links)
     {
-        return executeScript(JSExecuter.class, "window.open(" + links + ",'_blank');");
+        return executeScript(JSExecuter.class, String.format("window.open(%s,'_blank');", links));
     }
 
     @Override
@@ -65,7 +65,7 @@ public class JSHelper implements JSExecuter
     @Override
     public JSExecuter navigateToUrl(String links)
     {
-        return executeScript(JSExecuter.class, "window.location.href = '" + links + "';");
+        return executeScript(JSExecuter.class, String.format("window.location.href = '%s';", links));
     }
 
     @Override

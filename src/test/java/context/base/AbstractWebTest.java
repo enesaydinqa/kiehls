@@ -57,7 +57,7 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
         {
             createFolder(System.getProperty("user.dir") + "/target/PageSource");
 
-            String file = System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt";
+            String file = System.getProperty("user.dir") + String.format("/target/PageSource/%s-DOM.txt", description.getMethodName());
 
             PrintWriter writer = null;
 
