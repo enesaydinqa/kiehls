@@ -39,6 +39,14 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
     public final TestRule watchman = new TestWatcher()
     {
         @Override
+        protected void starting(org.junit.runner.Description description)
+        {
+            logger.info("=================================================================");
+            logger.info("TEST STARTED ... → " + description.getMethodName());
+            logger.info("=================================================================");
+        }
+
+        @Override
         public Statement apply(Statement base, org.junit.runner.Description description)
         {
             return super.apply(base, description);
@@ -55,9 +63,9 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
         @Override
         protected void failed(Throwable e, org.junit.runner.Description description)
         {
-            createFolder(System.getProperty("user.dir") + "/target/PageSource");
+            createFolder(System.getProperty("user.dir").concat("/target/PageSource"));
 
-            String file = System.getProperty("user.dir") + "/target/PageSource/" + description.getMethodName() + "-DOM.txt";
+            String file = System.getProperty("user.dir").concat(String.format("/target/PageSource/%s-DOM.txt", description.getMethodName()));
 
             PrintWriter writer = null;
 
@@ -127,10 +135,10 @@ public abstract class AbstractResponsiveTest extends AbstractLayoutDesignTest
 
         jsHelper = new JSHelper(driver);
 
+        session = (driver).getSessionId().toString();
         logger.info("=================================================================");
-        logger.info("TEST STARTED ... -> " + testName.getMethodName());
+        logger.info("This Execute Session ID --> " + session);
         logger.info("=================================================================");
-
     }
 
 

@@ -1,7 +1,7 @@
 package selenium.tests.adaptive;
 
 import context.annotations.Description;
-import context.base.AbstractNYXCosmeticsResponsiveTest;
+import context.base.AbstractKiehlsResponsiveTest;
 import context.flag.NetworkExecutable;
 import context.flag.ParallelExecutable;
 import net.lightbody.bmp.core.har.HarEntry;
@@ -15,7 +15,7 @@ import selenium.pages.mobile.MainResponsivePage;
 
 import java.util.List;
 
-public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
+public class HomePageNetworkTest extends AbstractKiehlsResponsiveTest
 {
     private static final Logger logger = Logger.getLogger(HomePageNetworkTest.class);
 
@@ -25,6 +25,7 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     public void init() throws Exception
     {
         super.init(true);
+
         mainPage = new MainResponsivePage(driver);
     }
 
@@ -33,8 +34,11 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     @Category({NetworkExecutable.class, ParallelExecutable.class})
     public void testAdaptiveHomePageLoadPNG()
     {
-        navigateToURL(UrlFactory.MAIN_URL);
+        campaingClose();
+
         pageLongDownScroll();
+        wait(DEFAULT_WAIT_A_MOMENT_SECONDS);
+
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png") | link.getRequest().getUrl().contains(".jpg"))
@@ -49,8 +53,10 @@ public class HomePageNetworkTest extends AbstractNYXCosmeticsResponsiveTest
     @Category(ParallelExecutable.class)
     public void testAdaptiveHomePageNetwork()
     {
-        navigateToURL(UrlFactory.MAIN_URL);
+        campaingClose();
+
         pageLongDownScroll();
+        wait(DEFAULT_WAIT_SECONDS);
         List<HarEntry> entries = proxy.getHar().getLog().getEntries();
 
         entries.forEach(png -> {

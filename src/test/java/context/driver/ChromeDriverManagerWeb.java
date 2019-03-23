@@ -3,6 +3,7 @@ package context.driver;
 import com.browserstack.local.Local;
 import net.lightbody.bmp.client.ClientUtil;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import selenium.pages.UrlFactory;
 
 import java.net.URL;
 import java.util.HashMap;
@@ -54,10 +56,10 @@ public class ChromeDriverManagerWeb extends DriverManager
             driver = new ChromeDriver(desiredCapabilities);
         }
 
-        session = (driver).getSessionId().toString();
-        logger.info("=================================================================");
-        logger.info("This Execute Session ID --> " + session);
-        logger.info("=================================================================");
+        driver.navigate().to(UrlFactory.MAIN_URL.pageUrl);
+        Cookie ck = new Cookie("newsletter_popup_shown", "TRUE");
+        driver.manage().addCookie(ck);
+        driver.navigate().refresh();
     }
 
     private DesiredCapabilities desiredCapabilities(Boolean remoteTest, Boolean withProxy, Boolean browserStackLocal, ChromeOptions chromeOptions) throws Exception

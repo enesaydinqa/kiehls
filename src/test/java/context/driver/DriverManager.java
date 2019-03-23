@@ -16,6 +16,9 @@ public abstract class DriverManager
     public static Properties prop;
 
     protected static final String accessKey = "FPqXDFz4bqk1jvqXDZ3d";
+    protected static final Integer DEFAULT_WAIT_A_MOMENT_SECONDS = 2;
+    protected static final Integer DEFAULT_WAIT_SECONDS = 5;
+    protected static final Integer DEFAULT_WAIT_TOO_LONG_SECONDS = 15;
 
     protected void createDriver(Boolean withProxy) throws Exception
     {

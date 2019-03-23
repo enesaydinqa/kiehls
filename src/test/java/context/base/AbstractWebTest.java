@@ -39,6 +39,14 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
     public final TestRule watchman = new TestWatcher()
     {
         @Override
+        protected void starting(org.junit.runner.Description description)
+        {
+            logger.info("=================================================================");
+            logger.info("TEST STARTED ... → " + description.getMethodName());
+            logger.info("=================================================================");
+        }
+
+        @Override
         public Statement apply(Statement base, org.junit.runner.Description description)
         {
             return super.apply(base, description);
@@ -123,8 +131,9 @@ public abstract class AbstractWebTest extends AbstractLayoutDesignTest
 
         jsHelper = new JSHelper(driver);
 
+        session = (driver).getSessionId().toString();
         logger.info("=================================================================");
-        logger.info("TEST STARTED ... -> " + testName.getMethodName());
+        logger.info("This Execute Session ID --> " + session);
         logger.info("=================================================================");
     }
 
