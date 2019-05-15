@@ -1,0 +1,99 @@
+2019-05-14 10:43:46 INFO  AbstractWebTest:44 - =================================================================
+2019-05-14 10:43:46 INFO  AbstractWebTest:45 - TEST STARTED ... → testHomePageLoadPNG
+2019-05-14 10:43:46 INFO  AbstractWebTest:46 - =================================================================
+2019-05-14 10:43:46 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-14 10:43:47 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-14 10:43:47 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-14 10:43:48 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62952
+2019-05-14 10:43:49 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-14 10:43:49 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-14 10:43:49 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 62952
+2019-05-14 10:43:49 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-14 10:43:49 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-14 10:43:49 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-14 10:43:49 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-14 10:43:49 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-14 10:43:51 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-14 10:45:54 INFO  AbstractWebTest:44 - =================================================================
+2019-05-14 10:45:54 INFO  AbstractWebTest:45 - TEST STARTED ... → testHomePageLoadPNG
+2019-05-14 10:45:54 INFO  AbstractWebTest:46 - =================================================================
+2019-05-14 10:45:54 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-14 10:45:54 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-14 10:45:54 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-14 10:45:54 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63277
+2019-05-14 10:45:55 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-14 10:45:55 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-14 10:45:55 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 63277
+2019-05-14 10:45:55 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-14 10:45:55 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-14 10:45:55 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-14 10:45:55 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-14 10:45:55 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-14 10:45:57 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-14 10:46:19 INFO  AbstractWebTest:44 - =================================================================
+2019-05-14 10:46:19 INFO  AbstractWebTest:45 - TEST STARTED ... → testHomePageLoadPNG
+2019-05-14 10:46:19 INFO  AbstractWebTest:46 - =================================================================
+2019-05-14 10:46:19 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-14 10:46:19 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-14 10:46:19 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-14 10:46:19 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63298
+2019-05-14 10:46:20 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-14 10:46:20 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-14 10:46:20 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 63298
+2019-05-14 10:46:20 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-14 10:46:20 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-14 10:46:34 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-14 10:46:34 INFO  AbstractWebTest:135 - =================================================================
+2019-05-14 10:46:34 INFO  AbstractWebTest:136 - This Execute Session ID --> 3fffac90efb527358685e2969b62ff65
+2019-05-14 10:46:34 INFO  AbstractWebTest:137 - =================================================================
+2019-05-14 10:46:35 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x985adbcc, L:/10.1.10.130:63298 - R:/10.1.10.130:63488]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-14 10:46:35 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x81dafbb4, L:0.0.0.0/0.0.0.0:63489 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-14 10:46:36 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0x21921172, L:/10.1.10.130:63298 - R:/10.1.10.130:63381]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/pro/img/_blank_1x1.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-09/08/guarantee-icon-230x230-1504874126.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/1.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/5-1503067439.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/_blank.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/2-1503067051.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/6-1503067205.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/logo/18-10/24/kiehls_logo_transparent.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-05/13/sahur_anasayfa.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-05/08/top_products_anasayfa_02-01-1557318309.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-05/08/top_products_anasayfa_02-04.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-05/07/mrc_2019_anasayfa.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/projects/kiehls/img/spotlight-arrow-right.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/projects/kiehls/img/spotlight-arrow-left.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-05/03/onlinerandevu_mothersday_anasayfa-1556869007.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/18-07/05/555x251_maskebul.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/19-05/03/onlinerandevu_551x251.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/18-08/28/brand-promise.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/11123v2_1_2.jpg?1557792559
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Midnight_Recovery_Concentrate_10.jpg?1557792576
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Powerful_Strength_Line_Reducing_Concentrate_50ml_RV3_PV2.jpg?1557792636
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Super_Multi_Corrective_Cream_1_1_1.png?1557792586
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/11158_1_1.jpg?1557792582
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Resize_HydroPlumping_Serum[1].jpg?1557792571
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/r11149_1.jpg?1557792576
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Calendula_Deep_Cleansing_Foaming_Face_Wash_UPC_230ml_PV1.jpg?1557792563
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/spotlight_gradient.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/arrow-right-type2.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/arrow-left-type2.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-04/08/20180712_091621000_ios.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-04/08/111519_ag_sh10_calendula_family_560-1554730916.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-04/08/image-26.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-04/08/image-28.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/_blank_1x1.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-04/08/powerful-strenght-line-reducing-concentrate-1554730317.jpg
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-11/21/group-20-1.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-11/21/group-20-copy.png
+2019-05-14 10:47:01 INFO  HomePageNetworkTest:45 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-11/21/group-20-copy-2.png
+2019-05-14 10:47:01 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-14 10:47:01 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-14 10:47:01 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-14 10:47:03 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-14 10:47:03 INFO  AbstractWebTest:58 - =================================================================
+2019-05-14 10:47:03 INFO  AbstractWebTest:59 - TEST PASSED ...
+2019-05-14 10:47:03 INFO  AbstractWebTest:60 - =================================================================
