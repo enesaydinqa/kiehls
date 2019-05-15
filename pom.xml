@@ -45,6 +45,12 @@
                 <testcase.groups>context.flag.PaymentExecutable</testcase.groups>
             </properties>
         </profile>
+        <profile>
+            <id>Shopping</id>
+            <properties>
+                <testcase.groups>context.flag.ShoppingExecutable</testcase.groups>
+            </properties>
+        </profile>
     </profiles>
 
     <build>
