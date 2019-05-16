@@ -856,3 +856,8 @@ java.nio.channels.ClosedChannelException
 2019-05-16 11:57:34 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x6082b113, L:0.0.0.0/0.0.0.0:58524]: Connection to upstream server failed
 java.nio.channels.ClosedChannelException
 2019-05-16 11:57:52 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:58:13 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:58:13 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:58:13 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:58:15 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:58:16 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
