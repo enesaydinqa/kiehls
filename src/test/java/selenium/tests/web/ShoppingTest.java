@@ -51,12 +51,14 @@ public class ShoppingTest extends AbstractKiehlsTest
         click(shoppingPage.gotoPaymentPage);
         click(shoppingPage.guestLoginBtn);
 
-        Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_PAGE.pageUrl));
+        wait(10);
+        Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_ADD_SAMPLES_PAGE.pageUrl));
 
         click(shoppingPage.sampleProduct.get(0));
         wait(5);
         click(shoppingPage.next);
-
+        wait(5);
+        Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_PAGE.pageUrl));
         //TODO teslimat adresi kısmından devam edilcek.
 
     }
