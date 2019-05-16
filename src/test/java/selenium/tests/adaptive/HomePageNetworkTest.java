@@ -44,7 +44,7 @@ public class HomePageNetworkTest extends AbstractKiehlsResponsiveTest
         entries.stream().filter(link -> link.getRequest().getUrl().contains(".png") | link.getRequest().getUrl().contains(".jpg"))
                 .forEach(png -> {
                     logger.info("Check Response this url -> " + png.getRequest().getUrl());
-                    Assert.assertEquals("HTTP Request Error :" + png.getRequest().getUrl(), 200, png.getResponse().getStatus());
+                    Assert.assertTrue("HTTP Request Error :" + png.getRequest().getUrl(), png.getResponse().getStatus()>200);
                 });
     }
 

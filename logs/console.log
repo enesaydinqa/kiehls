@@ -97,3 +97,762 @@ java.nio.channels.ClosedChannelException
 2019-05-14 10:47:03 INFO  AbstractWebTest:58 - =================================================================
 2019-05-14 10:47:03 INFO  AbstractWebTest:59 - TEST PASSED ...
 2019-05-14 10:47:03 INFO  AbstractWebTest:60 - =================================================================
+2019-05-16 11:02:53 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:02:53 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:02:53 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:02:53 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:02:54 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:02:54 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:02:54 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:57195
+2019-05-16 11:02:54 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:02:54 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:02:54 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 57195
+2019-05-16 11:02:54 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:02:54 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:02:55 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:02:55 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:02:55 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:02:57 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:03:51 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:03:51 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:03:51 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:03:51 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:03:52 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:03:52 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:03:52 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:57452
+2019-05-16 11:03:53 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:03:53 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:03:53 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 57452
+2019-05-16 11:03:53 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:03:53 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:04:06 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:04:06 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:04:06 INFO  AbstractWebTest:136 - This Execute Session ID --> 589c93b646ce5c9aecee4dc04d0ecf0a
+2019-05-16 11:04:06 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:04:07 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x86802a5a, L:0.0.0.0/0.0.0.0:57674]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:04:10 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:04:10 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:04:10 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:04:12 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:04:13 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:04:46 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:04:46 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:04:46 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:04:46 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:04:47 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:04:47 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:04:47 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:57991
+2019-05-16 11:04:48 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:04:48 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:04:48 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 57991
+2019-05-16 11:04:48 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:04:48 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:05:01 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:05:01 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:05:01 INFO  AbstractWebTest:136 - This Execute Session ID --> 3b3d7d8e0d21e3868beacb4b0878560e
+2019-05-16 11:05:01 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:06:03 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x0cf697ad, L:/10.1.10.130:57991 - R:/10.1.10.130:58374]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:06:03 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x0b5986a0, L:/10.1.10.130:57991 - R:/10.1.10.130:58379]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:06:56 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xcda45f55, L:/10.1.10.130:57991 - R:/10.1.10.130:58373]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:06:56 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xaa60e096, L:0.0.0.0/0.0.0.0:58614]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:06:56 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x6cc48f6b, L:0.0.0.0/0.0.0.0:58615]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:06:56 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xd8f01808, L:0.0.0.0/0.0.0.0:58613]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:06:56 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xdee11700, L:/10.1.10.130:57991 - R:/10.1.10.130:58677]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:06:56 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x3fb94216, L:0.0.0.0/0.0.0.0:58996 ! R:kiehlstr.api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:07:14 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xa69bf5a4, L:/10.1.10.130:57991 - R:/10.1.10.130:58842]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:07:14 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x518ab9cf, L:/10.1.10.130:57991 - R:/10.1.10.130:58843]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:07:14 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xb97c331d, L:/10.1.10.130:57991 - R:/10.1.10.130:58678]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:07:14 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x4fcd053a, L:/10.1.10.130:57991 - R:/10.1.10.130:58679]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:07:14 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xc0401413, L:0.0.0.0/0.0.0.0:58999]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:07:14 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xe8683f68, L:0.0.0.0/0.0.0.0:59002]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:07:14 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x35e24be8, L:0.0.0.0/0.0.0.0:59000]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:07:14 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x597436b3, L:0.0.0.0/0.0.0.0:59001 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:07:14 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xdf42c51f, L:0.0.0.0/0.0.0.0:58998 ! R:static.hotjar.com/147.75.32.173:443]: Connection to upstream server failed
+javax.net.ssl.SSLException: handshake timed out
+2019-05-16 11:07:14 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xd82ff4d8, L:0.0.0.0/0.0.0.0:59003 ! R:script.hotjar.com/147.75.32.173:443]: Connection to upstream server failed
+javax.net.ssl.SSLException: handshake timed out
+2019-05-16 11:08:20 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xb885909e, L:/10.1.10.130:57991 - R:/10.1.10.130:59262]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:08:20 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x41da3333, L:/10.1.10.130:57991 - R:/10.1.10.130:59256]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:08:20 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x80482e61, L:/10.1.10.130:57991 - R:/10.1.10.130:59263]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:08:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x7fc64e5e, L:0.0.0.0/0.0.0.0:59443 ! R:log.api.useinsider.com/104.17.170.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:08:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xb50099f5, L:0.0.0.0/0.0.0.0:59441 ! R:log.api.useinsider.com/104.17.170.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:08:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x7cd2ab91, L:0.0.0.0/0.0.0.0:59442 ! R:kiehlstr.api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:08:20 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xdd6c8be6, L:/10.1.10.130:57991 - R:/10.1.10.130:59261]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:08:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x47b75b0b, L:0.0.0.0/0.0.0.0:59440 ! R:kiehlstr.api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:08:20 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-16 11:08:20 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-16 11:08:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x2a8faaf7, L:0.0.0.0/0.0.0.0:59447 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:08:20 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-16 11:08:20 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:08:31 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:08:31 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:08:31 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:08:31 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:08:32 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:08:32 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:08:32 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:59503
+2019-05-16 11:08:33 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:08:33 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:08:33 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 59503
+2019-05-16 11:08:33 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:08:33 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:08:44 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:08:44 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:08:44 INFO  AbstractWebTest:136 - This Execute Session ID --> afb1bdf1974313b3a2997e81f04e54bf
+2019-05-16 11:08:44 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:08:45 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xefeb6935, L:/10.1.10.130:59503 - R:/10.1.10.130:59735]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:08:45 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x7f86d132, L:0.0.0.0/0.0.0.0:59736]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:08:47 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0xebcc90cb, L:/10.1.10.130:59503 - R:/10.1.10.130:59556]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:09:13 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:09:13 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:09:13 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:09:15 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:09:16 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:09:34 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:09:34 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:09:34 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:09:34 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:09:35 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:09:35 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:09:35 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:60114
+2019-05-16 11:09:36 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:09:36 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:09:36 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 60114
+2019-05-16 11:09:36 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:09:36 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:09:44 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:09:44 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:09:44 INFO  AbstractWebTest:136 - This Execute Session ID --> c21bdc1e461b4ac03d176b7dd626f23d
+2019-05-16 11:09:44 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:22:48 WARN  HarCaptureFilter:644 - Unable to find cached IP address for host: www.kiehls.com.tr. IP address in HAR entry will be blank.
+2019-05-16 11:22:48 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:22:48 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:22:48 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x988d394f, L:0.0.0.0/0.0.0.0:63993 ! R:googleads.g.doubleclick.net/172.217.169.98:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:22:48 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xf29fb7ee, L:0.0.0.0/0.0.0.0:63995 ! R:api.useinsider.com/104.17.170.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:22:48 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1302207c, L:0.0.0.0/0.0.0.0:63994 ! R:connect.facebook.net/157.240.9.23:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:22:56 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:22:56 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:22:56 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:22:56 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:22:57 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:22:57 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:22:57 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:64037
+2019-05-16 11:22:58 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:22:58 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:22:58 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 64037
+2019-05-16 11:22:58 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:22:58 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:23:13 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:23:13 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:23:13 INFO  AbstractWebTest:136 - This Execute Session ID --> be24dab3caa10afb453b2a1a01a3cb64
+2019-05-16 11:23:13 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:23:13 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x47996fda, L:/10.1.10.130:64037 - R:/10.1.10.130:64289]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:23:13 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xbc59ab71, L:0.0.0.0/0.0.0.0:64290 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:23:18 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xfb24fad4, L:/10.1.10.130:64037 - R:/10.1.10.130:64402]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:23:18 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x0e24d7d7, L:0.0.0.0/0.0.0.0:64403 ! R:fonts.googleapis.com/172.217.17.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:23:58 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x8e04aa38, L:0.0.0.0/0.0.0.0:64502 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+javax.net.ssl.SSLException: handshake timed out
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xe40cbdcb, L:0.0.0.0/0.0.0.0:64775 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+javax.net.ssl.SSLException: handshake timed out
+2019-05-16 11:27:50 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0xae5ecf16, L:/10.1.10.130:64037 - R:/10.1.10.130:64774]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:27:50 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-16 11:27:50 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xbde59464, L:0.0.0.0/0.0.0.0:50032 ! R:fonts.googleapis.com/172.217.17.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xfcba61b6, L:0.0.0.0/0.0.0.0:50023 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xee512c47, L:0.0.0.0/0.0.0.0:50038 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xc9a1af63, L:0.0.0.0/0.0.0.0:50025 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x33170759, L:0.0.0.0/0.0.0.0:50027 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x206bdd6f, L:0.0.0.0/0.0.0.0:50028 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x246c8a92, L:0.0.0.0/0.0.0.0:50035 ! R:script.hotjar.com/147.75.33.239:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xdcfaaae5, L:0.0.0.0/0.0.0.0:50036 ! R:www.google-analytics.com/172.217.169.142:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xd797077b, L:0.0.0.0/0.0.0.0:50033 ! R:fonts.googleapis.com/172.217.17.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xa4823e4c, L:0.0.0.0/0.0.0.0:50034 ! R:www.google-analytics.com/172.217.169.142:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x0b1de2c3, L:0.0.0.0/0.0.0.0:50022 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x6f86f442, L:0.0.0.0/0.0.0.0:50037 ! R:www.google-analytics.com/172.217.169.142:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xe86eb450, L:0.0.0.0/0.0.0.0:50031 ! R:fonts.googleapis.com/172.217.17.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:51 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x6eb0b968, L:0.0.0.0/0.0.0.0:50029 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x5e604278, L:0.0.0.0/0.0.0.0:50040 ! R:www.google-analytics.com/172.217.169.142:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:51 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xdee23307, L:0.0.0.0/0.0.0.0:50039 ! R:www.google-analytics.com/172.217.169.142:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x65134af6, L:0.0.0.0/0.0.0.0:50030 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:51 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x0345c3df, L:0.0.0.0/0.0.0.0:50024 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:50 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:27:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x92e66a92, L:0.0.0.0/0.0.0.0:50026 ! R:kiehlstr.api.useinsider.com/104.17.169.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:27:51 WARN  SingleThreadEventExecutor:131 - An event executor terminated with non-empty task queue (4)
+2019-05-16 11:27:54 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:27:54 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:27:54 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:27:54 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:27:55 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:27:55 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:27:55 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:50067
+2019-05-16 11:27:56 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:27:56 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:27:56 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 50067
+2019-05-16 11:27:56 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:27:56 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:28:07 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:28:07 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:28:07 INFO  AbstractWebTest:136 - This Execute Session ID --> 218e57b0636649c7e3785e4592c13656
+2019-05-16 11:28:07 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:28:11 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x650edb6f, L:/10.1.10.130:50067 - R:/10.1.10.130:50403]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:28:11 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x8c3a5d82, L:0.0.0.0/0.0.0.0:50404 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:28:45 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:28:45 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:28:45 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:28:48 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:28:48 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:29:06 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:29:06 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:29:06 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:29:06 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:29:07 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:29:07 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:29:07 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:50879
+2019-05-16 11:29:08 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:29:08 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:29:08 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 50879
+2019-05-16 11:29:08 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:29:08 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:29:15 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0x57e198c7, L:/10.1.10.130:50879 - R:/10.1.10.130:50910]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:29:24 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:29:24 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:29:24 INFO  AbstractWebTest:136 - This Execute Session ID --> 1c4c5b6ca0771ada0e053ae8e4a111e7
+2019-05-16 11:29:24 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:29:24 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xb41a82c9, L:/10.1.10.130:50879 - R:/10.1.10.130:51095]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:29:24 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xc294ea6b, L:0.0.0.0/0.0.0.0:51096 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:29:29 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x0622c61a, L:/10.1.10.130:50879 - R:/10.1.10.130:51168]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:29:29 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xc078c9c0, L:0.0.0.0/0.0.0.0:51169 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:29:32 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-16 11:29:32 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-16 11:29:32 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-16 11:29:32 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:29:32 WARN  DefaultPromise:151 - An exception was thrown by org.littleshoot.proxy.impl.ConnectionFlow$3.operationComplete()
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:715)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:300)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:691)
+	at io.netty.channel.AbstractChannelHandlerContext.read(AbstractChannelHandlerContext.java:577)
+	at io.netty.channel.DefaultChannelPipeline.read(DefaultChannelPipeline.java:1049)
+	at io.netty.channel.AbstractChannel.read(AbstractChannel.java:228)
+	at io.netty.channel.DefaultChannelConfig.setAutoRead(DefaultChannelConfig.java:281)
+	at io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:314)
+	at io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:35)
+	at org.littleshoot.proxy.impl.ProxyConnection.resumeReading(ProxyConnection.java:560)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.resumeReadingIfNecessary(ClientToProxyConnection.java:628)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.serverConnectionFailed(ClientToProxyConnection.java:588)
+	at org.littleshoot.proxy.impl.ConnectionFlow$3.operationComplete(ConnectionFlow.java:188)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:683)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:624)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:139)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ConnectionFlow.fail(ConnectionFlow.java:182)
+	at org.littleshoot.proxy.impl.ConnectionFlow$2.operationComplete(ConnectionFlow.java:153)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:683)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:564)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.handler.ssl.SslHandler.notifyHandshakeFailure(SslHandler.java:1239)
+	at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1234)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:726)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:944)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:687)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-16 11:29:32 ERROR rejectedExecution:181 - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:715)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:300)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:691)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:674)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:644)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:139)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:466)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.serverDisconnected(ClientToProxyConnection.java:650)
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.disconnected(ProxyToServerConnection.java:421)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:621)
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.channelInactive(ProxyToServerConnection.java:73)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:349)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:309)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:349)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:309)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:727)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:944)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:687)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-16 11:29:32 WARN  DefaultPromise:151 - An exception was thrown by org.littleshoot.proxy.impl.ConnectionFlow$3.operationComplete()
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:715)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:300)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:691)
+	at io.netty.channel.AbstractChannelHandlerContext.read(AbstractChannelHandlerContext.java:577)
+	at io.netty.channel.DefaultChannelPipeline.read(DefaultChannelPipeline.java:1049)
+	at io.netty.channel.AbstractChannel.read(AbstractChannel.java:228)
+	at io.netty.channel.DefaultChannelConfig.setAutoRead(DefaultChannelConfig.java:281)
+	at io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:314)
+	at io.netty.channel.socket.DefaultSocketChannelConfig.setAutoRead(DefaultSocketChannelConfig.java:35)
+	at org.littleshoot.proxy.impl.ProxyConnection.resumeReading(ProxyConnection.java:560)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.resumeReadingIfNecessary(ClientToProxyConnection.java:628)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.serverConnectionFailed(ClientToProxyConnection.java:588)
+	at org.littleshoot.proxy.impl.ConnectionFlow$3.operationComplete(ConnectionFlow.java:188)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:683)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:624)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:139)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ConnectionFlow.fail(ConnectionFlow.java:182)
+	at org.littleshoot.proxy.impl.ConnectionFlow$2.operationComplete(ConnectionFlow.java:153)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:683)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:564)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:425)
+	at io.netty.handler.ssl.SslHandler.notifyHandshakeFailure(SslHandler.java:1239)
+	at io.netty.handler.ssl.SslHandler.setHandshakeFailure(SslHandler.java:1234)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:726)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:944)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:687)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-16 11:29:32 WARN  SingleThreadEventExecutor:131 - An event executor terminated with non-empty task queue (5)
+2019-05-16 11:29:32 ERROR rejectedExecution:181 - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:715)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:300)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:691)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:674)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:644)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:139)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:466)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.serverDisconnected(ClientToProxyConnection.java:650)
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.disconnected(ProxyToServerConnection.java:421)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:621)
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.channelInactive(ProxyToServerConnection.java:73)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:349)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:309)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:349)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:309)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:727)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:944)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:687)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-16 11:29:32 ERROR rejectedExecution:181 - Failed to submit a listener notification task. Event loop shut down?
+java.util.concurrent.RejectedExecutionException: event executor terminated
+	at io.netty.util.concurrent.SingleThreadEventExecutor.reject(SingleThreadEventExecutor.java:715)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.addTask(SingleThreadEventExecutor.java:300)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.execute(SingleThreadEventExecutor.java:691)
+	at io.netty.util.concurrent.DefaultPromise.execute(DefaultPromise.java:674)
+	at io.netty.util.concurrent.DefaultPromise.notifyLateListener(DefaultPromise.java:644)
+	at io.netty.util.concurrent.DefaultPromise.addListener(DefaultPromise.java:139)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:93)
+	at io.netty.channel.DefaultChannelPromise.addListener(DefaultChannelPromise.java:28)
+	at org.littleshoot.proxy.impl.ProxyConnection.disconnect(ProxyConnection.java:466)
+	at org.littleshoot.proxy.impl.ClientToProxyConnection.serverDisconnected(ClientToProxyConnection.java:650)
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.disconnected(ProxyToServerConnection.java:421)
+	at org.littleshoot.proxy.impl.ProxyConnection.channelInactive(ProxyConnection.java:621)
+	at org.littleshoot.proxy.impl.ProxyToServerConnection.channelInactive(ProxyToServerConnection.java:73)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.handler.timeout.IdleStateHandler.channelInactive(IdleStateHandler.java:257)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:349)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:309)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:75)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInputClosed(ByteToMessageDecoder.java:349)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelInactive(ByteToMessageDecoder.java:309)
+	at io.netty.handler.ssl.SslHandler.channelInactive(SslHandler.java:727)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelInactive(AbstractChannelHandlerContext.java:193)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:179)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:944)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$7.run(AbstractChannel.java:687)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:358)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:374)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-16 11:29:36 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:29:36 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:29:36 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:29:36 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:29:37 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:29:37 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:29:37 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:51239
+2019-05-16 11:29:38 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:29:38 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:29:38 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 51239
+2019-05-16 11:29:38 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:29:38 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:29:51 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:29:51 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:29:51 INFO  AbstractWebTest:136 - This Execute Session ID --> d78c3566ec39ca29c2a43ff4f4776cbd
+2019-05-16 11:29:51 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:30:42 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:32:47 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-16 11:32:47 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xfb6f59e9, L:0.0.0.0/0.0.0.0:52784 ! R:stats.g.doubleclick.net/74.125.140.154:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x48dbdfbe, L:0.0.0.0/0.0.0.0:52775 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xe479de6f, L:0.0.0.0/0.0.0.0:52781 ! R:connect.facebook.net/157.240.9.23:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x20bc735d, L:0.0.0.0/0.0.0.0:52773 ! R:hit.api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x19b55578, L:0.0.0.0/0.0.0.0:52777 ! R:api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xcf377e01, L:0.0.0.0/0.0.0.0:52780 ! R:connect.facebook.net/157.240.9.23:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xd38a4a69, L:0.0.0.0/0.0.0.0:52772 ! R:fonts.gstatic.com/172.217.169.195:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xa6b9d39b, L:0.0.0.0/0.0.0.0:52786 ! R:hit.api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x339ee77d, L:0.0.0.0/0.0.0.0:52776 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xa6243daf, L:0.0.0.0/0.0.0.0:52779 ! R:fonts.gstatic.com/172.217.169.195:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x9c7f77d3, L:0.0.0.0/0.0.0.0:52771 ! R:googleads.g.doubleclick.net/172.217.169.194:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xdceb9241, L:0.0.0.0/0.0.0.0:52778 ! R:api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xcaa0e1fd, L:0.0.0.0/0.0.0.0:52774 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x468483c7, L:0.0.0.0/0.0.0.0:52770 ! R:googleads.g.doubleclick.net/172.217.169.194:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xae3497df, L:0.0.0.0/0.0.0.0:52782 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:32:47 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:33:05 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:33:05 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:33:05 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:33:05 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:33:06 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:33:06 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:33:06 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:52879
+2019-05-16 11:33:07 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:33:07 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:33:07 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 52879
+2019-05-16 11:33:07 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:33:07 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:33:18 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:33:18 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:33:18 INFO  AbstractWebTest:136 - This Execute Session ID --> 11f2b19b6f465486a95419631fcb079e
+2019-05-16 11:33:18 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:33:19 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x09e325d2, L:/10.1.10.130:52879 - R:/10.1.10.130:53069]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:33:19 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xcf4ffb7d, L:0.0.0.0/0.0.0.0:53071 ! R:log.api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:33:20 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0x0f75e024, L:/10.1.10.130:52879 - R:/10.1.10.130:53109]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:33:20 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x39a2336c, L:/10.1.10.130:52879 - R:/10.1.10.130:53141]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:33:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x6e8ef1d5, L:0.0.0.0/0.0.0.0:53142 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:33:52 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:35:30 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:35:30 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:35:30 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:35:32 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:35:33 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:36:16 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:36:16 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:36:16 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:36:16 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:36:17 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:36:17 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:36:17 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:54157
+2019-05-16 11:36:17 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:36:17 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:36:17 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 54157
+2019-05-16 11:36:17 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:36:17 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:36:27 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:36:27 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:36:27 INFO  AbstractWebTest:136 - This Execute Session ID --> a0f24618f71e8435364c02ca293776db
+2019-05-16 11:36:27 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:36:29 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x716ba7b1, L:/10.1.10.130:54157 - R:/10.1.10.130:54365]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:36:29 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x5044e327, L:0.0.0.0/0.0.0.0:54398 ! R:hit.api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:37:03 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:38:32 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-16 11:38:32 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x6cf07873, L:0.0.0.0/0.0.0.0:55501 ! R:fonts.gstatic.com/172.217.169.195:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xf1056813, L:0.0.0.0/0.0.0.0:55493 ! R:script.hotjar.com/147.75.33.239:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1800efaf, L:0.0.0.0/0.0.0.0:55499 ! R:static.api.useinsider.com/104.17.171.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xebb8d16f, L:0.0.0.0/0.0.0.0:55485 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x4b301929, L:0.0.0.0/0.0.0.0:55484 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xfb5f5a77, L:0.0.0.0/0.0.0.0:55496 ! R:static.hotjar.com/147.75.33.239:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1dec9350, L:0.0.0.0/0.0.0.0:55489 ! R:kiehlstr.api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x59bd3c7e, L:0.0.0.0/0.0.0.0:55488 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xd43a5ac4, L:0.0.0.0/0.0.0.0:55497 ! R:googleads.g.doubleclick.net/172.217.17.194:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x4b087b05, L:0.0.0.0/0.0.0.0:55486 ! R:static.api.useinsider.com/104.17.171.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x27e27ff6, L:0.0.0.0/0.0.0.0:55487 ! R:static.api.useinsider.com/104.17.171.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xcef14ab4, L:0.0.0.0/0.0.0.0:55495 ! R:script.hotjar.com/147.75.33.239:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x43fc832f, L:0.0.0.0/0.0.0.0:55494 ! R:static.hotjar.com/147.75.33.239:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xca7afdf0, L:0.0.0.0/0.0.0.0:55498 ! R:kiehlstr.api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xe8cc4cd5, L:0.0.0.0/0.0.0.0:55500 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xa88670c9, L:0.0.0.0/0.0.0.0:55491 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x0b55dd6c, L:0.0.0.0/0.0.0.0:55492 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xdb55497d, L:0.0.0.0/0.0.0.0:55490 ! R:api.useinsider.com/104.17.168.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1da3f6d5, L:0.0.0.0/0.0.0.0:55502 ! R:connect.facebook.net/157.240.9.23:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:38:32 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:40:52 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:40:52 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:40:52 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:40:52 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:40:53 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:40:53 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:40:53 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:55650
+2019-05-16 11:40:54 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:40:54 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:40:54 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 55650
+2019-05-16 11:40:54 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:40:54 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:41:02 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:41:02 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:41:02 INFO  AbstractWebTest:136 - This Execute Session ID --> a3c11c00df640d3bda8558ca76e0af68
+2019-05-16 11:41:02 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:41:03 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x7324625a, L:/10.1.10.130:55650 - R:/10.1.10.130:55737]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:41:03 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x11e8a4c8, L:/10.1.10.130:55650 - R:/10.1.10.130:55739]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:41:03 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x402abee2, L:0.0.0.0/0.0.0.0:55742 ! R:stats.g.doubleclick.net/74.125.140.155:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:41:03 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x88e83824, L:0.0.0.0/0.0.0.0:55743 ! R:stats.g.doubleclick.net/74.125.140.155:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:41:04 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xae60f870, L:/10.1.10.130:55650 - R:/10.1.10.130:55733]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:41:04 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xb1c745e9, L:0.0.0.0/0.0.0.0:55734 ! R:fonts.googleapis.com/216.58.206.202:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:41:05 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x1629a90d, L:/10.1.10.130:55650 - R:/10.1.10.130:55779]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:41:05 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x3b362eed, L:0.0.0.0/0.0.0.0:55781 ! R:fonts.gstatic.com/172.217.169.195:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:41:23 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0x90e32bd6, L:/10.1.10.130:55650 - R:/10.1.10.130:55853]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:41:37 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:42:02 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:42:02 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:42:02 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:42:05 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:42:05 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:42:59 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:42:59 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:42:59 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:42:59 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:43:00 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:43:00 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:43:00 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:55969
+2019-05-16 11:43:01 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:43:01 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:43:01 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 55969
+2019-05-16 11:43:01 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:43:01 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:43:10 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:43:10 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:43:10 INFO  AbstractWebTest:136 - This Execute Session ID --> 8a123b0de7938900d2cb8a86d1fcbda7
+2019-05-16 11:43:10 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:43:10 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xbc4258ce, L:/10.1.10.130:55969 - R:/10.1.10.130:56108]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:43:10 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x472afd6a, L:0.0.0.0/0.0.0.0:56110 ! R:fonts.gstatic.com/172.217.169.195:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:43:45 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:44:06 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:44:06 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:44:06 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:44:09 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:44:09 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:44:34 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:44:34 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:44:34 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:44:34 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:44:35 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:44:35 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:44:35 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:56417
+2019-05-16 11:44:36 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:44:36 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:44:36 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 56417
+2019-05-16 11:44:36 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:44:36 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:44:45 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:44:45 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:44:45 INFO  AbstractWebTest:136 - This Execute Session ID --> 6983d96b6dc0449c36d5b371cd6eb927
+2019-05-16 11:44:45 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:45:19 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:50:59 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:50:59 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:53:37 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:53:37 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:53:37 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:53:37 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:53:38 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:53:38 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:53:38 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:57283
+2019-05-16 11:53:39 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:53:39 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:53:39 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 57283
+2019-05-16 11:53:39 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:53:39 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:53:51 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:53:51 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:53:51 INFO  AbstractWebTest:136 - This Execute Session ID --> a07b40ce53ec17351739e3039c063173
+2019-05-16 11:53:51 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:54:09 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:54:30 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-16 11:54:30 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-16 11:54:30 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-16 11:54:32 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:54:33 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-16 11:56:02 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:56:02 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:56:02 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:56:02 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:56:03 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:56:03 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:56:03 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:57682
+2019-05-16 11:56:04 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:56:04 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:56:04 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 57682
+2019-05-16 11:56:04 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:56:04 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:56:13 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:56:13 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:56:13 INFO  AbstractWebTest:136 - This Execute Session ID --> 90b2cb2caf215cde6c967f1ad0ca4693
+2019-05-16 11:56:13 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:56:31 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-16 11:57:20 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-16 11:57:20 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-16 11:57:20 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-16 11:57:20 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xc711d216, L:0.0.0.0/0.0.0.0:58317 ! R:stats.g.doubleclick.net/74.125.140.155:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:57:20 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-16 11:57:23 INFO  AbstractWebTest:44 - =================================================================
+2019-05-16 11:57:23 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-16 11:57:23 INFO  AbstractWebTest:46 - =================================================================
+2019-05-16 11:57:23 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-16 11:57:24 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-16 11:57:24 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-16 11:57:24 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:58327
+2019-05-16 11:57:24 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-16 11:57:24 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-16 11:57:24 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 58327
+2019-05-16 11:57:24 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-16 11:57:24 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-16 11:57:33 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-16 11:57:33 INFO  AbstractWebTest:135 - =================================================================
+2019-05-16 11:57:33 INFO  AbstractWebTest:136 - This Execute Session ID --> 6486a63c08d0ec4cd72e542fdbddbcec
+2019-05-16 11:57:33 INFO  AbstractWebTest:137 - =================================================================
+2019-05-16 11:57:34 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xb46a477a, L:/10.1.10.130:58327 - R:/10.1.10.130:58523]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-16 11:57:34 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x6082b113, L:0.0.0.0/0.0.0.0:58524]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-16 11:57:52 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }

@@ -32,16 +32,21 @@ public class ShoppingTest extends AbstractKiehlsTest
     public void testShoppingColdCreamCategoryWithGuestLogin(){
 
         driver.get(UrlFactory.COLD_CREAM.pageUrl);
-        click(shoppingPage.productList.get(0));
-        String price = getText(shoppingPage.productPrice);
-        String title =  getText(shoppingPage.productDetailTitle);
-        click(shoppingPage.addToBasket);
         wait(5);
-        Assert.assertEquals("Price",price,shoppingPage.popupPrice.getText());
+        waitElementToBeClickable(shoppingPage.productList.get(0));
+        click(shoppingPage.productList.get(0));
+        wait(10);
+        String price = getText(shoppingPage.productPrice).replace(" TL","");
+        String title =  getText(shoppingPage.productDetailTitle);
+        jsHelper.click(shoppingPage.addToBasket);
+        wait(10);
+        Assert.assertEquals("Price",price,getText(shoppingPage.popupPrice).replace(" TL",""));
         click(shoppingPage.paymentBtn);
         wait(5);
-        Assert.assertEquals("Title",title,shoppingPage.productTitleFromOrderSummary.getText());
-        Assert.assertEquals("Total Price",Integer.parseInt(price)+10,shoppingPage.totalPice.getText());
+        Assert.assertTrue("Title",getText(shoppingPage.productTitleFromOrderSummary).contains(title));
+        int exPrice = Integer.valueOf(price.replace(",00",""))+10;
+        int acPrice = Integer.valueOf(getText(shoppingPage.totalPice).replace(",00", ""));
+        Assert.assertEquals("Total Price",exPrice,acPrice);
 
         click(shoppingPage.gotoPaymentPage);
         click(shoppingPage.guestLoginBtn);

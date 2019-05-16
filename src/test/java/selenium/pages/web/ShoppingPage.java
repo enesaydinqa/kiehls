@@ -15,7 +15,7 @@ public class ShoppingPage extends PageObject
         super(driver);
     }
 
-    @FindBy(css = ".row .pro-product-list-items > div")
+    @FindBy(css = ".pro-product-title.-GTM-product-click-action")
     public List<WebElement> productList;
 
     @FindBy(css = ".display-inline-block")
@@ -33,7 +33,7 @@ public class ShoppingPage extends PageObject
     @FindBy(css = ".pro-product-detail-title")
     public WebElement productDetailTitle;
 
-    @FindBy(css = ".pro-product-detail-title")
+    @FindBy(css = ".display-inline-block.cart-table-product-name")
     public WebElement productTitleFromOrderSummary;
 
     @FindBy(xpath = "//div[@class='pro-order-summary ']/div[@class='clearfix']//h4[text()='SİPARİŞ ÖZETİ']/" +
