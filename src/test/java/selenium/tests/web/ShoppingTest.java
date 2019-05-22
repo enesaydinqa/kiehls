@@ -12,6 +12,8 @@ import org.junit.experimental.categories.Category;
 import selenium.pages.UrlFactory;
 import selenium.pages.web.ShoppingPage;
 
+import java.util.NoSuchElementException;
+
 public class ShoppingTest extends AbstractKiehlsTest
 {
     private static final Logger logger = Logger.getLogger(ShoppingTest.class);
@@ -32,7 +34,22 @@ public class ShoppingTest extends AbstractKiehlsTest
     public void testShoppingColdCreamCategoryWithGuestLogin(){
 
         driver.get(UrlFactory.COLD_CREAM.pageUrl);
-        wait(5);
+        wait(10);
+        try
+        {
+            driver.switchTo().frame(shoppingPage.popupFrame);
+            jsHelper.click(shoppingPage.popupClose);
+            driver.switchTo().defaultContent();
+
+        }
+        catch (Exception e)
+        {
+
+            logger.debug("userFavoritePopup");
+            driver.switchTo().defaultContent();
+
+        }
+
         waitElementToBeClickable(shoppingPage.productList.get(0));
         click(shoppingPage.productList.get(0));
         wait(10);
@@ -56,7 +73,7 @@ public class ShoppingTest extends AbstractKiehlsTest
 
         click(shoppingPage.sampleProduct.get(0));
         wait(5);
-        click(shoppingPage.next);
+        jsHelper.click(shoppingPage.next);
         wait(5);
         Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_PAGE.pageUrl));
         //TODO teslimat adresi kısmından devam edilcek.

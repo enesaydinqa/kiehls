@@ -18,6 +18,12 @@ public class ShoppingPage extends PageObject
     @FindBy(css = ".pro-product-title.-GTM-product-click-action")
     public List<WebElement> productList;
 
+    @FindBy(id = "close-button-1454703945249")
+    public WebElement popupClose;
+
+    @FindBy(css = "#body > div.sp-fancybox-wrap.fancybox-desktop.fancybox-type-iframe.sp-advanced-css-1268.sp-fancybox-opened.adaptive-resolution.adaptive-position.adaptive-x-position-center.adaptive-y-position-middle > div.sp-fancybox-skin.adaptive-resolution > div.sp-fancybox-outer.adaptive-resolution > div > iframe")
+    public WebElement popupFrame;
+
     @FindBy(css = ".display-inline-block")
     public WebElement productPrice;
 

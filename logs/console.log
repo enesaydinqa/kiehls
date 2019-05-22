@@ -913,3 +913,482 @@ java.nio.channels.ClosedChannelException
 2019-05-16 12:02:53 INFO  AbstractWebTest:58 - =================================================================
 2019-05-16 12:02:53 INFO  AbstractWebTest:59 - TEST PASSED ...
 2019-05-16 12:02:53 INFO  AbstractWebTest:60 - =================================================================
+2019-05-17 15:32:02 INFO  AbstractWebTest:44 - =================================================================
+2019-05-17 15:32:02 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-17 15:32:02 INFO  AbstractWebTest:46 - =================================================================
+2019-05-17 15:32:02 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-17 15:32:03 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-17 15:32:03 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-17 15:32:03 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:61774
+2019-05-17 15:32:03 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-17 15:32:03 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-17 15:32:03 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 61774
+2019-05-17 15:32:03 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-17 15:32:03 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-17 15:32:03 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-17 15:32:03 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-17 15:32:03 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-17 15:32:06 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-17 15:36:20 INFO  AbstractWebTest:44 - =================================================================
+2019-05-17 15:36:20 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-17 15:36:20 INFO  AbstractWebTest:46 - =================================================================
+2019-05-17 15:36:20 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-17 15:36:21 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-17 15:36:21 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-17 15:36:21 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:61806
+2019-05-17 15:36:22 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-17 15:36:22 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-17 15:36:22 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 61806
+2019-05-17 15:36:22 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-17 15:36:22 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-17 15:36:30 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-17 15:36:30 INFO  AbstractWebTest:135 - =================================================================
+2019-05-17 15:36:30 INFO  AbstractWebTest:136 - This Execute Session ID --> 63b01f77d053bc4c740d904ca4985401
+2019-05-17 15:36:30 INFO  AbstractWebTest:137 - =================================================================
+2019-05-17 15:36:30 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x1313c797, L:/10.1.10.130:61806 - R:/10.1.10.130:61959]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-17 15:36:30 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x5ece47fb, L:0.0.0.0/0.0.0.0:61961 ! R:fonts.gstatic.com/172.217.169.163:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-17 15:36:38 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-17 15:36:38 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-17 15:36:38 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-17 15:36:40 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-17 15:36:41 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-17 15:41:01 INFO  AbstractWebTest:44 - =================================================================
+2019-05-17 15:41:01 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-17 15:41:01 INFO  AbstractWebTest:46 - =================================================================
+2019-05-17 15:41:01 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-17 15:41:02 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-17 15:41:02 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-17 15:41:02 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62198
+2019-05-17 15:41:02 INFO  ChromeDriverManagerWeb:36 - This test is browserstack execute ...
+2019-05-17 15:41:08 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-17 15:41:08 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-17 15:41:08 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 62198
+2019-05-17 15:41:08 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-17 15:42:10 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-17 15:42:10 INFO  AbstractWebTest:135 - =================================================================
+2019-05-17 15:42:10 INFO  AbstractWebTest:136 - This Execute Session ID --> ed8753dd8f35a1b1a840f82f7b3ed644ca1909dc
+2019-05-17 15:42:10 INFO  AbstractWebTest:137 - =================================================================
+2019-05-17 15:42:26 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-17 15:42:26 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-17 15:42:26 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-17 15:42:28 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-17 15:42:29 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 09:40:54 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:40:54 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:40:54 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:40:54 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:40:55 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:40:55 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:40:55 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:52723
+2019-05-22 09:40:55 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:40:55 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:40:55 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 52723
+2019-05-22 09:40:55 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:40:55 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:40:55 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:40:55 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:40:55 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:40:58 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:41:43 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:41:43 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:41:43 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:41:43 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:41:44 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:41:44 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:41:44 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:52744
+2019-05-22 09:41:44 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:41:44 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:41:44 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 52744
+2019-05-22 09:41:44 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:41:44 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:41:54 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:41:54 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:41:54 INFO  AbstractWebTest:136 - This Execute Session ID --> e8cca8ac0c1b0c4a06f81608d6ae78ea
+2019-05-22 09:41:54 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:42:02 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:42:02 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:42:02 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:42:04 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:42:05 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 09:42:16 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:42:16 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:42:16 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:42:16 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:42:17 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:42:17 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:42:17 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:53114
+2019-05-22 09:42:18 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:42:18 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:42:18 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 53114
+2019-05-22 09:42:18 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:42:18 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:42:27 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:42:27 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:42:27 INFO  AbstractWebTest:136 - This Execute Session ID --> 8bdcfac8860e62330f991fe0d4d2a71c
+2019-05-22 09:42:27 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:42:30 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x027061a1, L:/10.1.10.143:53114 - R:/10.1.10.143:53303]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:42:30 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x60bc34ef, L:0.0.0.0/0.0.0.0:53304 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xf08ac3d1, L:/10.1.10.143:53114 - R:/10.1.10.143:53369]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x93caa6aa, L:0.0.0.0/0.0.0.0:53370]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x064e7295, L:/10.1.10.143:53114 - R:/10.1.10.143:53385]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xd2f2e57d, L:/10.1.10.143:53114 - R:/10.1.10.143:53382]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xe300c71a, L:/10.1.10.143:53114 - R:/10.1.10.143:53383]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xb7e4b91a, L:0.0.0.0/0.0.0.0:53467 ! R:api.useinsider.com/104.17.171.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x9dbddb6d, L:0.0.0.0/0.0.0.0:53468 ! R:kiehlstr.api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1f63831d, L:0.0.0.0/0.0.0.0:53469 ! R:kiehlstr.api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x60a98953, L:/10.1.10.143:53114 - R:/10.1.10.143:53384]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x7c05ec28, L:0.0.0.0/0.0.0.0:53476 ! R:kiehlstr.api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xc2b03172, L:/10.1.10.143:53114 - R:/10.1.10.143:53375]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x5b8c15a7, L:0.0.0.0/0.0.0.0:53478 ! R:connect.facebook.net/157.240.9.23:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x094b84cd, L:/10.1.10.143:53114 - R:/10.1.10.143:53377]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x0fd9ad7b, L:0.0.0.0/0.0.0.0:53466 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xec7e574a, L:/10.1.10.143:53114 - R:/10.1.10.143:53374]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x7ecc75b6, L:/10.1.10.143:53114 - R:/10.1.10.143:53376]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x10e335ce, L:0.0.0.0/0.0.0.0:53465 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xfc2f48a6, L:0.0.0.0/0.0.0.0:53464 ! R:mnj4pext.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xe95a5389, L:/10.1.10.143:53114 - R:/10.1.10.143:53386]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xbf71e5b1, L:0.0.0.0/0.0.0.0:53470 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:50 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xc44f8d79, L:/10.1.10.143:53114 - R:/10.1.10.143:53387]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:50 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xd95b7797, L:0.0.0.0/0.0.0.0:53479 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:51 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x411722b3, L:/10.1.10.143:53114 - R:/10.1.10.143:53389]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:51 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xf7b6a7b4, L:0.0.0.0/0.0.0.0:53474 ! R:static.hotjar.com/147.75.81.98:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:43:51 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xaed49aa0, L:/10.1.10.143:53114 - R:/10.1.10.143:53388]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:43:51 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xb3c7c1bc, L:0.0.0.0/0.0.0.0:53473 ! R:script.hotjar.com/147.75.81.98:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:44:19 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x413b87c3, L:/10.1.10.143:53114 - R:/10.1.10.143:53522]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:44:19 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x78908ef2, L:/10.1.10.143:53114 - R:/10.1.10.143:53521]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:44:19 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xc4a0a101, L:0.0.0.0/0.0.0.0:53530 ! R:www.kiehls.com.tr/104.18.20.54:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:44:19 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xcdb0b284, L:0.0.0.0/0.0.0.0:53534 ! R:www.kiehls.com.tr/104.18.20.54:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:44:19 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x5d4cf154, L:/10.1.10.143:53114 - R:/10.1.10.143:53523]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:44:19 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x9b95c744, L:0.0.0.0/0.0.0.0:53543 ! R:www.kiehls.com.tr/104.18.20.54:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:44:19 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-22 09:44:19 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-22 09:44:19 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-22 09:44:19 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x6cd224f7, L:0.0.0.0/0.0.0.0:53535 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:44:19 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xef5ccf82, L:0.0.0.0/0.0.0.0:53537 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:44:19 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:47:38 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:47:38 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:47:38 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:47:38 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:47:39 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:47:39 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:47:39 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:54410
+2019-05-22 09:47:40 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:47:40 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:47:40 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 54410
+2019-05-22 09:47:40 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:47:40 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:47:52 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:47:52 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:47:52 INFO  AbstractWebTest:136 - This Execute Session ID --> 48692522445acb6e2427cd5bbc7c4aff
+2019-05-22 09:47:52 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:48:28 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:48:28 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:48:28 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /kiehlstr/1268/TTjJqhNRPWL7MgsJIj7n1558410361.jpeg because proxy is stopped
+2019-05-22 09:48:28 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /ajax.php?t=storeLog because proxy is stopped
+2019-05-22 09:48:28 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:48:30 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:48:31 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 09:48:50 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:48:50 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:48:50 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:48:50 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:48:51 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:48:51 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:48:51 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:55059
+2019-05-22 09:48:51 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:48:51 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:48:51 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 55059
+2019-05-22 09:48:51 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:48:51 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:49:05 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:49:05 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:49:05 INFO  AbstractWebTest:136 - This Execute Session ID --> 99dbba4f4c211a1b4baba35ee3233d0d
+2019-05-22 09:49:05 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:50:18 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 09:50:18 INFO  ClientToProxyConnection:305 - (AWAITING_INITIAL) [id: 0xe93b4f0b, L:/10.1.10.143:55059 - R:/10.1.10.143:55706]: Bad Host http://simens/
+2019-05-22 09:50:18 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0xe93b4f0b, L:/10.1.10.143:55059 - R:/10.1.10.143:55706]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:50:20 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:50:20 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:50:20 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:50:20 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x083c31a1, L:0.0.0.0/0.0.0.0:55794]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:50:20 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xf5fa720b, L:0.0.0.0/0.0.0.0:55793]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:50:23 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:50:23 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 09:51:09 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:51:09 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:51:09 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:51:09 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:51:10 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:51:10 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:51:10 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:56030
+2019-05-22 09:51:10 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:51:10 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:51:10 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 56030
+2019-05-22 09:51:10 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:51:10 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:51:20 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:51:20 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:51:20 INFO  AbstractWebTest:136 - This Execute Session ID --> e10a06d49f602acd0a6f81b062b95b01
+2019-05-22 09:51:20 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:51:23 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xd517058b, L:/10.1.10.143:56030 - R:/10.1.10.143:56314]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:51:23 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x72a6e99d, L:0.0.0.0/0.0.0.0:56378]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:54:27 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 09:54:27 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:54:27 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:54:27 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:54:34 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:54:34 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:54:34 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:54:34 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:54:35 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:54:35 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:54:35 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:57928
+2019-05-22 09:54:36 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:54:36 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:54:36 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 57928
+2019-05-22 09:54:36 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:54:36 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:54:46 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:54:46 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:54:46 INFO  AbstractWebTest:136 - This Execute Session ID --> 8cbbe7dc7954f5e2fa6e1f08136efe1c
+2019-05-22 09:54:46 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:54:46 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0xfe345ab7, L:/10.1.10.143:57928 - R:/10.1.10.143:57975]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:54:59 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:54:59 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:54:59 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:55:01 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:55:02 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 09:55:29 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:55:29 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:55:29 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:55:29 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:55:30 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:55:30 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:55:31 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:58559
+2019-05-22 09:55:31 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:55:31 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:55:31 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 58559
+2019-05-22 09:55:31 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:55:31 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:55:42 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:55:42 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:55:42 INFO  AbstractWebTest:136 - This Execute Session ID --> e5ca0c7c794cfdad364c6503db57a130
+2019-05-22 09:55:42 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:55:44 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x53624ab6, L:/10.1.10.143:58559 - R:/10.1.10.143:58780]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:55:44 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x236baaea, L:0.0.0.0/0.0.0.0:58781 ! R:vc.hotjar.io/147.75.33.239:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:56:29 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:56:29 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:56:29 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:56:32 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 09:56:32 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 09:56:43 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:56:43 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:56:43 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:56:43 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:56:44 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:56:44 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:56:44 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:59112
+2019-05-22 09:56:45 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:56:45 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:56:45 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 59112
+2019-05-22 09:56:45 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:56:45 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:56:56 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:56:56 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:56:56 INFO  AbstractWebTest:136 - This Execute Session ID --> f5e448f0c80906882fb5464e14a55831
+2019-05-22 09:56:56 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:56:57 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x4535bd66, L:/10.1.10.143:59112 - R:/10.1.10.143:59362]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:56:57 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xbfe1e0b3, L:0.0.0.0/0.0.0.0:59363 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:56:57 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0xc442a6a7, L:/10.1.10.143:59112 - R:/10.1.10.143:59192]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xdb24007d, L:/10.1.10.143:59112 - R:/10.1.10.143:59510]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xc281e511, L:/10.1.10.143:59112 - R:/10.1.10.143:59508]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x6fabdec3, L:/10.1.10.143:59112 - R:/10.1.10.143:59509]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x308fffba, L:0.0.0.0/0.0.0.0:60122 ! R:kiehlstr.api.useinsider.com/104.17.170.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:58:31 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x9b1239a0, L:0.0.0.0/0.0.0.0:60124 ! R:api.useinsider.com/104.17.167.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:58:31 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x79ea54b8, L:0.0.0.0/0.0.0.0:60125 ! R:kiehlstr.api.useinsider.com/104.17.170.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x63c7e9c4, L:/10.1.10.143:59112 - R:/10.1.10.143:59511]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x800ec905, L:0.0.0.0/0.0.0.0:60123 ! R:epmajuiy.rocketcdn.com/195.142.105.35:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xa5d730bb, L:/10.1.10.143:59112 - R:/10.1.10.143:59673]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xfe3f9788, L:/10.1.10.143:59112 - R:/10.1.10.143:59512]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:31 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1199749d, L:0.0.0.0/0.0.0.0:60128 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:58:31 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x1e136657, L:0.0.0.0/0.0.0.0:60127 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:58:31 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x25cd7f0a, L:/10.1.10.143:59112 - R:/10.1.10.143:59674]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:58:45 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x6b5ef277, L:0.0.0.0/0.0.0.0:60126 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:59:05 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x4d57602f, L:0.0.0.0/0.0.0.0:60240 ! R:script.hotjar.com/147.75.83.19:443]: Connection to upstream server failed
+javax.net.ssl.SSLException: handshake timed out
+2019-05-22 09:59:05 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xc2b5f706, L:0.0.0.0/0.0.0.0:60239 ! R:static.hotjar.com/147.75.83.19:443]: Connection to upstream server failed
+javax.net.ssl.SSLException: handshake timed out
+2019-05-22 09:59:33 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 09:59:33 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 09:59:33 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 09:59:37 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 09:59:37 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 09:59:37 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 09:59:37 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 09:59:38 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 09:59:38 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 09:59:38 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:60652
+2019-05-22 09:59:39 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 09:59:39 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 09:59:39 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 60652
+2019-05-22 09:59:39 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 09:59:39 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 09:59:47 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 09:59:47 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 09:59:47 INFO  AbstractWebTest:136 - This Execute Session ID --> c26adc34884edd4c10fb2b231564c4c5
+2019-05-22 09:59:47 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 09:59:47 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x556bbb6f, L:/10.1.10.143:60652 - R:/10.1.10.143:60797]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:59:47 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x0f76a05f, L:0.0.0.0/0.0.0.0:60798 ! R:connect.facebook.net/157.240.9.23:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:59:48 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x11415b56, L:/10.1.10.143:60652 - R:/10.1.10.143:60787]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:59:48 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x5df0fe3a, L:0.0.0.0/0.0.0.0:60789 ! R:fonts.gstatic.com/172.217.22.99:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 09:59:48 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x11aa9958, L:/10.1.10.143:60652 - R:/10.1.10.143:60780]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 09:59:48 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0x66227e8c, L:0.0.0.0/0.0.0.0:60785 ! R:stats.g.doubleclick.net/74.125.140.156:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 10:01:07 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 10:01:07 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /css/web-push-popup.css?v=1.0 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to epmajuiy.rocketcdn.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /modules.f0cd2cef0113d1d5cf10.js.map because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /c/hotjar.js.map because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /assets/pro/build/pro.kiehls.min.css?v=ec6ae3 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /edit/actionbuilder/ext/css/apiView.css?v=0.1 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to /v1/collect?pn=kiehlstr&t=c&p=%7B%22type%22%3A%22camp-step1-close%22%2C%22referer%22%3A%22%22%2C%22campId%22%3A1268%2C%22otherProperties%22%3A%22%22%2C%22userID%22%3A%2215585083896007181b70940.a93e8280%22%2C%22userId%22%3A%2215585083896007181b70940.a93e8280%22%7D because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:08 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0x1cb41cd2, L:/10.1.10.143:60652 - R:/10.1.10.143:61183]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to fonts.googleapis.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to fonts.googleapis.com:443 because proxy is stopped
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to fonts.googleapis.com:443 because proxy is stopped
+2019-05-22 10:01:08 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0xe4b2f0dd, L:/10.1.10.143:60652 - R:/10.1.10.143:61186]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 10:01:08 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 10:01:08 WARN  BrowserMobHttpFilterChain:57 - Aborting request to kiehlstr.api.useinsider.com:443 because proxy is stopped
+2019-05-22 10:01:32 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 10:01:32 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 10:01:32 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 10:01:32 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 10:01:34 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 10:01:34 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 10:01:34 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:61542
+2019-05-22 10:01:34 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 10:01:34 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 10:01:34 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 61542
+2019-05-22 10:01:34 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 10:01:34 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 10:01:46 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 10:01:46 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 10:01:46 INFO  AbstractWebTest:136 - This Execute Session ID --> e51c64dc4c0db723e93374fdf3745714
+2019-05-22 10:01:46 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 10:01:46 INFO  ClientToProxyConnection:730 - (AWAITING_INITIAL) [id: 0x9bc1a47f, L:/10.1.10.143:61542 - R:/10.1.10.143:61638]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 10:03:02 INFO  DefaultHttpProxyServer:400 - Shutting down proxy server immediately (non-graceful)
+2019-05-22 10:03:02 INFO  DefaultHttpProxyServer:433 - Closing all channels (non-graceful)
+2019-05-22 10:03:02 INFO  ServerGroup:212 - Shutting down server group event loops (non-graceful)
+2019-05-22 10:03:02 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 10:03:42 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 10:03:42 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 10:03:42 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 10:03:42 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 10:03:43 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 10:03:43 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 10:03:44 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:62350
+2019-05-22 10:03:44 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 10:03:44 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 10:03:44 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 62350
+2019-05-22 10:03:44 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 10:03:44 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 10:03:52 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 10:03:52 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 10:03:52 INFO  AbstractWebTest:136 - This Execute Session ID --> 668c2e9a3a35393873ef2d7b04ddc412
+2019-05-22 10:03:52 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 10:03:53 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xc096393c, L:/10.1.10.143:62350 - R:/10.1.10.143:62584]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 10:03:53 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x19a4c3f2, L:0.0.0.0/0.0.0.0:62585 ! R:www.google-analytics.com/172.217.22.78:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 10:04:06 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:04:21 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:04:56 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 10:04:56 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 10:04:56 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 10:04:58 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 10:04:58 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testShoppingColdCreamCategoryWithGuestLogin-DOM.txt
+2019-05-22 10:05:09 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 10:05:09 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 10:05:09 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 10:05:09 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 10:05:10 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 10:05:10 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 10:05:10 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:63321
+2019-05-22 10:05:11 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 10:05:11 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 10:05:11 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 63321
+2019-05-22 10:05:11 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 10:05:11 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 10:05:24 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 10:05:24 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 10:05:24 INFO  AbstractWebTest:136 - This Execute Session ID --> e133e8fd1f91a98d3535c13999f67939
+2019-05-22 10:05:24 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 10:05:25 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0xa0576009, L:/10.1.10.143:63321 - R:/10.1.10.143:63551]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 10:05:25 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0x19a71ad7, L:0.0.0.0/0.0.0.0:63552 ! R:hit.api.useinsider.com/104.17.170.114:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 10:05:26 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x95cacdf8, L:/10.1.10.143:63321 - R:/10.1.10.143:63591]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 10:05:26 INFO  ProxyToServerConnection:791 - (HANDSHAKING) [id: 0xd21251c8, L:0.0.0.0/0.0.0.0:63592 ! R:fonts.googleapis.com/172.217.22.10:443]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 10:05:37 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:05:47 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:06:51 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 10:06:51 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 10:06:51 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 10:06:54 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 10:06:54 INFO  AbstractWebTest:58 - =================================================================
+2019-05-22 10:06:54 INFO  AbstractWebTest:59 - TEST PASSED ...
+2019-05-22 10:06:54 INFO  AbstractWebTest:60 - =================================================================
+2019-05-22 10:12:06 INFO  AbstractWebTest:44 - =================================================================
+2019-05-22 10:12:06 INFO  AbstractWebTest:45 - TEST STARTED ... → testShoppingColdCreamCategoryWithGuestLogin
+2019-05-22 10:12:06 INFO  AbstractWebTest:46 - =================================================================
+2019-05-22 10:12:06 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-05-22 10:12:07 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-05-22 10:12:07 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 10:12:07 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:49256
+2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 49256
+2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
