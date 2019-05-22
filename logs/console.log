@@ -1392,3 +1392,8 @@ java.nio.channels.ClosedChannelException
 2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 49256
 2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:87 - =================================================================
 2019-05-22 10:12:07 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-05-22 10:12:21 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-05-22 10:12:21 INFO  AbstractWebTest:135 - =================================================================
+2019-05-22 10:12:21 INFO  AbstractWebTest:136 - This Execute Session ID --> 2cc5cd840299b0c5108b1fa077194c72
+2019-05-22 10:12:21 INFO  AbstractWebTest:137 - =================================================================
+2019-05-22 10:12:34 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
