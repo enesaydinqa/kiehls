@@ -1406,3 +1406,82 @@ java.nio.channels.ClosedChannelException
 2019-05-22 10:13:28 INFO  AbstractWebTest:58 - =================================================================
 2019-05-22 10:13:28 INFO  AbstractWebTest:59 - TEST PASSED ...
 2019-05-22 10:13:28 INFO  AbstractWebTest:60 - =================================================================
+2019-05-22 12:23:04 INFO  AbstractResponsiveTest:44 - =================================================================
+2019-05-22 12:23:04 INFO  AbstractResponsiveTest:45 - TEST STARTED ... → testAdaptiveHomePageLoadPNG
+2019-05-22 12:23:04 INFO  AbstractResponsiveTest:46 - =================================================================
+2019-05-22 12:23:04 INFO  DriverResponsiveTestFactory:18 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-05-22 12:23:05 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:1337
+2019-05-22 12:23:05 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 12:23:05 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:1337
+2019-05-22 12:23:06 INFO  ChromeDriverManagerResponsive:50 - This test is local execute ...
+2019-05-22 12:23:06 INFO  ChromeDriverManagerResponsive:95 - =================================================================
+2019-05-22 12:23:06 INFO  ChromeDriverManagerResponsive:96 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 12:23:06 INFO  ChromeDriverManagerResponsive:97 - This Execute Browser Port --> 1337
+2019-05-22 12:23:06 INFO  ChromeDriverManagerResponsive:98 - =================================================================
+2019-05-22 12:23:06 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 12:23:06 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 12:23:06 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 12:23:08 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 12:23:34 INFO  AbstractResponsiveTest:44 - =================================================================
+2019-05-22 12:23:34 INFO  AbstractResponsiveTest:45 - TEST STARTED ... → testAdaptiveHomePageLoadPNG
+2019-05-22 12:23:34 INFO  AbstractResponsiveTest:46 - =================================================================
+2019-05-22 12:23:34 INFO  DriverResponsiveTestFactory:18 - BrowserType (DriverResponsiveTestFactory) : chrome
+2019-05-22 12:23:35 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:1337
+2019-05-22 12:23:35 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-05-22 12:23:35 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:1337
+2019-05-22 12:23:35 INFO  ChromeDriverManagerResponsive:50 - This test is local execute ...
+2019-05-22 12:23:35 INFO  ChromeDriverManagerResponsive:95 - =================================================================
+2019-05-22 12:23:35 INFO  ChromeDriverManagerResponsive:96 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-05-22 12:23:35 INFO  ChromeDriverManagerResponsive:97 - This Execute Browser Port --> 1337
+2019-05-22 12:23:35 INFO  ChromeDriverManagerResponsive:98 - =================================================================
+2019-05-22 12:23:45 INFO  AbstractResponsiveTest:133 - Scenarios will not take video
+2019-05-22 12:23:45 INFO  AbstractResponsiveTest:139 - =================================================================
+2019-05-22 12:23:45 INFO  AbstractResponsiveTest:140 - This Execute Session ID --> 309aaefc71aa79f82135d6082ea025aa
+2019-05-22 12:23:45 INFO  AbstractResponsiveTest:141 - =================================================================
+2019-05-22 12:23:46 INFO  ClientToProxyConnection:730 - (NEGOTIATING_CONNECT) [id: 0x6d3deda3, L:/10.1.10.143:1337 - R:/10.1.10.143:57257]: An IOException occurred on ClientToProxyConnection: Connection reset by peer
+2019-05-22 12:23:46 INFO  ProxyToServerConnection:791 - (DISCONNECTED) [id: 0xe7ac1677, L:0.0.0.0/0.0.0.0:57258]: Connection to upstream server failed
+java.nio.channels.ClosedChannelException
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/25/logo-1503624275.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/01/menu_background_image__b.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/03/menu.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-07/27/basket-1501161065.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/pixel.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-10/25/search.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_mobile/19-05/21/coklumaske_mobil.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/18-07/05/555x251_maskebul.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/angle-right.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/closebox.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/icon_facebook.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/js-logo.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/pixel.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/angle-up.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/angle-left.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://www.kiehls.com.tr/assets/mobileweb/assets/img/angle-down.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_mobile/19-05/20/gunduz_gece_gozkremi_mobil.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/25/logo-1503624275.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/01/menu_background_image__b.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/25/logo-1503624275.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-08/03/menu.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-07/27/basket-1501161065.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-10/25/search.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/18-07/05/555x251_maskebul.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_mobile/19-05/21/coklumaske_mobil.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/19-05/14/555x251-px-2.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_mobile/19-05/20/gunduz_gece_gozkremi_mobil.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-10/25/heart_red.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/17-10/25/heart_grey.png
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://mnj4pext.rocketcdn.com/cache/480/480/loreal/loreal_kiehls/product_images/Midnight_Recovery_Concentrate_10.jpg?1558508740
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://mnj4pext.rocketcdn.com/cache/480/480/loreal/loreal_kiehls/product_images/Super_Multi_Corrective_Cream_1_1_1.png?1558508750
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://mnj4pext.rocketcdn.com/cache/480/480/loreal/loreal_kiehls/product_images/Creamy_Eye_Treatment_with_Avocado.jpg?1558508723
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_mobile/19-05/07/mrc_2019_mobil.jpg
+2019-05-22 12:24:06 INFO  HomePageNetworkTest:46 - Check Response this url -> https://image.useinsider.com/kiehlstr/c193/i4o3Z5oEdvgtT1NeXcRy1528292907.png
+2019-05-22 12:24:06 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 12:24:06 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 12:24:06 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 12:24:09 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 12:24:09 INFO  AbstractResponsiveTest:58 - =================================================================
+2019-05-22 12:24:09 INFO  AbstractResponsiveTest:59 - TEST PASSED ...
+2019-05-22 12:24:09 INFO  AbstractResponsiveTest:60 - =================================================================

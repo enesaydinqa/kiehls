@@ -205,7 +205,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558509420574" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558517032500" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -231,18 +231,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin">
-    <configuration name="HomePageNetworkTest.testHomePageLoadPNG" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="HomePageNetworkTest.testAdaptiveHomePageLoadPNG" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="kiehls" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="selenium.tests.web.*" />
+          <option name="PATTERN" value="selenium.tests.adaptive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="selenium.tests.web" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.web.HomePageNetworkTest" />
-      <option name="METHOD_NAME" value="testHomePageLoadPNG" />
+      <option name="PACKAGE_NAME" value="selenium.tests.adaptive" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.adaptive.HomePageNetworkTest" />
+      <option name="METHOD_NAME" value="testAdaptiveHomePageLoadPNG" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false" />
       <option name="PARAMETERS" value="" />
@@ -250,28 +250,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="kiehls" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="selenium.tests.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="selenium.tests.web" />
-      <option name="MAIN_CLASS_NAME" value="selenium.tests.web.ShoppingTest" />
-      <option name="METHOD_NAME" value="testShoppingColdCreamCategoryWithGuestLogin" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.HomePageNetworkTest.testHomePageLoadPNG" />
-      <item itemvalue="JUnit.ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
