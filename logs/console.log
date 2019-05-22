@@ -1397,3 +1397,12 @@ java.nio.channels.ClosedChannelException
 2019-05-22 10:12:21 INFO  AbstractWebTest:136 - This Execute Session ID --> 2cc5cd840299b0c5108b1fa077194c72
 2019-05-22 10:12:21 INFO  AbstractWebTest:137 - =================================================================
 2019-05-22 10:12:34 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:12:45 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:13:20 INFO  JSHelper:23 - JavaScript Execute Info : { arguments[0].click(); }
+2019-05-22 10:13:26 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-05-22 10:13:26 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-05-22 10:13:26 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-05-22 10:13:28 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-05-22 10:13:28 INFO  AbstractWebTest:58 - =================================================================
+2019-05-22 10:13:28 INFO  AbstractWebTest:59 - TEST PASSED ...
+2019-05-22 10:13:28 INFO  AbstractWebTest:60 - =================================================================
