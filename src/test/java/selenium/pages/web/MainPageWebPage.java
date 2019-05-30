@@ -18,4 +18,7 @@ public class MainPageWebPage extends PageObject
 
     @FindBy(xpath = "//i[contains(@id, 'icon-close-button')]")
     public WebElement campaingCloseButton;
+
+    @FindBy(css = "div.col-sm-12.pro-header-bottom-col > ul > li > a > span")
+    public WebElement username;
 }

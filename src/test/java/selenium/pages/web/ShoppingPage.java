@@ -19,10 +19,10 @@ public class ShoppingPage extends PageObject
     public List<WebElement> productList;
 
     @FindBy(id = "close-button-1454703945249")
-    public WebElement popupClose;
+    public WebElement popupCloseMainPage;
 
     @FindBy(css = "#body > div.sp-fancybox-wrap.fancybox-desktop.fancybox-type-iframe.sp-advanced-css-1268.sp-fancybox-opened.adaptive-resolution.adaptive-position.adaptive-x-position-center.adaptive-y-position-middle > div.sp-fancybox-skin.adaptive-resolution > div.sp-fancybox-outer.adaptive-resolution > div > iframe")
-    public WebElement popupFrame;
+    public WebElement popupFrameMainPage;
 
     @FindBy(css = ".display-inline-block")
     public WebElement productPrice;
@@ -53,9 +53,27 @@ public class ShoppingPage extends PageObject
     @FindBy(id = "ca-guest-login")
     public WebElement guestLoginBtn;
 
-    @FindBy(xpath = "//*[text()='DEVAM ET']")
+    @FindBy(xpath = "//*[text()='DEVAM ET' or text()='Satın Al']")
     public WebElement next;
 
     @FindBy(xpath = "//div[@class='row pro-checkout-product-samples-row']/div/descendant::div[@class='pro-product-add-button-wrapper']")
     public List<WebElement> sampleProduct;
+
+    @FindBy(css = ".sp-fancybox-iframe.adaptive-resolution")
+    public WebElement popupFrameProductDetailPage;
+
+    @FindBy(id = "icon-close-button-1454703945249")
+    public WebElement popupCloseProductDetailPage;
+
+    @FindBy(css = "div.col-xs-8 > div > ul > li.input > input")
+    public WebElement productQuantity;
+
+    @FindBy(xpath = "//a[text()=' Sepetten Sil']")
+    public List<WebElement> proRemove;
+
+    @FindBy(css = ".pay-with-credit-card")
+    public WebElement creditCard;
+
+    @FindBy(id = "pay-button")
+    public WebElement securePayBtn;
 }
