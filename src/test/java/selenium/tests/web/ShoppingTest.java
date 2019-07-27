@@ -80,8 +80,17 @@ public class ShoppingTest extends AbstractKiehlsTest
         wait(10);
         Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_ADD_SAMPLES_PAGE.pageUrl));
 
-        click(shoppingPage.sampleProduct.get(0));
+        int sampleProduct = Integer.valueOf(shoppingPage.sampleProductText.getText().replaceAll("[^0-9]+",""));
+
+        IntStream.range(0, sampleProduct).forEach(value -> {
+
+            click(shoppingPage.sampleProduct.get(value));
+            wait(5);
+
+        });
+
         wait(5);
+
         jsHelper.click(shoppingPage.next);
         wait(5);
         Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_PAGE.pageUrl));
@@ -128,9 +137,17 @@ public class ShoppingTest extends AbstractKiehlsTest
         wait(10);
         Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_ADD_SAMPLES_PAGE.pageUrl));
 
-        click(shoppingPage.sampleProduct.get(0));
-        wait(5);
+        int sampleProduct = Integer.valueOf(shoppingPage.sampleProductText.getText().replaceAll("[^0-9]+",""));
 
+        IntStream.range(0, sampleProduct).forEach(value -> {
+
+            click(shoppingPage.sampleProduct.get(value));
+            wait(5);
+
+        });
+
+
+        wait(5);
         jsHelper.click(shoppingPage.next);
         wait(5);
         Assert.assertTrue(driver.getCurrentUrl().equals(UrlFactory.CHECKOUT_PAGE.pageUrl));
@@ -149,13 +166,15 @@ public class ShoppingTest extends AbstractKiehlsTest
 
         driver.get(UrlFactory.CART.pageUrl);
 
+        wait(10);
         List<WebElement> proRemove = shoppingPage.proRemove;
 
-        IntStream.range(0, proRemove.size()-1)
+        //IntStream.range(0, proRemove.size()-1)
+        IntStream.range(0, 1)
                 .mapToObj(proRemove::get)
                 .filter(Objects::nonNull)
                 .forEach(el -> {
-                    wait(2);
+                    wait(3);
                     click(el);
                 });
 

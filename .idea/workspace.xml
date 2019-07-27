@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df260428-708a-4ebc-a736-35b2b9878134" name="Default Changelist" comment="" />
+    <list default="true" id="df260428-708a-4ebc-a736-35b2b9878134" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/console.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/console.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/context/annotations/DescriptionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/annotations/DescriptionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/HomePageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/HomePageNetworkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/HomePageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/HomePageNetworkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/ShoppingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/ShoppingTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1010">
-              <caret line="41" column="59" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="38" column="25" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="128" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-718">
+            <state relative-caret-position="1245">
               <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
             </state>
           </provider>
@@ -65,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractKiehlsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
+            <state relative-caret-position="555">
               <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
             </state>
           </provider>
@@ -74,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="187">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#2958#2959#0" expanded="true" />
                 <element signature="e#2996#2997#0" expanded="true" />
@@ -89,12 +86,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="285">
               <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="210">
               <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
               <folding>
                 <element signature="e#309#310#0" expanded="true" />
@@ -116,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+            <state relative-caret-position="429">
+              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,13 +152,13 @@
         <option value="$PROJECT_DIR$/src/test/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/test/java/context/objects/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/base/AbstractKiehlsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/pages/web/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/context/utils/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java" />
       </list>
     </option>
   </component>
@@ -176,7 +171,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -188,6 +183,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,13 +354,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559220747305" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564258468611" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -393,7 +388,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.testLogin">
+  <component name="RunManager" selected="JUnit.ShoppingTest.testShoppingShampooCategoryWithLogin">
     <configuration name="HomePageNetworkTest.testAdaptiveHomePageLoadPNG" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="kiehls" />
       <extension name="coverage">
@@ -524,49 +519,49 @@
       <workItem from="1558530747119" duration="21000" />
       <workItem from="1559035076234" duration="2062000" />
       <workItem from="1559197600459" duration="12560000" />
+      <workItem from="1564255394044" duration="2697000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShoppingTest_testShoppingShampooCategoryWithLogin - 2019.05.30 at 11h 52m 31s.xml">
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 27m 32s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 46m 23s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 48m 01s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 52m 08s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 55m 07s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 59m 09s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 23h 03m 08s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 23h 09m 11s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 23h 11m 13s.xml">
+      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingTest_testShoppingShampooCategoryWithLogin - 2019.07.27 at 23h 14m 20s.xml">
       <configuration name="ShoppingTest.testShoppingShampooCategoryWithLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingTest_testShoppingShampooCategoryWithLogin - 2019.05.30 at 12h 21m 48s.xml">
-      <configuration name="ShoppingTest.testShoppingShampooCategoryWithLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 50m 51s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 51m 18s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 53m 31s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 54m 02s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 55m 08s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 55m 38s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLogin - 2019.05.30 at 12h 56m 21s.xml">
-      <configuration name="LoginTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginTest_testLoginMissingUsernameAndPassword - 2019.05.30 at 12h 56m 48s.xml">
-      <configuration name="LoginTest.testLoginMissingUsernameAndPassword" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32522000" />
+    <option name="totallyTimeSpent" value="35219000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33821735" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34249085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -575,8 +570,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -584,7 +579,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061053" side_tool="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -611,12 +606,6 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java</url>
-          <line>149</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java</url>
           <line>163</line>
           <properties />
@@ -634,65 +623,65 @@
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>IntStream.range(0,validation.size()).mapToObj((IntFunction&lt;Object&gt;) validation::indexOf)</expression-string>
+        <expression-string>proRemove</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>IntStream.of(2).mapToObj(validation.get(1)).equals(Constants.LoginValidation.PASS)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>context.utils.Constants</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>IntStream.of(2).mapToObj(validation::get(1)).equals(Constants.LoginValidation.PASS)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>context.utils.Constants</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>IntStream.of(2).mapToObj(validation::get).equals(Constants.LoginValidation.PASS)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>context.utils.Constants</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>IntStream.of(1).mapToObj(validation::get).equals(Constants.LoginValidation.PASS)</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>context.utils.Constants</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>IntStream.of(1).mapToObj(validation::get);</expression-string>
+        <expression-string>Integer.valueOf(shoppingPage.sampleProductText.getText().replaceAll(&quot;[^0-9]+&quot;,&quot;&quot;))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>IntStream.of(1).mapToObj(validation::get).filter(Objects::nonNull).equals(Constants.LoginValidation.PASS);</expression-string>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[^0-9]+&quot;,&quot;&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>user.getEmail()</expression-string>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[^0-9]+&quot;,&quot;.&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>driver.switchTo().frame(driver.findElement(By.cssSelector(&quot;#body &gt; div.sp-fancybox-wrap.fancybox-desktop.fancybox-type-iframe.sp-advanced-css-1268.sp-fancybox-opened.adaptive-resolution.adaptive-position.adaptive-x-position-center.adaptive-y-position-middle &gt; div.sp-fancybox-skin.adaptive-resolution &gt; div.sp-fancybox-outer.adaptive-resolution &gt; div &gt; iframe&quot;)))</expression-string>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[0-9]+&quot;,&quot;.&quot;)</expression-string>
         <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>driver.findElement(By.cssSelector(&quot;#body &gt; div.sp-fancybox-wrap.fancybox-desktop.fancybox-type-iframe.sp-advanced-css-1268.sp-fancybox-opened.adaptive-resolution.adaptive-position.adaptive-x-position-center.adaptive-y-position-middle &gt; div.sp-fancybox-skin.adaptive-resolution &gt; div.sp-fancybox-outer.adaptive-resolution &gt; div &gt; iframe&quot;))</expression-string>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[0-9]]&quot;,&quot;.&quot;)</expression-string>
         <language-id>JAVA</language-id>
-        <custom-info>org.openqa.selenium.By</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[0-9]]&quot;,&quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[^0-9]]&quot;,&quot;.&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>shoppingPage.sampleProductText.getText().replaceAll(&quot;[^0-9]]&quot;,&quot;&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Integer.parseInt(shoppingPage.sampleProductText.getText().replaceAll(&quot;[^0-9]]&quot;,&quot;&quot;));</expression-string>
+        <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
@@ -876,16 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -907,6 +886,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/UrlFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -916,26 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractWebTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-718">
+        <state relative-caret-position="1245">
           <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractKiehlsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,22 +917,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractKiehlsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="285">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/MainPageWebPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.4.0/selenium-remote-driver-3.4.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="299" selection-start-line="299" selection-end-line="299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/context/base/AbstractSeleniumTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="187">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#2958#2959#0" expanded="true" />
             <element signature="e#2996#2997#0" expanded="true" />
@@ -971,20 +975,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/LoginTest.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/net/SocketInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1010">
-          <caret line="41" column="59" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="59" />
+        <state relative-caret-position="187">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

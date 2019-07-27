@@ -76,4 +76,7 @@ public class ShoppingPage extends PageObject
 
     @FindBy(id = "pay-button")
     public WebElement securePayBtn;
+
+    @FindBy(css = "div.sticky-init.clearfix > div > span.pull-left")
+    public WebElement sampleProductText;
 }
