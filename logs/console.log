@@ -3039,3 +3039,150 @@ javax.net.ssl.SSLException: handshake timed out
 2019-07-27 23:17:12 INFO  AbstractWebTest:58 - =================================================================
 2019-07-27 23:17:12 INFO  AbstractWebTest:59 - TEST PASSED ...
 2019-07-27 23:17:12 INFO  AbstractWebTest:60 - =================================================================
+2019-07-27 23:19:00 INFO  AbstractWebTest:44 - =================================================================
+2019-07-27 23:19:00 INFO  AbstractWebTest:45 - TEST STARTED ... → testHomePageNetwork
+2019-07-27 23:19:00 INFO  AbstractWebTest:46 - =================================================================
+2019-07-27 23:19:00 INFO  DriverWebTestFactory:18 - BrowserType (DriverWebTestFactory) : chrome
+2019-07-27 23:19:01 INFO  DefaultHttpProxyServer:459 - Starting proxy at address: 0.0.0.0/0.0.0.0:0
+2019-07-27 23:19:01 INFO  DefaultHttpProxyServer:488 - Proxy listening with TCP transport
+2019-07-27 23:19:01 INFO  DefaultHttpProxyServer:523 - Proxy started at address: /0:0:0:0:0:0:0:0:54918
+2019-07-27 23:19:01 INFO  ChromeDriverManagerWeb:84 - =================================================================
+2019-07-27 23:19:01 INFO  ChromeDriverManagerWeb:85 - This Execute Browser Host --> sezais-MacBook-Pro.local
+2019-07-27 23:19:01 INFO  ChromeDriverManagerWeb:86 - This Execute Browser Port --> 54918
+2019-07-27 23:19:01 INFO  ChromeDriverManagerWeb:87 - =================================================================
+2019-07-27 23:19:01 INFO  ChromeDriverManagerWeb:55 - This test is local execute ...
+2019-07-27 23:19:13 INFO  AbstractWebTest:129 - Scenarios will not take video
+2019-07-27 23:19:13 INFO  AbstractWebTest:135 - =================================================================
+2019-07-27 23:19:13 INFO  AbstractWebTest:136 - This Execute Session ID --> 379351739544d7bfaefe23ffa766121f
+2019-07-27 23:19:13 INFO  AbstractWebTest:137 - =================================================================
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.gstatic.com/chrome/intelligence/assist/ranker/models/translate/2017/03/translate_ranker_model_20170329.pb.bin
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/admin_v3/global/plugins/froala/css/froala_editor.pkgd.min.css
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/build/pro.kiehls.min.css?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/default/css/magnific-popup.min.css
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/ssv3/assets/css/ssv3.css
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/default/css/sweet-alert.css
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/js/lib/jquery.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/pro/img/_blank_1x1.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/default/js/rg.vod.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/ssv3/assets/js/twttr-txt.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/js/secondscreen.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/fonts/pro-icons/pro-icons.ttf?1d12bu
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/default/js/sweet-alert.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/arrow-right-type2.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/_blank.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/projects/kiehls/img/spotlight-arrow-right.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/projects/kiehls/img/spotlight-arrow-left.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/css/18-05/29/kiehls.css?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/18-07/05/555x251_maskebul.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/arrow-left-type2.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/19-05/14/555x251-px-2.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/default/js/jquery.magnific-popup.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/logo/18-10/24/kiehls_logo_transparent.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-07/25/cremedecorps_anasayfa-1.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/js/chatroom.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-07/26/kiehls_app_anasayfa_02-1.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-05/27/video_chat_anasayfa_04.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/ssv3/assets/js/chart.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/font/17-07/28/trtimesnewroman.woff
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-06/17/aquagel_anasayfa.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/font/17-07/28/kiehls_hand_tc.woff
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/js/lib/swiper/swiper.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/font/17-08/01/helveticaneueltw1g-bdcn.woff
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/11123v2_1_2.jpg?1564186686
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/r11149_1.jpg?1564186704
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/ssv3/assets/js/ssv3.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/secondscreen/js/remotecontrol.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Resize_HydroPlumping_Serum[1].jpg?1564186698
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-09/08/guarantee-icon-230x230-1504874126.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/1.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Super_Multi_Corrective_Cream_1_1_1.png?1564186714
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/Powerful_Strength_Line_Reducing_Concentrate_50ml_3605971536090_front.jpg?1564186759
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/11158_1_1.jpg?1564186709
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/5-1503067439.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://mnj4pext.rocketcdn.com/cache/180/180/loreal/loreal_kiehls/product_images/1081941_06a_Kiehls_MRC_15ml_IMG_6508.jpg?1564186703
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/2-1503067051.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://multiscreen.akamaized.net/kiehls//img/content/17-08/18/6-1503067205.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/content/18-08/28/brand-promise.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/ajax/translation/get?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/build/projects/kiehls/kiehls.pro.min.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://connect.facebook.net/en_US/all.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/app/widgets/pro_header_fresh/assets/js/design_1.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/app/widgets/ecomm_pro_static_banner/assets/js/ecomm_pro_static_banner.min.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/app/widgets/ecomm_pro_content_list/assets/js/ecomm_pro_content_list.min.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/app/widgets/pro_media_carousel_in_light_box/assets/js/pro_media_carousel_in_light_box.min.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/app/widgets/pro_newsletter_submission_2/assets/js/pro_newsletter_submission.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/spotlight_gradient.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.googletagmanager.com/gtm.js?id=GTM-WJPW7G
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://platform.twitter.com/widgets.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://platform.twitter.com/widgets/widget_iframe.0639d67d95b7680840758b6833f06d87.html?origin=https%3A%2F%2Fwww.kiehls.com.tr
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://connect.facebook.net/en_US/fbevents.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.googleadservices.com/pagead/conversion_async.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/app/widgets/ecomm_pro_spotlight/assets/js/spotlight.min.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://5434011.fls.doubleclick.net/activityi;src=5434011;type=remar0;cat=kiehl0;ord=7736423387479;gtm=2wg7i2;auiddc=1515643366.1564258747;u1=homepage;u2=undefined;u3=undefined;u4=undefined;u5=undefined;u6=undefined;u7=undefined;~oref=https%3A%2F%2Fwww.kiehls.com.tr%2F?
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.0/css/swiper.min.css
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://storage.googleapis.com/code.snapengage.com/js/94af88a7-77aa-411d-868f-a308aa63c177.js?v=cbbe8ad5a05be831f3851fbd6fe62928
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://5434011.fls.doubleclick.net/activityi;dc_pre=COvB8Pf11eMCFdk64AodKKEGlg;src=5434011;type=remar0;cat=kiehl0;ord=7736423387479;gtm=2wg7i2;auiddc=1515643366.1564258747;u1=homepage;u2=undefined;u3=undefined;u4=undefined;u5=undefined;u6=undefined;u7=undefined;~oref=https%3A%2F%2Fwww.kiehls.com.tr%2F?
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://connect.facebook.net/signals/config/397537234388540?v=2.8.51&r=stable
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://static.hotjar.com/c/hotjar-261976.js?sv=5
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/slider_big/19-06/21/top_products_anasayfa_02-04.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://secondscreen.multiscreen.technology/socket.io/socket.io.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/api/secondscreen/videoPolls?item_id=null
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://syndication.twitter.com/settings
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google-analytics.com/analytics.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://adservice.google.com/ddm/fls/z/dc_pre=COvB8Pf11eMCFdk64AodKKEGlg;src=5434011;type=remar0;cat=kiehl0;ord=7736423387479;gtm=2wg7i2;auiddc=*;u1=homepage;u2=undefined;u3=undefined;u4=undefined;u5=undefined;u6=undefined;u7=undefined;~oref=https%3A%2F%2Fwww.kiehls.com.tr%2F
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://googleads.g.doubleclick.net/pagead/viewthroughconversion/945734793/?random=1564258747567&cv=9&fst=1564258747567&num=1&label=aO-4CIaumGEQiYn7wgM&guid=ON&resp=GooglemKTybQhCsO&u_h=1050&u_w=1680&u_ah=1027&u_aw=1680&u_cd=24&u_his=2&u_tz=180&u_java=false&u_nplug=3&u_nmime=4&gtm=2wg7i2&sendb=1&ig=1&data=ecomm_pagetype%3Dhomepage%3Becomm_pbrand%3DKIE%3Becomm_uiGender%3D%3Becomm_uiLoggedStatus%3Dnot%20logged%3Becomm_uiUser%3Dfalse&frm=0&url=https%3A%2F%2Fwww.kiehls.com.tr%2F&tiba=Do%C4%9Fadan%20%C4%B0lham%20Alan%20Cilt%20Bak%C4%B1m%C4%B1%2C%20V%C3%BCcut%20%26%20Sa%C3%A7%20Bak%C4%B1m%C4%B1%20%7C%20Kiehl%27s&async=1&rfmt=3&fmt=4
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://kiehlstr.api.useinsider.com/ins.js?id=10001075
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://connect.facebook.net/en_US/all.js?hash=9e339a2d1e05339b2dcca9cf46792bfa&ua=modern_es6
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-06/26/20190424_094242000_ios.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-06/26/ultra-facial-oil-free-cleanser-1561542112.PNG
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-06/26/ultra-light-daily-defense-uv-aqua-gel.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-06/26/ultra-facial-cream-1561541955.PNG
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://epmajuiy.rocketcdn.com/kiehls/img/instashop_m/19-06/26/calendula-serum-infused-water-cream.jpg
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/assets/pro/img/_blank_1x1.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://storage.googleapis.com/code.snapengage.com/cd/6304113348575232/1542723318534.png
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://script.hotjar.com/modules.00804eee64e6e6fbdc44.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google-analytics.com/plugins/ua/linkid.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google-analytics.com/collect?v=1&_v=j77&a=1892281787&t=pageview&_s=1&dl=https%3A%2F%2Fwww.kiehls.com.tr%2F&ul=en-us&de=UTF-8&dt=Do%C4%9Fadan%20%C4%B0lham%20Alan%20Cilt%20Bak%C4%B1m%C4%B1%2C%20V%C3%BCcut%20%26%20Sa%C3%A7%20Bak%C4%B1m%C4%B1%20%7C%20Kiehl%27s&sd=24-bit&sr=1680x1050&vp=1185x904&je=0&_u=YGBAgEAj~&jid=861620584&gjid=1096733445&cid=1461958210.1564258748&uid=0&tid=UA-31147745-1&_gid=2043650874.1564258748&gtm=2wg7i2WJPW7G&cd1=KIE&cd2=tr&cd3=tr&cd4=main&cd5=homepage&cd6=&cd8=0&cd9=not%20logged&cd10=&cd11=0&cd12=0&cd18=0&cd34=0&z=680792439
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://connect.facebook.net/signals/plugins/inferredEvents.js?v=2.8.51
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://vars.hotjar.com/box-90f3a29ef7448451db5af955688970d7.html
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j77&tid=UA-31147745-1&cid=1461958210.1564258748&jid=861620584&gjid=1096733445&_gid=2043650874.1564258748&_u=YGBAgEAj~&z=1684972588
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.snapengage.com/chatjs/ServiceGetProactiveChatAgent?w=94af88a7-77aa-411d-868f-a308aa63c177&rid=5
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.snapengage.com/chatjs/ServiceGetConfig?w=94af88a7-77aa-411d-868f-a308aa63c177
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://vc.hotjar.io/views/261976?s=0.25
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://staticxx.facebook.com/connect/xd_arbiter.php?version=44
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://fonts.googleapis.com/css?family=Lato:400,600
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-31147745-1&cid=1461958210.1564258748&jid=861620584&_v=j77&z=1684972588
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google.com/pagead/1p-user-list/945734793/?random=1564258747567&cv=9&fst=1564257600000&num=1&label=aO-4CIaumGEQiYn7wgM&guid=ON&u_h=1050&u_w=1680&u_ah=1027&u_aw=1680&u_cd=24&u_his=2&u_tz=180&u_java=false&u_nplug=3&u_nmime=4&gtm=2wg7i2&sendb=1&data=ecomm_pagetype%3Dhomepage%3Becomm_pbrand%3DKIE%3Becomm_uiGender%3D%3Becomm_uiLoggedStatus%3Dnot%20logged%3Becomm_uiUser%3Dfalse&frm=0&url=https%3A%2F%2Fwww.kiehls.com.tr%2F&tiba=Do%C4%9Fadan%20%C4%B0lham%20Alan%20Cilt%20Bak%C4%B1m%C4%B1%2C%20V%C3%BCcut%20%26%20Sa%C3%A7%20Bak%C4%B1m%C4%B1%20%7C%20Kiehl%27s&async=1&fmt=3&cdct=2&is_vtc=1&random=3270196499&resp=GooglemKTybQhCsO&rmt_tld=0&ipr=y
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://fonts.googleapis.com/css?family=Lato:400,600
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://fonts.googleapis.com/css?family=Lato:400,600
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXiWtFCc.woff2
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wXiWtFCc.woff2
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google.com.tr/pagead/1p-user-list/945734793/?random=1564258747567&cv=9&fst=1564257600000&num=1&label=aO-4CIaumGEQiYn7wgM&guid=ON&u_h=1050&u_w=1680&u_ah=1027&u_aw=1680&u_cd=24&u_his=2&u_tz=180&u_java=false&u_nplug=3&u_nmime=4&gtm=2wg7i2&sendb=1&data=ecomm_pagetype%3Dhomepage%3Becomm_pbrand%3DKIE%3Becomm_uiGender%3D%3Becomm_uiLoggedStatus%3Dnot%20logged%3Becomm_uiUser%3Dfalse&frm=0&url=https%3A%2F%2Fwww.kiehls.com.tr%2F&tiba=Do%C4%9Fadan%20%C4%B0lham%20Alan%20Cilt%20Bak%C4%B1m%C4%B1%2C%20V%C3%BCcut%20%26%20Sa%C3%A7%20Bak%C4%B1m%C4%B1%20%7C%20Kiehl%27s&async=1&fmt=3&cdct=2&is_vtc=1&random=3270196499&resp=GooglemKTybQhCsO&rmt_tld=1&ipr=y
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google.com.tr/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-31147745-1&cid=1461958210.1564258748&jid=861620584&_v=j77&z=1684972588&slf_rd=1&random=3735466699
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google-analytics.com/collect?v=1&_v=j77&a=1892281787&t=pageview&_s=1&dl=https%3A%2F%2Fwww.kiehls.com.tr%2F&ul=en-us&de=UTF-8&dt=Do%C4%9Fadan%20%C4%B0lham%20Alan%20Cilt%20Bak%C4%B1m%C4%B1%2C%20V%C3%BCcut%20%26%20Sa%C3%A7%20Bak%C4%B1m%C4%B1%20%7C%20Kiehl%27s&sd=24-bit&sr=1680x1050&vp=1185x904&je=0&_u=aGDAgEAj~&jid=74911390&gjid=102626081&cid=1461958210.1564258748&uid=0&tid=UA-31147745-2&_gid=2043650874.1564258748&gtm=2wg7i2WJPW7G&cd1=KIE&cd2=tr&cd3=tr&cd4=main&cd5=homepage&cd6=&cd8=0&cd9=not%20logged&cd10=&cd11=0&cd12=0&cd18=0&cd28=&cd34=0&z=858138730
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j77&tid=UA-31147745-2&cid=1461958210.1564258748&jid=74911390&gjid=102626081&_gid=2043650874.1564258748&_u=aGDAgEAj~&z=1131551618
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-31147745-2&cid=1461958210.1564258748&jid=74911390&_v=j77&z=1131551618
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.facebook.com/tr/
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.facebook.com/tr/?id=397537234388540&ev=PageView&dl=https%3A%2F%2Fwww.kiehls.com.tr%2F&rl=&if=false&ts=1564258749487&sw=1680&sh=1050&v=2.8.51&r=stable&ec=0&o=30&fbp=fb.2.1564258749485.1421473059&it=1564258747284&coo=false&rqm=GET
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google.com.tr/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-31147745-2&cid=1461958210.1564258748&jid=74911390&_v=j77&z=1131551618&slf_rd=1&random=614284092
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://api.useinsider.com/js/squery.min.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://kiehlstr.api.useinsider.com/worker.html?new=true
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://location.api.useinsider.com/?pId=10001075&callback=parseLocationData&_=1564258751751
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://segment.api.useinsider.com/v4/segments/15642587517753c7bd633e3.44e9da88?partnerid=10001075&jsonp=true&fields=82549dc8e3e5e3758358dc4f75f92361&callback=parsePredictiveData&_=1564258751786
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://secondscreen.multiscreen.technology/socket.io/?member_id=null&domain=https%3A%2F%2Fwww.kiehls.com.tr%2F&EIO=3&transport=polling&t=1564258752364-0
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.kiehls.com.tr/api_v2/getActivePolls/14
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.google-analytics.com/plugins/ua/ec.js
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://www.facebook.com/connect/ping?client_id=121708341801614&domain=www.kiehls.com.tr&origin=1&redirect_uri=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df1963112b93a994%26domain%3Dwww.kiehls.com.tr%26origin%3Dhttps%253A%252F%252Fwww.kiehls.com.tr%252Ff2c3b0320ea5454%26relation%3Dparent&response_type=token%2Csigned_request&sdk=joey
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://secondscreen.multiscreen.technology/socket.io/?member_id=null&domain=https%3A%2F%2Fwww.kiehls.com.tr%2F&EIO=3&transport=polling&t=1564258752822-1&sid=_emv2e7YUZmtitW7Armt
+2019-07-27 23:19:38 INFO  HomePageNetworkTest:65 - Check Response This Url -> https://secondscreen.multiscreen.technology/socket.io/?member_id=null&domain=https%3A%2F%2Fwww.kiehls.com.tr%2F&EIO=3&transport=websocket&sid=_emv2e7YUZmtitW7Armt
+2019-07-27 23:19:38 INFO  DefaultHttpProxyServer:398 - Shutting down proxy server gracefully
+2019-07-27 23:19:38 INFO  DefaultHttpProxyServer:433 - Closing all channels (graceful)
+2019-07-27 23:19:38 INFO  ServerGroup:212 - Shutting down server group event loops (graceful)
+2019-07-27 23:19:40 INFO  DefaultHttpProxyServer:414 - Done shutting down proxy server
+2019-07-27 23:19:41 INFO  AbstractWebTest:83 - TEST FAIL ... Fail Screen Page Source --> /Users/sezai.can/Documents/sezfree/kiehls/kiehls/target/PageSource/testHomePageNetwork-DOM.txt

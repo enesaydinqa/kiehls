@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df260428-708a-4ebc-a736-35b2b9878134" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/console.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/console.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/pages/web/ShoppingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/context/annotations/DescriptionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/context/annotations/DescriptionManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/HomePageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/adaptive/HomePageNetworkTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/HomePageNetworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/HomePageNetworkTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/ShoppingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/selenium/tests/web/ShoppingTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/ShoppingTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -28,6 +21,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
@@ -359,7 +361,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564258468611" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564258850841" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -388,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingTest.testShoppingShampooCategoryWithLogin">
+  <component name="RunManager" selected="JUnit.HomePageNetworkTest.testHomePageNetwork">
     <configuration name="HomePageNetworkTest.testAdaptiveHomePageLoadPNG" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="kiehls" />
       <extension name="coverage">
@@ -402,6 +404,24 @@
       <option name="METHOD_NAME" value="testAdaptiveHomePageLoadPNG" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-Dremote.test=true -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageNetworkTest.testHomePageNetwork" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="kiehls" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="selenium.tests.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="selenium.tests.web" />
+      <option name="MAIN_CLASS_NAME" value="selenium.tests.web.HomePageNetworkTest" />
+      <option name="METHOD_NAME" value="testHomePageNetwork" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dremote.test=false -Dbrowser.type=chrome -Djetty.port=8090 -Dtake.a.video=false" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -519,17 +539,11 @@
       <workItem from="1558530747119" duration="21000" />
       <workItem from="1559035076234" duration="2062000" />
       <workItem from="1559197600459" duration="12560000" />
-      <workItem from="1564255394044" duration="2697000" />
+      <workItem from="1564255394044" duration="2932000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 27m 32s.xml">
-      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 46m 23s.xml">
-      <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ShoppingTest_testShoppingColdCreamCategoryWithGuestLogin - 2019.07.27 at 22h 48m 01s.xml">
       <configuration name="ShoppingTest.testShoppingColdCreamCategoryWithGuestLogin" configurationId="JUnit" />
     </history-entry>
@@ -554,9 +568,15 @@
     <history-entry file="ShoppingTest_testShoppingShampooCategoryWithLogin - 2019.07.27 at 23h 14m 20s.xml">
       <configuration name="ShoppingTest.testShoppingShampooCategoryWithLogin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ShoppingTest_testShoppingShampooCategoryWithLogin - 2019.07.27 at 23h 17m 12s.xml">
+      <configuration name="ShoppingTest.testShoppingShampooCategoryWithLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HomePageNetworkTest_testHomePageNetwork - 2019.07.27 at 23h 19m 41s.xml">
+      <configuration name="HomePageNetworkTest.testHomePageNetwork" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35219000" />
+    <option name="totallyTimeSpent" value="35454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -570,8 +590,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -810,13 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -989,6 +1002,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/selenium/tests/web/HomePageNetworkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
